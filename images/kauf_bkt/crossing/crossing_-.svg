@@ -1,0 +1,17 @@
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="0 0 1019.4673 1019.4674" xml:space="preserve" id="svg7" sodipodi:docname="crossing_-.svg" inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)" class="">
+    <sodipodi:namedview id="namedview7" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="1.4340126" inkscape:cx="192.81561" inkscape:cy="493.37086" inkscape:window-width="3840" inkscape:window-height="2091" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg7"/>
+
+    <defs id="defs1"/>
+
+
+ <g id="g8" transform="matrix(0,1,1,0,19.536376,9.7336664)">
+        <path d="M 500,949.543 V 603.13459 m 0,-226.28706 V 0" fill="none" class="" stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="39.0728" id="path2" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" sodipodi:nodetypes="cccc"/>
+        <path d="m 367.661,838.183 117.219,143.268 15.12,18.48 15.12,-18.48 117.219,-143.268 c 6.832,-8.35 5.601,-20.659 -2.749,-27.491 -8.351,-6.832 -20.659,-5.602 -27.492,2.749 L 484.88,956.708 h 30.24 L 397.902,813.441 c -6.833,-8.351 -19.141,-9.581 -27.492,-2.749 -8.35,6.832 -9.581,19.141 -2.749,27.491 z" class="" fill="#ffb86c" id="path3" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round"/>
+    </g>
+
+    <g id="g7" transform="rotate(90,504.90135,504.83232)">
+        <path d="M 161.817,367.661 18.5495,484.88 0.0690475,500 18.5495,515.12 161.817,632.339 c 8.35,6.832 20.659,5.601 27.491,-2.749 6.832,-8.351 5.602,-20.659 -2.749,-27.492 L 43.2919,484.88 v 30.24 L 186.559,397.902 c 8.351,-6.833 9.581,-19.141 2.749,-27.492 -6.832,-8.35 -19.141,-9.581 -27.491,-2.749 z" class="" fill="#ffb86c" id="path6" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round"/>
+        <path d="M 50.4571,500 C 135.95,500 1000,500 1000,500" fill="none" class="" stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="39.0728" id="path5" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round"/>
+    </g>
+
+</svg>

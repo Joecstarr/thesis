@@ -1,0 +1,15 @@
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="-20 0 453.05746 532.02155" xml:space="preserve" id="svg17" sodipodi:docname="1.svg" inkscape:version="1.2.2 (732a01da63, 2022-12-09)" class="">
+    <sodipodi:namedview id="namedview19" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" showgrid="false" inkscape:zoom="0.6675088" inkscape:cx="-149.81076" inkscape:cy="217.2256" inkscape:window-width="1920" inkscape:window-height="1120" inkscape:window-x="-11" inkscape:window-y="-11" inkscape:window-maximized="1" inkscape:current-layer="svg17"/>
+    <defs id="defs2">
+        <inkscape:path-effect effect="knot" id="path-effect1033" is_visible="true" lpeversion="1" switcher_size="15" interruption_width="4.6" prop_to_stroke_width="true" add_stroke_width="inkscape_1.0_and_up" both="false" inverse_width="false" add_other_stroke_width="inkscape_1.0_and_up" crossing_points_vector="146.33268 | 258.50765 | 0 | 0 | 0 | 1 | 0.98267502 | 5.3541942 | -1"/>
+    </defs>
+
+
+    <path d="M -4.4914012,15 C -3.3154719,18.388892 39.825865,119.65929 104.51571,212.03204 m 92.80642,104.11861 c 30.69282,24.28832 63.61416,39.71389 97.8277,39.71389 l 2.15353,0.18726 c 158.994,0 162.736,-185.39937 0.797,-185.88937 l -1.779,-0.0936 C 154.48936,169.6388 -1.5807417,510.22029 -5,517.02152" fill="none" opacity="1" class="" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30" id="path12" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" sodipodi:nodetypes="csccccc" inkscape:path-effect="#path-effect1033" inkscape:original-d="m -4.4914012,15 c 1.4291317,4.118592 64.8413962,152.8087 153.5877312,254.3979 43.27973,49.54292 93.12006,86.46664 146.0535,86.46664 l 2.15353,0.18726 c 158.994,0 162.736,-185.39937 0.797,-185.88937 l -1.779,-0.0936 C 154.48936,169.6388 -1.5807417,510.22029 -5,517.02152"/>
+    <g clip-path="url(#ArtboardFrame_76)" id="Layer-2" vectornator:layerName="Layer 2" transform="translate(-5.3866382,13.8478)">
+        <clipPath id="ClipPath">
+            <path d="M -15.4654,37.7522 C -17.6997,47.1359 99.6175,260.997 99.6175,260.997 l 61.0615,-61.973 50.791,46.092 -64.744,68.081 103.681,105.714 181.866,25.023 L 512.705,178.955 442.55,7.36675 107.417,-76.1932 l -215.379,25.917 c 0,0 94.7308,78.6446 92.4966,88.0284 z" id="path9"/>
+        </clipPath>
+
+    </g>
+</svg>

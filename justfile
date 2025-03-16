@@ -24,9 +24,11 @@ do-prettier:
 
 check-ruff:
     ruff format --check plugins
+    ruff format --check resources
 
 do-ruff:
     ruff format plugins
+    ruff format resources
 
 normalize-media:
     uv run ./resources/imgproc/svg_colors.py

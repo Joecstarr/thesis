@@ -1,0 +1,7 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 500 500" xml:space="preserve" class="">
+    <defs/>
+    <g id="Layer-1" vectornator:layerName="Layer 1">
+        <path d="M15.5479 249.956C15.5479 120.215 120.545 15.0387 250.065 15.0387C379.585 15.0387 484.582 120.215 484.582 249.956C484.582 379.698 379.585 484.874 250.065 484.874C120.545 484.874 15.5479 379.698 15.5479 249.956Z" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="28.9667"/>
+    </g>
+</svg>

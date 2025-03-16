@@ -1,0 +1,28 @@
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1000 1000" xml:space="preserve" id="svg8" sodipodi:docname="trefoil_ba.svg" inkscape:version="1.3 (0e150ed6c4, 2023-07-21)" class="">
+    <sodipodi:namedview id="namedview8" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="1.4340126" inkscape:cx="627.95824" inkscape:cy="237.44562" inkscape:window-width="1920" inkscape:window-height="1120" inkscape:window-x="-11" inkscape:window-y="-11" inkscape:window-maximized="1" inkscape:current-layer="Layer-1"/>
+
+    <defs id="defs1"/>
+
+<g clip-path="url(#ArtboardFrame_70)" id="Layer-1" vectornator:layerName="Layer 1">
+
+
+        <path d="M 747.52504,224.34031 C 738.19947,-17.293818 338.63014,-75.601962 273.04251,210.79426 m 12.01192,237.29008 C 313.04186,557.21848 370.73426,689.3099 468.895,846.757" fill="none" opacity="1" class="" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path6" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" sodipodi:nodetypes="cccc"/>
+        <path d="M 714.579,382.06 C 396.0147,1633.7998 -239.17037,576.16533 135.03623,374.06533" fill="none" opacity="1" class="" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path7" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" sodipodi:nodetypes="cc"/>
+        <path d="m 393.6745,322.41835 c 84.52924,-8.20684 158.28321,-8.06641 222.25722,-1.17405 m 235.44336,77.98981 C 1174.6152,622.24196 811.60317,1197.7498 525.333,902.819" fill="none" opacity="1" class="" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path8" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" sodipodi:nodetypes="cccc"/>
+        <path d="M136.276 373.688C221.454 331.083 262.905 348.506 283.676 442.876" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path1"/>
+
+        <path d="M270.732 219.921C258.227 272.458 282.845 343.079 388.415 322.833" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path2"/>
+
+        <path d="M843.768 394.053C818.574 376.612 801.283 372.289 784.773 358.013C751.014 328.825 746.126 281.035 747.851 232.036" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path3"/>
+
+        <path d="M712.37 390.79C728.854 328.482 657.137 328.684 627.388 322.716" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path4"/>
+<clipPath id="ClipPath">
+
+            <path d="M678.954 246.428L591.211 395.591L759.035 385.372L950.078 339.435L1240.51 636.005L700.889 1161.58L-96.6902 1127.36L-119.503 232.39L345.254 460.923L430.285 382.074L195.509 155.201L532.865-176.824L1052.97 202.884L678.954 246.428Z" id="path5"/>
+
+        </clipPath>
+
+
+    </g>
+
+</svg>

@@ -1,0 +1,26 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1000 1000" xml:space="preserve" class="">
+    <defs/>
+
+    <g clip-path="url(#ArtboardFrame_64)" id="Layer-1" vectornator:layerName="Layer 1">
+        <path d="M440.395 800.338C460.967 830.644 496.016 891.202 463.141 915.578" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
+        <path d="M553.788 800.313C514.808 860.808 530.169 915.55 563.515 936.801" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
+        <path d="M631.197 323.446C662.568 330.202 745.473 303.564 747.986 232.171" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
+        <path d="M136.276 373.688C221.454 331.083 262.905 348.506 283.676 442.876" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
+        <path d="M270.732 219.921C258.227 272.458 282.845 343.079 388.415 322.833" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
+        <path d="M712.229 389.517C728.712 327.209 816.583 376.199 837.35 390.256" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
+        <clipPath id="ClipPath">
+            <path d="M678.954 246.428L591.211 395.591L759.035 385.372L950.078 339.435L1240.51 636.005L700.889 1161.58L-96.6902 1127.36L-119.503 232.39L345.254 460.923L430.285 382.074L195.509 155.201L532.865-176.824L1052.97 202.884L678.954 246.428Z"/>
+        </clipPath>
+        <g clip-path="url(#ClipPath)">
+            <clipPath id="ClipPath_2">
+                <path d="M678.954 246.428L591.211 395.591L759.035 385.372L950.078 339.435L1240.51 636.005L700.889 1161.58L589.849 1004.31C589.849 1004.31 559.986 950.038 545.426 956.157C530.866 962.277 573.652 904.122 573.652 904.122L605.619 850.457L491.549 772.397L414.655 824.722L433.611 879.467L502.396 936.701L530.951 1013.95L-96.6902 1127.36L-119.503 232.39L345.254 460.923L430.285 382.074L195.509 155.201L532.865-176.824L1052.97 202.884L678.954 246.428Z"/>
+            </clipPath>
+            <g clip-path="url(#ClipPath_2)">
+                <path d="M738.563 299.681C852.762-130.445-154.031-152.399 468.895 846.757" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
+                <path d="M714.579 382.06C374.474 1718.44-326.518 422.576 225.201 345.782" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
+                <path d="M315.101 332.037C1411.76 171.475 902.086 1290.97 525.333 902.819" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -4,7 +4,7 @@ from pathlib import Path
 from rich import print
 from tqdm import tqdm
 
-IMAGE_PATH = Path("./media")
+IMAGE_PATH = Path("./images")
 
 # | Palette      | Hex
 # | ------------ | ---------

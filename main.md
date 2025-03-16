@@ -44,19 +44,44 @@ math:
 
 <!-- prettier-ignore-end -->
 
-```{include} sections/default.md
+
+<!-- Include frontmatter -->
+
+```{include} sections/frontmatter/frontmatter.md
+
+```
+
+<!-- Include chapters -->
+
+```{include} sections/introduction/introduction.md
+
+```
+
+```{include} sections/background/background.md
+
+```
+
+```{include} sections/tabulation/tabulation.md
+
+```
+
+```{include} sections/software/software.md
+
+```
+
+```{include} sections/future_work/future_work.md
 
 ```
 
 <!-- @@@-subfigure-start-@@@ -->
 
-<!-- ```{figure} ./media/bands/bnd_sum_1.svg
+<!-- ```{figure} ./media/bands/bnd_sum_1.svg.svg
 :label: UC-N-APN-E-4
 :align: center
 @@@ TODO
 ```
 
-```{figure} ./media/bands/bnd_sum_2.svg
+```{figure} ./media/bands/bnd_sum_2.svg.svg
 :label: UC-N-APN-E-4
 :align: center
 @@@ TODO
