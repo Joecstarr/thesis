@@ -27,3 +27,5 @@ project:
 
 site:
     template: article-theme
+    options:
+        numbered_references: true

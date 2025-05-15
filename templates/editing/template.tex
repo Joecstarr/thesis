@@ -1,4 +1,4 @@
-\documentclass[14pt]{article}
+\documentclass[17pt]{extarticle}
 \usepackage{editing}
 \usepackage{extsizes}
 
@@ -12,32 +12,17 @@
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
 \usepackage{graphicx}
-\usepackage{natbib}
+\usepackage{mathrsfs}
+\usepackage[square,numbers]{natbib}
 \usepackage{doi}
 \usepackage{xcolor}
+\usepackage{float}
 \usepackage{subcaption}
-\usepackage{background}
 \usepackage[twitter]{coloremoji}
 \usepackage{qrcode}
-\usepackage[left=.5in,right=3in,top=1in,bottom=1in]{geometry}
 
-\usetikzlibrary{positioning}
-\backgroundsetup{
-   scale=1,
-   angle=0,
-   position={6in,0cm},
-   contents={%
-   \qrcode{None}
-   \tikzset{normal lines/.style={color=black, very thin}}
-   \begin{tikzpicture}
-       \foreach \y in {1,2,...,40}
-       \draw[style=normal lines](0 in, \y*.5 in) -- ( 2.5 in, \y*.5 in);
-   \end{tikzpicture}\newline
-   }
-   }
 \usepackage{lineno}
 \linenumbers
-
 [- IMPORTS -]
 
 \hypersetup{colorlinks = true,
@@ -120,7 +105,7 @@ This article is available online at the following URL: \href{[-options.link-]}{[
 [# endif #]
 
 [# if doc.bibliography #]
-\bibliographystyle{unsrtnat}
+\bibliographystyle{ksfh_nat}
 \bibliography{[- doc.bibliography | join(", ") -]}
 [# endif #]
 

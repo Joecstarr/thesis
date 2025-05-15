@@ -11,12 +11,14 @@
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
 \usepackage{graphicx}
-\usepackage{natbib}
+\usepackage{mathrsfs}
+\usepackage[square,numbers]{natbib}
 \usepackage{doi}
 \usepackage{xcolor}
 \usepackage{qrcode}
 \usepackage[twitter]{coloremoji}
 \usepackage{subcaption}
+\usepackage{float}
 
 
 [- IMPORTS -]
@@ -101,7 +103,7 @@ This article is available online at the following URL: \href{[-options.link-]}{[
 [# endif #]
 
 [# if doc.bibliography #]
-\bibliographystyle{unsrtnat}
+\bibliographystyle{ksfh_nat}
 \bibliography{[- doc.bibliography | join(", ") -]}
 [# endif #]
 

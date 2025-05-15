@@ -39,6 +39,7 @@ init:
     myst init --write-toc
 
 build: bootstrap
+    rip _build
     myst build ./main.md
     cp -r resources/coloremoji/coloremoji _build/exports/main_tex
     cp resources/coloremoji/coloremoji.sty _build/exports/main_tex
@@ -53,11 +54,11 @@ live:
 
 latex-main_0:
     cd ./_build/exports/main_tex && \
-    latexmk -synctex=1 -interaction=nonstopmode -file-line-error -shell-escape -lualatex main_0.tex
+    tectonic main_0.tex
 
 latex-main_1:
     cd ./_build/exports/main_tex && \
-    latexmk -synctex=1 -interaction=nonstopmode -file-line-error -shell-escape -lualatex main_1.tex
+    tectonic main_1.tex --keep-logs
 
 latex: latex-main_0 latex-main_1
     echo built!

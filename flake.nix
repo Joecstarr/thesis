@@ -13,62 +13,62 @@
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-      tex = pkgs.texlive.combine {
-        inherit (pkgs.texlive)
-          scheme-tetex
-          collection-luatex
-          adjustbox
-          amsmath
-          bbm
-          background
-          biblatex
-          capt-of
-          catchfile
-          datetime
-          doi
-          enumitem
-          environ
-          everypage
-          fancyhdr
-          fmtcount
-          fncychap
-          fontaxes
-          fontspec
-          framed
-          glossaries
-          graphbox
-          graphics
-          hyperref
-          ifoddpage
-          import
-          latexmk
-          lipsum
-          listings
-          mdframed
-          needspace
-          pdfcol
-          relsize
-          sauerj
-          silence
-          svg
-          tabulary
-          tcolorbox
-          tikzfill
-          titlesec
-          transparent
-          upquote
-          varwidth
-          wrapfig
-          xcharter
-          xetex
-          xstring
-          xurl
-          zref
-          commonunicode
-          newunicodechar
-          gnu-freefont
-          ;
-      };
+    #   tex = pkgs.texlive.combine {
+    #     inherit (pkgs.texlive)
+    #       scheme-tetex
+    #       collection-luatex
+    #       adjustbox
+    #       amsmath
+    #       bbm
+    #       background
+    #       biblatex
+    #       capt-of
+    #       catchfile
+    #       datetime
+    #       doi
+    #       enumitem
+    #       environ
+    #       everypage
+    #       fancyhdr
+    #       fmtcount
+    #       fncychap
+    #       fontaxes
+    #       fontspec
+    #       framed
+    #       glossaries
+    #       graphbox
+    #       graphics
+    #       hyperref
+    #       ifoddpage
+    #       import
+    #       latexmk
+    #       lipsum
+    #       listings
+    #       mdframed
+    #       needspace
+    #       pdfcol
+    #       relsize
+    #       sauerj
+    #       silence
+    #       svg
+    #       tabulary
+    #       tcolorbox
+    #       tikzfill
+    #       titlesec
+    #       transparent
+    #       upquote
+    #       varwidth
+    #       wrapfig
+    #       xcharter
+    #       xetex
+    #       xstring
+    #       xurl
+    #       zref
+    #       commonunicode
+    #       newunicodechar
+    #       gnu-freefont
+    #       ;
+    #   };
     in
     {
 
@@ -84,9 +84,9 @@
           nodePackages.prettier
           rip2
           rsync
+          tectonic
           ruff
           svg2pdf
-          tex
           uv
           wget
           zip
