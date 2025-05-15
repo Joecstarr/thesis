@@ -35,10 +35,12 @@ We call this projection a knot shadow, an example can be seen in
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 In our knot shadow we notice some points where strands overlap, call them

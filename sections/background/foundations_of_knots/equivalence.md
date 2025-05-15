@@ -26,6 +26,7 @@ remove the new crossing by twisting in the opposite direction.
 
 ```{figure} ./images/reidemeister_move/R1.svg
 
+@@@ TODO: Add content description
 ```
 
 The next Reidemeister move is the Type II move, seen in @fig-knot_def-R2. When
@@ -36,6 +37,7 @@ the strands apart.
 
 ```{figure} ./images/reidemeister_move/R2.svg
 
+@@@ TODO: Add content description
 ```
 
 The final Reidemeister move is the Type III move. In the type III move we take
@@ -47,4 +49,5 @@ with type I and type II, we're free to reverse the type III move.
 
 ```{figure} ./images/reidemeister_move/R3.svg
 
+@@@ TODO: Add content description
 ```

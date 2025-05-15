@@ -19,6 +19,7 @@ tangle.
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 From here, take the crank and move it to the bottom (south) side of the tangle.
@@ -29,6 +30,7 @@ of right and bottom twists the Twist Vector for the rational tangle.
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 To formalize this intuitive description we will assume the existence of integral

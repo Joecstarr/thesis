@@ -25,6 +25,7 @@ where $K$ is any oriented diagram for $\mathscr{K}$.
 
 ```{include} kauf_bkt.md
 
+@@@ TODO: Add content description
 ```
 
 Having gained each equality needed for an invariant of knots we finish the

@@ -24,14 +24,17 @@ the full model is shown in @fig-JP-screw-model.
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 We can take a screw driver and turn the screw clockwise or anti-clockwise. When
@@ -60,18 +63,22 @@ enlarged in @fig-inv-t3-ct2.
 
 ```{figure} ./images/kauf_bkt/type3/2b.svg
 
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/kauf_bkt/type3/3b.svg
 
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/kauf_bkt/type3/2a.svg
 
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/kauf_bkt/type3/3a.svg
 
+@@@ TODO: Add content description
 ```
 
 Finally, following a process similar to the clockwise case on the anti-clockwise
@@ -87,8 +94,10 @@ $
 
 ```{include} writhe.md
 
+@@@ TODO: Add content description
 ```
 
 ```{include} type_i.md
 
+@@@ TODO: Add content description
 ```

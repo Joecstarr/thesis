@@ -13,6 +13,7 @@ trefoil and figure 8 knot in @fig-prime_knot-connect_sum
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 With the connect sum operation we are now prepared to give the key definition

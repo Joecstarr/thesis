@@ -22,6 +22,7 @@ circle/cookie cutter, this process is seen in seen in @fig-knot2tangle.
 
 ```{figure} ./images/tangle_maker.svg
 
+@@@ TODO: Add content description
 ```
 
 These circular boundaries that split knots at four points are called Conway
@@ -50,10 +51,12 @@ as the tangle with a single crossing. The $+1$ and $0$ tangles can be seen in
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 # Rotation and Mirroring of Tangles
@@ -64,6 +67,7 @@ broken $T$.
 
 ```{figure} ./images/generic_tangles/generic_tangle.svg
 
+@@@ TODO: Add content description
 ```
 
 We can manipulate this tangle by the set of rotations, clockwise or
@@ -74,6 +78,7 @@ data. Pairing flips with rotations gives the table seen in @fig-tangle_flips
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 When we apply this set of flips and rotations to the basic tangles seen in
@@ -82,6 +87,7 @@ When we apply this set of flips and rotations to the basic tangles seen in
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 # Operations on Tangles
@@ -99,6 +105,7 @@ indicated in @fig-opo-minus
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 # Tangle Addition
@@ -109,6 +116,7 @@ $ SE$ of $A$ to the $NW$ and $SW$ of $B$. This can be seen in @fig-opo-plus
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 The class of tangles built by successive addition of the $\pm 1$ basic tangles
@@ -124,6 +132,7 @@ multiplication is equivalent to $-A+B$. This operation can be seen in
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 Notice that $$A*0=-A+0=-A$$
@@ -138,6 +147,7 @@ ramification is equivalent to $-A-B$ or $A0+B0$. This operation can be seen in
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 # Indicating Precedence
@@ -148,6 +158,7 @@ in the obvious way. An example can be seen in @fig-opo-prec.
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 # The Flype
@@ -162,6 +173,7 @@ An example of a flype is given in @fig-opo-flype.
 
 ```{figure} ./images/reidemeister_move/flype.svg
 
+@@@ TODO: Add content description
 ```
 
 # Closures
@@ -174,10 +186,12 @@ strand from $NE$ to $SE$, seen in @fig-closure-den.
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 # Tangle insertions
@@ -193,6 +207,7 @@ algebraic.
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 To obtain a knot that has non-bigon connections between tangles we will first
@@ -202,6 +217,7 @@ or hexagon can be seen in @fig-6starstar.
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 The simplest thing we can do from here is consider the graph as a knot shadow
@@ -214,6 +230,7 @@ can be seen in @fig-6starstar_insurtion.
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 When noting the tangle insertion we list first the graph to be inserted into,
@@ -223,8 +240,10 @@ two knots written in Conway notation can be seen in
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```

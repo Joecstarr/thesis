@@ -25,6 +25,7 @@ like a tangle, in fact, physically it's not a tangle.
 
 ```{figure} ./images/Sun-corona-magnetic-braids.jpg
 :label: fig-intro-solar_lines
+@@@ TODO: Add content description
 ```
 
 To see the tangle, we need to change our perspective slightly; we move the end
@@ -38,10 +39,12 @@ drawn around the two sets of bases of the flares, seen in
 
 ```{figure} ./images/solar_tangle.svg
 :label: fig-intro-solar_tangle
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/solar_braid.svg
 :label: fig-intro-solar_braid
+@@@ TODO: Add content description
 ```
 
 <!-- @@@label:fig-intro-solar  -->
@@ -86,10 +89,12 @@ top double strand to be the bottom double strand. This action can be seen in
 
 ```{figure} ./images/dont_proc/DNA_chemical_structure.svg
 :label:fig-intro-DNA_chemical_structure
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/dont_proc/topo.svg
 :label: fig-intro-topo
+@@@ TODO: Add content description
 ```
 
 <!-- @@@label:fig-intro-dna  -->
@@ -105,10 +110,12 @@ closed loop, making it a mathematical knot (@fig-intro-circ_dna_fig)
 
 ```{figure} ./images/dna_circle.svg
 :label: fig-intro-dna_circle
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/sem_knot.png
 :label: fig-intro-sem_knot-png
+@@@ TODO: Add content description
 ```
 
 <!-- @@@label:fig-intro-circ_dna_fig  -->
@@ -130,14 +137,17 @@ bound in the area on the right (@fig-intro-tangle_calc),
 
 ```{figure} ./images/tangle_equation_start.svg
 :label: fig-intro-tangle_equation_start
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/tangle_equation_result.svg
 :label: fig-intro-tangle_equation_result
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/pathway.png
 :label: fig-intro-pathway-png
+@@@ TODO: Add content description
 ```
 
 <!-- @@@label:fig-intro-tangle_calc  -->

@@ -10,6 +10,7 @@ loops to remove the knot, leaving us with only an unknotted string.
 
 ```{figure} ./images/everyday_knot.svg
 :label: fig-intro-everyday_knot
+@@@ TODO: Add content description
 ```
 
 This leaves us with a somewhat unsatisfying construction, exactly one object.
@@ -20,10 +21,12 @@ a circle by gluing the ends as in @fig-intro-everyday_knot_closed.
 
 ```{figure} ./images/everyday_knot_closed.svg
 :label: fig-intro-everyday_knot_closed
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/circle.svg
 :label: fig-intro-circle
+@@@ TODO: Add content description
 ```
 
 <!-- @@@label:fig-intro-closed_knots  -->
@@ -42,6 +45,7 @@ can't be maneuvered to look the same as @fig-intro-everyday_knot_closed or
 
 ```{figure} ./images/torus.svg
 :label: fig-intro-torus
+@@@ TODO: Add content description
 ```
 
 In fact, this twisting gives us a whole infinite family of odd crossing torus
@@ -51,16 +55,19 @@ knots, a sampling of which can be seen in @fig-intro-torus_knots.
 
 ```{figure} ./images/torus_3.svg
 :label: fig-intro-torus_3
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/torus_5.svg
 :label: fig-intro-torus_5
 
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/torus_7.svg
 :label: fig-intro-torus_7
 
+@@@ TODO: Add content description
 ```
 
 <!-- @@@label:fig-intro-closed_knots  -->
@@ -83,6 +90,7 @@ we've developed and follow the recipe (as seen in @fig-intro-tangle_maker):
 
 ```{figure} ./images/tangle_maker.svg
 :label: fig-intro-tangle_maker
+@@@ TODO: Add content description
 ```
 
 As we'll see in the following section, mathematical knots and tangles have

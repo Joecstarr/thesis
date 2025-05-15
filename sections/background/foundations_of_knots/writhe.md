@@ -13,6 +13,7 @@ arrive where you started.
 
 ```{figure} ./images/kauf_bkt/orientation/5_1.svg
 
+@@@ TODO: Add content description
 ```
 
 We now zoom in on our oriented diagram to focus on a crossing. Since the whole
@@ -26,10 +27,12 @@ positive (+) crossing, while an east pointing under strand is called a negative
 
 ```{figure} ./images/kauf_bkt/crossing/crossing_+.svg
 
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/kauf_bkt/crossing/crossing_-.svg
 
+@@@ TODO: Add content description
 ```
 
 A hint for determining the orientation of a crossing in practice is a right hand
@@ -54,6 +57,7 @@ crossings seen in @fig-writhe-local
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 then classifying each crossing as positive or negative we can count finding $5$

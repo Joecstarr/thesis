@@ -36,10 +36,12 @@ not equivalent by Reidemeister moves.
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 # Moveable Boundary Points
@@ -54,6 +56,7 @@ integral twists. This unwinding can be seen in @fig-tangl_eq-unwinding.
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 For this thesis we will assume tangles have a fixed boundary unless explicitly
@@ -78,10 +81,12 @@ of horizontally. The operations can be seen in @fig-newopo
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 ```{figure} ./images/missing.svg
 
+@@@ TODO: Add content description
 ```
 
 These two operations give a natural arithmetic structure to the combinations of

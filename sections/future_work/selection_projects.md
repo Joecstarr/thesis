@@ -21,6 +21,7 @@ tree, with the natural tangle orientations. @skein_rel
 
 ```{figure} ./images/Skein_HOMFLY.svg
 
+@@@ TODO: Add content description
 ```
 
 In this project an undergraduate researcher will conceive the theory and design

@@ -18,6 +18,7 @@ can be seen in @fig-hist-7table @schareinInteractiveTopologicalDrawing
 
 ```{figure} ./images/knots_to_7.svg
 
+@@@ TODO: Add content description
 ```
 
 With a table of seven crossing knots complete Tait's work in knot tabulation
@@ -34,6 +35,7 @@ pair can be seen in @fig-hist-perko).
 
 ```{figure} ./images/perko_pair.svg
 
+@@@ TODO: Add content description
 ```
 
 After Tait, Kirkman, and Little's completion of the ten crossing table efforts
