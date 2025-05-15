@@ -12,3 +12,7 @@ Sumners
 KnotPlot
 TopoICE-X
 dna
+Reidemeister
+Reidemister
+eq-fixed
+calc
