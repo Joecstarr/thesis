@@ -1,4 +1,4 @@
-# Prime Knots
+### Prime Knots
 
 When enumerating objects it's important to be clear on what types of object
 should be enumerated and which should be left uncounted. In this section we

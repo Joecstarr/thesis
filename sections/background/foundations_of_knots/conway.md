@@ -1,12 +1,11 @@
-# Conway Notation
+### Conway Notation
 
 In @sec-history-of-tabulation we saw that Conway claimed to have enumerated
 knots up to 11 crossings in "a few hours". Conway accomplished this by breaking
 knots into building blocks he called Tangles. This section gives an outline for
 the tools he used to achieve those "a few hours" of amazing efficiency.
 
-#
-Definition of a Tangle
+#### Definition of a Tangle
 
 Our first step in unlocking Conway's tabulation secrets is the definition of a
 tangle. We will give Conway's original definition followed by a description of
@@ -40,7 +39,7 @@ to $\R^3$. When a knot in $S^3$ is split by a Conway sphere the ambient $
 S^3$
 is decomposed into two $B^3$ each with a portion of the knot.
 
-# Basic
+#### Basic
 Tangles
 
 Often when thinking about a new construction we focus on what is the simplest
@@ -59,7 +58,7 @@ as the tangle with a single crossing. The $+1$ and $0$ tangles can be seen in
 @@@ TODO: Add content description
 ```
 
-# Rotation and Mirroring of Tangles
+#### Rotation and Mirroring of Tangles
 
 Consider a generic tangle, as seen in @fig-generic_tangle, where ambient
 orientation of data in the interior of the Conway circle is indicated by a
@@ -90,13 +89,13 @@ When we apply this set of flips and rotations to the basic tangles seen in
 @@@ TODO: Add content description
 ```
 
-# Operations on Tangles
+#### Operations on Tangles
 
 In addition to the rotations and flips Conway introduced a calculus on tangles
 @conwayEnumerationKnotsLinks1970. This calculus allowed Conway to build the
 simple basic tangles into iteratively more complex tangles.
 
-# Minus Tangle
+#### Minus Tangle
 
 For a generic tangle $T$ we call the tangle generated from a clockwise rotation
 and flip around the $y$ axis the negative of $T$ notated $-T$. Equivalently,
@@ -108,7 +107,7 @@ indicated in @fig-opo-minus
 @@@ TODO: Add content description
 ```
 
-# Tangle Addition
+#### Tangle Addition
 
 For a pair of generic tangles, $A$ and $B$, we construct their sum $A+B$ by
 first aligning $A$ and $ B$ horizontally. We then connect in order the $NE$ and
@@ -122,7 +121,7 @@ $ SE$ of $A$ to the $NW$ and $SW$ of $B$. This can be seen in @fig-opo-plus
 The class of tangles built by successive addition of the $\pm 1$ basic tangles
 are called the integral tangles.
 
-# Tangle Multiplication
+#### Tangle Multiplication
 
 For a pair of generic tangles, $A$ and $B$, we construct their product $A*B$, or
 $A\ B$ by first aligning $A$ and $B$ horizontally. We then take $-A$ and connect
@@ -137,7 +136,7 @@ multiplication is equivalent to $-A+B$. This operation can be seen in
 
 Notice that $$A*0=-A+0=-A$$
 
-# Tangle Ramification
+#### Tangle Ramification
 
 For a pair of generic tangles, $A$ and $B$, we construct their ramification
 $A,B$ by first aligning $A$ and $B$ horizontally. We then take $-A$ and $-B$ and
@@ -150,7 +149,7 @@ ramification is equivalent to $-A-B$ or $A0+B0$. This operation can be seen in
 @@@ TODO: Add content description
 ```
 
-# Indicating Precedence
+#### Indicating Precedence
 
 With operations naturally comes the desire to chain multiple operations
 together. The precedence for operations on tangles is indicated by parentheses
@@ -161,7 +160,7 @@ in the obvious way. An example can be seen in @fig-opo-prec.
 @@@ TODO: Add content description
 ```
 
-# The Flype
+#### The Flype
 
 When working in this calculus of tangles a common situation you may find
 yourself is one where the $1$ (or $-1$) tangle is added to a tangle $T$. In this
@@ -176,7 +175,7 @@ An example of a flype is given in @fig-opo-flype.
 @@@ TODO: Add content description
 ```
 
-# Closures
+#### Closures
 
 For a generic tangle we have two options for how to close up the tangle. The
 first is by connecting a strand from $NW$ to $ NE$ and a strand from $SW$ to
@@ -194,7 +193,7 @@ strand from $NE$ to $SE$, seen in @fig-closure-den.
 @@@ TODO: Add content description
 ```
 
-# Tangle insertions
+#### Tangle insertions
 
 With the calculus of tangles Conway was able to enumerate a substantial number
 of knots, but not all. We should notice a common theme with the calculus, every

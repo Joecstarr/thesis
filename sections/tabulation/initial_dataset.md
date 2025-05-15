@@ -1,4 +1,4 @@
-# The First Tangle Dataset
+## The First Tangle Dataset
 
 This chapter will describe the methodology that was used to answer two of the
 essential questions detailed in @sec-intro-Overview "What rational tangles can I

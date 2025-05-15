@@ -1,4 +1,4 @@
-# Knot Equivalence
+### Knot Equivalence
 
 Armed with the formal definition of a knot we can make our first progress in
 answering the overarching question "How do I tell two knots I make apart? from

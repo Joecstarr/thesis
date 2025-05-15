@@ -1,4 +1,4 @@
-# Definition of a Knot
+### Definition of a Knot
 
 Our first effort in formalization is the construction of a definition for knots.
 

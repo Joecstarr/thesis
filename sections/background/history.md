@@ -1,4 +1,4 @@
-# History of Knot Tabulation
+## History of Knot Tabulation
 
 Mathematical interest in knots was brought into the forefront of mathematics and
 physics during the 1860s by Lord Kelvin. A central area of research in physics
@@ -8,7 +8,7 @@ vortices in the aether @thomsonVortexAtoms1867. Given this hypothesis, a natural
 next step is the creation of a table of the elements which, by hypothesis, was a
 table of knots.
 
-# Knot Tabulation Hand
+### Knot Tabulation Hand
 
 With Lord Kelvin's vortex hypothesis as the driving interest in knots, the first
 knot table was produced, via hand computation, by P.G. Tait. Tait's first table,
@@ -53,7 +53,7 @@ Conway's findings and rectifying the four omissions. Caudron's confirmation of
 the eleven crossing tables marked the final chapter in the hand computation era
 of knot tabulation.
 
-# By Computer
+### By Computer
 
 With advancements in manufacturing in the early 1980s electronic computers
 became closer to commodity products, allowing for more and diverse users to take

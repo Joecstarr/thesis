@@ -1,11 +1,11 @@
-# Rational Tangles
+### Rational Tangles
 
 We will see in this section that the rational tangles have a deeply
 combinatorial nature which makes them among the simplest classes of tangle that
 can be described. This simplicity leads to the rational tangles, and their knot
 closures, to be some of the most commonly studied objects in knot theory.
 
-# Construction
+#### Construction
 
 In our development of the modified tangle calculus in @subsec-tangle_operations
 we described a way to glue tangles together forming successively more complex
@@ -36,6 +36,6 @@ of right and bottom twists the Twist Vector for the rational tangle.
 To formalize this intuitive description we will assume the existence of integral
 tangles
 
-# Generation
+#### Generation
 
-# Computational Strategy
+#### Computational Strategy

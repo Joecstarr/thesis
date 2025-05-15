@@ -1,4 +1,4 @@
-# Knot Invariants
+### Knot Invariants
 
 Our next topic of interest is that of a knot invariant. In general an invariant
 for an object is a datum which is computed deterministically for the object and
@@ -9,7 +9,7 @@ will continue to be key players in through the remainder of this thesis. The
 remainder of this section will be devoted to the construction of one of the most
 historically useful knot invariants the Jones polynomial.
 
-# Jones Polynomial
+#### Jones Polynomial
 
 The Jones polynomial was published by Vaughan Jones in 1985
 @jonesPolynomialInvariantKnots1985, discovered during his work on Von Neumann
@@ -24,8 +24,6 @@ where $K$ is any oriented diagram for $\mathscr{K}$.
 @jonesPolynomialInvariantKnots1985 lickorishIntroductionKnotTheory1997
 
 ```{include} kauf_bkt.md
-
-@@@ TODO: Add content description
 ```
 
 Having gained each equality needed for an invariant of knots we finish the

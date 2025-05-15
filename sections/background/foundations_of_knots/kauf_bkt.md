@@ -1,4 +1,4 @@
-# Kauffman Bracket
+##### Kauffman Bracket
 
 The Kauffman bracket is a function that takes knot diagrams as inputs and
 outputs a polynomial with integer coefficients.
@@ -93,11 +93,11 @@ $
 \bkt{images/kauf_bkt/type1/1b}$ $ \bkt{images/kauf_bkt/type1/1}$
 
 ```{include} writhe.md
-
-@@@ TODO: Add content description
 ```
+###### Kauffman Bracket: Type I
 
-```{include} type_i.md
+With the writhe we're ready to approach the bracket polynomial applied to the
+type I move. We augment the type I move with the addition of multiplication by a
+$-A^{-3w\LP K\RP}$ term obtaining the following theorem.
 
-@@@ TODO: Add content description
-```
+We first compute our writhes

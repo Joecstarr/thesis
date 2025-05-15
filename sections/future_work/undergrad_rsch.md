@@ -1,4 +1,4 @@
-# Tangles as Undergraduate Research
+## Tangles as Undergraduate Research
 
 The accessibility of knot theory and tangles was discussed in the in
 introduction (Chapter \ref{pt-introduction}) this elaborates on how that
@@ -8,4 +8,4 @@ We've also seen, even through the structure of this thesis itself, how easily
 portions of tangle tabulation can be "peeled off" and decomposed as a singular
 self-contained project.
 
-# Structure of an undergraduate research project
+### Structure of an undergraduate research project

@@ -1,4 +1,4 @@
-# Knot Notations
+### Knot Notations
 
 The final topic to cover in our treatment of foundations for knot theory is
 notational strategies for knots. In @subsec-knot_def we came across our first

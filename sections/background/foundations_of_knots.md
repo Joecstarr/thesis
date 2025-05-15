@@ -1,4 +1,4 @@
-# Foundations of knots
+## Foundations of knots
 
 We can now begin a more formal description of the foundation of the theory of
 knots. Our treatment will begin with the general definition of knots, as well as
