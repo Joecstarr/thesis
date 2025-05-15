@@ -20,7 +20,9 @@ the Conway sphere, or Conway circle in the diagram case. This leads us to the
 second difference when handling the tangle case, being how we handle the
 boundary points. There are two constructions for how to handle equality; first
 fixing the boundary points on the Conway sphere and second allowing the boundary
-points to move on the Conway sphere. # Non-moveable Boundary Points
+points to move on the Conway sphere.
+
+# Non-moveable Boundary Points
 
 The non-moveable case is the more straight forward of the two boundary inclusive
 concepts of equality for tangles. When the boundary points are fixed we have

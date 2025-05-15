@@ -6,7 +6,9 @@ during the 1860s was the investigation of the fundamental building blocks of
 matter: the atoms. At this time Lord Kelvin hypothesized that atoms were knotted
 vortices in the aether @thomsonVortexAtoms1867. Given this hypothesis, a natural
 next step is the creation of a table of the elements which, by hypothesis, was a
-table of knots. # Knot Tabulation Hand
+table of knots.
+
+# Knot Tabulation Hand
 
 With Lord Kelvin's vortex hypothesis as the driving interest in knots, the first
 knot table was produced, via hand computation, by P.G. Tait. Tait's first table,
@@ -47,7 +49,9 @@ complex. Inspired by Conway's strategies, a second effort to enumerate eleven
 crossing knots was carried out by Caudron @caudron1982classification verifying
 Conway's findings and rectifying the four omissions. Caudron's confirmation of
 the eleven crossing tables marked the final chapter in the hand computation era
-of knot tabulation. # By Computer
+of knot tabulation.
+
+# By Computer
 
 With advancements in manufacturing in the early 1980s electronic computers
 became closer to commodity products, allowing for more and diverse users to take

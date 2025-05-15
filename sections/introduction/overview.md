@@ -17,7 +17,9 @@ crossings. To effectively utilize computers for this tabulation work requires
 the design and implementation of a number of pieces of software. This tabulation
 framework, described in the later parts, is constructed with the accessible
 nature of knot theory in mind. We keep this accessibility in mind to enable
-future work with undergraduate researchers.# Chapter Summary
+future work with undergraduate researchers.
+
+# Chapter Summary
 
 In this section we describe the order and gives a short summary of each part of
 this thesis. Organizationally, this thesis is broken into five parts. Each part
@@ -52,7 +54,9 @@ will give an overview of the system design. The process and design given in this
 part are intended to be used in this work as well as generically for
 undergraduate research projects. The part concludes with a description of the
 presentation layer for the tangle table, a web interface similar to KnotInfo
-@knotinfo.# Future Work and Undergraduate Research
+@knotinfo.
+
+# Future Work and Undergraduate Research
 
 The final part of this thesis gives an overview of future work to be done on
 tangle tabulation. The part has a particular emphasis on outlining project plans

@@ -23,6 +23,7 @@ math:
     '\Z': '\mathbb{Z}'
     '\Q': '\mathbb{Q}'
     '\R': '\mathbb{R}'
+    '\T': '\mathscr{T}'
     '\LN': '\left.'
     '\RN': '\right.'
     '\LP': '\left('
@@ -38,6 +39,9 @@ math:
     '\msr': 'm\left(#1\right)'
     '\inv': " #1^{-1}"
     '\bkt': '\LA \img{ #1}\RA'
+    '\mvspc': '\hspace{.125cm}'
+    '\mvtwt': '\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}'
+    '\mvtht': '\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}'
 ---
 
 <!-- prettier-ignore-start -->

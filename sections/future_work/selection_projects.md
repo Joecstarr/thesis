@@ -6,7 +6,9 @@ accessibility can be leveraged to engage Undergraduates in research. Throughout
 this thesis we've investigated and observed the depth of tangle tabulation.
 We've also seen, even through the structure of this thesis itself, how easily
 portions of tangle tabulation can be "peeled off" and decomposed as a singular
-self-contained project. # Compute HOMFLYPT polynomial from algebraic tangle
+self-contained project.
+
+# Compute HOMFLYPT polynomial from algebraic tangle
 trees
 
 One of the most important advancements in knot theory was the discovery of knot
@@ -39,7 +41,9 @@ KnotPlot @schareinInteractiveTopologicalDrawing. However, KnotPlot has no
 interface for drawing knots in "arbitrary" notations. This project will remedy
 that, with the description of a LUA interface for placing beads into KnotPlot
 and a further layer for algebraic tangle trees to be drawn from a call to The
-Tanglenomicon website API. # Notation Description for Extended Gauss Notation
+Tanglenomicon website API.
+
+# Notation Description for Extended Gauss Notation
 
 There are many ways to encode the data of a knot, each with its own advantages
 and disadvantages. Throughout this thesis the primary target notation was the
@@ -61,7 +65,9 @@ describe a computational data structure for extended Gauss notation. They will
 then develop the software implementing extended Gauss notation within The
 Tanglenomicon core library structure. Finally, as a stretch goal they will
 develop a translation interface for taking algebraic tangle trees and converting
-them into extended Gauss notation. # Notation description for planar diagram
+them into extended Gauss notation.
+
+# Notation description for planar diagram
 (PD) notation
 
 There are many ways to encode the data of a knot, each with its own advantages
@@ -83,7 +89,9 @@ this project an undergraduate researcher will describe a computational data
 structure for PD notation. They will then develop the software implementing PD
 notation within The Tanglenomicon core library structure. Finally, as a stretch
 goal they will develop a translation interface for taking algebraic tangle trees
-and converting them into PD notation. # Notation description for DT notation
+and converting them into PD notation.
+
+# Notation description for DT notation
 
 There are many ways to encode the data of a knot, each with its own advantages
 and disadvantages. Throughout this thesis the primary target notation was the
@@ -102,7 +110,9 @@ knot is: $$ 4,6,2 $$ In this project an undergraduate researcher will describe a
 computational data structure for DT notation. They will then develop the
 software implementing DT notation within The Tanglenomicon core library
 structure. Finally, as a stretch goal they will develop a translation interface
-for taking algebraic tangle trees and converting them into DT notation. #
+for taking algebraic tangle trees and converting them into DT notation.
+
+#
 Notation description for ??? notation
 
 As seen in the previous three sections each of the various knot notational

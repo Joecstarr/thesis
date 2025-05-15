@@ -3,7 +3,9 @@
 In @sec-history-of-tabulation we saw that Conway claimed to have enumerated
 knots up to 11 crossings in "a few hours". Conway accomplished this by breaking
 knots into building blocks he called Tangles. This section gives an outline for
-the tools he used to achieve those "a few hours" of amazing efficiency. #
+the tools he used to achieve those "a few hours" of amazing efficiency.
+
+#
 Definition of a Tangle
 
 Our first step in unlocking Conway's tabulation secrets is the definition of a
@@ -35,7 +37,9 @@ a knot so that the knot intersects the sphere in exactly four points. Here we
 see the first example of our preference for ambient space to be $S^3$ as opposed
 to $\R^3$. When a knot in $S^3$ is split by a Conway sphere the ambient $
 S^3$
-is decomposed into two $B^3$ each with a portion of the knot. # Basic
+is decomposed into two $B^3$ each with a portion of the knot.
+
+# Basic
 Tangles
 
 Often when thinking about a new construction we focus on what is the simplest
@@ -54,7 +58,7 @@ as the tangle with a single crossing. The $+1$ and $0$ tangles can be seen in
 
 # Rotation and Mirroring of Tangles
 
-Consider a generic tangle, as seen in @fig-generic_tangle , where ambient
+Consider a generic tangle, as seen in @fig-generic_tangle, where ambient
 orientation of data in the interior of the Conway circle is indicated by a
 broken $T$.
 
@@ -84,7 +88,9 @@ When we apply this set of flips and rotations to the basic tangles seen in
 
 In addition to the rotations and flips Conway introduced a calculus on tangles
 @conwayEnumerationKnotsLinks1970. This calculus allowed Conway to build the
-simple basic tangles into iteratively more complex tangles. # Minus Tangle
+simple basic tangles into iteratively more complex tangles.
+
+# Minus Tangle
 
 For a generic tangle $T$ we call the tangle generated from a clockwise rotation
 and flip around the $y$ axis the negative of $T$ notated $-T$. Equivalently,
@@ -106,7 +112,9 @@ $ SE$ of $A$ to the $NW$ and $SW$ of $B$. This can be seen in @fig-opo-plus
 ```
 
 The class of tangles built by successive addition of the $\pm 1$ basic tangles
-are called the integral tangles. # Tangle Multiplication
+are called the integral tangles.
+
+# Tangle Multiplication
 
 For a pair of generic tangles, $A$ and $B$, we construct their product $A*B$, or
 $A\ B$ by first aligning $A$ and $B$ horizontally. We then take $-A$ and connect
@@ -118,7 +126,9 @@ multiplication is equivalent to $-A+B$. This operation can be seen in
 
 ```
 
-Notice that $$A*0=-A+0=-A$$ # Tangle Ramification
+Notice that $$A*0=-A+0=-A$$
+
+# Tangle Ramification
 
 For a pair of generic tangles, $A$ and $B$, we construct their ramification
 $A,B$ by first aligning $A$ and $B$ horizontally. We then take $-A$ and $-B$ and

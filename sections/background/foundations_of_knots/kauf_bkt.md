@@ -3,7 +3,7 @@
 The Kauffman bracket is a function that takes knot diagrams as inputs and
 outputs a polynomial with integer coefficients.
 
-The Kauffman bracket of an unoriented knot $K$ , $\LA K\RA$, is the Laurent
+The Kauffman bracket of an unoriented knot $K$, $\LA K\RA$, is the Laurent
 polynomial with integer coefficients in $A$ given by the following:
 
 $\LA\img{images/kauf_bkt/unknot} \RA=1$

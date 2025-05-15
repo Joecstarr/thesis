@@ -44,7 +44,9 @@ around the two sets of bases of the flares, seen in
 
 @fig-intro-solar_braid. An accessible introduction to the theory of braids can
 be found in Birman's "Braids: A survey" @birman2005braids. For further reading
-on braid theory of solar flares reference `@@@missing`.# Tangles in DNA
+on braid theory of solar flares reference `@@@missing`.
+
+# Tangles in DNA
 
 One of the fundamental features that identifies life as life is the ability to
 self-replicate. In order to self-replicate, life must have a mechanism to pass

@@ -16,7 +16,7 @@ following definition.
 
 A $c$ component link is a smooth embedding of $ c$ disjoint copies of a circle
 $S^1$ into $\R^3$ (or $S^3$), where the embeddings of circles $S_i^1$ are its
-components ($i = 1, 2,... , c$). @jablanLinKnotKnotTheory2007
+components ($i = 1, 2,..., c$). @jablanLinKnotKnotTheory2007
 
 For convenience, and brevity, we will adopt the following convention. The term
 knot will refer to the collection of all proper knots as well as all $c$

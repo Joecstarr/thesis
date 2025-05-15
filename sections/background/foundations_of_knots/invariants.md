@@ -7,7 +7,9 @@ the concept of equality given in @subsec-knot_equivalence. As discussed in
 @sec-history-of-tabulation invariants play an important role in tabulation and
 will continue to be key players in through the remainder of this thesis. The
 remainder of this section will be devoted to the construction of one of the most
-historically useful knot invariants the Jones polynomial.# Jones Polynomial
+historically useful knot invariants the Jones polynomial.
+
+# Jones Polynomial
 
 The Jones polynomial was published by Vaughan Jones in 1985
 @jonesPolynomialInvariantKnots1985, discovered during his work on Von Neumann
@@ -30,5 +32,5 @@ section with the following theorem.
 
 The Jones polynomial ( @def-jones) is an invariant of oriented knots.
 
-Combining @thm-typeI, @thm-typeII_bkt , @thm-typeIII_bkt and substituting $A$
+Combining @thm-typeI, @thm-typeII_bkt, @thm-typeIII_bkt and substituting $A$
 for $ t$ we obtain the result.
