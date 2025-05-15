@@ -1,4 +1,4 @@
-# An Intuitive Grounding in Knot Theory
+## An Intuitive Grounding in Knot Theory
 
 A knot, when used in everyday life, is a tool whether the "bunny ear" knot
 holding on your shoe, a decorative monkey's fist on your keychain, or a climbing

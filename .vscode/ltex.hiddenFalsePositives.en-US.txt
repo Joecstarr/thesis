@@ -1,0 +1,1 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QFrom here, the crossing change from type II topoisomerase can be modeled by changing the tangle bound in the area on the right (@fig-intro-tangle_calc), @darcy3DVisualizationSoftware2008 built into KnotPlot @schareinInteractiveTopologicalDrawing\\E$"}
