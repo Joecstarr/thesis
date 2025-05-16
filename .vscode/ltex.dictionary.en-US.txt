@@ -16,3 +16,8 @@ Reidemeister
 Reidemister
 eq-fixed
 calc
+Flype
+flype
+bigon
+bigons
+non-bigon

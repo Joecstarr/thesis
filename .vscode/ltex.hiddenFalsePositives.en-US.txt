@@ -2,3 +2,5 @@
 {"rule":"EN_COMPOUNDS_THREE_DIMENSIONAL","sentence":"^\\QFrom @subsubsec-deftangles we have definitions for tangles in the context of knot diagrams and three dimensional embeddings of knots.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIn @fig-tangl_eq-fixed we find two tangle, each with two crossings but not equivalent by Reidemeister moves.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThis unwinding can be seen in @fig-tangl_eq-unwinding.\\E$"}
+{"rule":"EN_COMPOUNDS_THREE_DIMENSIONAL","sentence":"^\\QWe will give Conway's original definition followed by a description of what this looks like for a three three dimensional embedding for a knot.\\E$"}
+{"rule":"EN_COMPOUNDS_THREE_DIMENSIONAL","sentence":"^\\QWe move our attention to the three dimensional analog for a Conway circle, the Conway sphere.\\E$"}
