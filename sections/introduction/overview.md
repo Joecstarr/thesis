@@ -5,7 +5,7 @@ As discussed above, the goal of this thesis is to address, in part, the two
 questions "What knots can I make?" and "How do I tell two knots I make apart?" .
 Particularly, we will address a restricted version of these questions, for
 objects that can be thought of as the building blocks of knots, the tangles
-introduced by Conway @conwayEnumerationKnotsLinks1970. Through the middle of
+introduced by Conway [@conwayEnumerationKnotsLinks1970]. Through the middle of
 this thesis we will describe several strategies that have been employed to
 answer even further restricted versions of these questions:
 
@@ -20,8 +20,8 @@ While we could answer these questions with pen and paper brute force, beyond
 reasonable crossing number, as small as 9, the time and effort needed makes pen
 and paper untenable. To achieve our goal in reasonable time we will follow a
 similar framework to Hoste, Thistlethwaite, Weeks, and recently Burton
-@hosteFirst1701936Knots1998 @hosteEnumerationClassificationKnots2005
-@burtonNext350Million2020 utilizing computer methods to generate a tangle table
+[@hosteFirst1701936Knots1998] [@hosteEnumerationClassificationKnots2005]
+[@burtonNext350Million2020] utilizing computer methods to generate a tangle table
 of algebraic tangles to `@@@decide` crossings. To effectively utilize computers
 for this tabulation work requires the design and implementation of several
 pieces of software. This tabulation framework, described in the later parts, is

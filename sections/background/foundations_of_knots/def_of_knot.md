@@ -2,10 +2,12 @@
 
 Our first effort in formalization is the construction of a definition for knots.
 
-A proper knot is a smooth embedding of a circle $ S^1$ into Euclidean
+```{prf:definition}
+:label: def-knot
+A **proper knot** is a smooth embedding of a circle $ S^1$ into Euclidean
 3-dimensional space $\R^3$ (or the 3-dimensional sphere
-$S^3$).@jablanLinKnotKnotTheory2007
-
+$S^3$) [@jablanLinKnotKnotTheory2007].
+```
 After some consideration we can see this definition aligns with our intuitive
 description of a knot given in @sec-intro-intuit_knot_theory. We note that this
 definition gives two choices for ambient space, for this thesis we will prefer
@@ -14,12 +16,15 @@ natural extension of this concept is the allowance for more then a single $S^1$
 component to be embedded into the ambient space and allowing this gives the
 following definition.
 
+```{prf:definition}
+:label: def-link
 A $c$ component link is a smooth embedding of $ c$ disjoint copies of a circle
 $S^1$ into $\R^3$ (or $S^3$), where the embeddings of circles $S_i^1$ are its
-components ($i = 1, 2,..., c$). @jablanLinKnotKnotTheory2007
+components ($i = 1, 2,..., c$) [@jablanLinKnotKnotTheory2007].
+```
 
 For convenience, and brevity, we will adopt the following convention. The term
-knot will refer to the collection of all proper knots as well as all $c$
+**knot** will refer to the collection of all proper knots as well as all $c$
 component links. When we find need to exclude the $c$ component links from
 consideration we will use the term proper knot.
 
@@ -33,15 +38,21 @@ that the projection have no more then two points on strands that are colinear.
 We call this projection a knot shadow, an example can be seen in
 @fig-knot_def-shadow, and is commonly interpreted as a planar graph.
 
-```{figure} ./images/missing.svg
+````{prf:observation}
+:label: fig-knot_def-set-shadow
 
+
+```{figure} ./media/missing.svg
+:label: fig-knot_def-shadow
 @@@ TODO: Add content description
 ```
 
-```{figure} ./images/missing.svg
-
+```{figure} ./media/missing.svg
+:label: fig-knot_def-shadow_knot
 @@@ TODO: Add content description
 ```
+
+````
 
 In our knot shadow we notice some points where strands overlap, call them
 vertices as in a graph. When we look at these points in out three dimensional

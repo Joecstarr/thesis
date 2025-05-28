@@ -11,8 +11,8 @@ given by first excising an arc from both $J$ and $K$, and then glueing endpoints
 of $J$ to endpoints in $ K$. We can see an example of the connect sum of a
 trefoil and figure 8 knot in @fig-prime_knot-connect_sum
 
-```{figure} ./images/missing.svg
-
+```{figure} ./media/missing.svg
+:label: fig-prime_knot-connect_sum
 @@@ TODO: Add content description
 ```
 
@@ -21,4 +21,4 @@ for the section.
 
 A knot is called prime if in every decomposition into a connected sum, one of
 the factors is unknotted. Otherwise, the knot is called composite.
-@jablanLinKnotKnotTheory2007.
+[@jablanLinKnotKnotTheory2007].

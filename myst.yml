@@ -28,4 +28,5 @@ project:
 site:
     template: article-theme
     options:
+        outline_maxdepth: 4
         numbered_references: true

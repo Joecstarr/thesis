@@ -10,6 +10,13 @@ exports:
     - format: tex
       template: ./templates/editing
       logo: false
+abstract: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 math:
     # Note the 'single quotes'
     '\N': '\mathbb{N}'
@@ -17,6 +24,7 @@ math:
     '\Q': '\mathbb{Q}'
     '\R': '\mathbb{R}'
     '\T': '\mathscr{T}'
+    '\M': '\mathscr{M}'
     '\LN': '\left.'
     '\RN': '\right.'
     '\LP': '\left('
@@ -31,6 +39,7 @@ math:
     '\abs': '\left\vert#1\right\vert'
     '\msr': 'm\left(#1\right)'
     '\inv': " #1^{-1}"
+    '\img': '\text{ place holder }'
     '\bkt': '\LA \img{ #1}\RA'
     '\mvspc': '\hspace{.125cm}'
     '\mvtwt': '\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}'
@@ -69,19 +78,3 @@ math:
 ```{include} sections/future_work/future_work.md
 
 ```
-
-<!-- @@@-subfigure-start-@@@ -->
-
-<!-- ```{figure} ./media/bands/bnd_sum_1.svg.svg
-:label: UC-N-APN-E-4
-:align: center
-@@@ TODO
-```
-
-```{figure} ./media/bands/bnd_sum_2.svg.svg
-:label: UC-N-APN-E-4
-:align: center
-@@@ TODO
-``` -->
-
-<!-- @@@-subfigure-end-@@@ -->

@@ -12,16 +12,16 @@ historically useful knot invariants the Jones polynomial.
 #### Jones Polynomial
 
 The Jones polynomial was published by Vaughan Jones in 1985
-@jonesPolynomialInvariantKnots1985, discovered during his work on Von Neumann
+[@jonesPolynomialInvariantKnots1985], discovered during his work on Von Neumann
 algebras. A more combinatorial approach to the construction given here uses the
-Kauffman bracket @kauffmanStateModelsJones1987.
+Kauffman bracket [@kauffmanStateModelsJones1987].
 
 The Jones Polynomial $V\LP \mathscr{K}\RP$ of an oriented knot $\mathscr{K}$ is
 the Laurent polynomial with integer coefficients in $t^{1/2}$. Defined by
 $$
 V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(K)}\LA K\RA\RP \_{t^{1/2}=A^{-2}} $$
 where $K$ is any oriented diagram for $\mathscr{K}$.
-@jonesPolynomialInvariantKnots1985 lickorishIntroductionKnotTheory1997
+[@jonesPolynomialInvariantKnots1985] lickorishIntroductionKnotTheory1997
 
 ```{include} kauf_bkt.md
 ```

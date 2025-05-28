@@ -1,11 +1,11 @@
-### Conway Notation
+#### Conway Notation
 
 In @sec-history-of-tabulation, we saw that Conway claimed to have enumerated
 knots up to 11 crossings in "a few hours". Conway accomplished this by breaking
 knots into building blocks he called tangles. This section gives an outline of
 the tools he used to achieve those "a few hours" of amazing efficiency.
 
-#### Definition of a Tangle
+##### Definition of a Tangle
 
 Our first step in unlocking Conway's tabulation secrets is the definition of a
 tangle. We will give Conway's original definition followed by a description of
@@ -13,13 +13,13 @@ what this looks like for a three three dimensional embedding for a knot.
 
 We define a tangle as a portion of a knot diagram from which there emerge just 4
 arcs pointing in the compass directions $NW,\ NE,\ SW,\ \text{and }SE$.
-@conwayEnumerationKnotsLinks1970
+[@conwayEnumerationKnotsLinks1970]
 
 This can be thought of as drawing a circle around, or slamming a cookie cutter
 onto, a knot diagram. Then cutting off the parts of the knot laying outside the
 circle/cookie cutter, this process is seen in @fig-knot2tangle.
 
-```{figure} ./images/tangle_maker.svg
+```{figure} ./media/tangle_maker.svg
 :label: fig-knot2tangle
 @@@ TODO: Add content description
 ```
@@ -27,7 +27,7 @@ circle/cookie cutter, this process is seen in @fig-knot2tangle.
 These circular boundaries that split knots at four points are called Conway
 circles, and we call the points $NW,\ NE,\ SW,\ \text{and }SE$ boundary points.
 Formally, we can consider a Conway circle to be a Jordan curve meeting the knot
-diagram in exactly four points @bonahonNewGeometricSplittings2016. In general,
+diagram in exactly four points [@bonahonNewGeometricSplittings2016]. In general,
 we prefer our Conway circles to be circles in the colloquial sense. Luckily, the
 circle and Jordan curve constructions are equivalent, this can be seen by a
 straightforward isotopy of one into the other. We move our attention to the
@@ -38,7 +38,7 @@ see the first example of our preference for ambient space to be $S^3$ as opposed
 to $\R^3$. When a knot in $S^3$ is split by a Conway sphere, the ambient $S^3$
 is decomposed into two $B^3$, each with a portion of the knot.
 
-#### Basic Tangles
+##### Basic Tangles
 
 Often, when thinking about a new construction, we focus on what is the simplest
 object that can be created with the construction. For the case of drawing Conway
@@ -46,30 +46,30 @@ circles to build tangles, the simplest tangles are the tangle with no crossings
 as the tangle with a single crossing. The $+1$ and $0$ tangles can be seen in
 @fig-basic_tangles.
 
-<!-- @@@-subfigure-start-@@@ -->
+````{prf:observation}
+:label: fig-basic_tangles
 
-```{figure} ./images/0.svg
+
+```{figure} ./media/0.svg
 :label: prelim-fig-basic_0
 :width: 500px
 A tangle with no crossings, called the $0$ tangle.
 ```
 
-```{figure} ./images/1.svg
+```{figure} ./media/1.svg
 :label: prelim-fig-basic_1
 :width: 500px
 A tangle with a single crossings, called the $1$ tangle.
 ```
+````
 
-<!-- @@@label:fig-basic_tangles  -->
-<!-- @@@-subfigure-end-@@@ -->
-
-#### Rotation and Mirroring of Tangles
+##### Rotation and Mirroring of Tangles
 
 Consider a generic tangle, as seen in @fig-generic_tangle, where ambient
 orientation of data in the interior of the Conway circle is indicated by a
 broken $T$.
 
-```{figure} ./images/generic_tangles/generic_tangle.svg
+```{figure} ./media/generic_tangles/generic_tangle.svg
 :label: fig-generic_tangle
 @@@ TODO: Add content description
 ```
@@ -80,7 +80,7 @@ We can also manipulate the tangle by the set of flips, one around the core
 x-axis and one around the y-axis. Each flip gives an arrangement of the interior
 data. Pairing flips with rotations gives the table seen in @fig-tangle_flips.
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 :label: fig-tangle_flips
 @@@ TODO: Add content description
 ```
@@ -89,48 +89,48 @@ When we apply this set of flips and rotations to the basic tangles seen in
 @subsubsec-basic_tangles we two additional basic tangles seen in
 @fig-basic_tangles_extra.
 
-<!-- @@@-subfigure-start-@@@ -->
+````{prf:observation}
+:label: fig-basic_tangles_extra
 
-```{figure} ./images/inf.svg
+
+```{figure} ./media/inf.svg
 :label: prelim-fig-basic_nc-inf
 :width: 500px
 A tangle with no crossings, called the $\infty$ tangle.
 ```
 
-```{figure} ./images/m1.svg
+```{figure} ./media/m1.svg
 :label: prelim-fig-basic_c-m1
 :width: 500px
 A tangle with a single crossings, called the $m1$ tangle.
 ```
+````
 
-<!-- @@@label:fig-basic_tangles_extra  -->
-<!-- @@@-subfigure-end-@@@ -->
-
-#### Operations on Tangles
+##### Operations on Tangles
 
 In addition to the rotations and flips, Conway introduced a calculus on tangles
-@conwayEnumerationKnotsLinks1970. This calculus allowed Conway to build the
+[@conwayEnumerationKnotsLinks1970]. This calculus allowed Conway to build the
 simple basic tangles into iteratively more complex tangles.
 
-#### Minus Tangle
+##### Minus Tangle
 
 For a generic tangle $T$, we call the tangle generated from a clockwise rotation
 and flip around the y-axis the negative of $T$ notated $-T$. Equivalently, this
 can be thought of as rotating the tangle around the $NW$ and $SE$ axis, as
 indicated in @fig-opo-minus.
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 :label: fig-opo-minus
 @@@ TODO: Add content description
 ```
 
-#### Tangle Addition
+##### Tangle Addition
 
 For a pair of generic tangles, $A$ and $B$, we construct their sum $A+B$ by
 first aligning $A$ and $B$ horizontally. We then connect in order the $NE$ and
 $SE$ of $A$ to the $NW$ and $SW$ of $B$. This can be seen in @fig-opo-plus
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 :label: fig-opo-plus
 @@@ TODO: Add content description
 ```
@@ -138,7 +138,7 @@ $SE$ of $A$ to the $NW$ and $SW$ of $B$. This can be seen in @fig-opo-plus
 The class of tangles built by successive addition of the $\pm 1$ basic tangles
 are called the integral tangles.
 
-#### Tangle Multiplication
+##### Tangle Multiplication
 
 For a pair of generic tangles, $A$ and $B$, we construct their product $A*B$, or
 $A\ B$ by first aligning $A$ and $B$ horizontally. We then take $-A$ and connect
@@ -146,14 +146,14 @@ in order the $NE$ and $SE$ of $-A$ to the $NW$ and $SW$ of $B$. This
 multiplication is equivalent to $-A+B$. This operation can be seen in
 @fig-opo-times.
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 :label: fig-opo-times
 @@@ TODO: Add content description
 ```
 
 Notice that $$A*0=-A+0=-A$$
 
-#### Tangle Ramification
+##### Tangle Ramification
 
 For a pair of generic tangles, $A$ and $B$, we construct their ramification
 $A,B$ by first aligning $A$ and $B$ horizontally. We then take $-A$ and $-B$ and
@@ -161,23 +161,23 @@ connect in order the $NE$ and $SE$ of $-A$ to the $NW$ and $SW$ of $-B$. This
 ramification is equivalent to $-A-B$ or $A0+B0$. This operation can be seen in
 @fig-opo-ramification.
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 :label: fig-opo-ramification
 @@@ TODO: Add content description
 ```
 
-#### Indicating Precedence
+##### Indicating Precedence
 
 With a set of operations comes the desire to chain multiple operations together.
 The precedence for operations on tangles is indicated by parentheses in the
 obvious way. An example can be seen in @fig-opo-prec.
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 :label: fig-opo-prec
 @@@ TODO: Add content description
 ```
 
-#### The Flype
+##### The Flype
 
 When working in this calculus of tangles, a common situation you may find
 yourself is one where the $1$ (or $-1$) tangle is added to a tangle $T$. In this
@@ -186,12 +186,12 @@ flype. To complete a flype we grab the top (north) and bottom (south) of $T$ and
 rotate (according to the sign of the $\pm 1$) around the horizontal axis of $
 T$. An example of a flype is given in @fig-opo-flype.
 
-```{figure} ./images/reidemeister_move/flype.svg
+```{figure} ./media/reidemeister_move/flype.svg
 :label: fig-opo-flype
 @@@ TODO: Add content description
 ```
 
-#### Closures
+##### Closures
 
 For a generic tangle $T$, we have two options for how to close up the tangle.
 The first is by connecting a strand from $NW$ to $NE$ and a strand from $SW$ to
@@ -199,20 +199,22 @@ $SE$, seen in @fig-closure-num, called the numerator closure. The second is the
 denominator closure formed by connecting a strand from $NW$ to $SW$ and a strand
 from $NE$ to $SE$, seen in @fig-closure-den.
 
-<!-- @@@-subfigure-start-@@@ -->
-```{figure} ./images/missing.svg
+````{prf:observation}
+:label: fig-closure-prec
+
+```{figure} ./media/missing.svg
 :label: fig-closure-num
 @@@ TODO: Add content description
 ```
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 :label: fig-closure-den
 @@@ TODO: Add content description
 ```
-<!-- @@@label:fig-closure-prec  -->
-<!-- @@@-subfigure-end-@@@ -->
 
-#### Tangle insertions
+````
+
+##### Tangle insertions
 
 With the calculus of tangles, Conway was able to enumerate a substantial number
 of knots, but not all. We should notice a common theme with the calculus, every
@@ -223,7 +225,7 @@ bigon collapse can be seen in @fig-bigon_collapse. The class of knots who have a
 presentation where bigons can be collapsed to a single vertex is called
 algebraic.
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 :label: fig-bigon_collapse
 @@@ TODO: Add content description
 ```
@@ -233,7 +235,7 @@ identify a four-valent graph that has non-bigon connections between vertices.
 The class of graph that is most useful here are the polygons, the $6^{**}$ graph
 or hexagon can be seen in @fig-6starstar.
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 :label: fig-6starstar
 @@@ TODO: Add content description
 ```
@@ -246,7 +248,7 @@ replace the vertex in the graph with that generated tangle, connecting the
 $NW,\,NE,\,SW,\,\text{and }SE $ points to the four edges of the vertex. An example of a tangle insertion into $ 6^{**}$
 can be seen in @fig-6starstar_insurtion.
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 :label: fig-6starstar_insurtion.
 @@@ TODO: Add content description
 ```
@@ -255,18 +257,18 @@ When noting the tangle insertion we list first the graph to be inserted into,
 each graph has a canonical ordering of vertices for purposes of insertion. Next
 we list the tangles we wish to insert, each separated by a period. An example of
 two knots written in Conway notation can be seen in
+````{prf:observation}
+:label: fig-full_conway
 
 
-<!-- @@@-subfigure-start-@@@ -->
-
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 :label: fig-full_conway-alg
 @@@ TODO: Add content description
 ```
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 :label: fig-full_conway-nonalg
 @@@ TODO: Add content description
 ```
-<!-- @@@label:fig-full_conway  -->
-<!-- @@@-subfigure-end-@@@ -->
+
+````

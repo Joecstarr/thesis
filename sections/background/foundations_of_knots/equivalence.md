@@ -9,7 +9,7 @@ isotopy and equal knots are said to be ambient isotopic, formally stated in
 
 Two knots $J$ and $K$ are said to be ambient isotopic if there exists an ambient
 isotopy, that is a diffeomorphism of the ambient space, taking $J$ to
-$K$.@jablanLinKnotKnotTheory2007
+$K$.[@jablanLinKnotKnotTheory2007]
 
 When working with the a three dimensional model of a knot writing down explicit
 ambient isotopies is, in general, quite difficult. As we did in @subsec-knot_def
@@ -24,8 +24,8 @@ crossings. Now add a half twist, when adding the twist we have two choices;
 twist into or out of the plane the diagram lays in. In either we can freely
 remove the new crossing by twisting in the opposite direction.
 
-```{figure} ./images/reidemeister_move/R1.svg
-
+```{figure} ./media/reidemeister_move/R1.svg
+:label: fig-knot_def-R1
 @@@ TODO: Add content description
 ```
 
@@ -35,7 +35,8 @@ then pull one strand on top of the other, inducing two crossing in our diagram.
 Similarly to the type I move, the type II move can be freely undone by pulling
 the strands apart.
 
-```{figure} ./images/reidemeister_move/R2.svg
+```{figure} ./media/reidemeister_move/R2.svg
+:label: fig-knot_def-R2
 
 @@@ TODO: Add content description
 ```
@@ -47,7 +48,8 @@ or below the under strand. We can now execute the type III move by taking the
 third strand and passing it across the crossing in the other two strands. As
 with type I and type II, we're free to reverse the type III move.
 
-```{figure} ./images/reidemeister_move/R3.svg
+```{figure} ./media/reidemeister_move/R3.svg
+:label: fig-knot_def-R3
 
 @@@ TODO: Add content description
 ```

@@ -34,20 +34,22 @@ it's easy to convince yourself that these are all distinct when the boundary is
 fixed. In @fig-tangl_eq-fixed we find two tangles, each with two crossings but
 not equivalent by Reidemeister moves.
 
-<!-- @@@-subfigure-start-@@@ -->
+````{prf:observation}
+:label: fig-tangl_eq-fixed
 
 
-```{figure} ./images/missing.svg
+
+```{figure} ./media/missing.svg
 :label: fig-tang_eq-fixed-2
 @@@ TODO: Add content description
 ```
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 :label: fig-tang_eq-fixed-v2
 @@@ TODO: Add content description
 ```
-<!-- @@@label:fig-tangl_eq-fixed  -->
-<!-- @@@-subfigure-end-@@@ -->
+
+````
 
 #### Moveable Boundary Points
 
@@ -59,7 +61,7 @@ the rotation and flip equivalence, a moveable boundary allows us to unwind
 integral components of a tangle which are connected to the boundary inline with
 the integral twists. This unwinding can be seen in @fig-tangl_eq-unwinding.
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 :label: fig-tang_eq-fixed-2
 @@@ TODO: Add content description
 ```
@@ -73,28 +75,29 @@ In @subsubsec-conway_calc we saw Conway's calculus of tangles. While this
 construction is powerful and flexible, it's rather unintuitive when starting and
 cumbersome when combined with computer methods. In this section, we will
 describe a slightly modified, but equivalent, version of the calculus. This
-version of tangle arithmetic was first constructed by Kauffman and Goldman in
-1997 @goldmanRationalTangles1997. Instead of Conway's three operations on the
+version of tangle arithmetic was first constructed by Kauffman and Goldman [@goldmanRationalTangles1997]. Instead of Conway's three operations on the
 two basic tangles $1$ and $0$, we need only two operations but all four basic
 tangles seen in @fig-four_basics. The first operation in this arithmetic is
 exactly Conway's horizontal sum, $+$. The second operation is the vertical sum,
 $\vee$, sometimes written $*$ as in Kauffman and Goldman
-@goldmanRationalTangles1997. The generic tangle $A$ and $B$, $A\vee B$ is built
+[@goldmanRationalTangles1997]. The generic tangle $A$ and $B$, $A\vee B$ is built
 analogously to the $+$ but stacking $A$ vertically on top of $B$ instead of
 horizontally. The operations can be seen in @fig-newopo
 
-<!-- @@@-subfigure-start-@@@ -->
-```{figure} ./images/missing.svg
+````{prf:observation}
+:label: fig-newopo
+
+```{figure} ./media/missing.svg
 :label: fig-newopo-plus
 @@@ TODO: Add content description
 ```
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 :label: fig-newopo-vee
 @@@ TODO: Add content description
 ```
-<!-- @@@label:fig-newopo  -->
-<!-- @@@-subfigure-end-@@@ -->
+
+````
 
 
 These two operations give a natural arithmetic structure to the combinations of

@@ -1,11 +1,11 @@
 @_default:
     just --list
 
-
 # Set up development environment
 bootstrap:
     uv venv
     uv pip install -r requirements.txt
+    mkdir -p _build
 
 # This will only work for how I (@joecstarr) have zotero set up.
 bib:
@@ -24,11 +24,9 @@ do-prettier:
 
 check-ruff:
     ruff format --check plugins
-    ruff format --check resources
 
 do-ruff:
     ruff format plugins
-    ruff format resources
 
 normalize-media:
     uv run ./resources/imgproc/svg_colors.py
@@ -37,28 +35,38 @@ normalize-media:
 init:
     myst clean --all -y
     myst init --write-toc
+    mkdir -p _build
 
 build: bootstrap
     rip _build
+    mkdir -p _build
     myst build ./main.md
-    cp -r resources/coloremoji/coloremoji _build/exports/main_tex
-    cp resources/coloremoji/coloremoji.sty _build/exports/main_tex
+    cp -r resources/coloremoji/coloremoji _build/exports/index_tex
+    cp resources/coloremoji/coloremoji.sty _build/exports/index_tex
     uv run ./resources/postprocess/subfigure.py
 
 html: bootstrap
     myst build ./main.md --html
 
+proc-svg-ws:
+    uv run ./resources/imgproc/proc_svg_text.py .
+
+proc-svg-size:
+    uv run ./resources/imgproc/proc_svg_size.py .
+
+proc-svg-mini:
+    find ./media/ -iname "*.svg" -exec sh -c 'svgo -i "$1" -o "$1" ' sh {} \;
 
 live:
     myst start
 
 latex-main_0:
-    cd ./_build/exports/main_tex && \
-    tectonic main_0.tex
+    cd ./_build/exports/index_tex && \
+    tectonic index_0.tex --keep-logs --keep-intermediates
 
 latex-main_1:
-    cd ./_build/exports/main_tex && \
-    tectonic main_1.tex --keep-logs
+    cd ./_build/exports/index_tex && \
+    tectonic index_1.tex --keep-logs --keep-intermediates
 
 latex: latex-main_0 latex-main_1
     echo built!

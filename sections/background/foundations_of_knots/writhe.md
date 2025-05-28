@@ -7,14 +7,15 @@ of "forward" for the car to point on the track. We call a choice of forward an
 orientation for the track. Similarly for knots, each strand of a knot is a
 circle we can choose to traverse in one of two directions. A choice of direction
 on a strand of a knots, seen in @fig-writhe-orientation is a choice of
-orientation for that knot.
-$5_1$. Following the strand in the direction of the arrow you'll find that you
-arrive where you started.
+orientation for that knot. $5_1$. Following the strand in the direction of the
+arrow you'll find that you arrive where you started.
 
-```{figure} ./images/kauf_bkt/orientation/5_1.svg
-
-@@@ TODO: Add content description
+```{figure} ./media/kauf_bkt/orientation/5_1.svg
+:label: fig-writhe-orientation
+An orientation applied to the knot $5_1$. Following the strand in the direction
+of the arrow you'll find that you arrive where you started.
 ```
+
 
 We now zoom in on our oriented diagram to focus on a crossing. Since the whole
 diagram is oriented, each strand in the local crossing has an induced
@@ -25,15 +26,24 @@ or pointing east. In this a arrangement a west pointing under strand is called a
 positive (+) crossing, while an east pointing under strand is called a negative
 (-) crossing, seen in @fig-writhe-oriented_crossing.
 
-```{figure} ./images/kauf_bkt/crossing/crossing_+.svg
+````{prf:observation}
+:label: fig-writhe-oriented_crossing
+
+
+
+
+```{figure} ./media/kauf_bkt/crossing/crossing_+.svg
+:label: fig-inv-or-positive
+@@@ TODO: Add content description
+```
+
+```{figure} ./media/kauf_bkt/crossing/crossing_-.svg
+:label: fig-inv-or-negative
 
 @@@ TODO: Add content description
 ```
 
-```{figure} ./images/kauf_bkt/crossing/crossing_-.svg
-
-@@@ TODO: Add content description
-```
+````
 
 A hint for determining the orientation of a crossing in practice is a right hand
 rule. After the knot has been oriented, imagine your right hand with your
@@ -55,12 +65,14 @@ We start by taking the oriented version of knot $5_1$ seen in
 @fig-writhe-orientation and modifying the diagram with local pictures for
 crossings seen in @fig-writhe-local
 
-```{figure} ./images/missing.svg
-
+```{figure} ./media/missing.svg
+:label: fig-writhe-local
 @@@ TODO: Add content description
 ```
 
 then classifying each crossing as positive or negative we can count finding $5$
 positive and $0$ negative crossing giving
+
 $$
-w\LP\img{images/kauf_bkt/orientation/5_1}\RP=5+0=5 $$
+w\LP\img{images/kauf_bkt/orientation/5_1}\RP=5+0=5
+$$

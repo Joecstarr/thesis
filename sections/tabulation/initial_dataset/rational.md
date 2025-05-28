@@ -17,7 +17,7 @@ crank and crank it clockwise a half turn we introduce a positive twist, it is
 important to notice that we can crank $n$ half turns to make an integral $n$
 tangle.
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 
 @@@ TODO: Add content description
 ```
@@ -28,7 +28,7 @@ tangle. Alternating, right and bottom sets of half turns, as seen in
 @fig-rat_tang-crank_many, builds a rational tangle. We call the list of counts
 of right and bottom twists the Twist Vector for the rational tangle.
 
-```{figure} ./images/missing.svg
+```{figure} ./media/missing.svg
 
 @@@ TODO: Add content description
 ```
