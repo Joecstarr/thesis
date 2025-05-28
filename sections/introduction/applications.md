@@ -91,7 +91,7 @@ top double strand to be the bottom double strand. This action can be seen in
 
 ```{figure} ./media/dont_proc/DNA_chemical_structure.svg
 :label:fig-intro-DNA_chemical_structure
-@@@ TODO: Add content description
+@@@ TODO: Add content description @priceballDNAChemicalStructure
 ```
 
 ```{figure} ./media/dont_proc/topo.svg

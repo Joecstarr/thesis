@@ -43,7 +43,7 @@ build: bootstrap
     myst build ./main.md
     cp -r resources/coloremoji/coloremoji _build/exports/index_tex
     cp resources/coloremoji/coloremoji.sty _build/exports/index_tex
-    uv run ./resources/postprocess/subfigure.py
+    uv run ./resources/postprocess/nsf.py
 
 html: bootstrap
     myst build ./main.md --html
