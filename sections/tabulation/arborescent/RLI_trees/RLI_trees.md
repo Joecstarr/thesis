@@ -1,7 +1,3 @@
-<!-- prettier-ignore-start -->
-
-<!-- prettier-ignore-end -->
-
 ### Right Leaning Identity CWPTT
 
 CWPTT are sufficient for distinguishing any two arborescent tangles from moves

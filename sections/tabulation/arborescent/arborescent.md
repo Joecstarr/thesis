@@ -1,4 +1,4 @@
-### Arborescent Tangles
+## Arborescent Tangles
 
 ```{include} weighted_planar_trees/weighted_planar_trees.md
 

@@ -1,7 +1,3 @@
-<!-- prettier-ignore-start -->
-
-<!-- prettier-ignore-end -->
-
 ### Weighted Planar Trees
 
 ```{include} construction.md

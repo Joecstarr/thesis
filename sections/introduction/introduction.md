@@ -2,6 +2,7 @@
 (pt-introduction)=
 # Introduction
 <!-- prettier-ignore-end -->
+
 There exists a common view of advanced mathematics as esoteric nonsense only
 understandable by elite thinkers. While that sentiment is perhaps deserved by
 some mathematical disciplines, knot theory is an area of advanced mathematics

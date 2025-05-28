@@ -1,5 +1,7 @@
+<!-- prettier-ignore-start -->
 (ov)=
 ## Overview of this thesis
+<!-- prettier-ignore-end -->
 
 As discussed above, the goal of this thesis is to address, in part, the two
 questions "What knots can I make?" and "How do I tell two knots I make apart?" .
@@ -9,24 +11,24 @@ introduced by Conway [@conwayEnumerationKnotsLinks1970]. Through the middle of
 this thesis we will describe several strategies that have been employed to
 answer even further restricted versions of these questions:
 
--   "What rational tangles can I make?" and "How do I tell two rational tangles
-    I make apart?"
--   "What Montesinos tangles can I make?" and "How do I tell two Montesinos
-    tangles I make apart?"
--   "What algebraic/arborescent tangles can I make?" and "How do I tell two
-    algebraic/arborescent tangles I make apart?"
+- "What rational tangles can I make?" and "How do I tell two rational tangles I
+  make apart?"
+- "What Montesinos tangles can I make?" and "How do I tell two Montesinos
+  tangles I make apart?"
+- "What algebraic/arborescent tangles can I make?" and "How do I tell two
+  algebraic/arborescent tangles I make apart?"
 
 While we could answer these questions with pen and paper brute force, beyond
 reasonable crossing number, as small as 9, the time and effort needed makes pen
 and paper untenable. To achieve our goal in reasonable time we will follow a
 similar framework to Hoste, Thistlethwaite, Weeks, and recently Burton
 [@hosteFirst1701936Knots1998] [@hosteEnumerationClassificationKnots2005]
-[@burtonNext350Million2020] utilizing computer methods to generate a tangle table
-of algebraic tangles to `@@@decide` crossings. To effectively utilize computers
-for this tabulation work requires the design and implementation of several
-pieces of software. This tabulation framework, described in the later parts, is
-constructed with the accessible nature of knot theory in mind. We keep this
-accessibility in mind to enable future work with undergraduate researchers.
+[@burtonNext350Million2020] utilizing computer methods to generate a tangle
+table of algebraic tangles to `@@@decide` crossings. To effectively utilize
+computers for this tabulation work requires the design and implementation of
+several pieces of software. This tabulation framework, described in the later
+parts, is constructed with the accessible nature of knot theory in mind. We keep
+this accessibility in mind to enable future work with undergraduate researchers.
 
 ### Chapter Summary
 

@@ -4,17 +4,17 @@ Mathematical interest in knots was brought into the forefront of mathematics and
 physics during the 1860s by Lord Kelvin. A central area of research in physics
 during the 1860s was the investigation of the fundamental building blocks of
 matter: the atoms. At this time Lord Kelvin hypothesized that atoms were knotted
-vortices in the aether [@thomsonVortexAtoms1867]. Given this hypothesis, a natural
-next step is the creation of a table of the elements which, by hypothesis, was a
-table of knots.
+vortices in the aether [@thomsonVortexAtoms1867]. Given this hypothesis, a
+natural next step is the creation of a table of the elements which, by
+hypothesis, was a table of knots.
 
 ### Knot Tabulation Hand
 
 With Lord Kelvin's vortex hypothesis as the driving interest in knots, the first
 knot table was produced, via hand computation, by P.G. Tait. Tait's first table,
 completed in the 1860's, contained prime knots (described in @subsec-prime_knot)
-up to seven crossings[@taitFirstSevenOrders1884], a table of the first seven knots
-can be seen in @fig-hist-7table @schareinInteractiveTopologicalDrawing
+up to seven crossings[@taitFirstSevenOrders1884], a table of the first seven
+knots can be seen in @fig-hist-7table @schareinInteractiveTopologicalDrawing
 
 ```{figure} ./media/knots_to_7.svg
 
@@ -30,8 +30,7 @@ trio ultimately published a complete list of prime knots up to ten crossings
 considered, we see the completion of these tables were a herculean task. The
 tables contained a single error, two equivalent ten crossing knots, identified
 in 1974 by Perko an amateur mathematician [@perkoClassificationKnots1974] (the
-pair can be seen in @fig-hist-perko).
-@schareinInteractiveTopologicalDrawing
+pair can be seen in @fig-hist-perko). @schareinInteractiveTopologicalDrawing
 
 ```{figure} ./media/perko_pair.svg
 
@@ -59,23 +58,23 @@ With advancements in manufacturing in the early 1980s electronic computers
 became closer to commodity products, allowing for more and diverse users to take
 their crack at time consuming computational tasks. One of these computational
 tasks is the construction of knot tables. The first to construct a knot table by
-computer was Dowker and Thistlethwaite [@dowkerClassificationKnotProjections1983]
-in 1983 who produced a table of all prime knots to thirteen crossing. The pair
-implemented a novel two pass approach that has served as an outline for all
-major efforts that have followed. The process begins with a first pass to
-enumerate all possible knot projections. This is followed by a second pass where
-"sufficient invariants to distinguish them (knots) from each other"
-[@dowkerClassificationKnotProjections1983] are computed. This effectively assigns
-knots to equivalence classes ("bins" in software parlance) hence finding and
-removing all duplicate entries from the list ("deduping" in software parlance).
-The next computer table, knots up to sixteen crossing, was given by Hoste,
-Thistlethwaite, and Weeks [@hosteFirst1701936Knots1998] in 1998. Their process
-deviates only slightly from the earlier Dowker and Thistlethwaite approach,
-leaning on a heuristic approach to limit the duplicates found in their first
-pass. This preprocessing in the first pass allowed Hoste, Thistlethwaite, and
-Weeks to compute their table in 1-2 weeks of wall time [@burtonNext350Million2020]
-in 2020, finding knots to nineteen crossings. Burton's program followed closely
-to the two pass process, with further heuristic work to preprocess in the first
-pass and heavily relying on the hyperbolic volume invariant for the second pass.
-The computation of the nineteen crossing table required months of wall time on a
-cluster,
+computer was Dowker and Thistlethwaite
+[@dowkerClassificationKnotProjections1983] in 1983 who produced a table of all
+prime knots to thirteen crossing. The pair implemented a novel two pass approach
+that has served as an outline for all major efforts that have followed. The
+process begins with a first pass to enumerate all possible knot projections.
+This is followed by a second pass where "sufficient invariants to distinguish
+them (knots) from each other" [@dowkerClassificationKnotProjections1983] are
+computed. This effectively assigns knots to equivalence classes ("bins" in
+software parlance) hence finding and removing all duplicate entries from the
+list ("deduping" in software parlance). The next computer table, knots up to
+sixteen crossing, was given by Hoste, Thistlethwaite, and Weeks
+[@hosteFirst1701936Knots1998] in 1998. Their process deviates only slightly from
+the earlier Dowker and Thistlethwaite approach, leaning on a heuristic approach
+to limit the duplicates found in their first pass. This preprocessing in the
+first pass allowed Hoste, Thistlethwaite, and Weeks to compute their table in
+1-2 weeks of wall time [@burtonNext350Million2020] in 2020, finding knots to
+nineteen crossings. Burton's program followed closely to the two pass process,
+with further heuristic work to preprocess in the first pass and heavily relying
+on the hyperbolic volume invariant for the second pass. The computation of the
+nineteen crossing table required months of wall time on a cluster,

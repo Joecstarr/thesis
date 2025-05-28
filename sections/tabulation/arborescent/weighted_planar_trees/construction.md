@@ -1,8 +1,4 @@
 <!-- prettier-ignore-start -->
-
-<!-- prettier-ignore-end -->
-
-<!-- prettier-ignore-start -->
 (construction_of_arbor)=
 #### Construction of Arborescent Knots from Weighted Planar Trees
 <!-- prettier-ignore-end -->
@@ -84,7 +80,7 @@ positive slope, negative is defined likewise. We note that the twists appear in
 unique regions of the band, determined by their position relative to the
 plumbing squares.
 
-````{prf:observation}
+`````{prf:observation}
 ```{figure} ./media/bands/arbor_band_with_twist.svg
 :label: wpt-construc-fig-6
 :width: 500px
@@ -118,7 +114,7 @@ Bands plumbed
 An arborescent knot
 ```
 
-````
+`````
 
 It is important to note that we must restrict plumbing from creating "cycles" in
 the bands. That is a chain of plumbing beginning and ending with the same band,

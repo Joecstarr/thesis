@@ -184,7 +184,8 @@ yourself is one where the $1$ (or $-1$) tangle is added to a tangle $T$. In this
 situation, we can move the $1$ crossing from one side of $T$ to the other by a
 flype. To complete a flype we grab the top (north) and bottom (south) of $T$ and
 rotate (according to the sign of the $\pm 1$) around the horizontal axis of $
-T$. An example of a flype is given in @fig-opo-flype.
+T$.
+An example of a flype is given in @fig-opo-flype.
 
 ```{figure} ./media/reidemeister_move/flype.svg
 :label: fig-opo-flype
@@ -257,6 +258,7 @@ When noting the tangle insertion we list first the graph to be inserted into,
 each graph has a canonical ordering of vertices for purposes of insertion. Next
 we list the tangles we wish to insert, each separated by a period. An example of
 two knots written in Conway notation can be seen in
+
 ````{prf:observation}
 :label: fig-full_conway
 

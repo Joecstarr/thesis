@@ -12,23 +12,25 @@ self-contained project.
 
 One of the most important advancements in knot theory was the discovery of knot
 polynomials as a class of knot invariants. Perhaps the most powerful of these
-polynomials is the HOMFLYPT polynomial [@freydNewPolynomialInvariant1985] $$ P(L)
-= \frac{-(\ell+\ell^{-1})}{m} P(L_1)P(L_2) $$ \ noindent constructed from the
-skein relations ( @fig-future_work-Skein_HOMFLY ) conveniently the data needed
-to apply the skein relations is exactly the data encoded by the algebraic tangle
-tree, with the natural tangle orientations.
+polynomials is the HOMFLYPT polynomial [@freydNewPolynomialInvariant1985]
+$$
+P(L) = \frac{-(\ell+\ell^{-1})}{m} P(L_1)P(L_2) $$ \ noindent constructed from
+the skein relations ( @fig-future_work-skein_homfly ) conveniently the data
+needed to apply the skein relations is exactly the data encoded by the algebraic
+tangle tree, with the natural tangle orientations.
 
 ```{figure} ./media/Skein_HOMFLY.svg
-:label: fig-future_work-Skein_HOMFLY
+:label: fig-future_work-skein_homfly
 @@@ TODO: Add content description
 ```
 
 In this project an undergraduate researcher will conceive the theory and design
-the software for computing the HOMFLYPT (and Jones as a special case of HOMFLYPT)
-polynomial. The hand computation of the HOMFLYPT, for reasonably sized knots,
-requires only college algebra maturity and should be easily accomplishable by
-most undergraduates. However, the algorithmic computation of HOMFLYPT offers a
-range of great opportunities for original heuristic optimizations.
+the software for computing the HOMFLYPT (and Jones as a special case of
+HOMFLYPT) polynomial. The hand computation of the HOMFLYPT, for reasonably sized
+knots, requires only college algebra maturity and should be easily
+accomplishable by most undergraduates. However, the algorithmic computation of
+HOMFLYPT offers a range of great opportunities for original heuristic
+optimizations.
 
 #### Compute Diagram for Algebraic Tangle Trees
 
@@ -58,6 +60,7 @@ starting at a point and walking along the strand until we come to a crossing. If
 the crossing has a label we list that label if not we increment our count. We
 also encode if we entered the crossing as the over/under strand by a +/-
 attached to the listed integer, a Gauss notation of the trefoil knot:
+
 $$
 1,-2,3,-1,2,-3 $$ The extended Gauss notation additionally encodes the data
 for handedness of the crossing. In this project an undergraduate researcher will
@@ -134,3 +137,4 @@ an undergraduate researcher will describe and implement a computational method
 for sampling from a collection of tangles. The distribution of the sampling
 method will classified. Finally, the researcher will implement the sampling
 strategy for use with the Tanglenomicon.
+$$

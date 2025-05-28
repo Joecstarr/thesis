@@ -18,12 +18,16 @@ Kauffman bracket [@kauffmanStateModelsJones1987].
 
 The Jones Polynomial $V\LP \mathscr{K}\RP$ of an oriented knot $\mathscr{K}$ is
 the Laurent polynomial with integer coefficients in $t^{1/2}$. Defined by
+
 $$
-V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(K)}\LA K\RA\RP \_{t^{1/2}=A^{-2}} $$
+V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(K)}\LA K\RA\RP \_{t^{1/2}=A^{-2}}
+$$
+
 where $K$ is any oriented diagram for $\mathscr{K}$.
 [@jonesPolynomialInvariantKnots1985] lickorishIntroductionKnotTheory1997
 
 ```{include} kauf_bkt.md
+
 ```
 
 Having gained each equality needed for an invariant of knots we finish the
@@ -31,5 +35,5 @@ section with the following theorem.
 
 The Jones polynomial ( @def-jones) is an invariant of oriented knots.
 
-Combining @thm-typeI, @thm-typeII_bkt, @thm-typeIII_bkt and substituting $A$
-for $ t$ we obtain the result.
+Combining @thm-typeI, @thm-typeII_bkt, @thm-typeIII_bkt and substituting $A$ for
+$ t$ we obtain the result.

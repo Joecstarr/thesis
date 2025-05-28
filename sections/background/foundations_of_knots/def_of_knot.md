@@ -8,6 +8,7 @@ A **proper knot** is a smooth embedding of a circle $ S^1$ into Euclidean
 3-dimensional space $\R^3$ (or the 3-dimensional sphere
 $S^3$) [@jablanLinKnotKnotTheory2007].
 ```
+
 After some consideration we can see this definition aligns with our intuitive
 description of a knot given in @sec-intro-intuit_knot_theory. We note that this
 definition gives two choices for ambient space, for this thesis we will prefer

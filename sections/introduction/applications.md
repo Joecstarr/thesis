@@ -124,12 +124,12 @@ closed loop, making it a mathematical knot (@fig-intro-circ_dna_fig)
 From here one may ask, "If the dsDNA is knotted and type II topoisomerase makes
 a change, what kind new knot does this make?", this question was addressed first
 by Ernst and Sumners in the 1990s [@ernstCalculusRationalTangles1990]
-[@ernstTANGLEEQUATIONS1996]. Their approach was to consider the dsDNA split in two
-"areas", the first area is created by drawing a circle around the crossing that
-type II topoisomerase is working on and the second by drawing a circle around
-the remainder, as seen in @fig-intro-tangle_equation_start. From here, the
-crossing change from type II topoisomerase can be modeled by changing the tangle
-bound in the area on the right (@fig-intro-tangle_calc),
+[@ernstTANGLEEQUATIONS1996]. Their approach was to consider the dsDNA split in
+two "areas", the first area is created by drawing a circle around the crossing
+that type II topoisomerase is working on and the second by drawing a circle
+around the remainder, as seen in @fig-intro-tangle_equation_start. From here,
+the crossing change from type II topoisomerase can be modeled by changing the
+tangle bound in the area on the right (@fig-intro-tangle_calc),
 [@darcy3DVisualizationSoftware2008] built into KnotPlot
 @schareinInteractiveTopologicalDrawing
 
@@ -153,7 +153,7 @@ bound in the area on the right (@fig-intro-tangle_calc),
 ```
 ````
 
-@fig-intro-tangle_equation_result. As you can see after the change there, may be
+@fig-intro-tangle_equation_result. As you can see, after the change there, may be
 many crossings that type II topoisomerase could "choose" to work on next. A
 program like TopoICE-X [@darcy3DVisualizationSoftware2008] built into KnotPlot
 @schareinInteractiveTopologicalDrawing can help visualize the results of making

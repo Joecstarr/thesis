@@ -10,14 +10,14 @@ remainder of this thesis.
 As we saw for knots in @subsec-knot_equivalence to tell two tangles apart we
 need to also be able to say what we mean when we say tangles are the same. Our
 development of the concept of equality of tangles follows closely to that of
-knots. From @subsubsec-deftangles, we have definitions for tangles in the context
-of knot diagrams and three dimensional embeddings of knots. This tells us that
-the concepts of equality developed in @subsec-knot_equivalence namely ambient
-isotopy and Reidemeister moves also apply in the tangle case with two key
-differences. The first difference in tangles when compared to knots is that we
-restrict ambient isotopy, and Reidemeister moves, from pushing a strand through
-the Conway sphere, or Conway circle in the diagram case. This leads us to the
-second difference when handling the tangle case, being how we handle the
+knots. From @subsubsec-deftangles, we have definitions for tangles in the
+context of knot diagrams and three dimensional embeddings of knots. This tells
+us that the concepts of equality developed in @subsec-knot_equivalence namely
+ambient isotopy and Reidemeister moves also apply in the tangle case with two
+key differences. The first difference in tangles when compared to knots is that
+we restrict ambient isotopy, and Reidemeister moves, from pushing a strand
+through the Conway sphere, or Conway circle in the diagram case. This leads us
+to the second difference when handling the tangle case, being how we handle the
 boundary points. There are two constructions for how to handle equality; first
 fixing the boundary points on the Conway sphere and second allowing the boundary
 points to move on the Conway sphere.
@@ -75,14 +75,15 @@ In @subsubsec-conway_calc we saw Conway's calculus of tangles. While this
 construction is powerful and flexible, it's rather unintuitive when starting and
 cumbersome when combined with computer methods. In this section, we will
 describe a slightly modified, but equivalent, version of the calculus. This
-version of tangle arithmetic was first constructed by Kauffman and Goldman [@goldmanRationalTangles1997]. Instead of Conway's three operations on the
-two basic tangles $1$ and $0$, we need only two operations but all four basic
+version of tangle arithmetic was first constructed by Kauffman and Goldman
+[@goldmanRationalTangles1997]. Instead of Conway's three operations on the two
+basic tangles $1$ and $0$, we need only two operations but all four basic
 tangles seen in @fig-four_basics. The first operation in this arithmetic is
 exactly Conway's horizontal sum, $+$. The second operation is the vertical sum,
 $\vee$, sometimes written $*$ as in Kauffman and Goldman
-[@goldmanRationalTangles1997]. The generic tangle $A$ and $B$, $A\vee B$ is built
-analogously to the $+$ but stacking $A$ vertically on top of $B$ instead of
-horizontally. The operations can be seen in @fig-newopo
+[@goldmanRationalTangles1997]. The generic tangle $A$ and $B$, $A\vee B$ is
+built analogously to the $+$ but stacking $A$ vertically on top of $B$ instead
+of horizontally. The operations can be seen in @fig-newopo
 
 ````{prf:observation}
 :label: fig-newopo
@@ -98,7 +99,6 @@ horizontally. The operations can be seen in @fig-newopo
 ```
 
 ````
-
 
 These two operations give a natural arithmetic structure to the combinations of
 tangles. We'll see in later sections how this structure is easily encoded on a

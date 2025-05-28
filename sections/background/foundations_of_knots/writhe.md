@@ -16,7 +16,6 @@ An orientation applied to the knot $5_1$. Following the strand in the direction
 of the arrow you'll find that you arrive where you started.
 ```
 
-
 We now zoom in on our oriented diagram to focus on a crossing. Since the whole
 diagram is oriented, each strand in the local crossing has an induced
 orientation, indicated by arrow heads on the strands. We can arrange the

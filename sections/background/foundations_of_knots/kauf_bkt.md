@@ -16,30 +16,30 @@ $\LA \img{images/kauf_bkt/crossing/crossing_un} \RA=A\LA \img{images/kauf_bkt/ty
 We focus our discussion from here on the third criteria in the definition of the
 kauffman bracket. The action in criteria three is called the smoothing of a
 crossing and is perhaps not straight forward to see. We will now present an
-intuitive model (originally by jones [@jonesJonesPolynomialDummies2014]) for what
-happens in the smoothing process. Consider an unoriented crossing, imagine that
-the over strand of the crossing is the drive (the slot) of a giant flathead
+intuitive model (originally by jones [@jonesJonesPolynomialDummies2014]) for
+what happens in the smoothing process. Consider an unoriented crossing, imagine
+that the over strand of the crossing is the drive (the slot) of a giant flathead
 screw. Imagine also attaching to the screw a marker on either end of the drive,
-the full model is shown in @fig-JP-screw-model.
+the full model is shown in @fig-jp-screw-model.
 
 ````{prf:observation}
-:label: fig-JP-screw
+:label: fig-jp-screw
 
 
 
 
 ```{figure} ./media/missing.svg
-:label: fig-JP-screw-model
+:label: fig-jp-screw-model
 @@@ TODO: Add content description
 ```
 
 ```{figure} ./media/missing.svg
-:label: fig-JP-screw-traceC
+:label: fig-jp-screw-tracec
 @@@ TODO: Add content description
 ```
 
 ```{figure} ./media/missing.svg
-:label: fig-JP-screw-traceCC
+:label: fig-jp-screw-tracecc
 
 @@@ TODO: Add content description
 ```
@@ -47,9 +47,9 @@ the full model is shown in @fig-JP-screw-model.
 
 We can take a screw driver and turn the screw clockwise or anti-clockwise. When
 the screw is turned, the markers traces out two arcs on the page. The arcs for a
-clockwise turn can be seen in @fig-JP-screw-traceC and anti-clockwise in
-@fig-JP-screw-traceCC. Looking again at criteria three we notice that the
-crossing, when smoothed, match those seen in @fig-JP-screw.
+clockwise turn can be seen in @fig-jp-screw-tracec and anti-clockwise in
+@fig-jp-screw-tracecc. Looking again at criteria three we notice that the
+crossing, when smoothed, match those seen in @fig-jp-screw.
 
 We will now move to proving that $\LA\,\RA$ is invariant under, Reidemeister II
 and III moves. First we prove the type II move.
@@ -100,7 +100,9 @@ Now for the final, and least straight, Reidemeister move we compute
 $$\bkt{images/kauf_bkt/type1/1b} \bkt{images/kauf_bkt/type1/1}$$
 
 ```{include} writhe.md
+
 ```
+
 ###### Kauffman Bracket: Type I
 
 With the writhe we're ready to approach the bracket polynomial applied to the

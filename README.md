@@ -1,10 +1,10 @@
-
-````{prf:observation}
-:label: fig-full_conway
+```{prf:observation}
 
 
 
-````
+<!-- @@@label:fig-full_conway  -->
+```
+
 ```
 /* Colors */
 Navy    : #001F3F
@@ -25,4 +25,5 @@ Silver  : #DDDDDD
 Gray    : #AAAAAA
 Black   : #111111
 ```
+
 https://clrs.cc

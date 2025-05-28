@@ -1,6 +1,6 @@
 # Tangle Tabulation
 
-```{include} ./initial_dataset.md
+```{include} ./initial_dataset/initial_dataset.md
 
 ```
 

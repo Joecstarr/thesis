@@ -7,9 +7,9 @@ prime knots. The first step is to define the connect sum operation on knots.
 Given two knots $J$ and $K$, the connect sum of $J$ and $ K$, written $J\
 
 #K$, is
-given by first excising an arc from both $J$ and $K$, and then glueing endpoints
-of $J$ to endpoints in $ K$. We can see an example of the connect sum of a
-trefoil and figure 8 knot in @fig-prime_knot-connect_sum
+given by first excising an arc from both $J$ and $K$, and then glueing
+endpoints of $J$ to endpoints in $ K$. We can see an example of the connect sum
+of a trefoil and figure 8 knot in @fig-prime_knot-connect_sum
 
 ```{figure} ./media/missing.svg
 :label: fig-prime_knot-connect_sum

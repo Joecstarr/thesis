@@ -46,11 +46,6 @@ math:
     '\mvtht': '\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}'
 ---
 
-<!-- prettier-ignore-start -->
-
-<!-- prettier-ignore-end -->
-
-
 <!-- Include frontmatter -->
 
 ```{include} sections/frontmatter/frontmatter.md

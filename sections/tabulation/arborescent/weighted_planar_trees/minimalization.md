@@ -1,7 +1,3 @@
-<!-- prettier-ignore-start -->
-
-<!-- prettier-ignore-end -->
-
 #### Minimalization of CWPTT
 
 ##### CWPTT Are Not Minimal
