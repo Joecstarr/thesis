@@ -73,5 +73,5 @@ then classifying each crossing as positive or negative we can count finding $5$
 positive and $0$ negative crossing giving
 
 $$
-w\LP\img{images/kauf_bkt/orientation/5_1}\RP=5+0=5
+w\LP\img{media/kauf_bkt/orientation/5_1}\RP=5+0=5
 $$

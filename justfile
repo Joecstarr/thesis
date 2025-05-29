@@ -42,6 +42,8 @@ build: bootstrap
     mkdir -p _build
     myst build ./main.md
     cp -r resources/coloremoji/coloremoji _build/exports/index_tex
+    mkdir -p _build/exports/index_tex/media/kauf_bkt && cp -r media/kauf_bkt _build/exports/index_tex/media
+    find ./_build/exports/index_tex/media/ -iname "*.svg" -exec sh -c 'svg2pdf "$1" "${1%.*}.pdf" ' sh {} \;
     cp resources/coloremoji/coloremoji.sty _build/exports/index_tex
     uv run ./resources/postprocess/nsf.py
 

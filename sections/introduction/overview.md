@@ -24,7 +24,7 @@ and paper untenable. To achieve our goal in reasonable time we will follow a
 similar framework to Hoste, Thistlethwaite, Weeks, and recently Burton
 [@hosteFirst1701936Knots1998] [@hosteEnumerationClassificationKnots2005]
 [@burtonNext350Million2020] utilizing computer methods to generate a tangle
-table of algebraic tangles to `@@@decide` crossings. To effectively utilize
+table of algebraic tangles to twelve crossings. To effectively utilize
 computers for this tabulation work requires the design and implementation of
 several pieces of software. This tabulation framework, described in the later
 parts, is constructed with the accessible nature of knot theory in mind. We keep

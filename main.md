@@ -39,7 +39,7 @@ math:
     '\abs': '\left\vert#1\right\vert'
     '\msr': 'm\left(#1\right)'
     '\inv': " #1^{-1}"
-    '\img': '\text{ place holder }'
+    '\img': '\includegraphics[height=2ex, width=2ex]{#1}'
     '\bkt': '\LA \img{ #1}\RA'
     '\mvspc': '\hspace{.125cm}'
     '\mvtwt': '\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}'

@@ -6,11 +6,11 @@ outputs a polynomial with integer coefficients.
 The Kauffman bracket of an unoriented knot $K$, $\LA K\RA$, is the Laurent
 polynomial with integer coefficients in $A$ given by the following:
 
-$\LA\img{images/kauf_bkt/unknot} \RA=1$
+$\LA\img{media/kauf_bkt/unknot} \RA=1$
 
-$\LA K \sqcup \img{images/kauf_bkt/unknot} \RA=\LP-A^2-A^2\RP \LA K \RA$
+$\LA K \sqcup \img{media/kauf_bkt/unknot} \RA=\LP-A^2-A^2\RP \LA K \RA$
 
-$\LA \img{images/kauf_bkt/crossing/crossing_un} \RA=A\LA \img{images/kauf_bkt/type2/6a} \RA+A^{-1}\LA \img{images/kauf_bkt/type2/6b} \RA$
+$\LA \img{media/kauf_bkt/crossing/crossing_un} \RA=A\LA \img{media/kauf_bkt/type2/6a} \RA+A^{-1}\LA \img{media/kauf_bkt/type2/6b} \RA$
 [@kauffmanStateModelsJones1987] [@lickorishIntroductionKnotTheory1997]
 
 We focus our discussion from here on the third criteria in the definition of the
@@ -28,17 +28,17 @@ the full model is shown in @fig-jp-screw-model.
 
 
 
-```{figure} ./media/missing.svg
+```{figure} ./media/missing
 :label: fig-jp-screw-model
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/missing.svg
+```{figure} ./media/missing
 :label: fig-jp-screw-tracec
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/missing.svg
+```{figure} ./media/missing
 :label: fig-jp-screw-tracecc
 
 @@@ TODO: Add content description
@@ -54,7 +54,7 @@ crossing, when smoothed, match those seen in @fig-jp-screw.
 We will now move to proving that $\LA\,\RA$ is invariant under, Reidemeister II
 and III moves. First we prove the type II move.
 
-$$\LA \img{images/kauf_bkt/type2/1}\RA=\LA \img{images/kauf_bkt/type2/6b} \RA$$
+$$\LA \img{media/kauf_bkt/type2/1}\RA=\LA \img{media/kauf_bkt/type2/6b} \RA$$
 
 We begin by smoothing the crossing on the left of the diagram, we then smooth
 the other crossing this process yields the following chian of equalities.
@@ -62,29 +62,29 @@ the other crossing this process yields the following chian of equalities.
 Now, utilizing the fact $\LA\,\RA$ is invariant for type II we will prove the
 same for type III.
 
-$$\LA \img{images/kauf_bkt/type3/1}\RA=\LA \img{images/kauf_bkt/type3/6} \RA$$
+$$\LA \img{media/kauf_bkt/type3/1}\RA=\LA \img{media/kauf_bkt/type3/6} \RA$$
 
 We begin by smoothing the crossing on the center of each the diagram in the
 equality, yielding @eq-kbkt-t3-1, enlarged in @fig-inv-t3-c we execute a type II
 move to obtain @fig-inv-t3-ct2 the clockwise smoothing from @eq-kbkt-t3-2,
 enlarged in @fig-inv-t3-ct2.
 
-```{figure} ./media/kauf_bkt/type3/2b.svg
+```{figure} ./media/kauf_bkt/type3/2b
 
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/kauf_bkt/type3/3b.svg
+```{figure} ./media/kauf_bkt/type3/3b
 
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/kauf_bkt/type3/2a.svg
+```{figure} ./media/kauf_bkt/type3/2a
 
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/kauf_bkt/type3/3a.svg
+```{figure} ./media/kauf_bkt/type3/3a
 
 @@@ TODO: Add content description
 ```
@@ -97,7 +97,7 @@ polynomial, shown in @thm-typeII_bkt, this chain of equalities shows the desired
 result.
 
 Now for the final, and least straight, Reidemeister move we compute
-$$\bkt{images/kauf_bkt/type1/1b} \bkt{images/kauf_bkt/type1/1}$$
+$$\bkt{media/kauf_bkt/type1/1b} \bkt{media/kauf_bkt/type1/1}$$
 
 ```{include} writhe.md
 
