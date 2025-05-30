@@ -53,6 +53,7 @@ html: bootstrap
 proc-svg-ws:
     uv run ./resources/imgproc/proc_svg_text.py .
 
+
 proc-svg-size:
     uv run ./resources/imgproc/proc_svg_size.py .
 

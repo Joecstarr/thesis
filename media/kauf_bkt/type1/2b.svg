@@ -13,5 +13,5 @@
 
     <g id="Layer-2" vectornator:layerName="Layer 2" transform="translate(-4.9220574,15.467192)"/>
 
-    <circle class="stroke-orange" style="opacity:1;fill:none;stroke:#FF851B;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:130.744;stroke-opacity:1;paint-order:stroke markers fill" id="path3" cx="290.51746" cy="258.3284" r="98.254906"/>
+    <circle class="stroke-orange fill-orange" style="opacity:1;fill:none;stroke:#FF851B;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:130.744;stroke-opacity:1;paint-order:stroke markers fill" id="path3" cx="290.51746" cy="258.3284" r="98.254906"/>
 </svg>

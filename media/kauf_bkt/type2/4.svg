@@ -14,7 +14,7 @@
 
         </g>
 
-        <ellipse class="stroke-orange" style="fill:none;stroke:#FF851B;stroke-width:29.0671;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill" id="path4" cx="250" cy="250" rx="70.466438" ry="70.466446"/>
+        <ellipse class="stroke-orange fill-orange" style="fill:none;stroke:#FF851B;stroke-width:29.0671;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill" id="path4" cx="250" cy="250" rx="70.466438" ry="70.466446"/>
     </g>
 
 </svg>

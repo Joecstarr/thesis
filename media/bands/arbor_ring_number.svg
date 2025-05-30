@@ -1,47 +1,136 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.127 175.725"><defs><marker id="a" markerHeight="1" markerWidth="1" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" refX="0" refY="0" style="overflow:visible" viewBox="0 0 1 1"><path d="M6 0C3 1-1 3-3 5c0 0 0-4 2-5-2-1-2-5-2-5 2 2 6 4 9 5z" style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt" transform="scale(.5)"/></marker></defs><g transform="translate(-8.058 -10.957)"><g transform="translate(3.036)"><path d="m10 35 20 20-20 20" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/><text x="6.098" y="34.446" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
-        <tspan x="6.098" y="34.446" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">3</tspan>
-      </text><text x="29.749" y="51.866" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
-        <tspan x="29.749" y="51.866" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
-      </text><text x="5" y="75" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
-        <tspan x="5" y="75" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">-3</tspan>
-      </text><ellipse cx="10.261" cy="35.079" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="29.721" cy="54.976" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="10.199" cy="74.805" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><path d="M30 55h20" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/></g><g transform="translate(3.036 -1.055)"><path d="m50 56.055 54.501.026" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.06583;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none"/><ellipse cx="15.885" cy="54.876" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1" transform="translate(34.115 1.343)"/></g><g transform="translate(-37.273 -.018)"><text x="67.725" y="60.495" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(95.46 -.153)">
-        <tspan x="67.725" y="60.495" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">0</tspan>
-      </text><text x="93.026" y="33.867" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(95.46 -.153)">
-        <tspan x="93.026" y="33.867" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">4</tspan>
-      </text><text x="93.073" y="74.86" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(95.46 -.153)">
-        <tspan x="93.073" y="74.86" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">3</tspan>
-      </text><g transform="translate(95.46 -.153)"><path d="M50 55h20l20-20" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.06583;stroke-dasharray:none;stroke-opacity:1"/><path d="m70 55 20.094 20.094" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="70.173" cy="54.996" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="90.312" cy="75.038" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="90.188" cy="34.871" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/></g><ellipse cx="129.459" cy="55.011" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1" transform="translate(15.5)"/><text x="69.702" y="59.839" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(74.31 21.006)">
-        <tspan x="69.702" y="59.839" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">1</tspan>
-      </text><text x="48.457" y="79.016" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(74.31 21.006)">
-        <tspan x="48.457" y="79.016" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
-      </text><text x="91.823" y="78.063" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(74.31 21.006)">
-        <tspan x="91.823" y="78.063" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
-      </text><g transform="rotate(90 97.398 102.612)"><path d="M50 55h20l20-20" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.06583;stroke-dasharray:none;stroke-opacity:1"/><path d="m70 55 20.094 20.094" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="70.173" cy="54.996" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="90.312" cy="75.038" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="90.188" cy="34.871" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/></g><text x="69.959" y="52.566" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(74.143 -20.73)">
-        <tspan x="69.959" y="52.566" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">1</tspan>
-      </text><text x="92.32" y="34.335" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(74.143 -20.73)">
-        <tspan x="92.32" y="34.335" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
-      </text><text x="47.635" y="34.194" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(74.143 -20.73)">
-        <tspan x="47.635" y="34.194" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
-      </text><g transform="rotate(-90 97.452 7.518)"><path d="M50 55h20l20-20" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.06583;stroke-dasharray:none;stroke-opacity:1"/><path d="m70 55 20.094 20.094" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="70.173" cy="54.996" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="90.312" cy="75.038" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="90.188" cy="34.871" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/></g></g><path d="m13.036 145.65 20 20-20 20" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/><text x="9.134" y="145.096" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
-      <tspan x="9.134" y="145.096" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">3</tspan>
-    </text><text x="32.785" y="162.517" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
-      <tspan x="32.785" y="162.517" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
-    </text><text x="8.036" y="185.65" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
-      <tspan x="8.036" y="185.65" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">-3</tspan>
-    </text><ellipse cx="13.296" cy="145.729" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="32.757" cy="165.627" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="13.235" cy="185.455" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><path d="m33.036 165.65 17.776.033" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/><text x="106.56" y="166.605" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
-      <tspan x="106.56" y="166.605" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
-    </text><path d="m55.312 165.662 49.956-.002" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.06583;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none"/><ellipse cx="53.036" cy="165.815" class="stroke-comment fill-comment" rx="2.38" ry="2.375" style="fill:none;fill-opacity:1;stroke:#aaa;stroke-width:.982677;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="107.527" cy="165.427" class="stroke-comment fill-comment" rx="2.38" ry="2.375" style="fill:none;fill-opacity:1;stroke:#aaa;stroke-width:.982677;stroke-dasharray:none;stroke-opacity:1"/><text x="67.725" y="60.495" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(58.186 110.479)">
-      <tspan x="67.725" y="60.495" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">0</tspan>
-    </text><text x="93.026" y="33.867" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(58.186 110.479)">
-      <tspan x="93.026" y="33.867" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">4</tspan>
-    </text><text x="93.073" y="74.86" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(58.186 110.479)">
-      <tspan x="93.073" y="74.86" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">3</tspan>
-    </text><g transform="translate(58.186 110.479)"><path d="M51.694 55H70l20-20" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.06583;stroke-dasharray:none;stroke-opacity:1"/><path d="m70 55 20.094 20.094" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="70.173" cy="54.996" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="90.312" cy="75.038" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="90.188" cy="34.871" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/></g><path d="M80 110v35" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:.982677;stroke-linejoin:round;stroke-miterlimit:4.1;marker-end:url(#a);paint-order:stroke markers fill"/><text x="51.998" y="166.972" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
-      <tspan x="51.998" y="166.972" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">1</tspan>
-    </text></g><text x="69.959" y="52.566" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(-28.837 -31.275)">
-    <tspan x="69.959" y="52.566" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">1</tspan>
-  </text><text x="92.32" y="34.335" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(-28.837 -31.275)">
-    <tspan x="92.32" y="34.335" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
-  </text><text x="47.635" y="34.194" class="stroke-comment fill-comment stroke-comment" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(-28.837 -31.275)">
-    <tspan x="47.635" y="34.194" class="stroke-comment fill-comment stroke-comment" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
-  </text><g transform="rotate(-90 40.69 53.735)"><path d="M50 55h20l20-20" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.06583;stroke-dasharray:none;stroke-opacity:1"/><path d="m70 55 20.094 20.094" class="stroke-comment fill-comment" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="70.173" cy="54.996" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="90.312" cy="75.038" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/><ellipse cx="90.188" cy="34.871" class="stroke-comment fill-comment" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.127 175.725">
+  <defs>
+    <marker id="a" markerHeight="1" markerWidth="1" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" refX="0" refY="0" style="overflow:visible" viewBox="0 0 1 1" class="">
+      <path d="M6 0C3 1-1 3-3 5c0 0 0-4 2-5-2-1-2-5-2-5 2 2 6 4 9 5z" style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt" transform="scale(.5)" class=""/>
+    </marker>
+  </defs>
+  <g transform="translate(-8.058 -10.957)">
+    <g transform="translate(3.036)">
+      <path d="m10 35 20 20-20 20" class="" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/>
+      <text x="6.098" y="34.446" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
+        <tspan x="6.098" y="34.446" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">3</tspan>
+      </text>
+      <text x="29.749" y="51.866" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
+        <tspan x="29.749" y="51.866" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
+      </text>
+      <text x="5" y="75" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
+        <tspan x="5" y="75" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">-3</tspan>
+      </text>
+      <ellipse cx="10.261" cy="35.079" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+      <ellipse cx="29.721" cy="54.976" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+      <ellipse cx="10.199" cy="74.805" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+      <path d="M30 55h20" class="" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/>
+    </g>
+    <g transform="translate(3.036 -1.055)">
+      <path d="m50 56.055 54.501.026" class="" style="fill:none;stroke:#aaa;stroke-width:1.06583;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none"/>
+      <ellipse cx="15.885" cy="54.876" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1" transform="translate(34.115 1.343)"/>
+    </g>
+    <g transform="translate(-37.273 -.018)">
+      <text x="67.725" y="60.495" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(95.46 -.153)">
+        <tspan x="67.725" y="60.495" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">0</tspan>
+      </text>
+      <text x="93.026" y="33.867" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(95.46 -.153)">
+        <tspan x="93.026" y="33.867" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">4</tspan>
+      </text>
+      <text x="93.073" y="74.86" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(95.46 -.153)">
+        <tspan x="93.073" y="74.86" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">3</tspan>
+      </text>
+      <g transform="translate(95.46 -.153)">
+        <path d="M50 55h20l20-20" class="" style="fill:none;stroke:#aaa;stroke-width:1.06583;stroke-dasharray:none;stroke-opacity:1"/>
+        <path d="m70 55 20.094 20.094" class="" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/>
+        <ellipse cx="70.173" cy="54.996" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+        <ellipse cx="90.312" cy="75.038" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+        <ellipse cx="90.188" cy="34.871" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+      </g>
+      <ellipse cx="129.459" cy="55.011" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1" transform="translate(15.5)"/>
+      <text x="69.702" y="59.839" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(74.31 21.006)">
+        <tspan x="69.702" y="59.839" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">1</tspan>
+      </text>
+      <text x="48.457" y="79.016" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(74.31 21.006)">
+        <tspan x="48.457" y="79.016" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
+      </text>
+      <text x="91.823" y="78.063" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(74.31 21.006)">
+        <tspan x="91.823" y="78.063" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
+      </text>
+      <g transform="rotate(90 97.398 102.612)">
+        <path d="M50 55h20l20-20" class="" style="fill:none;stroke:#aaa;stroke-width:1.06583;stroke-dasharray:none;stroke-opacity:1"/>
+        <path d="m70 55 20.094 20.094" class="" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/>
+        <ellipse cx="70.173" cy="54.996" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+        <ellipse cx="90.312" cy="75.038" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+        <ellipse cx="90.188" cy="34.871" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+      </g>
+      <text x="69.959" y="52.566" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(74.143 -20.73)">
+        <tspan x="69.959" y="52.566" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">1</tspan>
+      </text>
+      <text x="92.32" y="34.335" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(74.143 -20.73)">
+        <tspan x="92.32" y="34.335" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
+      </text>
+      <text x="47.635" y="34.194" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(74.143 -20.73)">
+        <tspan x="47.635" y="34.194" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
+      </text>
+      <g transform="rotate(-90 97.452 7.518)">
+        <path d="M50 55h20l20-20" class="" style="fill:none;stroke:#aaa;stroke-width:1.06583;stroke-dasharray:none;stroke-opacity:1"/>
+        <path d="m70 55 20.094 20.094" class="" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/>
+        <ellipse cx="70.173" cy="54.996" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+        <ellipse cx="90.312" cy="75.038" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+        <ellipse cx="90.188" cy="34.871" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+      </g>
+    </g>
+    <path d="m13.036 145.65 20 20-20 20" class="" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/>
+    <text x="9.134" y="145.096" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
+      <tspan x="9.134" y="145.096" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">3</tspan>
+    </text>
+    <text x="32.785" y="162.517" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
+      <tspan x="32.785" y="162.517" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
+    </text>
+    <text x="8.036" y="185.65" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
+      <tspan x="8.036" y="185.65" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">-3</tspan>
+    </text>
+    <ellipse cx="13.296" cy="145.729" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+    <ellipse cx="32.757" cy="165.627" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+    <ellipse cx="13.235" cy="185.455" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+    <path d="m33.036 165.65 17.776.033" class="" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/>
+    <text x="106.56" y="166.605" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
+      <tspan x="106.56" y="166.605" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
+    </text>
+    <path d="m55.312 165.662 49.956-.002" class="" style="fill:none;stroke:#aaa;stroke-width:1.06583;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none"/>
+    <ellipse cx="53.036" cy="165.815" class="" rx="2.38" ry="2.375" style="fill:none;fill-opacity:1;stroke:#aaa;stroke-width:.982677;stroke-dasharray:none;stroke-opacity:1"/>
+    <ellipse cx="107.527" cy="165.427" class="" rx="2.38" ry="2.375" style="fill:none;fill-opacity:1;stroke:#aaa;stroke-width:.982677;stroke-dasharray:none;stroke-opacity:1"/>
+    <text x="67.725" y="60.495" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(58.186 110.479)">
+      <tspan x="67.725" y="60.495" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">0</tspan>
+    </text>
+    <text x="93.026" y="33.867" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(58.186 110.479)">
+      <tspan x="93.026" y="33.867" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">4</tspan>
+    </text>
+    <text x="93.073" y="74.86" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(58.186 110.479)">
+      <tspan x="93.073" y="74.86" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">3</tspan>
+    </text>
+    <g transform="translate(58.186 110.479)">
+      <path d="M51.694 55H70l20-20" class="" style="fill:none;stroke:#aaa;stroke-width:1.06583;stroke-dasharray:none;stroke-opacity:1"/>
+      <path d="m70 55 20.094 20.094" class="" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/>
+      <ellipse cx="70.173" cy="54.996" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+      <ellipse cx="90.312" cy="75.038" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+      <ellipse cx="90.188" cy="34.871" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+    </g>
+    <path d="M80 110v35" class="" style="fill:none;stroke:#aaa;stroke-width:.982677;stroke-linejoin:round;stroke-miterlimit:4.1;marker-end:url(#a);paint-order:stroke markers fill"/>
+    <text x="51.998" y="166.972" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">
+      <tspan x="51.998" y="166.972" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">1</tspan>
+    </text>
+  </g>
+  <text x="69.959" y="52.566" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(-28.837 -31.275)">
+    <tspan x="69.959" y="52.566" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">1</tspan>
+  </text>
+  <text x="92.32" y="34.335" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(-28.837 -31.275)">
+    <tspan x="92.32" y="34.335" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
+  </text>
+  <text x="47.635" y="34.194" class="" style="font-size:3.175px;fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1" transform="translate(-28.837 -31.275)">
+    <tspan x="47.635" y="34.194" class="" style="fill:#aaa;fill-opacity:1;stroke:#aaa;stroke-width:.265;stroke-dasharray:none;stroke-opacity:1">2</tspan>
+  </text>
+  <g transform="rotate(-90 40.69 53.735)">
+    <path d="M50 55h20l20-20" class="" style="fill:none;stroke:#aaa;stroke-width:1.06583;stroke-dasharray:none;stroke-opacity:1"/>
+    <path d="m70 55 20.094 20.094" class="" style="fill:none;stroke:#aaa;stroke-width:1.065;stroke-dasharray:none;stroke-opacity:1"/>
+    <ellipse cx="70.173" cy="54.996" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+    <ellipse cx="90.312" cy="75.038" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+    <ellipse cx="90.188" cy="34.871" class="" rx="1.181" ry="1.165" style="fill:#aaa;fill-opacity:1;stroke:none;stroke-width:.0762529;stroke-dasharray:none;stroke-opacity:1"/>
+  </g>
+</svg>
