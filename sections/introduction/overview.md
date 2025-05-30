@@ -1,5 +1,5 @@
 <!-- prettier-ignore-start -->
-(ov)=
+(sec-intro-overview)=
 ## Overview of this thesis
 <!-- prettier-ignore-end -->
 
@@ -24,11 +24,11 @@ and paper untenable. To achieve our goal in reasonable time we will follow a
 similar framework to Hoste, Thistlethwaite, Weeks, and recently Burton
 [@hosteFirst1701936Knots1998] [@hosteEnumerationClassificationKnots2005]
 [@burtonNext350Million2020] utilizing computer methods to generate a tangle
-table of algebraic tangles to twelve crossings. To effectively utilize
-computers for this tabulation work requires the design and implementation of
-several pieces of software. This tabulation framework, described in the later
-parts, is constructed with the accessible nature of knot theory in mind. We keep
-this accessibility in mind to enable future work with undergraduate researchers.
+table of algebraic tangles to twelve crossings. To effectively utilize computers
+for this tabulation work requires the design and implementation of several
+pieces of software. This tabulation framework, described in the later parts, is
+constructed with the accessible nature of knot theory in mind. We keep this
+accessibility in mind to enable future work with undergraduate researchers.
 
 ### Chapter Summary
 
@@ -65,7 +65,7 @@ will give an overview of the system design. The process and design given in this
 part are intended to be used in this work as well as generically for
 undergraduate research projects. The part concludes with a description of the
 presentation layer for the tangle table, a web interface similar to KnotInfo
-@knotinfo.
+[@livingstonKnotInfoTableKnot2025].
 
 #### Future Work and Undergraduate Research
 

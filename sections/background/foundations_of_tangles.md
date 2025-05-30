@@ -70,7 +70,10 @@ the integral twists. This unwinding can be seen in @fig-tangl_eq-unwinding.
 For this thesis, we will assume tangles have a fixed boundary unless explicitly
 mentioned.
 
+<!-- prettier-ignore-start -->
+(subsec-tangle_operations)=
 ### Modified Tangle Operations
+<!-- prettier-ignore-end -->
 
 In @subsubsec-conway_calc we saw Conway's calculus of tangles. While this
 construction is powerful and flexible, it's rather unintuitive when starting and
@@ -84,11 +87,11 @@ operation in this arithmetic is exactly Conway's horizontal sum, $+$. The second
 operation is the vertical sum, $\vee$, sometimes written $*$ as in Kauffman and
 Goldman [@goldmanRationalTangles1997]. The generic tangle $A$ and $B$, $A\vee B$
 is built analogously to the $+$ but stacking $A$ vertically on top of $B$
-instead of horizontally. The operations can be seen in @@fig-opo-plus and
+instead of horizontally. The operations can be seen in @fig-opo-plus and
 @fig-opo-vee.
 
 ```{figure} ./media/fig-opo-vee.svg
-:label:@fig-opo-vee
+:label: fig-opo-vee
 @@@ TODO: Add content description
 ```
 
@@ -103,17 +106,21 @@ encountered in @subsubsec-opo-plus. The integral tangles are the simplest class
 of tangle that are built from the basic operations on basic tangles. We start by
 defining the $ \pm$ horizontal integral tangles.
 
+```{prf:definition}
 A tangle built from the successive sum of $n$ $+1$ tangles is called a
-horizontal $n$ tangle. Similarly, a sum of $-1$ tangles is a horizontal $ -n$
-tangle.
+horizontal (integral) $n$ tangle. Similarly, a sum of $-1$ tangles is a
+horizontal (integral) $ -n$ tangle.
+```
 
 It is convenient to notate the horizontal integral tangles simply by their
 corresponding integer $\pm n$. A similar construction can be defined for the
 $\vee$ operation, yielding the $ \pm$ vertical integral tangles.
 
+```{prf:definition}
 A tangle built from the successive vertical sum of $n$ $+1$ tangles is called a
 vertical $n$ tangle. Similarly, a vertical sum of $-1$ tangles is a vertical
 $-n$ tangle.
+```
 
 We adopt a similar notational convention for the vertical integral tangles,
 however as to not overload our notations, we will instead notate the vertical

@@ -1,4 +1,7 @@
+<!-- prettier-ignore-start -->
+(sec-intro-applications)=
 ## Brief Discussion on Applications
+<!-- prettier-ignore-end -->
 
 As we saw in the intuitive overview, mathematical knots can be easily
 constructed as physical objects. It should be no surprise then that mathematical
@@ -17,7 +20,7 @@ atmosphere the temperature increases as you move outward. With the hottest layer
 of the solar atmosphere, called the corona, being the outermost
 [@carrollIntroductionModernAstrophysics2014]. One model for why the corona is so
 hot, is the braiding of solar flares (magnetic field lines)
-[@cirtainEnergyReleaseSolar2013],bergerEnergycrossingNumberRelations1993. When
+[@cirtainEnergyReleaseSolar2013;@bergerEnergycrossingNumberRelations1993]. When
 energy builds in this magnetic field and released, a solar flare, an arc of
 burning gas, is formed. When these arcs form, they will sometimes "dance" around
 each other, becoming a braid. While at first glance this structure may not look
@@ -51,7 +54,7 @@ drawn around the two sets of bases of the flares, seen in
 ````
 
 @fig-intro-solar_braid. An accessible introduction to the theory of braids can
-be found in Birman's "Braids: A survey" [@birman2005braids].
+be found in Birman's "Braids: A survey" [@birmanBraidsSurvey2005].
 
 ### Tangles in DNA
 
@@ -65,7 +68,7 @@ cytosine (C), and thymine (T) [@watsonMolecularStructureNucleic1953]. The two
 strands of dsDNA connect to each other to form the "double-helix" where the
 monomer guanine (G) binding to cytosine (C), and adenine (A) binding to thymine
 (T) [@watsonMolecularStructureNucleic1953] as seen in
-@fig-intro-DNA_chemical_structure. When replicating, the cell will duplicate the
+@fig-intro-dna_chemical_structure. When replicating, the cell will duplicate the
 dsDNA by splitting the dsDNA with an enzyme DNA-helicase into two single
 strands, then will build two new strands from each strand of the original dsDNA.
 The dsDNA of a cell needs to be physically stored in the cell. The volume in a
@@ -89,7 +92,7 @@ top double strand to be the bottom double strand. This action can be seen in
 
 
 ```{figure} ./media/dont_proc/DNA_chemical_structure.svg
-:label:fig-intro-DNA_chemical_structure
+:label:fig-intro-dna_chemical_structure
 @@@ TODO: Add content description [@priceballDNAChemicalStructure2007]
 ```
 
@@ -134,7 +137,7 @@ around the remainder, as seen in @fig-intro-tangle_equation_start. From here,
 the crossing change from type II topoisomerase can be modeled by changing the
 tangle bound in the area on the right (@fig-intro-tangle_calc),
 [@darcy3DVisualizationSoftware2008] built into KnotPlot
-@schareinInteractiveTopologicalDrawing
+[@schareinInteractiveTopologicalDrawing1998]
 
 ````{prf:observation}
 :label: fig-intro-tangle_calc
@@ -156,8 +159,8 @@ tangle bound in the area on the right (@fig-intro-tangle_calc),
 ```
 ````
 
-@fig-intro-tangle_equation_result. As you can see, after the change there, may be
-many crossings that type II topoisomerase could "choose" to work on next. A
+@fig-intro-tangle_equation_result. As you can see, after the change there, may
+be many crossings that type II topoisomerase could "choose" to work on next. A
 program like TopoICE-X [@darcy3DVisualizationSoftware2008] built into KnotPlot
-@schareinInteractiveTopologicalDrawing can help visualize the results of making
-these choices as seen in @fig-intro-pathway-png.
+[@schareinInteractiveTopologicalDrawing1998] can help visualize the results of
+making these choices as seen in @fig-intro-pathway-png.

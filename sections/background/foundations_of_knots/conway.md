@@ -5,15 +5,19 @@ knots up to 11 crossings in "a few hours". Conway accomplished this by breaking
 knots into building blocks he called tangles. This section gives an outline of
 the tools he used to achieve those "a few hours" of amazing efficiency.
 
+<!-- prettier-ignore-start -->
+(subsubsec-deftangles)=
 ##### Definition of a Tangle
+<!-- prettier-ignore-end -->
 
 Our first step in unlocking Conway's tabulation secrets is the definition of a
 tangle. We will give Conway's original definition followed by a description of
 what this looks like for a three three dimensional embedding for a knot.
 
-We define a tangle as a portion of a knot diagram from which there emerge just 4
+```{prf:definition} Tangle [@conwayEnumerationKnotsLinks1970]
+We define a **tangle** as a portion of a knot diagram from which there emerge just 4
 arcs pointing in the compass directions $NW,\ NE,\ SW,\ \text{and }SE$.
-[@conwayEnumerationKnotsLinks1970]
+```
 
 This can be thought of as drawing a circle around, or slamming a cookie cutter
 onto, a knot diagram. Then cutting off the parts of the knot laying outside the
@@ -38,7 +42,10 @@ see the first example of our preference for ambient space to be $S^3$ as opposed
 to $\R^3$. When a knot in $S^3$ is split by a Conway sphere, the ambient $S^3$
 is decomposed into two $B^3$, each with a portion of the knot.
 
+<!-- prettier-ignore-start -->
+(subsubsec-basic_tangles)=
 ##### Basic Tangles
+<!-- prettier-ignore-end -->
 
 Often, when thinking about a new construction, we focus on what is the simplest
 object that can be created with the construction. For the case of drawing Conway
@@ -62,6 +69,7 @@ A tangle with no crossings, called the $0$ tangle.
 A tangle with a single crossings, called the $1$ tangle.
 ```
 ````
+
 <!-- prettier-ignore-start -->
 (subsubsec-tangle_flips)=
 ##### Rotation and Mirroring of Tangles
@@ -108,7 +116,10 @@ A tangle with a single crossings, called the $m1$ tangle.
 ```
 ````
 
+<!-- prettier-ignore-start -->
+(subsubsec-conway_calc)=
 ##### Operations on Tangles
+<!-- prettier-ignore-end -->
 
 In addition to the rotations and flips, Conway introduced a calculus on tangles
 [@conwayEnumerationKnotsLinks1970]. This calculus allowed Conway to build the
@@ -126,7 +137,10 @@ indicated in @fig-opo-minus.
 @@@ TODO: Add content description
 ```
 
+<!-- prettier-ignore-start -->
+(subsubsec-opo-plus)=
 ##### Tangle Addition
+<!-- prettier-ignore-end -->
 
 For a pair of generic tangles, $A$ and $B$, we construct their sum $A+B$ by
 first aligning $A$ and $B$ horizontally. We then connect in order the $NE$ and

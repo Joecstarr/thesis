@@ -16,6 +16,8 @@ The Jones polynomial was published by Vaughan Jones in 1985
 algebras. A more combinatorial approach to the construction given here uses the
 Kauffman bracket [@kauffmanStateModelsJones1987].
 
+```{prf:definition} Jones Polynomial [@jonesPolynomialInvariantKnots1985; @lickorishIntroductionKnotTheory1997]
+:label: def-jones
 The Jones Polynomial $V\LP \mathscr{K}\RP$ of an oriented knot $\mathscr{K}$ is
 the Laurent polynomial with integer coefficients in $t^{1/2}$. Defined by
 
@@ -24,7 +26,7 @@ V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(K)}\LA K\RA\RP \_{t^{1/2}=A^{-2}}
 $$
 
 where $K$ is any oriented diagram for $\mathscr{K}$.
-[@jonesPolynomialInvariantKnots1985] lickorishIntroductionKnotTheory1997
+```
 
 ```{include} kauf_bkt.md
 
@@ -33,7 +35,13 @@ where $K$ is any oriented diagram for $\mathscr{K}$.
 Having gained each equality needed for an invariant of knots we finish the
 section with the following theorem.
 
+```{prf:theorem}
 The Jones polynomial ( @def-jones) is an invariant of oriented knots.
 
-Combining @thm-typeI, @thm-typeII_bkt, @thm-typeIII_bkt and substituting $A$ for
+```
+
+```{prf:proof}
+
+Combining @thm-typeii_bkt, @thm-typeiii_bkt, and @thm-typei, substituting $A$ for
 $ t$ we obtain the result.
+```

@@ -54,8 +54,11 @@ opposite the arrowhead of the under strand the orientation is negative.
 Given an oriented knot we can now classify each crossing as either a positive or
 negative, giving us enough information to define the writhe of a knot.
 
+```{prf:definition}
+:label: def-writhe
 The writhe, $w\LP K\RP$, of an oriented knot $ K$ is defined to be:
 $$w\LP K\RP=\LP\text{count of positive crossings in } K\RP-\LP\text{count of negative crossings in } K\RP$$
+```
 
 The writhe is fairly simple to calculate and we will now carry out an example
 calculation for knot $5_1$.

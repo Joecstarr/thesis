@@ -1,12 +1,15 @@
+<!-- prettier-ignore-start -->
+(subsec-knot_def)=
 ### Definition of a Knot
+<!-- prettier-ignore-end -->
 
 Our first effort in formalization is the construction of a definition for knots.
 
-```{prf:definition}
+```{prf:definition} Proper Knot [@jablanLinKnotKnotTheory2007]
 :label: def-knot
 A **proper knot** is a smooth embedding of a circle $ S^1$ into Euclidean
 3-dimensional space $\R^3$ (or the 3-dimensional sphere
-$S^3$) [@jablanLinKnotKnotTheory2007].
+$S^3$) .
 ```
 
 After some consideration we can see this definition aligns with our intuitive
@@ -17,11 +20,11 @@ natural extension of this concept is the allowance for more then a single $S^1$
 component to be embedded into the ambient space and allowing this gives the
 following definition.
 
-```{prf:definition}
+```{prf:definition} $c$ Component Link [@jablanLinKnotKnotTheory2007]
 :label: def-link
-A $c$ component link is a smooth embedding of $ c$ disjoint copies of a circle
+A **$c$ component link** is a smooth embedding of $ c$ disjoint copies of a circle
 $S^1$ into $\R^3$ (or $S^3$), where the embeddings of circles $S_i^1$ are its
-components ($i = 1, 2,..., c$) [@jablanLinKnotKnotTheory2007].
+components ($i = 1, 2,..., c$).
 ```
 
 For convenience, and brevity, we will adopt the following convention. The term
@@ -40,7 +43,7 @@ We call this projection a knot shadow, an example can be seen in
 @fig-knot_def-shadow, and is commonly interpreted as a planar graph.
 
 ```{figure} ./media/knot_shadow.svg
-:label: fig-knot_def-set-shadow
+:label: fig-knot_def-shadow
 @@@ TODO: Add content description
 ```
 
@@ -52,8 +55,8 @@ relative distance of colinear points, our crossings. To recover this data, we
 split the edges of the shadow, correlating to the strand closer to the plane so
 that it appears to travel under the edge correlating to the strand further from
 the plane. We call the split edge the under strand while the other edge is
-called the over strand,. The result of this can be seen in
-@fig-knot_def-set-shadow. These augmented knot shadows are called knot diagrams
-and will serve as our primary schematic model for knots throughout this thesis.
-We finish with naming a knot with particular significance as we move forward,
-the knot with no crossings in its diagram is called the unknot.
+called the over strand,. The result of this can be seen in @fig-knot_def-shadow.
+These augmented knot shadows are called knot diagrams and will serve as our
+primary schematic model for knots throughout this thesis. We finish with naming
+a knot with particular significance as we move forward, the knot with no
+crossings in its diagram is called the unknot.

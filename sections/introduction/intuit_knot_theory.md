@@ -1,4 +1,7 @@
+<!-- prettier-ignore-start -->
+(sec-intro-intuit_knot_theory)=
 ## An Intuitive Grounding in Knot Theory
+<!-- prettier-ignore-end -->
 
 A knot, when used in everyday life, is a tool whether the "bunny ear" knot
 holding on your shoe, a decorative monkey's fist on your keychain, or a climbing
@@ -52,7 +55,7 @@ In fact, this twisting gives us a whole infinite family of odd crossing torus
 knots, a sampling of which can be seen in @fig-intro-torus_knots.
 
 ````{prf:observation}
-:label: fig-intro-closed_knots
+:label: fig-intro-torus_knots
 
 
 ```{figure} ./media/torus_3.svg

@@ -1,4 +1,7 @@
+<!-- prettier-ignore-start -->
+(sec-history-of-tabulation)=
 ## History of Knot Tabulation
+<!-- prettier-ignore-end -->
 
 Mathematical interest in knots was brought into the forefront of mathematics and
 physics during the 1860s by Lord Kelvin. A central area of research in physics
@@ -13,28 +16,28 @@ hypothesis, was a table of knots.
 With Lord Kelvin's vortex hypothesis as the driving interest in knots, the first
 knot table was produced, via hand computation, by P.G. Tait. Tait's first table,
 completed in the 1860's, contained prime knots (described in @subsec-prime_knot)
-up to seven crossings[@taitFirstSevenOrders1884], a table of the first seven
-knots can be seen in @fig-hist-7table @schareinInteractiveTopologicalDrawing
+up to seven crossings [@taitFirstSevenOrders1884], a table of the first seven
+knots can be seen in @fig-hist-7table
 
 ```{figure} ./media/knots_to_7.svg
-
-@@@ TODO: Add content description
+:label: fig-hist-7table
+@@@ TODO: Add content description [@schareinInteractiveTopologicalDrawing1998]
 ```
 
 With a table of seven crossing knots complete Tait's work in knot tabulation
 didn't stop. Tait continued to work, alongside Kirkman and Little
-[@taitTenfoldKnottiness1885] kirkmanEnumerationDescriptionConstruction1885
-littleKnotsCensusOrder1885, on tabulation of knots for the next 25 years. The
+[@taitTenfoldKnottiness1885;@kirkmanEnumerationDescriptionConstruction1885;
+@littleKnotsCensusOrder1885], on tabulation of knots for the next 25 years. The
 trio ultimately published a complete list of prime knots up to ten crossings
 (250+1 knots). When the knot theoretic machinery available at the time is
 considered, we see the completion of these tables were a herculean task. The
 tables contained a single error, two equivalent ten crossing knots, identified
 in 1974 by Perko an amateur mathematician [@perkoClassificationKnots1974] (the
-pair can be seen in @fig-hist-perko). @schareinInteractiveTopologicalDrawing
+pair can be seen in @fig-hist-perko) .
 
 ```{figure} ./media/perko_pair.svg
-
-@@@ TODO: Add content description
+:label: fig-hist-perko
+@@@ TODO: Add content description [@schareinInteractiveTopologicalDrawing1998]
 ```
 
 After Tait, Kirkman, and Little's completion of the ten crossing table efforts

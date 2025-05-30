@@ -1,5 +1,5 @@
 <!-- prettier-ignore-start -->
-(sec-CWPTT-def)=
+(sec-cwptt-def)=
 #### Canonical Weighted Planar Tangle Trees (CWPTT)
 <!-- prettier-ignore-end -->
 
