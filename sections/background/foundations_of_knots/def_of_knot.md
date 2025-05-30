@@ -39,32 +39,21 @@ that the projection have no more then two points on strands that are colinear.
 We call this projection a knot shadow, an example can be seen in
 @fig-knot_def-shadow, and is commonly interpreted as a planar graph.
 
-````{prf:observation}
+```{figure} ./media/knot_shadow.svg
 :label: fig-knot_def-set-shadow
-
-
-```{figure} ./media/missing.svg
-:label: fig-knot_def-shadow
 @@@ TODO: Add content description
 ```
-
-```{figure} ./media/missing.svg
-:label: fig-knot_def-shadow_knot
-@@@ TODO: Add content description
-```
-
-````
 
 In our knot shadow we notice some points where strands overlap, call them
 vertices as in a graph. When we look at these points in out three dimensional
 model, those vertices are where strands are colinear in the projection. Taking
 only the shadow of a knot loses some intuitively important data being the
 relative distance of colinear points, our crossings. To recover this data, we
-split the edges of the shadow, corelating to the strand closer to the plane so
-that it appears to travel under the edge corelating to the strand further from
+split the edges of the shadow, correlating to the strand closer to the plane so
+that it appears to travel under the edge correlating to the strand further from
 the plane. We call the split edge the under strand while the other edge is
 called the over strand,. The result of this can be seen in
-@fig-knot_def-shadow_knot. These augmented knot shadows are called knot diagrams
+@fig-knot_def-set-shadow. These augmented knot shadows are called knot diagrams
 and will serve as our primary schematic model for knots throughout this thesis.
 We finish with naming a knot with particular significance as we move forward,
 the knot with no crossings in its diagram is called the unknot.

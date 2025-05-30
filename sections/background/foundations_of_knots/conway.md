@@ -62,8 +62,10 @@ A tangle with no crossings, called the $0$ tangle.
 A tangle with a single crossings, called the $1$ tangle.
 ```
 ````
-
+<!-- prettier-ignore-start -->
+(subsubsec-tangle_flips)=
 ##### Rotation and Mirroring of Tangles
+<!-- prettier-ignore-end -->
 
 Consider a generic tangle, as seen in @fig-generic_tangle, where ambient
 orientation of data in the interior of the Conway circle is indicated by a
@@ -80,7 +82,7 @@ We can also manipulate the tangle by the set of flips, one around the core
 x-axis and one around the y-axis. Each flip gives an arrangement of the interior
 data. Pairing flips with rotations gives the table seen in @fig-tangle_flips.
 
-```{figure} ./media/missing.svg
+```{figure} ./media/fig-tangle_flips.svg
 :label: fig-tangle_flips
 @@@ TODO: Add content description
 ```
@@ -119,7 +121,7 @@ and flip around the y-axis the negative of $T$ notated $-T$. Equivalently, this
 can be thought of as rotating the tangle around the $NW$ and $SE$ axis, as
 indicated in @fig-opo-minus.
 
-```{figure} ./media/missing.svg
+```{figure} ./media/fig-opo-minus.svg
 :label: fig-opo-minus
 @@@ TODO: Add content description
 ```
@@ -130,7 +132,7 @@ For a pair of generic tangles, $A$ and $B$, we construct their sum $A+B$ by
 first aligning $A$ and $B$ horizontally. We then connect in order the $NE$ and
 $SE$ of $A$ to the $NW$ and $SW$ of $B$. This can be seen in @fig-opo-plus
 
-```{figure} ./media/missing.svg
+```{figure} ./media/fig-opo-plus.svg
 :label: fig-opo-plus
 @@@ TODO: Add content description
 ```
@@ -146,7 +148,7 @@ in order the $NE$ and $SE$ of $-A$ to the $NW$ and $SW$ of $B$. This
 multiplication is equivalent to $-A+B$. This operation can be seen in
 @fig-opo-times.
 
-```{figure} ./media/missing.svg
+```{figure} ./media/fig-opo-times.svg
 :label: fig-opo-times
 @@@ TODO: Add content description
 ```
@@ -161,7 +163,7 @@ connect in order the $NE$ and $SE$ of $-A$ to the $NW$ and $SW$ of $-B$. This
 ramification is equivalent to $-A-B$ or $A0+B0$. This operation can be seen in
 @fig-opo-ramification.
 
-```{figure} ./media/missing.svg
+```{figure} ./media/fig-opo-ramification.svg
 :label: fig-opo-ramification
 @@@ TODO: Add content description
 ```
@@ -172,7 +174,7 @@ With a set of operations comes the desire to chain multiple operations together.
 The precedence for operations on tangles is indicated by parentheses in the
 obvious way. An example can be seen in @fig-opo-prec.
 
-```{figure} ./media/missing.svg
+```{figure} ./media/fig-opo-prec.svg
 :label: fig-opo-prec
 @@@ TODO: Add content description
 ```
@@ -203,12 +205,12 @@ from $NE$ to $SE$, seen in @fig-closure-den.
 ````{prf:observation}
 :label: fig-closure-prec
 
-```{figure} ./media/missing.svg
+```{figure} ./media/fig-closure-num.svg
 :label: fig-closure-num
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/missing.svg
+```{figure} ./media/fig-closure-den.svg
 :label: fig-closure-den
 @@@ TODO: Add content description
 ```
@@ -226,7 +228,7 @@ bigon collapse can be seen in @fig-bigon_collapse. The class of knots who have a
 presentation where bigons can be collapsed to a single vertex is called
 algebraic.
 
-```{figure} ./media/missing.svg
+```{figure} ./media/fig-bigon_collapse.svg
 :label: fig-bigon_collapse
 @@@ TODO: Add content description
 ```
@@ -236,7 +238,7 @@ identify a four-valent graph that has non-bigon connections between vertices.
 The class of graph that is most useful here are the polygons, the $6^{**}$ graph
 or hexagon can be seen in @fig-6starstar.
 
-```{figure} ./media/missing.svg
+```{figure} ./media/fig-6starstar.svg
 :label: fig-6starstar
 @@@ TODO: Add content description
 ```
@@ -249,28 +251,11 @@ replace the vertex in the graph with that generated tangle, connecting the
 $NW,\,NE,\,SW,\,\text{and }SE $ points to the four edges of the vertex. An example of a tangle insertion into $ 6^{**}$
 can be seen in @fig-6starstar_insurtion.
 
-```{figure} ./media/missing.svg
-:label: fig-6starstar_insurtion.
-@@@ TODO: Add content description
+```{figure} ./media/fig-6starstar_insurtion.svg
+:label: fig-6starstar_insurtion
+$6^*\ *.1\ 2\ 2\ 3\ 1.1\ 2\ 2\ 3\ 1.1\ 2\ 2\ 3\ 1.1\ 2\ 2\ 3\ 1.1\ 2\ 2\ 3\ 1$
 ```
 
 When noting the tangle insertion we list first the graph to be inserted into,
 each graph has a canonical ordering of vertices for purposes of insertion. Next
-we list the tangles we wish to insert, each separated by a period. An example of
-two knots written in Conway notation can be seen in
-
-````{prf:observation}
-:label: fig-full_conway
-
-
-```{figure} ./media/missing.svg
-:label: fig-full_conway-alg
-@@@ TODO: Add content description
-```
-
-```{figure} ./media/missing.svg
-:label: fig-full_conway-nonalg
-@@@ TODO: Add content description
-```
-
-````
+we list the subtangles we wish to insert, each separated by a period.

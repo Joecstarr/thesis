@@ -29,22 +29,23 @@ concepts of equality for tangles. When the boundary points are fixed, we have
 essentially the same concept of equality for knots. We need only care for the
 ambient isotopy, Reidemister move, equivalence of the interior of the Conway
 sphere. In the fixed boundary world, we have four distinct basic tangles
-$1,\ -1,\ 0,\ \text{and } \infty$ seen in @fig-four_basics. With a little play,
-it's easy to convince yourself that these are all distinct when the boundary is
-fixed. In @fig-tangl_eq-fixed we find two tangles, each with two crossings but
-not equivalent by Reidemeister moves.
+$1,\ -1,\ 0,\ \text{and } \infty$ seen in @fig-basic_tangles and
+@fig-basic_tangles_extra. With a little play, it's easy to convince yourself
+that these are all distinct when the boundary is fixed. In @fig-tangl_eq-fixed
+we find two tangles, each with two crossings but not equivalent by Reidemeister
+moves.
 
 ````{prf:observation}
 :label: fig-tangl_eq-fixed
 
 
 
-```{figure} ./media/missing.svg
+```{figure} ./media/fig-tang_eq-fixed-2.svg
 :label: fig-tang_eq-fixed-2
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/missing.svg
+```{figure} ./media/fig-tang_eq-fixed-v2.svg
 :label: fig-tang_eq-fixed-v2
 @@@ TODO: Add content description
 ```
@@ -61,8 +62,8 @@ the rotation and flip equivalence, a moveable boundary allows us to unwind
 integral components of a tangle which are connected to the boundary inline with
 the integral twists. This unwinding can be seen in @fig-tangl_eq-unwinding.
 
-```{figure} ./media/missing.svg
-:label: fig-tang_eq-fixed-2
+```{figure} ./media/fig-tangl_eq-unwinding.svg
+:label: fig-tangl_eq-unwinding
 @@@ TODO: Add content description
 ```
 
@@ -78,27 +79,18 @@ describe a slightly modified, but equivalent, version of the calculus. This
 version of tangle arithmetic was first constructed by Kauffman and Goldman
 [@goldmanRationalTangles1997]. Instead of Conway's three operations on the two
 basic tangles $1$ and $0$, we need only two operations but all four basic
-tangles seen in @fig-four_basics. The first operation in this arithmetic is
-exactly Conway's horizontal sum, $+$. The second operation is the vertical sum,
-$\vee$, sometimes written $*$ as in Kauffman and Goldman
-[@goldmanRationalTangles1997]. The generic tangle $A$ and $B$, $A\vee B$ is
-built analogously to the $+$ but stacking $A$ vertically on top of $B$ instead
-of horizontally. The operations can be seen in @fig-newopo
+tangles seen in @fig-basic_tangles and @fig-basic_tangles_extra. The first
+operation in this arithmetic is exactly Conway's horizontal sum, $+$. The second
+operation is the vertical sum, $\vee$, sometimes written $*$ as in Kauffman and
+Goldman [@goldmanRationalTangles1997]. The generic tangle $A$ and $B$, $A\vee B$
+is built analogously to the $+$ but stacking $A$ vertically on top of $B$
+instead of horizontally. The operations can be seen in @@fig-opo-plus and
+@fig-opo-vee.
 
-````{prf:observation}
-:label: fig-newopo
-
-```{figure} ./media/missing.svg
-:label: fig-newopo-plus
+```{figure} ./media/fig-opo-vee.svg
+:label:@fig-opo-vee
 @@@ TODO: Add content description
 ```
-
-```{figure} ./media/missing.svg
-:label: fig-newopo-vee
-@@@ TODO: Add content description
-```
-
-````
 
 These two operations give a natural arithmetic structure to the combinations of
 tangles. We'll see in later sections how this structure is easily encoded on a

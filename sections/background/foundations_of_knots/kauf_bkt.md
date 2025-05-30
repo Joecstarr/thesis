@@ -22,33 +22,16 @@ that the over strand of the crossing is the drive (the slot) of a giant flathead
 screw. Imagine also attaching to the screw a marker on either end of the drive,
 the full model is shown in @fig-jp-screw-model.
 
-````{prf:observation}
-:label: fig-jp-screw
-
-
-
-
-```{figure} ./media/missing
+```{figure} ./media/fig-jp-screw-model_iso.svg
 :label: fig-jp-screw-model
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/missing
-:label: fig-jp-screw-tracec
-@@@ TODO: Add content description
-```
-
-```{figure} ./media/missing
-:label: fig-jp-screw-tracecc
-
-@@@ TODO: Add content description
-```
-````
 
 We can take a screw driver and turn the screw clockwise or anti-clockwise. When
 the screw is turned, the markers traces out two arcs on the page. The arcs for a
-clockwise turn can be seen in @fig-jp-screw-tracec and anti-clockwise in
-@fig-jp-screw-tracecc. Looking again at criteria three we notice that the
+clockwise turn can be seen in @fig-jp-screw-model and anti-clockwise in
+@fig-jp-screw-model. Looking again at criteria three we notice that the
 crossing, when smoothed, match those seen in @fig-jp-screw.
 
 We will now move to proving that $\LA\,\RA$ is invariant under, Reidemeister II

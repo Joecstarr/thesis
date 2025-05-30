@@ -51,8 +51,7 @@ drawn around the two sets of bases of the flares, seen in
 ````
 
 @fig-intro-solar_braid. An accessible introduction to the theory of braids can
-be found in Birman's "Braids: A survey" [@birman2005braids]. For further reading
-on the braid theory of solar flares reference `@@@missing`.
+be found in Birman's "Braids: A survey" [@birman2005braids].
 
 ### Tangles in DNA
 

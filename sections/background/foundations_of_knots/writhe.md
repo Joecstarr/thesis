@@ -64,7 +64,7 @@ We start by taking the oriented version of knot $5_1$ seen in
 @fig-writhe-orientation and modifying the diagram with local pictures for
 crossings seen in @fig-writhe-local
 
-```{figure} ./media/missing.svg
+```{figure} ./media/kauf_bkt/orientation/fig-writhe-local.svg
 :label: fig-writhe-local
 @@@ TODO: Add content description
 ```

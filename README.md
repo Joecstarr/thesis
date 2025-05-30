@@ -1,9 +1,4 @@
-```{prf:observation}
 
-
-
-<!-- @@@label:fig-full_conway  -->
-```
 
 ```
 /* Colors */
