@@ -1,4 +1,8 @@
 <!-- prettier-ignore-start -->
+
+<!-- prettier-ignore-end -->
+
+<!-- prettier-ignore-start -->
 (construction_of_arbor)=
 #### Construction of Arborescent Knots from Weighted Planar Trees
 <!-- prettier-ignore-end -->
@@ -389,13 +393,13 @@ vertices.
 ```{prf:definition} Essential vertex
 :label: apn-def-2
 We define an **essential vertex** as any vertex with valence
-greater than $3$ or ring number greater than $1$.
+greater than $3$.
 ```
 
 ```{prf:definition} Non-essential vertex
 :label: apn-def-3
 
-A vertex is called non-essential if it has valence $0,1,2$ and no rings.
+A vertex is called non-essential if it has valence $0,1,2$.
 ```
 
 We see in {prf:ref}`wpt-construc-fig-18` essential vertices in orange and
@@ -404,7 +408,8 @@ non-essential in red.
 ```{figure} ./media/bands/arbor_ring_essential.svg
 :label: wpt-construc-fig-18
 :width: 500px
-Abbreviated
+A weighted planar tree annotated with essential vertices in orange and
+non-essential in red
 ```
 
 <!-- prettier-ignore-start -->
@@ -416,9 +421,9 @@ The final important class in the anatomy of a tree is the sticks of a tree.
 
 ```{prf:definition} Sticks of a weighted planar tree
 :label: wpt-construc-def-sticks_of_a_tree
-Let $\Gamma$ be a weighted planar tree and $\LS e_i\RS$ be the set of essential
+Let $\Gamma$ be a weighted planar tree and $\LS n_i\RS$ be the set of essential
 vertices of $\Gamma$ including their bonds (half-edges). We call the collection subtrees
-$\Gamma_s=\Gamma\setminus \LS e_i\RS$ the **sticks** of $\Gamma$ and every
+$\Gamma_s=\Gamma\setminus \LS n_i\RS$ the **sticks** of $\Gamma$ and every
 connected component of $\Gamma_s$ a **stick**.
 ```
 
@@ -428,19 +433,27 @@ sticks of which can be seen in {prf:ref}`wpt-construc-fig-19`.
 ```{figure} ./media/bands/arbor_ring_noessential.svg
 :label: wpt-construc-fig-19
 :width: 500px
-Sticks of a tree
+Sticks of the tree from @wpt-construc-fig-18.
 ```
 
 By construction, a stick subtree of $\Gamma$ may have 0,1, or 2 free bonds, we
 call a stick with; 0 free bonds closed, 1 free bond half-open, and 2 free bonds
 open. We call a stick where each vertex has a single weight a **proper stick**.
+We call a vertex at the end of a stick an **end vertex**.
+
+```{figure} ./media/bands/sticks_open.svg
+:label: wpt-construc-fig-sticks
+:width: 500px
+From top to bottom a fully open, half open, and closed sitck. Each end vertex
+is colored in red.
+```
+
 Bonahon and Seibenmann [@bonahonNewGeometricSplittings2016] give a
 correspondence between stick subtrees and Conway's rational tangles
-[@conwayEnumerationKnotsLinks1970]. An example of the corresponcance can be seen
+[@conwayEnumerationKnotsLinks1970]. An example of the correspondence can be seen
 in {prf:ref}`wpt-construc-fig-rat`.
 
 ```{figure} ./media/watt_rational.svg
 :label: wpt-construc-fig-rat
-:width: 500px
 A stick realized as a rational tangle.
 ```

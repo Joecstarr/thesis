@@ -32,11 +32,8 @@
     - [x] intuit_knot_theory
     - [x] overview
 - [ ] 📂software
-    - [ ] 📂documentation
-            - [ ] core_libraries
-            - [ ] documentation
-            - [ ] presentation
-            - [ ] web_api
+    - [ ] 📂documentation - [ ] core_libraries - [ ] documentation - [ ]
+          presentation - [ ] web_api
     - [ ] selecting_technologies
     - [ ] software
     - [ ] software_lifecycle
@@ -83,11 +80,8 @@
     - [ ] intuit_knot_theory
     - [ ] overview
 - [ ] 📂software
-    - [ ] 📂documentation
-            - [ ] core_libraries
-            - [ ] documentation
-            - [ ] presentation
-            - [ ] web_api
+    - [ ] 📂documentation - [ ] core_libraries - [ ] documentation - [ ]
+          presentation - [ ] web_api
     - [ ] selecting_technologies
     - [ ] software
     - [ ] software_lifecycle
@@ -99,8 +93,6 @@
         - [ ] montesinos
         - [ ] rational
     - [ ] tabulation
-
-
 
 ```
 /* Colors */

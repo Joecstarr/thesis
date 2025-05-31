@@ -1,5 +1,5 @@
 <!-- prettier-ignore-start -->
-(sec-cwptt-def)=
+(sec-CWPTT-def)=
 #### Canonical Weighted Planar Tangle Trees (CWPTT)
 <!-- prettier-ignore-end -->
 
@@ -9,7 +9,7 @@ preferred representative is to put some additional conditions on a weighted
 planar tree $\Gamma$. The following conditions pair down the equivalence class
 of an arborescent tangle to a more manageable level.
 
-`````{prf:definition} Canonical Weighted Planar Tangle TreesBonahon and Seibenmann Section 12.8.2 [@bonahonNewGeometricSplittings2016]
+`````{prf:definition} Canonical Weighted Planar Tangle Trees, Bonahon and Seibenmann Section 12.8.2 [@bonahonNewGeometricSplittings2016]
 :label: wpt-equi-def-abcanon
 
 A Weighted Planar Tree is called a **Canonical Weighted Planar
@@ -18,99 +18,99 @@ Tangle Tree (CWPTT)** if it satisfies the following conditions:
 
 -   **Weight Condition** At each vertex of $\Gamma$, at most one weight is
     non-zero.
--   **Stick Condition** On any stick the weights are non-zero except for end
-    vertices that have a bond free in $\Gamma_0$ and for the case $\Gamma_0$ is
-    {prf:ref}`wpt-construc-fig-stick_cond-1` or
-    {prf:ref}`wpt-construc-fig-stick_cond-2`. The non-zero weights along any
-    stick are of alternating sign. No end vertex of a stick has weight $\pm 1$
-    unless it has a bond free in $\Gamma_0$, or
-    {prf:ref}`wpt-construc-fig-stick_cond-3`.
+-   **Stick Conditions**
+
+    1. On any stick the weights are non-zero except for end vertices that have a bond free in $\Gamma$ and for the case $\Gamma$ is {prf:ref}`wpt-construc-fig-stick_cond-1` or {prf:ref}`wpt-construc-fig-stick_cond-2`.
+    2. The non-zero weights along any  stick are of alternating sign.
+    3. No end vertex of a stick has weight $\pm 1$ unless it has a bond free in $\Gamma$, or {prf:ref}`wpt-construc-fig-stick_cond-3`.
+
+    ````{prf:observation}
+    :label: wpt-construc-fig-stick_cond
+
+    ```{figure} ./media/bands/conditions/stick/0.svg
+    :label: wpt-construc-fig-stick_cond-1
+    :width: 100px
+    $\ a$
+    ```
+
+    ```{figure} ./media/bands/conditions/stick/00.svg
+    :label: wpt-construc-fig-stick_cond-2
+    :width: 100px
+    $\ a$
+    ```
+
+    ```{figure} ./media/bands/conditions/stick/pm1.svg
+    :label: wpt-construc-fig-stick_cond-3
+    :width: 100px
+    $\ a$
+    ```
+
+    ````
 -   One of:
 
-    -   **Positivity Condition** There are no sticks in $\Gamma_0$ of the form
-        {prf:ref}`wpt-construc-fig-positivity_cond`.
-    -   **Negativity Condition** There are no sticks in $\Gamma_0$ of the form
-        {prf:ref}`wpt-construc-fig-negativity_cond`.
-````{prf:observation}
-:label: wpt-construc-fig-stick_cond
+    -   **Positivity Condition** There are no sticks in $\Gamma$ of the forms
+        @wpt-construc-fig-positivity_cond-1 @wpt-construc-fig-positivity_cond-2 @wpt-construc-fig-positivity_cond-3 @wpt-construc-fig-positivity_cond-4.
 
-```{figure} ./media/bands/conditions/stick/0.svg
-:label: wpt-construc-fig-stick_cond-1
-:width: 100px
-$\ a$
-```
+        ````{prf:observation}
+        :label: wpt-construc-fig-positivity_cond
 
-```{figure} ./media/bands/conditions/stick/00.svg
-:label: wpt-construc-fig-stick_cond-2
-:width: 100px
-$\ a$
-```
+        ```{figure} ./media/bands/conditions/positivity/am2.svg
+        :label: wpt-construc-fig-positivity_cond-1
+        :width: 100px
+        $\ a$
+        ```
 
-```{figure} ./media/bands/conditions/stick/pm1.svg
-:label: wpt-construc-fig-stick_cond-3
-:width: 100px
-$\ a$
-```
+        ```{figure} ./media/bands/conditions/positivity/am2a.svg
+        :label: wpt-construc-fig-positivity_cond-2
+        :width: 100px
+        $\ a$
+        ```
 
-````
+        ```{figure} ./media/bands/conditions/positivity/m2.svg
+        :label: wpt-construc-fig-positivity_cond-3
+        :width: 100px
+        $\ a$
+        ```
 
-````{prf:observation}
-:label: wpt-construc-fig-positivity_cond
+        ```{figure} ./media/bands/conditions/positivity/m1.svg
+        :label: wpt-construc-fig-positivity_cond-4
+        :width: 100px
+        $\ a$
+        ```
 
-```{figure} ./media/bands/conditions/positivity/am2.svg
-:label: wpt-construc-fig-positivity_cond-1
-:width: 100px
-$\ a$
-```
+        ````
+    -   **Negativity Condition** There are no sticks in $\Gamma$ of the forms
+         @wpt-construc-fig-negativity_cond-1 @wpt-construc-fig-negativity_cond-2
+         @wpt-construc-fig-negativity_cond-3 @wpt-construc-fig-negativity_cond-4.
 
-```{figure} ./media/bands/conditions/positivity/am2a.svg
-:label: wpt-construc-fig-positivity_cond-2
-:width: 100px
-$\ a$
-```
+        ````{prf:observation}
+        :label:wpt-construc-fig-negativity_cond
 
-```{figure} ./media/bands/conditions/positivity/m2.svg
-:label: wpt-construc-fig-positivity_cond-3
-:width: 100px
-$\ a$
-```
+        ```{figure} ./media/bands/conditions/negativity/a2.svg
+        :label: wpt-construc-fig-negativity_cond-1
+        :width: 100px
+        $\ a$
+        ```
 
-```{figure} ./media/bands/conditions/positivity/m1.svg
-:label: wpt-construc-fig-positivity_cond-4
-:width: 100px
-$\ a$
-```
+        ```{figure} ./media/bands/conditions/negativity/a2a.svg
+        :label: wpt-construc-fig-negativity_cond-2
+        :width: 100px
+        $\ a$
+        ```
 
-````
+        ```{figure} ./media/bands/conditions/negativity/2.svg
+        :label: wpt-construc-fig-negativity_cond-3
+        :width: 100px
+        $\ a$
+        ```
 
-````{prf:observation}
-:label:wpt-construc-fig-negativity_cond
+        ```{figure} ./media/bands/conditions/negativity/1.svg
+        :label: wpt-construc-fig-negativity_cond-4
+        :width: 100px
+        $\ a$
+        ```
 
-```{figure} ./media/bands/conditions/negativity/a2.svg
-:label: wpt-construc-fig-negativity_cond-1
-:width: 100px
-$\ a$
-```
-
-```{figure} ./media/bands/conditions/negativity/a2a.svg
-:label: wpt-construc-fig-negativity_cond-2
-:width: 100px
-$\ a$
-```
-
-```{figure} ./media/bands/conditions/negativity/2.svg
-:label: wpt-construc-fig-negativity_cond-3
-:width: 100px
-$\ a$
-```
-
-```{figure} ./media/bands/conditions/negativity/1.svg
-:label: wpt-construc-fig-negativity_cond-4
-:width: 100px
-$\ a$
-```
-
-````
+        ````
 
 `````
 

@@ -1,3 +1,7 @@
+<!-- prettier-ignore-start -->
+
+<!-- prettier-ignore-end -->
+
 #### Minimalization of CWPTT
 
 ##### CWPTT Are Not Minimal
@@ -103,5 +107,5 @@ with a $2.2$ move. We can then bound the crossing number of $\Gamma$ as in
 
 ```{math}
 :label: minimal-eq-upper-bound
-\text{cr}\LP \Gamma\RP \leq \text{cr}\LP \Gamma_c\RP\leq 2\cdot\abs{V}+\text{ACN}\LP\Gamma\RP
+\text{ACN}\LP \Gamma\RP \leq \text{ACN}\LP \Gamma_c\RP\leq 2\cdot\abs{V}+\text{ACN}\LP\Gamma\RP
 ```

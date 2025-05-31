@@ -1,3 +1,7 @@
+<!-- prettier-ignore-start -->
+
+<!-- prettier-ignore-end -->
+
 #### Generation of Right Leaning Identity Weighted Planar Tangle Trees
 
 We are now prepared for the enumeration of the arborescent tangles. This section

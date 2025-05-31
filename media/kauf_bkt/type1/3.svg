@@ -1,17 +1,1 @@
-<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="-20 0 423.77237 530.86017" xml:space="preserve" id="svg3" sodipodi:docname="3.svg" inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)" class="">
-    <sodipodi:namedview id="namedview3" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="0.93888889" inkscape:cx="264.67456" inkscape:cy="265.2071" inkscape:window-width="1920" inkscape:window-height="1126" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg3"/>
-
-    <defs id="defs1"/>
-
-<g clip-path="url(#ArtboardFrame_79)" id="Layer-1" vectornator:layerName="Layer 1" transform="translate(129.43629,15.467192)">
-
-        <path d="M -0.0779426,-0.467192 C 282.282,239.189 0.254223,500.393 0.254223,500.393" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30" id="path1"/>
-
-
-
-    </g>
-
-    <g id="Layer-2" vectornator:layerName="Layer 2" transform="translate(-4.9220574,15.467192)"/>
-
-
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xml:space="preserve" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" viewBox="-20 0 423.772 530.86"><g vectornator:layerName="Layer 1" clip-path="url(#ArtboardFrame_79)" transform="translate(129.436 15.467)"><path fill="none" stroke="#ffb86c" stroke-width="30" d="M-.078-.467c282.36 239.656.332 500.86.332 500.86" class="stroke-orange stroke-orange"/></g></svg>

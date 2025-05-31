@@ -1,6 +1,6 @@
 ##### Kauffman Bracket
 
-The Kauffman bracket is a function that takes knot diagrams as inputs and
+The Kauffman bracket is a function that takes a knot diagrams as input and
 outputs a polynomial with integer coefficients.
 
 ```{prf:definition} Kauffman Bracket [@kauffmanStateModelsJones1987] [@lickorishIntroductionKnotTheory1997]
