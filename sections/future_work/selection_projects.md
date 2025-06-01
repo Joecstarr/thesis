@@ -155,7 +155,7 @@ them into ??? notation.
 In the introduction chapter @sec-intro-applications applications of knots to the
 hard sciences were discussed. When working in the hard sciences being able to
 sample with an understood distribution from a collection is important. Similarly
-to the above notational projects, describing and implementing random sampling
+to the previous notational projects, describing and implementing random sampling
 methodologies is a class of extremely useful tabulation projects. A project
 outline for random tangle sampling can be described as follows. In this project
 an undergraduate researcher will describe and implement a computational method

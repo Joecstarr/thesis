@@ -167,7 +167,9 @@ multiplication is equivalent to $-A+B$. This operation can be seen in
 @@@ TODO: Add content description
 ```
 
+```{note}
 Notice that $$A*0=-A+0=-A$$
+```
 
 ##### Tangle Ramification
 

@@ -35,11 +35,11 @@ consideration we will use the term proper knot.
 Playing with this three dimensional construction for knots it will become
 quickly apparent that three dimensional knots are unwieldy to work with. In an
 effort to simplify our work we will now build a two dimensionally encoded model
-for knots. We start by taking a knot $K$ as above, we select an $S^2$ such that
-$K$ lays fully in the interior. Now, for any plane that lays tangent to $S^2$ we
-can take an orthogonal projection of the knot onto the plane. We further require
-that the projection have no more then two points on strands that are colinear.
-We call this projection a knot shadow, an example can be seen in
+for knots. We start by taking a knot $K$ as shown previously, we select an $S^2$
+such that $K$ lays fully in the interior. Now, for any plane that lays tangent
+to $S^2$ we can take an orthogonal projection of the knot onto the plane. We
+further require that the projection have no more then two points on strands that
+are colinear. We call this projection a knot shadow, an example can be seen in
 @fig-knot_def-shadow, and is commonly interpreted as a planar graph.
 
 ```{figure} ./media/knot_shadow.svg

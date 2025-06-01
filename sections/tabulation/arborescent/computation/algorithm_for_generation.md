@@ -126,7 +126,7 @@ up to a given size as follows.
 
 ##### Modification for RLITT
 
-The algorithm described above serves as the inspiration for the algorithm we
+The algorithm described previously serves as the inspiration for the algorithm we
 will build here for the enumeration of the arborescent tangles. Building this
 algorithm begins with modifying the grafting $\star_i$ operation to operate on
 weighted planar tangle trees as follows.
