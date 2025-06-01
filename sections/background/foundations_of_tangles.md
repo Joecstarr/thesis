@@ -99,7 +99,10 @@ These two operations give a natural arithmetic structure to the combinations of
 tangles. We'll see in later sections how this structure is easily encoded on a
 computer as a data structure.
 
+<!-- prettier-ignore-start -->
+(subsec-integral_tangle)=
 ### Integral Tangles
+<!-- prettier-ignore-end -->
 
 We finish the chapter with a description of a class of tangles we first
 encountered in @subsubsec-opo-plus. The integral tangles are the simplest class
@@ -108,8 +111,8 @@ defining the $ \pm$ horizontal integral tangles.
 
 ```{prf:definition}
 A tangle built from the successive sum of $n$ $+1$ tangles is called a
-horizontal (integral) $n$ tangle. Similarly, a sum of $-1$ tangles is a
-horizontal (integral) $ -n$ tangle.
+horizontal integral $n$ tangle. Similarly, a sum of $-1$ tangles is a
+horizontal integral $ -n$ tangle.
 ```
 
 It is convenient to notate the horizontal integral tangles simply by their
@@ -118,8 +121,8 @@ $\vee$ operation, yielding the $ \pm$ vertical integral tangles.
 
 ```{prf:definition}
 A tangle built from the successive vertical sum of $n$ $+1$ tangles is called a
-vertical $n$ tangle. Similarly, a vertical sum of $-1$ tangles is a vertical
-$-n$ tangle.
+vertical integral $n$ tangle. Similarly, a vertical sum of $-1$ tangles is a
+vertical integral $-n$ tangle.
 ```
 
 We adopt a similar notational convention for the vertical integral tangles,
