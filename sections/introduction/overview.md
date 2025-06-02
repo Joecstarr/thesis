@@ -3,20 +3,24 @@
 ## Overview of this thesis
 <!-- prettier-ignore-end -->
 
-As discussed above, the goal of this thesis is to address, in part, the two
-questions "What knots can I make?" and "How do I tell two knots I make apart?" .
+As discussed in the previous section, the goal of this thesis is to address, in
+part, the three questions "How do I systematically construct knots?", "How do I
+tell two knots I make apart?", and "How many knots can I write down?" .
 Particularly, we will address a restricted version of these questions, for
 objects that can be thought of as the building blocks of knots, the tangles
 introduced by Conway [@conwayEnumerationKnotsLinks1970]. Through the middle of
-this thesis we will describe several strategies that have been employed to
+this thesis, we will describe several strategies that have been employed to
 answer even further restricted versions of these questions:
 
-- "What rational tangles can I make?" and "How do I tell two rational tangles I
-  make apart?"
-- "What Montesinos tangles can I make?" and "How do I tell two Montesinos
-  tangles I make apart?"
-- "What algebraic/arborescent tangles can I make?" and "How do I tell two
-  algebraic/arborescent tangles I make apart?"
+- "How do I systematically construct rational tangles?", "How do I tell two
+  rational tangles I make apart?", and "How many rational tangles can I write
+  down?"
+- "How do I systematically construct Montesinos tangles?" and "How do I tell two
+  Montesinos tangles I make apart?", and "How many Montesinos tangles can I
+  write down?"
+- "How do I systematically construct algebraic/arborescent tangles?" and "How do
+  I tell two algebraic/arborescent tangles I make apart?", and "How many
+  algebraic/arborescent tangles can I write down?"
 
 While we could answer these questions with pen and paper brute force, beyond
 reasonable crossing number, as small as 9, the time and effort needed makes pen

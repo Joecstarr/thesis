@@ -21,7 +21,7 @@ polynomials as a class of knot invariants. Perhaps the most powerful of these
 polynomials is the HOMFLYPT polynomial [@freydNewPolynomialInvariant1985]
 
 $$
-P(L) = \frac{-(\ell+\ell^{-1})}{m} P(L_1)P(L_2) $$ \ noindent constructed from
+P(L) = \frac{-(\ell+\ell^{\ \m 1})}{m} P(L_1)P(L_2) $$ \ noindent constructed from
 the skein relations ( @fig-future_work-skein_homfly ) conveniently the data
 needed to apply the skein relations is exactly the data encoded by the algebraic
 tangle tree, with the natural tangle orientations.
@@ -73,7 +73,7 @@ also encode if we entered the crossing as the over/under strand by a +/-
 attached to the listed integer, a Gauss notation of the trefoil knot:
 
 
-$$1,-2,3,-1,2,-3 $$ The extended Gauss notation additionally encodes the data for
+$$1,\ \m 2,3,\ \m 1,2,\ \m 3 $$ The extended Gauss notation additionally encodes the data for
 handedness of the crossing. In this project an undergraduate researcher will
 describe a computational data structure for extended Gauss notation. They will
 then develop the software implementing extended Gauss notation within The
@@ -155,7 +155,7 @@ them into ??? notation.
 In the introduction chapter @sec-intro-applications applications of knots to the
 hard sciences were discussed. When working in the hard sciences being able to
 sample with an understood distribution from a collection is important. Similarly
-to the above notational projects, describing and implementing random sampling
+to the previous notational projects, describing and implementing random sampling
 methodologies is a class of extremely useful tabulation projects. A project
 outline for random tangle sampling can be described as follows. In this project
 an undergraduate researcher will describe and implement a computational method

@@ -125,7 +125,10 @@ In addition to the rotations and flips, Conway introduced a calculus on tangles
 [@conwayEnumerationKnotsLinks1970]. This calculus allowed Conway to build the
 simple basic tangles into iteratively more complex tangles.
 
+<!-- prettier-ignore-start -->
+(subsubsec-conway_minus)=
 ##### Minus Tangle
+<!-- prettier-ignore-end -->
 
 For a generic tangle $T$, we call the tangle generated from a clockwise rotation
 and flip around the y-axis the negative of $T$ notated $-T$. Equivalently, this
@@ -167,7 +170,9 @@ multiplication is equivalent to $-A+B$. This operation can be seen in
 @@@ TODO: Add content description
 ```
 
+```{note}
 Notice that $$A*0=-A+0=-A$$
+```
 
 ##### Tangle Ramification
 
@@ -196,12 +201,12 @@ obvious way. An example can be seen in @fig-opo-prec.
 ##### The Flype
 
 When working in this calculus of tangles, a common situation you may find
-yourself is one where the $1$ (or $-1$) tangle is added to a tangle $T$. In this
-situation, we can move the $1$ crossing from one side of $T$ to the other by a
-flype. To complete a flype we grab the top (north) and bottom (south) of $T$ and
-rotate (according to the sign of the $\pm 1$) around the horizontal axis of $
-T$.
-An example of a flype is given in @fig-opo-flype.
+yourself is one where the $1$ (or $\ \m 1$) tangle is added to a tangle $T$. In
+this situation, we can move the $1$ crossing from one side of $T$ to the other
+by a flype. To complete a flype we grab the top (north) and bottom (south) of
+$T$ and rotate (according to the sign of the $\pm 1$) around the horizontal axis
+of $
+T$. An example of a flype is given in @fig-opo-flype.
 
 ```{figure} ./media/reidemeister_move/flype.svg
 :label: fig-opo-flype

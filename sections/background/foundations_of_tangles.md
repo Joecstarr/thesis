@@ -29,7 +29,7 @@ concepts of equality for tangles. When the boundary points are fixed, we have
 essentially the same concept of equality for knots. We need only care for the
 ambient isotopy, Reidemister move, equivalence of the interior of the Conway
 sphere. In the fixed boundary world, we have four distinct basic tangles
-$1,\ -1,\ 0,\ \text{and } \infty$ seen in @fig-basic_tangles and
+$1,\ \ \m 1,\ 0,\ \text{and } \infty$ seen in @fig-basic_tangles and
 @fig-basic_tangles_extra. With a little play, it's easy to convince yourself
 that these are all distinct when the boundary is fixed. In @fig-tangl_eq-fixed
 we find two tangles, each with two crossings but not equivalent by Reidemeister
@@ -99,7 +99,10 @@ These two operations give a natural arithmetic structure to the combinations of
 tangles. We'll see in later sections how this structure is easily encoded on a
 computer as a data structure.
 
+<!-- prettier-ignore-start -->
+(subsec-integral_tangle)=
 ### Integral Tangles
+<!-- prettier-ignore-end -->
 
 We finish the chapter with a description of a class of tangles we first
 encountered in @subsubsec-opo-plus. The integral tangles are the simplest class
@@ -108,8 +111,8 @@ defining the $ \pm$ horizontal integral tangles.
 
 ```{prf:definition}
 A tangle built from the successive sum of $n$ $+1$ tangles is called a
-horizontal (integral) $n$ tangle. Similarly, a sum of $-1$ tangles is a
-horizontal (integral) $ -n$ tangle.
+horizontal integral $n$ tangle. Similarly, a sum of $\ \m 1$ tangles is a
+horizontal integral $ -n$ tangle.
 ```
 
 It is convenient to notate the horizontal integral tangles simply by their
@@ -118,8 +121,8 @@ $\vee$ operation, yielding the $ \pm$ vertical integral tangles.
 
 ```{prf:definition}
 A tangle built from the successive vertical sum of $n$ $+1$ tangles is called a
-vertical $n$ tangle. Similarly, a vertical sum of $-1$ tangles is a vertical
-$-n$ tangle.
+vertical integral $n$ tangle. Similarly, a vertical sum of $\ \m 1$ tangles is a
+vertical integral $-n$ tangle.
 ```
 
 We adopt a similar notational convention for the vertical integral tangles,

@@ -1,4 +1,13 @@
+<!-- prettier-ignore-start -->
+(sec-arborescent)=
 ## Arborescent Tangles
+<!-- prettier-ignore-end -->
+
+This chapter will describe the methodology that was used to answer the final of
+the essential questions detailed in @sec-intro-overview.
+
+> "What rational tangles can I make? and "What algebraic/arborescent tangles can
+> I make?" and "How do I tell two algebraic/arborescent tangles I make apart?".
 
 <!-- prettier-ignore-start -->
 (prelim-arbor_def)=

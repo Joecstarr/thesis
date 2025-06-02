@@ -9,7 +9,7 @@ polynomial with integer coefficients in $A$ given by the following:
 
 1. $\LA\img{media/kauf_bkt/unknot} \RA=1$
 2. $\LA K \sqcup \img{media/kauf_bkt/unknot} \RA=\LP-A^2-A^2\RP \LA K \RA$
-3. $\LA \img{media/kauf_bkt/crossing/crossing_un} \RA=A\LA \img{media/kauf_bkt/type2/6a} \RA+A^{-1}\LA \img{media/kauf_bkt/type2/6b} \RA$
+3. $\LA \img{media/kauf_bkt/crossing/crossing_un} \RA=A\LA \img{media/kauf_bkt/type2/6a} \RA+A^{\ \m 1}\LA \img{media/kauf_bkt/type2/6b} \RA$
 
 ```
 
@@ -49,16 +49,16 @@ the other crossing this process yields the following chian of equalities.
 \begin{aligned}
  \bkt{media/kauf_bkt/type2/1}
 &=A\bkt{media/kauf_bkt/type2/2a}+\LP
-A^{-1}\RP\bkt{media/kauf_bkt/type2/2b}\\
+A^{\ \m 1}\RP\bkt{media/kauf_bkt/type2/2b}\\
  &=A \LP
 A\bkt{media/kauf_bkt/type2/3a}+\LP
-A^{-1}\RP\bkt{media/kauf_bkt/type2/4}\RP+\LP
-A^{-1}\RP\LP A\bkt{media/kauf_bkt/type2/6b}+\LP
-A^{-1}\RP\bkt{media/kauf_bkt/type2/6a}\RP\\
+A^{\ \m 1}\RP\bkt{media/kauf_bkt/type2/4}\RP+\LP
+A^{\ \m 1}\RP\LP A\bkt{media/kauf_bkt/type2/6b}+\LP
+A^{\ \m 1}\RP\bkt{media/kauf_bkt/type2/6a}\RP\\
  &= \LP
-A^2+A^{-2}\RP\bkt{media/kauf_bkt/type2/6a}+\bkt{media/kauf_bkt/type2/4}+\bkt{media/kauf_bkt/type2/6b}\\
+A^2+A^{\ \m 2}\RP\bkt{media/kauf_bkt/type2/6a}+\bkt{media/kauf_bkt/type2/4}+\bkt{media/kauf_bkt/type2/6b}\\
  &= \LP
-A^2+A^{-2}\RP\bkt{media/kauf_bkt/type2/6a}+\LP-A^{2}-A^{-2}\RP\bkt{media/kauf_bkt/type2/6a}+\bkt{media/kauf_bkt/type2/6b}\\
+A^2+A^{\ \m 2}\RP\bkt{media/kauf_bkt/type2/6a}+\LP-A^{2}-A^{\ \m 2}\RP\bkt{media/kauf_bkt/type2/6a}+\bkt{media/kauf_bkt/type2/6b}\\
  &=\bkt{media/kauf_bkt/type2/6b}\\
 \end{aligned}
 ```
@@ -83,12 +83,12 @@ equality, yielding
 
 ```{math}
 :label: eq-kbkt-t3-1
-\bkt{media/kauf_bkt/type3/1} =A\bkt{media/kauf_bkt/type3/2b}+A^{-1}\bkt{media/kauf_bkt/type3/2a}
+\bkt{media/kauf_bkt/type3/1} =A\bkt{media/kauf_bkt/type3/2b}+A^{\ \m 1}\bkt{media/kauf_bkt/type3/2a}
 ```
 
 ```{math}
 :label: eq-kbkt-t3-2
-\bkt{media/kauf_bkt/type3/6} =A\bkt{media/kauf_bkt/type3/3b}+A^{-1}\bkt{media/kauf_bkt/type3/3a}
+\bkt{media/kauf_bkt/type3/6} =A\bkt{media/kauf_bkt/type3/3b}+A^{\ \m 1}\bkt{media/kauf_bkt/type3/3a}
 ```
 Now on the clockwise smoothing @eq-kbkt-t3-1,
 enlarged in @fig-inv-t3-c we execute a type II
@@ -136,12 +136,12 @@ Now for the final, and least straight, Reidemeister move we compute
 ```{math}
 \begin{aligned}
  \bkt{media/kauf_bkt/type1/1b} & =
-A\bkt{media/kauf_bkt/type1/2a}+A^{-1}\bkt{media/kauf_bkt/type1/2b}\\
-& = A\bkt{media/kauf_bkt/type1/3}+A^{-1}\LP
--A^2-A^{-2}\RP\bkt{media/kauf_bkt/type1/3}\\
+A\bkt{media/kauf_bkt/type1/2a}+A^{\ \m 1}\bkt{media/kauf_bkt/type1/2b}\\
+& = A\bkt{media/kauf_bkt/type1/3}+A^{\ \m 1}\LP
+-A^2-A^{\ \m 2}\RP\bkt{media/kauf_bkt/type1/3}\\
 & = \LP A+
--A^-A^{-3}\RP\bkt{media/kauf_bkt/type1/3}\\
-& = -A^{-3}\bkt{media/kauf_bkt/type1/3}\\
+-A^-A^{\ \m 3}\RP\bkt{media/kauf_bkt/type1/3}\\
+& = -A^{\ \m 3}\bkt{media/kauf_bkt/type1/3}\\
 \end{aligned}
 ```
 
@@ -150,11 +150,11 @@ and for the second flavor of type I move $\bkt{media/kauf_bkt/type1/1}$
 ```{math}
 \begin{aligned}
  \bkt{media/kauf_bkt/type1/1} & =
-A\bkt{media/kauf_bkt/type1/2b}+A^{-1}\bkt{media/kauf_bkt/type1/2a}\\
+A\bkt{media/kauf_bkt/type1/2b}+A^{\ \m 1}\bkt{media/kauf_bkt/type1/2a}\\
  & = A\LP
--A^2-A^{-2}\RP\bkt{media/kauf_bkt/type1/3}+A^{-1}\bkt{media/kauf_bkt/type1/3}\\
+-A^2-A^{\ \m 2}\RP\bkt{media/kauf_bkt/type1/3}+A^{\ \m 1}\bkt{media/kauf_bkt/type1/3}\\
 & = \LP
--A^3-A^{-1}+A^{-1}\RP\bkt{media/kauf_bkt/type1/3}\\
+-A^3-A^{\ \m 1}+A^{\ \m 1}\RP\bkt{media/kauf_bkt/type1/3}\\
 & = -A^{3}\bkt{media/kauf_bkt/type1/3}\\
 \end{aligned}
 ```

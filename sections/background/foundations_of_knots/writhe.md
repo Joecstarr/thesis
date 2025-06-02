@@ -44,12 +44,14 @@ positive (+) crossing, while an east pointing under strand is called a negative
 
 ````
 
+```{note}
 A hint for determining the orientation of a crossing in practice is a right hand
 rule. After the knot has been oriented, imagine your right hand with your
 fingers extended and palm towards you, aligned with the over strand so that your
 thumb points with the arrowhead. Now if your fingers are pointing with the
 arrowhead of the understand the orientation is positive if your fingers are
 opposite the arrowhead of the under strand the orientation is negative.
+```
 
 Given an oriented knot we can now classify each crossing as either a positive or
 negative, giving us enough information to define the writhe of a knot.
