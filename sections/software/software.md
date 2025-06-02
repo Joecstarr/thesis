@@ -1,25 +1,30 @@
-# Software
+# Architecture Of A Knot Theory Toolbox
 
-```{include} ./software_lifecycle.md
+```mermaid
+flowchart LR
+    Runner
+    subgraph "Runnables"
+        Generator
+        Computation
+    end
+    subgraph "Data Wranglers"
+        Notation
+        Storage
+    end
+    Runner -->|Runs| Generator
+    Runner -->|Runs| Computation
+    Generator -->|Uses| Notation
+    Computation -->|Uses| Notation
+    Generator -->|Uses| Storage
+    Computation -->|Uses| Storage
+
 
 ```
 
-```{include} ./selecting_technologies.md
-
-```
-
-```{include} ./documentation/documentation.md
+```{include} ./documentation/interfaces/interfaces.md
 
 ```
 
 ```{include} ./documentation/core_libraries.md
-
-```
-
-```{include} ./documentation/web_api.md
-
-```
-
-```{include} ./documentation/presentation.md
 
 ```

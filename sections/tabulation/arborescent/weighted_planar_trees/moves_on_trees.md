@@ -82,8 +82,8 @@ Cyclic order reversal
 Consider the weighted planar tree in {prf:ref}`wpt-moves-fig-example_f3-even`
 and {prf:ref}`wpt-moves-fig-example_f3-odd`, the two trees agree in all but a
 weight of a single vertex, what we will call our object vertex which is marked
-in orange. The weight of this object vertex has been changed from $-2$ in
-{prf:ref}`wpt-moves-fig-example_f3-even` to $-3$ in
+in orange. The weight of this object vertex has been changed from $\ \m 2$ in
+{prf:ref}`wpt-moves-fig-example_f3-even` to $\ \m 3$ in
 {prf:ref}`wpt-moves-fig-example_f3-odd`.
 
 ````{prf:observation}

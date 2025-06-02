@@ -80,12 +80,12 @@ These closed knots are what are called "mathematical knots" and our
 experimentation may conjure some questions, perhaps the three most obvious
 questions being "How do I systematically construct knots?", "How do I tell two
 knots I make apart?", and "How many knots can I write down?". Attempting to
-answer these questions, even just in part or with restrictions, is the bread
-and butter of knot theory and the focus of the rest of this thesis. Some great
-texts for continued reading on knot theory in order of accessibility are: The
-Knot Book: An Elementary Introduction to the Mathematical Theory of Knots by
-Adams [@adamsKnotBookElementary2004], LinKnot: Knot Theory by Computer by
-Sazdanovic [@jablanLinKnotKnotTheory2007], Knots and Links by Rolfsen
+answer these questions, even just in part or with restrictions, is the bread and
+butter of knot theory and the focus of the rest of this thesis. Some great texts
+for continued reading on knot theory in order of accessibility are: The Knot
+Book: An Elementary Introduction to the Mathematical Theory of Knots by Adams
+[@adamsKnotBookElementary2004], LinKnot: Knot Theory by Computer by Sazdanovic
+[@jablanLinKnotKnotTheory2007], Knots and Links by Rolfsen
 [@rolfsenKnotsLinks2003], and An Introduction to Knot Theory by Lickerish
 [@lickorishIntroductionKnotTheory1997]. The remainder of this thesis quickly
 exchanges the idea of a knot for that of a tangle, introduced by Conway

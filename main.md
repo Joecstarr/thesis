@@ -25,6 +25,7 @@ math:
     '\R': '\mathbb{R}'
     '\T': '\mathscr{T}'
     '\M': '\mathscr{M}'
+    '\m': '\texttt{-}'
     '\LN': '\left.'
     '\RN': '\right.'
     '\LP': '\left('

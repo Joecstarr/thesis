@@ -22,7 +22,7 @@ The Jones Polynomial $V\LP \mathscr{K}\RP$ of an oriented knot $\mathscr{K}$ is
 the Laurent polynomial with integer coefficients in $t^{1/2}$. Defined by
 
 $$
-V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(K)}\LA K\RA\RP \_{t^{1/2}=A^{-2}}
+V\LP \mathscr{K}\RP=\LP\LP-A\RP^{\ \m 3w(K)}\LA K\RA\RP \_{t^{1/2}=A^{\ \m 2}}
 $$
 
 where $K$ is any oriented diagram for $\mathscr{K}$.

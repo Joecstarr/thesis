@@ -12,15 +12,15 @@ introduced by Conway [@conwayEnumerationKnotsLinks1970]. Through the middle of
 this thesis, we will describe several strategies that have been employed to
 answer even further restricted versions of these questions:
 
--   "How do I systematically construct rational tangles?", "How do I tell two
-    rational tangles I make apart?", and "How many rational tangles can I write
-    down?"
--   "How do I systematically construct Montesinos tangles?" and "How do I tell
-    two Montesinos tangles I make apart?", and "How many Montesinos tangles can
-    I write down?"
--   "How do I systematically construct algebraic/arborescent tangles?" and "How
-    do I tell two algebraic/arborescent tangles I make apart?", and "How many
-    algebraic/arborescent tangles can I write down?"
+- "How do I systematically construct rational tangles?", "How do I tell two
+  rational tangles I make apart?", and "How many rational tangles can I write
+  down?"
+- "How do I systematically construct Montesinos tangles?" and "How do I tell two
+  Montesinos tangles I make apart?", and "How many Montesinos tangles can I
+  write down?"
+- "How do I systematically construct algebraic/arborescent tangles?" and "How do
+  I tell two algebraic/arborescent tangles I make apart?", and "How many
+  algebraic/arborescent tangles can I write down?"
 
 While we could answer these questions with pen and paper brute force, beyond
 reasonable crossing number, as small as 9, the time and effort needed makes pen

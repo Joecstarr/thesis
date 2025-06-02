@@ -21,7 +21,7 @@ polynomials as a class of knot invariants. Perhaps the most powerful of these
 polynomials is the HOMFLYPT polynomial [@freydNewPolynomialInvariant1985]
 
 $$
-P(L) = \frac{-(\ell+\ell^{-1})}{m} P(L_1)P(L_2) $$ \ noindent constructed from
+P(L) = \frac{-(\ell+\ell^{\ \m 1})}{m} P(L_1)P(L_2) $$ \ noindent constructed from
 the skein relations ( @fig-future_work-skein_homfly ) conveniently the data
 needed to apply the skein relations is exactly the data encoded by the algebraic
 tangle tree, with the natural tangle orientations.
@@ -73,7 +73,7 @@ also encode if we entered the crossing as the over/under strand by a +/-
 attached to the listed integer, a Gauss notation of the trefoil knot:
 
 
-$$1,-2,3,-1,2,-3 $$ The extended Gauss notation additionally encodes the data for
+$$1,\ \m 2,3,\ \m 1,2,\ \m 3 $$ The extended Gauss notation additionally encodes the data for
 handedness of the crossing. In this project an undergraduate researcher will
 describe a computational data structure for extended Gauss notation. They will
 then develop the software implementing extended Gauss notation within The

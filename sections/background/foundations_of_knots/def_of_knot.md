@@ -55,8 +55,13 @@ relative distance of colinear points, our crossings. To recover this data, we
 split the edges of the shadow, correlating to the strand closer to the plane so
 that it appears to travel under the edge correlating to the strand further from
 the plane. We call the split edge the under strand while the other edge is
-called the over strand,. The result of this can be seen in @fig-knot_def-shadow.
-These augmented knot shadows are called knot diagrams and will serve as our
-primary schematic model for knots throughout this thesis. We finish with naming
-a knot with particular significance as we move forward, the knot with no
-crossings in its diagram is called the unknot.
+called the over strand. The result of this can be seen in @fig-knot_def-shadow.
+These augmented knot shadows are called **knot diagrams** and will serve as our
+primary schematic model for knots throughout this thesis. We call the count of
+crossings in a knot diagram the **crossing number** of the knot. Of particular
+interest in the tabulation of knots are are knot diagrams with the minimal
+crossing number. That is, knot diagrams where no crossing can be removed by the
+moves defined in @subsec-knot_equivalence.
+
+We finish with naming a knot with particular significance as we move forward,
+the knot with no crossings in its diagram is called the unknot.

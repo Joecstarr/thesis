@@ -76,15 +76,14 @@ sixteen crossing, was given by Hoste, Thistlethwaite, and Weeks
 the earlier Dowker and Thistlethwaite approach, leaning on a heuristic approach
 to limit the duplicates found in their first pass. This preprocessing in the
 first pass allowed Hoste, Thistlethwaite, and Weeks to compute their table in
-1-2 weeks of wall time[^wall-time].The most recent computational effort was carried out by
-Burton in [@burtonNext350Million2020] in 2020, finding knots to nineteen
-crossings. Burton's program followed closely to the two pass processes, with
-further heuristic work to preprocess in the first pass and heavily relying on
-the hyperbolic volume invariant for the second pass. The computation of the
-nineteen crossing table required months of wall time on a cluster[^cluster], serving as an
-important signpost for the time complexity problems of knot tabulation.
-
-
+1-2 weeks of wall time[^wall-time].The most recent computational effort was
+carried out by Burton in [@burtonNext350Million2020] in 2020, finding knots to
+nineteen crossings. Burton's program followed closely to the two pass processes,
+with further heuristic work to preprocess in the first pass and heavily relying
+on the hyperbolic volume invariant for the second pass. The computation of the
+nineteen crossing table required months of wall time on a cluster[^cluster],
+serving as an important signpost for the time complexity problems of knot
+tabulation.
 
 [^wall-time]:
     The real effective time of a clock on a wall, this is different from CPU
