@@ -1,6 +1,6 @@
 # Architecture Of A Knot Theory Toolbox
 
-```mermaid
+```mermaid-py
 flowchart LR
     Runner
     subgraph "Runnables"

@@ -28,7 +28,7 @@ the root as an object vertex, we descend the tree in a depth-first order.
 ##### Tangle Linearization Example
 
 We begin by adding the $V_4$ label for our tangle to the linearization. Now with
-the root as the object vertex, we add $\LP\ \RN$ to our linearization. When we
+the root as the object vertex, we add $\LP\ \right.$ to our linearization. When we
 encounter a child bond, we descend to the child. When we descend, we have two
 cases to consider, the child is essential or non-essential.
 
@@ -59,7 +59,7 @@ Six single vertex sticks can be seen in {prf:ref}`wpt-rli-fig-23` as leaf
 vertices.
 
 When we have exhausted the children for the object vertex, we close our
-linearization for that vertex with $\LN\ \RP$ closing the $\LP\ \RN$ for the
+linearization for that vertex with $\left.\ \RP$ closing the $\LP\ \right.$ for the
 vertex. We return to the parent linearization, repeating until all vertices have
 been exhausted. An example of a tree encoded with this strategy can be seen in
 {prf:ref}`wpt-rli-fig-23`.

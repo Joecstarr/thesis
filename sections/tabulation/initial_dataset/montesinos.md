@@ -110,7 +110,7 @@ Caudron @caudron1982classification and then further refined by Connolly
 ````{prf:example}
 :label: mont-ex-tree
 
-```mermaid
+```mermaid-py
  flowchart TD
 
    id0("+")-->id1("1")
@@ -154,7 +154,7 @@ In polish notation:
 $+[1 2 0]+[2 1 0][2 2 0]$
 
 As a algebraic tangle tree:
-   ```mermaid
+   ```mermaid-py
    flowchart TD
    id0("+")-->id1("[1 2 0]")
    id0("+")-->id2("+")

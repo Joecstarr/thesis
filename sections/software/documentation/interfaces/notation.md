@@ -3,7 +3,7 @@
 ##### Notation Interface
 <!-- prettier-ignore-end -->
 
-```mermaid
+```mermaid-py
 classDiagram
     notation *-- note_t
     class notation {
