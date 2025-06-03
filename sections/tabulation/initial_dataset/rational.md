@@ -152,9 +152,9 @@ continued fractions with integer coefficients, the **regular continued
 fractions**. We frame the definition in the context of twist vectors.
 
 ```{prf:definition} Regular Continued Fractions [@kauffmanClassificationRationalKnots2002; @rockettContinuedFractions1998]
-A continued fraction with integer coefficients is called a **regular continued
-fraction** if for every coefficient $c$ then $0 \geq c$ or or for every
-coefficient $c$ then $c\geq 0$.
+A continued fraction with integer coefficients $c_i$ is called a **regular
+continued fraction** if $0 \geq c_i$ for every coefficient or $c_i \geq 0$ for
+every coefficient.
 ```
 
 Conveniently, each rational number corresponds to exactly two regular continued
@@ -202,8 +202,7 @@ storage can be found in @sec-interfaces-notation. In the rational tangle case
 the theoretical encoding strategy, twist vectors, happens to be well suited for
 computational storage. A twist vector can be computationally stored identically
 to it's written form, a list of space separated integers delimited by a set of
-$\LB\ \RB$. As we will see in @sec-monttang and @sec-arborescent this is
-frequently not the case.
+$\LB\ \RB$. As we will see in @sec-arborescent this is not always the case.
 
 ##### Generation
 
@@ -303,7 +302,7 @@ computationally generating all rational tangles up to a given crossing number.
 ```
 
 ```{prf:remark} Find all rational tangles up to crossing number $n$
-:label: find-rat-tang-of-n
+:label: find-rat-tang-to-n
 
 **Input**
 

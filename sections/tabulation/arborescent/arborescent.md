@@ -3,11 +3,12 @@
 ## Arborescent Tangles
 <!-- prettier-ignore-end -->
 
-This chapter will describe the methodology that was used to answer the final of
-the essential questions detailed in @sec-intro-overview.
+This chapter will describe the methodology used to answer the final of the set
+of essential questions detailed in @sec-intro-overview.
 
-> "What rational tangles can I make? and "What algebraic/arborescent tangles can
-> I make?" and "How do I tell two algebraic/arborescent tangles I make apart?".
+> "How do I systematically construct algebraic/arborescent tangles?" and "How do
+> I tell two algebraic/arborescent tangles I make apart?", and "How many
+> algebraic/arborescent tangles can I write down?"
 
 <!-- prettier-ignore-start -->
 (prelim-arbor_def)=

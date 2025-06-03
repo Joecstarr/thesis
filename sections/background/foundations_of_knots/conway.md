@@ -187,7 +187,10 @@ ramification is equivalent to $-A-B$ or $A0+B0$. This operation can be seen in
 @@@ TODO: Add content description
 ```
 
+<!-- prettier-ignore-start -->
+(subsubsec-opo-precedence)=
 ##### Indicating Precedence
+<!-- prettier-ignore-end -->
 
 With a set of operations comes the desire to chain multiple operations together.
 The precedence for operations on tangles is indicated by parentheses in the
@@ -198,7 +201,10 @@ obvious way. An example can be seen in @fig-opo-prec.
 @@@ TODO: Add content description
 ```
 
+<!-- prettier-ignore-start -->
+(subsubsec-opo-flype)=
 ##### The Flype
+<!-- prettier-ignore-end -->
 
 When working in this calculus of tangles, a common situation you may find
 yourself is one where the $1$ (or $\ \m 1$) tangle is added to a tangle $T$. In
@@ -236,7 +242,10 @@ from $NE$ to $SE$, seen in @fig-closure-den.
 
 ````
 
+<!-- prettier-ignore-start -->
+(subsubsec-opo-insert)=
 ##### Tangle insertions
+<!-- prettier-ignore-end -->
 
 With the calculus of tangles, Conway was able to enumerate a substantial number
 of knots, but not all. We should notice a common theme with the calculus, every
@@ -245,7 +254,7 @@ the knot shadow, deleting edges and merging vertices, for a knot formed by only
 these operations we obtain a four-valent graph with one vertex. The process of
 bigon collapse can be seen in @fig-bigon_collapse. The class of knots who have a
 presentation where bigons can be collapsed to a single vertex is called
-algebraic.
+**algebraic**.
 
 ```{figure} ./media/fig-bigon_collapse.svg
 :label: fig-bigon_collapse
