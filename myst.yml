@@ -1,5 +1,18 @@
 version: 1
 project:
+    abstract: ./abstract.md
+    lay_summary: ./lay_summary.md
+    epigraph: ./epigraph.md
+    acknowledgments: ./acknowledgments.md
+    parts:
+        thesis_supervisor: Isabel Darcy
+        committee_members_1: two
+        committee_members_2: three
+        committee_members_3: four
+        committee_members_4: two
+        concentration: Mathematics
+        epigraph_author: Lorem ipsum
+
     github: https://github.com/Joecstarr/thesis
     open_access: true
     license: CC-BY-4.0
@@ -19,13 +32,66 @@ project:
     id: 28ae89ab-cba9-440d-a062-08075e0d441c
     toc:
         - file: main.md
+        - title: Introduction
+          file: sections/introduction/introduction.md
+        - title: Background
+          file: sections/background/background.md
+        - title: Tabulation
+          file: sections/tabulation/tabulation.md
+        - title: Architecture Of A Knot Theory Toolbox
+          file: sections/software/software.md
+        - title: Future Work
+          file: sections/future_work/future_work.md
     bibliography:
-      - "biblio.bib"
+        - "biblio.bib"
     plugins:
-      - type: executable
-        path: plugins/mermaid/default.py
+        - type: executable
+          path: plugins/mermaid/default.py
+    title: "The Tanglenomicon: Tabulation of two string tangles"
+    date: 2025-05-01
+    authors:
+        - name: Joe Starr
+    exports:
+        - format: tex
+          template: ./templates/arxiv
+          logo: false
+        - format: tex
+          template: ./templates/editing
+          logo: false
+        - format: tex
+          template: ./templates/thesis
+          logo: false
+          top_level: chapters
+    math:
+        # Note the 'single quotes'
+        '\N': '\mathbb{N}'
+        '\Z': '\mathbb{Z}'
+        '\Q': '\mathbb{Q}'
+        '\R': '\mathbb{R}'
+        '\T': '\mathscr{T}'
+        '\M': '\mathscr{M}'
+        '\m': '\texttt{-}'
+        '\LN': '\left.'
+        '\RN': '\right.'
+        '\LP': '\left('
+        '\RP': '\right)'
+        '\LS': '\left\lbrace'
+        '\RS': '\right\rbrace'
+        '\LA': '\left\langle'
+        '\RA': '\right\rangle'
+        '\LB': '\left['
+        '\RB': '\right]'
+        '\MM': '\ \middle|\ '
+        '\abs': '\left\vert#1\right\vert'
+        '\msr': 'm\left(#1\right)'
+        '\inv': " #1^{-1}"
+        '\img': '\includegraphics[height=2ex, width=2ex]{#1}'
+        '\bkt': '\LA \img{ #1}\RA'
+        '\mvspc': '\hspace{.125cm}'
+        '\mvtwt': '\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}'
+        '\mvtht': '\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}'
 
 site:
-    template: article-theme
+    template: book-theme
     options:
         outline_maxdepth: 4

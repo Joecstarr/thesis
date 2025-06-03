@@ -29,14 +29,14 @@ can be seen in {prf:ref}`wpt-construc-fig-band_sum`.
 ````{prf:observation}
 :label:wpt-construc-fig-band_sum
 
-```{figure} ./media/bands/bnd_sum_1.svg
+```{figure} ../../media/bands/bnd_sum_1.svg
 :label: wpt-construc-fig-band_sum-1
 :width: 500px
 
 @@@ TODO
 ```
 
-```{figure} ./media/bands/bnd_sum_2.svg
+```{figure} ../../media/bands/bnd_sum_2.svg
 :label: wpt-construc-fig-band_sum-2
 :width: 500px
 
@@ -61,13 +61,13 @@ picture for plumbing can be seen in {prf:ref}`wpt-construc-fig-band_sum_opo`.
 ````{prf:observation}
 :label:wpt-construc-fig-band_sum_opo
 
-```{figure} ./media/bands/bnd_sum_sum.svg
+```{figure} ../../media/bands/bnd_sum_sum.svg
 :label: wpt-construc-fig-band_sum_opo-1
 :width: 500px
 Plumbed bands
 ```
 
-```{figure} ./media/bands/bnd_sum_patch.svg
+```{figure} ../../media/bands/bnd_sum_patch.svg
 :label: wpt-construc-fig-band_sum_opo-2
 :width: 500px
 Plumbed bands
@@ -85,13 +85,13 @@ unique regions of the band, determined by their position relative to the
 plumbing squares.
 
 `````{prf:observation}
-```{figure} ./media/bands/arbor_band_with_twist.svg
+```{figure} ../../media/bands/arbor_band_with_twist.svg
 :label: wpt-construc-fig-6
 :width: 500px
 Band with two negative half twists<br/> and three plumbing squares.
 ```
 
-```{figure} ./media/bands/arbor_band_with_twist_2.svg
+```{figure} ../../media/bands/arbor_band_with_twist_2.svg
 :label: wpt-construc-fig-25
 :width: 500px
 
@@ -106,13 +106,13 @@ to those seen in {prf:ref}`wpt-construc-fig-10`. Finally, turning
 cell leaving only the boundary, seen in {prf:ref}`wpt-construc-fig-24`.
 
 ````{prf:observation}
-```{figure}./media/bands/arbor_bands.svg
+```{figure}../../media/bands/arbor_bands.svg
 :label: wpt-construc-fig-10
 :width: 500px
 Bands plumbed
 ```
 
-```{figure} ./media/bands/arbor_bound.svg
+```{figure} ../../media/bands/arbor_bound.svg
 :label: wpt-construc-fig-24
 :width: 500px
 An arborescent knot
@@ -124,7 +124,7 @@ It is important to note that we must restrict plumbing from creating "cycles" in
 the bands. That is a chain of plumbing beginning and ending with the same band,
 as seen in {prf:ref}`wpt-construc-fig-cycle`.
 
-```{figure} ./media/bands/band_cycle.svg
+```{figure} ../../media/bands/band_cycle.svg
 :label: wpt-construc-fig-cycle
 :width: 500px
 An collection of bands plumbed in such a way that the last band is plumbed to
@@ -214,13 +214,13 @@ decreasing embeddings are topologically equivalent.
 ````{prf:observation}
 :label:wpt-construc-fig-order
 
-```{figure}./media/bands/arbor_graph_split_local_inc.svg
+```{figure}../../media/bands/arbor_graph_split_local_inc.svg
 :label: wpt-construc-fig-order_1
 :width: 500px
 The local picture of a vertex with child labels increasing.
 ```
 
-```{figure}./media/bands/arbor_graph_split_local_dec.svg
+```{figure}../../media/bands/arbor_graph_split_local_dec.svg
 :label: wpt-construc-fig-order_2
 :width: 500px
 The local picture of a vertex with child labels decreasing.
@@ -236,7 +236,7 @@ annotating the local view of a vertex with an integer placed in the spaces
 between bonds. The relationship between a plumbing band and a weighted vertex in
 a rooted plane tree can be seen in {prf:ref}`wpt-construc-fig-7`.
 
-```{figure} ./media/bands/arbor_graph_split_local_with_band.svg
+```{figure} ../../media/bands/arbor_graph_split_local_with_band.svg
 :label: wpt-construc-fig-7
 :width: 500px
 The local view of a vertex with weight
@@ -247,13 +247,13 @@ We can see a full example of a tree with its associated plumbed construction in
 a **weighted planar tree**.
 
 ````{prf:observation}
-```{figure} ./media/bands/arbor_graph.svg
+```{figure} ../../media/bands/arbor_graph.svg
 :label: wpt-construc-fig-27
 :width: 500px
 @@@ TODO
 ```
 
-```{figure} ./media/bands/arbor_bands.svg
+```{figure} ../../media/bands/arbor_bands.svg
 :label: wpt-construc-fig-28
 :width: 500px
 @@@ TODO
@@ -274,13 +274,13 @@ non-plumbed plumbing square. We can realize the non-plumbed square, as a Conway
 circle for a two string tangle.
 
 ````{prf:observation}
-```{figure} ./media/bands/arbor_tangle.svg
+```{figure} ../../media/bands/arbor_tangle.svg
 :label: wpt-construc-fig-29
 :width: 500px
 @@@ TODO
 ```
 
-```{figure} ./media/bands/example_tangle.svg
+```{figure} ../../media/bands/example_tangle.svg
 :label: wpt-construc-fig-tangle_trad
 :width: 500px
 @@@ TODO
@@ -304,25 +304,25 @@ vertex with the free bond as the root of the weighted planar tangle tree.
 ````{prf:observation}
 :label: wpt-construc-fig-k4g
 
-```{figure} ./media/iota.svg
+```{figure} ../../media/iota.svg
 :label: wpt-construc-fig-k4g-i
 :width: 500px
 $\iota$ for no rotation
 ```
 
-```{figure} ./media/zeta.svg
+```{figure} ../../media/zeta.svg
 :label: wpt-construc-fig-k4g-x
 :width: 500px
 $\zeta$ rotates around the $x$-axis
 ```
 
-```{figure} ./media/eta.svg
+```{figure} ../../media/eta.svg
 :label: wpt-construc-fig-k4g-y
 :width: 500px
 $\eta$ rotates around the $y$-axis
 ```
 
-```{figure} ./media/xi.svg
+```{figure} ../../media/xi.svg
 :label: wpt-construc-fig-k4g-z
 :width: 500px
 $\xi$ rotates around the $z$-axis
@@ -343,7 +343,7 @@ trees.
 We will now describe special subtrees of a weighted planar tree, locally
 appearing as {prf:ref}`wpt-construc-fig-17`.
 
-```{figure} ./media/bands/arbor_graph_ring.svg
+```{figure} ../../media/bands/arbor_graph_ring.svg
 :label: wpt-construc-fig-17
 :width: 500px
 
@@ -353,7 +353,7 @@ Positive and negative ring subtree
 Now, resolving the plumbing for the positive subtree, we arrive at bands as in
 {prf:ref}`wpt-construc-fig-12`.
 
-```{figure} ./media/bands/arbor_ring.svg
+```{figure} ../../media/bands/arbor_ring.svg
 :label: wpt-construc-fig-12
 :width: 500px
 Plumbed ring bands
@@ -362,7 +362,7 @@ Plumbed ring bands
 Notice that the boundary of these plumbed bands has three components, as seen in
 {prf:ref}`wpt-construc-fig-13`.
 
-```{figure}./media/bands/arbor_ring_no_bnd.svg
+```{figure}../../media/bands/arbor_ring_no_bnd.svg
 :label: wpt-construc-fig-13
 :width: 500px
 Ring boundary
@@ -374,7 +374,7 @@ projection seen in {prf:ref}`wpt-construc-fig-14`. This tangle projection tells
 us that the subtree in {prf:ref}`wpt-construc-fig-12` is either the zero or
 infinity tangle with a ring.
 
-```{figure}./media/bands/arbor_ring_tangle.svg
+```{figure}../../media/bands/arbor_ring_tangle.svg
 :label: wpt-construc-fig-14
 :width: 500px
 Ring Tangle
@@ -405,7 +405,7 @@ A vertex is called non-essential if it has valence $0,1,2$.
 We see in {prf:ref}`wpt-construc-fig-18` essential vertices in orange and
 non-essential in red.
 
-```{figure} ./media/bands/arbor_ring_essential.svg
+```{figure} ../../media/bands/arbor_ring_essential.svg
 :label: wpt-construc-fig-18
 :width: 500px
 A weighted planar tree annotated with essential vertices in orange and
@@ -430,7 +430,7 @@ connected component of $\Gamma_s$ a **stick**.
 As an example, consider the tree seen in {prf:ref}`wpt-construc-fig-18`, the
 sticks of which can be seen in {prf:ref}`wpt-construc-fig-19`.
 
-```{figure} ./media/bands/arbor_ring_noessential.svg
+```{figure} ../../media/bands/arbor_ring_noessential.svg
 :label: wpt-construc-fig-19
 :width: 500px
 Sticks of the tree from @wpt-construc-fig-18.
@@ -441,7 +441,7 @@ call a stick with; 0 free bonds closed, 1 free bond half-open, and 2 free bonds
 open. We call a stick where each vertex has a single weight a **proper stick**.
 We call a vertex at the end of a stick an **end vertex**.
 
-```{figure} ./media/bands/sticks_open.svg
+```{figure} ../../media/bands/sticks_open.svg
 :label: wpt-construc-fig-sticks
 :width: 500px
 From top to bottom a fully open, half open, and closed sitck. Each end vertex
@@ -453,7 +453,7 @@ correspondence between stick subtrees and Conway's rational tangles
 [@conwayEnumerationKnotsLinks1970]. An example of the correspondence can be seen
 in {prf:ref}`wpt-construc-fig-rat`.
 
-```{figure} ./media/watt_rational.svg
+```{figure} ../../media/watt_rational.svg
 :label: wpt-construc-fig-rat
 A stick realized as a rational tangle.
 ```

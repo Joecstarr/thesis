@@ -64,7 +64,7 @@ vertex. We return to the parent linearization, repeating until all vertices have
 been exhausted. An example of a tree encoded with this strategy can be seen in
 {prf:ref}`wpt-rli-fig-23`.
 
-```{figure} ./media/bands/watt_walk_tangle.svg
+```{figure} ../../media/bands/watt_walk_tangle.svg
 :label: wpt-rli-fig-23
 :width: 500px
 Encoded tree subtrees are indicated by color.

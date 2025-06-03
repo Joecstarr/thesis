@@ -1,4 +1,3 @@
-# Architecture Of A Knot Theory Toolbox
 
 ```mermaid-py
 flowchart LR

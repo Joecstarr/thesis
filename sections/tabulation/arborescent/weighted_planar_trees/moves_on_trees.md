@@ -27,7 +27,7 @@ subtree lying at odd distance (count of edges between two vertices) from the ver
 $\xi$ ($z$-axis rotation @wpt-construc-fig-k4g) to all free bonds in the purple subtree that are attached to a vertex at
 even distance from the vertex shown, and $\eta$ ($y$-axis rotation) to those at odd distance.
 
-```{figure} ./media/bands/moves/f3/f3_def.svg
+```{figure} ../../media/bands/moves/f3/f3_def.svg
 :label: wpt-moves-fig-f3p_move-indef
 :width: 500px
 An $F_3^\prime$ move on a subtree
@@ -60,7 +60,7 @@ as a tangle $T$. We can then carry out $F_3^\prime$ over this tangle. Tracking
 the parts of this operation, we can see the correspondence in
 {prf:ref}`uc-c-f3-e-flype_and_bnd`.
 
-```{figure} ./media/bands/moves/f3/bnd_f3.svg
+```{figure} ../../media/bands/moves/f3/bnd_f3.svg
 :label: uc-c-f3-e-flype_and_bnd
 :width: 500px
 Flype and $F_3^\prime$
@@ -71,7 +71,7 @@ We expand to examples where the child band has descendants, as in
 case, the child band and every band even distance from it (odd distance from the
 parent) are inverted.
 
-```{figure} ./media/bands/moves/f3/cyclic_order_odd.svg
+```{figure} ../../media/bands/moves/f3/cyclic_order_odd.svg
 :label: uc-c-f3-e-cor
 :width: 500px
 Cyclic order reversal
@@ -89,13 +89,13 @@ in orange. The weight of this object vertex has been changed from $\ \m 2$ in
 ````{prf:observation}
 :label:wpt-moves-fig-example_f3-even
 
-```{figure} ./media/bands/moves/f3/watt_rooted_even.svg
+```{figure} ../../media/bands/moves/f3/watt_rooted_even.svg
 :label: wpt-moves-fig-example_f3-even-1
 :width: 500px
 $F_3$ on a weighted planar tree with even weight.
 ```
 
-```{figure} ./media/bands/moves/f3/bnd_only_f3_even.svg
+```{figure} ../../media/bands/moves/f3/bnd_only_f3_even.svg
 :label: wpt-moves-fig-example_f3-even-2
 :width: 500px
  $F_3^\prime$ on the band model realization of the orange vertex. Note how
@@ -116,7 +116,7 @@ distance are reversed.
 ````{prf:observation}
 :label:wpt-moves-fig-example_f3-odd
 
-```{figure} ./media/bands/moves/f3/watt_rooted_odd.svg
+```{figure} ../../media/bands/moves/f3/watt_rooted_odd.svg
 :label: wpt-moves-fig-example_f3-odd_1
 :width: 500px
 $F_3^\prime$ on a weighted planar tree with odd weight clockwise. Note the
@@ -124,7 +124,7 @@ changes in the relative positions of subtrees after the application of
 $F_3^\prime$.
 ```
 
-```{figure} ./media/bands/moves/f3/bnd_only_f3.svg
+```{figure} ../../media/bands/moves/f3/bnd_only_f3.svg
 :label: uc-c-f3-e-flype_bnd
 :width: 500px
 $F_3^\prime$ on the band model realization of the orange vertex and impacted
@@ -155,13 +155,13 @@ to zero weight. The result of carrying out $F_2$ on a weighted planar tree can
 be seen in {prf:ref}`wpt-moves-fig-example_f2`.
 
 ````{prf:observation}
-```{figure} ./media/bands/moves/f2/f2_local.svg
+```{figure} ../../media/bands/moves/f2/f2_local.svg
 :label: wpt-moves-fig-example_f2_cycle
 :width: 500px
 $F_3$ moving a weight in a complete cycle
 ```
 
-```{figure} ./media/bands/moves/f2/watt_rooted.svg
+```{figure} ../../media/bands/moves/f2/watt_rooted.svg
 :label: wpt-moves-fig-example_f2
 :width: 500px
 $F_2$ on a weighted planar tree. Note the changes in the relative positions of
@@ -201,7 +201,7 @@ tangle trees and deals with the ring subtrees of a tree.
 Replace the left image with the right, leaving both the blue
 and purple subtrees unchanged.
 
-```{image} ./media/bands/moves/R/p/def.svg
+```{image} ../../media/bands/moves/R/p/def.svg
 ```
 
 ````
@@ -212,7 +212,7 @@ and purple subtrees unchanged.
 Replace the left image with the right, leaving both the blue
 and purple subtrees unchanged.
 
-```{image} ./media/bands/moves/R/n/def.svg
+```{image} ../../media/bands/moves/R/n/def.svg
 ```
 
 ````
@@ -222,7 +222,7 @@ The result of a ring move on a tangle can be seen in @wpt-moves-fig-example-r.
 ````{prf:observation}
 :label: wpt-moves-fig-example-r
 
-```{image} ./media/bands/moves/R/example_ring.svg
+```{image} ../../media/bands/moves/R/example_ring.svg
 ```
 
 $R^-$ on on a tangle representation of a tree.

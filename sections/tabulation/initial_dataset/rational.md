@@ -16,7 +16,7 @@ tangle, seen in @fig-rat_tang-crank. If we take the crank and crank it clockwise
 a half turn we introduce a positive twist, it is important to notice that we can
 crank $n$ half turns to make an integral $n$ tangle.
 
-```{figure} ./media/fig-rat_tang-crank.svg
+```{figure} ../../media/fig-rat_tang-crank.svg
 :label: fig-rat_tang-crank
 The first set of cranks taking a basic $0$ tangle to a integral $3$ tangle.
 ```
@@ -27,7 +27,7 @@ tangle. Alternating, right and bottom sets of half turns, as seen in
 @fig-rat_tang-crank_many, builds a rational tangle. We call the list of counts
 of right and bottom twists the Twist Vector for the rational tangle.
 
-```{figure} ./media/fig-rat_tang-crank_many.svg
+```{figure} ../../media/fig-rat_tang-crank_many.svg
 :label: fig-rat_tang-crank_many
 The set of cranks that build a rational tangle, we will see this tangle is
 called $\LB1\ 2\ 3\RB$.

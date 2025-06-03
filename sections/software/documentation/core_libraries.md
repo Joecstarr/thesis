@@ -24,6 +24,6 @@
 
 ```
 
-```{include} ./notations/arborescent.md
+```{include} ./generators/arborescent.md
 
 ```

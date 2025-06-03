@@ -27,19 +27,19 @@ Tangle Tree (CWPTT)** if it satisfies the following conditions:
     ````{prf:observation}
     :label: wpt-construc-fig-stick_cond
 
-    ```{figure} ./media/bands/conditions/stick/0.svg
+    ```{figure} ../../media/bands/conditions/stick/0.svg
     :label: wpt-construc-fig-stick_cond-1
     :width: 100px
     $\ a$
     ```
 
-    ```{figure} ./media/bands/conditions/stick/00.svg
+    ```{figure} ../../media/bands/conditions/stick/00.svg
     :label: wpt-construc-fig-stick_cond-2
     :width: 100px
     $\ a$
     ```
 
-    ```{figure} ./media/bands/conditions/stick/pm1.svg
+    ```{figure} ../../media/bands/conditions/stick/pm1.svg
     :label: wpt-construc-fig-stick_cond-3
     :width: 100px
     $\ a$
@@ -54,25 +54,25 @@ Tangle Tree (CWPTT)** if it satisfies the following conditions:
         ````{prf:observation}
         :label: wpt-construc-fig-positivity_cond
 
-        ```{figure} ./media/bands/conditions/positivity/am2.svg
+        ```{figure} ../../media/bands/conditions/positivity/am2.svg
         :label: wpt-construc-fig-positivity_cond-1
         :width: 100px
         $\ a$
         ```
 
-        ```{figure} ./media/bands/conditions/positivity/am2a.svg
+        ```{figure} ../../media/bands/conditions/positivity/am2a.svg
         :label: wpt-construc-fig-positivity_cond-2
         :width: 100px
         $\ a$
         ```
 
-        ```{figure} ./media/bands/conditions/positivity/m2.svg
+        ```{figure} ../../media/bands/conditions/positivity/m2.svg
         :label: wpt-construc-fig-positivity_cond-3
         :width: 100px
         $\ a$
         ```
 
-        ```{figure} ./media/bands/conditions/positivity/m1.svg
+        ```{figure} ../../media/bands/conditions/positivity/m1.svg
         :label: wpt-construc-fig-positivity_cond-4
         :width: 100px
         $\ a$
@@ -86,25 +86,25 @@ Tangle Tree (CWPTT)** if it satisfies the following conditions:
         ````{prf:observation}
         :label:wpt-construc-fig-negativity_cond
 
-        ```{figure} ./media/bands/conditions/negativity/a2.svg
+        ```{figure} ../../media/bands/conditions/negativity/a2.svg
         :label: wpt-construc-fig-negativity_cond-1
         :width: 100px
         $\ a$
         ```
 
-        ```{figure} ./media/bands/conditions/negativity/a2a.svg
+        ```{figure} ../../media/bands/conditions/negativity/a2a.svg
         :label: wpt-construc-fig-negativity_cond-2
         :width: 100px
         $\ a$
         ```
 
-        ```{figure} ./media/bands/conditions/negativity/2.svg
+        ```{figure} ../../media/bands/conditions/negativity/2.svg
         :label: wpt-construc-fig-negativity_cond-3
         :width: 100px
         $\ a$
         ```
 
-        ```{figure} ./media/bands/conditions/negativity/1.svg
+        ```{figure} ../../media/bands/conditions/negativity/1.svg
         :label: wpt-construc-fig-negativity_cond-4
         :width: 100px
         $\ a$

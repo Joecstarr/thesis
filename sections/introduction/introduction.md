@@ -1,6 +1,5 @@
 <!-- prettier-ignore-start -->
 (pt-introduction)=
-# Introduction
 <!-- prettier-ignore-end -->
 
 There exists a common view of advanced mathematics as esoteric nonsense only

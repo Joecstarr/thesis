@@ -10,7 +10,7 @@ on a strand of a knots, seen in @fig-writhe-orientation is a choice of
 orientation for that knot. $5_1$. Following the strand in the direction of the
 arrow you'll find that you arrive where you started.
 
-```{figure} ./media/kauf_bkt/orientation/5_1.svg
+```{figure} ../../media/kauf_bkt/orientation/5_1.svg
 :label: fig-writhe-orientation
 An orientation applied to the knot $5_1$. Following the strand in the direction
 of the arrow you'll find that you arrive where you started.
@@ -31,12 +31,12 @@ positive (+) crossing, while an east pointing under strand is called a negative
 
 
 
-```{figure} ./media/kauf_bkt/crossing/crossing_+.svg
+```{figure} ../../media/kauf_bkt/crossing/crossing_+.svg
 :label: fig-inv-or-positive
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/kauf_bkt/crossing/crossing_-.svg
+```{figure} ../../media/kauf_bkt/crossing/crossing_-.svg
 :label: fig-inv-or-negative
 
 @@@ TODO: Add content description
@@ -69,7 +69,7 @@ We start by taking the oriented version of knot $5_1$ seen in
 @fig-writhe-orientation and modifying the diagram with local pictures for
 crossings seen in @fig-writhe-local
 
-```{figure} ./media/kauf_bkt/orientation/fig-writhe-local.svg
+```{figure} ../../media/kauf_bkt/orientation/fig-writhe-local.svg
 :label: fig-writhe-local
 @@@ TODO: Add content description
 ```

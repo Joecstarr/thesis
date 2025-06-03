@@ -40,15 +40,15 @@ init:
 build: bootstrap
     rip _build
     mkdir -p _build
-    myst build ./main.md
-    cp -r resources/coloremoji/coloremoji _build/exports/index_tex
-    mkdir -p _build/exports/index_tex/media/kauf_bkt && cp -r media/kauf_bkt _build/exports/index_tex/media
-    find ./_build/exports/index_tex/media/ -iname "*.svg" -exec sh -c 'svg2pdf "$1" "${1%.*}.pdf" ' sh {} \;
-    cp resources/coloremoji/coloremoji.sty _build/exports/index_tex
+    myst build -a
+    cp -r resources/coloremoji/coloremoji _build/exports/myst_tex
+    mkdir -p _build/exports/myst_tex/media/kauf_bkt && cp -r media/kauf_bkt _build/exports/myst_tex/media
+    find ./_build/exports/myst_tex/media/ -iname "*.svg" -exec sh -c 'svg2pdf "$1" "${1%.*}.pdf" ' sh {} \;
+    cp resources/coloremoji/coloremoji.sty _build/exports/myst_tex
     uv run ./resources/postprocess/nsf.py
 
 html: bootstrap
-    myst build ./main.md --html
+    myst build --html
 
 proc-svg-ws:
     uv run ./resources/imgproc/proc_svg_text.py .
@@ -64,16 +64,16 @@ live:
     myst start
 
 latex-main_0:
-    cd ./_build/exports/index_tex && \
-    tectonic index_0.tex --keep-logs --keep-intermediates
+    cd ./_build/exports/myst_tex && \
+    tectonic myst_0.tex --keep-logs --keep-intermediates
 
 latex-main_1:
-    cd ./_build/exports/index_tex && \
-    tectonic index_1.tex --keep-logs --keep-intermediates
+    cd ./_build/exports/myst_tex && \
+    tectonic myst_1.tex --keep-logs --keep-intermediates
 
 latex-main_2:
-    cd ./_build/exports/index_tex && \
-    tectonic index_2.tex --keep-logs --keep-intermediates
+    cd ./_build/exports/myst_tex && \
+    tectonic myst_2.tex --keep-logs --keep-intermediates
 
 latex: latex-main_0 latex-main_1 latex-main_2
     echo built!

@@ -26,7 +26,7 @@ burning gas, is formed. When these arcs form, they will sometimes "dance" around
 each other, becoming a braid. While at first glance this structure may not look
 like a tangle, in fact, physically it's not a tangle.
 
-```{figure} ./media/Sun-corona-magnetic-braids.jpg
+```{figure} ../../media/Sun-corona-magnetic-braids.jpg
 :label: fig-intro-solar_lines
 @@@ TODO: Add content description
 ```
@@ -42,12 +42,12 @@ drawn around the two sets of bases of the flares, seen in
 :label: fig-intro-solar
 
 
-```{figure} ./media/solar_tangle.svg
+```{figure} ../../media/solar_tangle.svg
 :label: fig-intro-solar_tangle
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/solar_braid.svg
+```{figure} ../../media/solar_braid.svg
 :label: fig-intro-solar_braid
 @@@ TODO: Add content description
 ```
@@ -91,16 +91,16 @@ top double strand to be the bottom double strand. This action can be seen in
 :label: fig-intro-dna
 
 
-```{figure} ./media/dont_proc/DNA_chemical_structure.svg
+```{figure} ../../media/dont_proc/DNA_chemical_structure.svg
 :label:fig-intro-dna_chemical_structure
 @@@ TODO: Add content description [@priceballDNAChemicalStructure2007]
 ```
 
-```{figure} ./media/topo3.svg
+```{figure} ../../media/topo3.svg
 :label: fig-intro-topo
 @@@ TODO: Add content description
 ```
-```{figure} ./media/topo2.svg
+```{figure} ../../media/topo2.svg
 :label: fig-intro-topo2
 @@@ TODO: Add content description
 ```
@@ -116,12 +116,12 @@ closed loop, making it a mathematical knot (@fig-intro-circ_dna_fig)
 :label: fig-intro-circ_dna_fig
 
 
-```{figure} ./media/dna_circle.svg
+```{figure} ../../media/dna_circle.svg
 :label: fig-intro-dna_circle
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/sem_knot.png
+```{figure} ../../media/sem_knot.png
 :label: fig-intro-sem_knot-png
 @@@ TODO: Add content description
 ```
@@ -143,17 +143,17 @@ tangle bound in the area on the right (@fig-intro-tangle_calc),
 :label: fig-intro-tangle_calc
 
 
-```{figure} ./media/tangle_equation_start.svg
+```{figure} ../../media/tangle_equation_start.svg
 :label: fig-intro-tangle_equation_start
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/tangle_equation_result.svg
+```{figure} ../../media/tangle_equation_result.svg
 :label: fig-intro-tangle_equation_result
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/pathway.png
+```{figure} ../../media/pathway.png
 :label: fig-intro-pathway-png
 @@@ TODO: Add content description
 ```

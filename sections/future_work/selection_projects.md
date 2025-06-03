@@ -26,7 +26,7 @@ the skein relations ( @fig-future_work-skein_homfly ) conveniently the data
 needed to apply the skein relations is exactly the data encoded by the algebraic
 tangle tree, with the natural tangle orientations.
 
-```{figure} ./media/Skein_HOMFLY.svg
+```{figure} ../../media/Skein_HOMFLY.svg
 :label: fig-future_work-skein_homfly
 @@@ TODO: Add content description [@pbroks13SkeinHOMFLY2008]
 ```

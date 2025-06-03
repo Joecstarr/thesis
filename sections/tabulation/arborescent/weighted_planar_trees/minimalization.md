@@ -17,7 +17,7 @@ making the tangle non-minimal is seen in @minimal-fig-nonmin_min.
 ````{prf:observation}
 :label:minimal-fig-nonmin
 
-```{figure} ./media/bands/non-minimal_minimalized.svg
+```{figure} ../../media/bands/non-minimal_minimalized.svg
 :label: minimal-fig-nonmin_min
 :width: 500px
 
@@ -25,7 +25,7 @@ A minimal presentation of a arborescent tangle in both its orthogonal projection
 as well as its CWPTT.
 ```
 
-```{figure} ./media/bands/non-minimal.svg
+```{figure} ../../media/bands/non-minimal.svg
 :label: minimal-fig-nonmin_non
 :width: 500px
 
@@ -56,7 +56,7 @@ Replace the left side with the right side of @minimal-fig-move12
 
 
 
-```{figure} ./media/bands/moves/1/2/def.svg
+```{figure} ../../media/bands/moves/1/2/def.svg
 :label: minimal-fig-move12
 :width: 500px
 
@@ -81,13 +81,13 @@ move increases the crossing number by $1$ and the 2.2 move increases by $2$.
 1. Move 2.1: replace the left side with the right side of @minimal-fig-move11
 2. Move 2.2: replace the left side with the right side of @minimal-fig-move12
 
-```{figure} ./media/bands/moves/2/1/def.svg
+```{figure} ../../media/bands/moves/2/1/def.svg
 :label: minimal-fig-move11
 :width: 500px
 
 Move 2.1 on a weighted planar tree.
 ```
-```{figure} ./media/bands/moves/2/2/def.svg
+```{figure} ../../media/bands/moves/2/2/def.svg
 :label: minimal-fig-move22
 :width: 500px
 

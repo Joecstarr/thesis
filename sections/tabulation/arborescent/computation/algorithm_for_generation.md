@@ -23,7 +23,7 @@ following:
 1.  $r$ has order $0$
 2.  $j<i<k_1<\cdots k_n$
 
-```{figure} ./media/bands/arbor_graph_with_order.svg
+```{figure} ../../media/bands/arbor_graph_with_order.svg
 :label: wpt-construc-fig-order_unique
 :width: 500px
 A rooted plane tree $\Gamma$ with vertices labeled in the order of $\Gamma$.
@@ -70,7 +70,7 @@ operation, that is $\star$ is written simply as $\star$.
 
 ````{prf:example}
 :label:  rli-gen-fig-scion_grafting
-```{figure} ./media/bands/arbor_graph_grafting.svg
+```{figure} ../../media/bands/arbor_graph_grafting.svg
 :width: 500px
 ```
 Grafting a scion $\Gamma_s$ to $\Gamma_r$ from {prf:ref}`wpt-construc-fig-order_unique` with $\Gamma_r\star_3\Gamma_s$
@@ -145,7 +145,7 @@ scion after grafting this can be seen in {prf:ref}`rli-gen-fig-scion_grafting_wt
 ````{prf:observation}
 :label:rli-gen-fig-scion_grafting_wth_weight
 
-```{figure} ./media/bands/awptt_graph_pregraft.svg
+```{figure} ../../media/bands/awptt_graph_pregraft.svg
 :label:  rli-gen-fig-scion_grafting_wth_weight_1
 :width: 500px
 
@@ -153,7 +153,7 @@ A rootstock $\Gamma_r=\iota\LP \LP2\LP2\LB3\RB2\LB \ \m 3\RB3\RP \LB3\RB4\RP 4\R
 labeled with its index in the order on $\Gamma$.
 ```
 
-```{figure} ./media/bands/awptt_graph_grafted.svg
+```{figure} ../../media/bands/awptt_graph_grafted.svg
 :label:  rli-gen-fig-scion_grafting_wth_weight_2
 :width: 500px
 
