@@ -95,9 +95,17 @@ instead of horizontally. The operations can be seen in @fig-opo-plus and
 @@@ TODO: Add content description
 ```
 
-These two operations give a natural arithmetic structure to the combinations of
-tangles. We'll see in later sections how this structure is easily encoded on a
-computer as a data structure.
+These two operations combined with parentheses as in @subsubsec-opo-precedence
+give a natural arithmetic structure to the combinations of tangles. We'll see in
+later sections how this structure is easily encoded on a computer as a data
+structure. We conclude the section by redefining the Algebraic Tangles.
+
+```{prf:definition} Algebraic Tangle [@conwayEnumerationKnotsLinks1970]
+:label: def-algbraic
+Any tangle that can be produced by the two binary operations $+$ and $\vee$ on
+the four basic tangles is called an **algebraic tangle**.
+
+```
 
 <!-- prettier-ignore-start -->
 (subsec-integral_tangle)=
