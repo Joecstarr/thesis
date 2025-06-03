@@ -71,5 +71,9 @@ latex-main_1:
     cd ./_build/exports/index_tex && \
     tectonic index_1.tex --keep-logs --keep-intermediates
 
-latex: latex-main_0 latex-main_1
+latex-main_2:
+    cd ./_build/exports/index_tex && \
+    tectonic index_2.tex --keep-logs --keep-intermediates
+
+latex: latex-main_0 latex-main_1 latex-main_2
     echo built!

@@ -1,8 +1,8 @@
 ---
 title: "The Tanglenomicon: Tabulation of two string tangles"
+date: 2025-05-01
 authors:
     - name: Joe Starr
-date: 2024-01-16
 exports:
     - format: tex
       template: ./templates/arxiv
@@ -10,7 +10,35 @@ exports:
     - format: tex
       template: ./templates/editing
       logo: false
+    - format: tex
+      template: ./templates/thesis
+      logo: false
+parts:
+    thesis_supervisor: Isabel Darcy
+    committee_members_1: two
+    committee_members_2: three
+    committee_members_3: four
+    committee_members_4: two
+    concentration: Mathematics
+    epigraph_author: Lorem ipsum
+
+lay_summary: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+epigraph: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 abstract: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+acknowledgments: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

@@ -1,0 +1,128 @@
+\documentclass[letterpaper, 11pt]{uithesis}
+\usepackage{graphicx}
+\usepackage{silence}
+%Disable all warnings issued by latex starting with "You have..."
+\WarningFilter{latex}{You have requested package}
+\WarningFilter{pdf backend}{(pdf backend): ignore duplicate}
+\WarningFilter{latex}{Hyper reference}
+\WarningFilter{latex}{Reference `ex:}
+
+[# if doc.bibliography #]
+\bibliography{[- doc.bibliography | join(", ") -]}
+[# endif #]
+
+\usepackage[inkscapeformat=png]{svg}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{url}            % simple URL typesetting
+\usepackage{datetime2}      % show dates in the title block
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{microtype}      % microtypography
+\usepackage{doi}
+\usepackage{xcolor}
+\usepackage[twitter]{coloremoji}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{times}
+\usepackage{mathtools}
+\usepackage{bbm}
+\usepackage{fancyhdr}
+\usepackage{tikz-cd}
+\usepackage{tikz}
+
+[- IMPORTS -]
+
+
+\DTMlangsetup{showdayofmonth=false}
+[# if options.show_date #]
+\date{\today}
+[# else #]
+\date{}
+[# endif #]
+
+\title{[-doc.title-]}
+
+\author{[# for author in doc.authors #]
+[--author.name--]
+[# endfor #]
+}
+
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks,
+  linkcolor=[rgb]{0.62,0.22,0.24},
+  urlcolor=[rgb]{0.16,0.20,0.36},
+  citecolor=[rgb]{0.95,0.65,0.07},
+  pdftitle={\thetitle},
+  pdfauthor={\theauthor}
+}
+
+\degree{Doctor of Philosophy}
+\concentration{[- parts.concentration -]}
+
+\ThesisSupervisor{[- parts.thesis_supervisor-]}
+
+\CommitteeMember{[- parts.committee_members_1 -]}
+\CommitteeMember{[- parts.committee_members_2 -]}
+\CommitteeMember{[- parts.committee_members_3 -]}
+
+
+\begin{document}
+
+\titlepage
+
+\copyrightPage
+
+\frontmatter
+
+
+[# if parts.epigraph #]
+\iowaEpigraph{[-parts.epigraph-]}{
+[# if parts.epigraph_author #]
+[- parts.epigraph_author-]
+[# endif #]
+}
+[# endif #]
+
+
+\begin{acknowledgments}
+[-parts.acknowledgments-]
+\end{acknowledgments}
+
+\begin{abstract}
+[-parts.abstract-]
+\end{abstract}
+
+\begin{publicAbstract}
+[-parts.lay_summary-]
+\end{publicAbstract}
+
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+
+\mainmatter
+
+
+[-CONTENT-]
+
+
+% \appendix
+
+
+% \backmatter
+
+
+[# if doc.bibliography #]
+\printbibliography
+[# endif #]
+
+\end{document}
