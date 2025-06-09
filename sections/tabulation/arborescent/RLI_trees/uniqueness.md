@@ -4,7 +4,7 @@ Our final step at identifying a preferred representative CWPTT of an arborescent
 tangle is to show that a $\LP +\RP$-RLITT is unique in the set of CWPTT
 representing an arborescent tangle. We will utilize the key proposition from
 Bonahon and Seibenmann [@bonahonNewGeometricSplittings2016] a consequence of
-{prf:ref}`wpt-equi-thm-classi` and {prf:ref}`wpt-equi-cor-algo`.
+@wpt-equi-thm-classi` and {prf:ref}`wpt-equi-cor-algo.
 
 ```{prf:proposition} Bonahon and Seibenmann proposition 12.2 [@bonahonNewGeometricSplittings2016]
 :label: rli-const-prop-not_iso
@@ -34,8 +34,8 @@ The $\LP +\RP$-RLITT representative is unique in the class of CWPTT.
 Let $\Gamma$ and $\Gamma^\prime$ be two $\LP +\RP$-RLITT representatives for an arborescent
 tangle $\T$. Assume for the sake of contradiction that
 $\Gamma\neq \Gamma^\prime$, meaning $\T$ has two distinct $\LP +\RP$-RLITT. The
-classification result in {prf:ref}`wpt-equi-thm-classi` and algorithm given
-by{prf:ref}`wpt-equi-cor-algo` allows us to produce a sequence of moves in the
+classification result in @wpt-equi-thm-classi and algorithm given
+by@wpt-equi-cor-algo allows us to produce a sequence of moves in the
 calculus of arborescent tangles that takes $\Gamma^\prime$ to $\Gamma$, let
 $\varphi$ be such a sequence. By construction the labels in $V_4$ of $\Gamma$
 and $\Gamma^\prime$ agree. Now, since $\Gamma\neq \Gamma^\prime$ there must be a
@@ -43,7 +43,7 @@ first, in the total order, vertex $v_i$ where $\Gamma$ and $\Gamma^\prime$
 disagree. As $\LP +\RP$-RLITT the location of weights for $v_i$ in $\Gamma$ and
 $\Gamma^\prime$ must appear in the same section. This requires that the
 disagreement at $v_i$ must be in cyclic order of its children. We find ourselves
-in the first case of {prf:ref}`rli-const-prop-not_iso`, making $\varphi$ not a
+in the first case of @rli-const-prop-not_iso, making $\varphi$ not a
 sequence of moves of the calculus of arborescent tangles taking $\Gamma^\prime$
 to $\Gamma$.
 ```

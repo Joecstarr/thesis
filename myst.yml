@@ -32,16 +32,11 @@ project:
     id: 28ae89ab-cba9-440d-a062-08075e0d441c
     toc:
         - file: main.md
-        - title: Introduction
-          file: sections/introduction/introduction.md
-        - title: Background
-          file: sections/background/background.md
-        - title: Tabulation
-          file: sections/tabulation/tabulation.md
-        - title: Architecture Of A Knot Theory Toolbox
-          file: sections/software/software.md
-        - title: Future Work
-          file: sections/future_work/future_work.md
+        - file: sections/introduction/introduction.md
+        - file: sections/background/background.md
+        - file: sections/tabulation/tabulation.md
+        - file: sections/software/software.md
+        - file: sections/future_work/future_work.md
     bibliography:
         - "biblio.bib"
     plugins:
@@ -72,7 +67,6 @@ project:
         '\M': '\mathscr{M}'
         '\m': '\texttt{-}'
         '\LN': '\left.'
-        '\RN': '\right.'
         '\LP': '\left('
         '\RP': '\right)'
         '\LS': '\left\lbrace'
@@ -90,8 +84,9 @@ project:
         '\mvspc': '\hspace{.125cm}'
         '\mvtwt': '\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}'
         '\mvtht': '\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}'
-
 site:
     template: book-theme
+
     options:
+        favicon: ./book.png
         outline_maxdepth: 4

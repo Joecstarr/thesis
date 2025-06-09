@@ -38,7 +38,7 @@ init:
     mkdir -p _build
 
 build: bootstrap
-    rip _build
+    rip _build/exports
     mkdir -p _build
     myst build -a
     cp -r resources/coloremoji/coloremoji _build/exports/myst_tex
@@ -58,7 +58,7 @@ proc-svg-size:
     uv run ./resources/imgproc/proc_svg_size.py .
 
 proc-svg-mini:
-    find ./media/ -iname "*.svg" -exec sh -c 'svgo -i "$1" -o "$1" ' sh {} \;
+    find../../media/ -iname "*.svg" -exec sh -c 'svgo -i "$1" -o "$1" ' sh {} \;
 
 live:
     myst start

@@ -89,7 +89,7 @@ Every CWPTT has a right leaning identity representative.
 ```{prf:proof}
 Let $\Gamma$ be an identity CWPTT representative for a tangle $\T$.
 Applying the algorithm described in the proof of
-{prf:ref}`rli-const-thm-rl_exists` transforms $\Gamma$ into a right leaning
+@rli-const-thm-rl_exists transforms $\Gamma$ into a right leaning
 tree. Our requirement that $F_3^\prime$ be anti-clockwise ensures that the
 resulting tree retains label $\iota$. This shows that $\Gamma$ can be
 represented as a right leaning identity CWPTT.

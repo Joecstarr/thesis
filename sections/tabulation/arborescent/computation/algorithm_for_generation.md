@@ -73,7 +73,7 @@ operation, that is $\star$ is written simply as $\star$.
 ```{figure} ../../media/bands/arbor_graph_grafting.svg
 :width: 500px
 ```
-Grafting a scion $\Gamma_s$ to $\Gamma_r$ from {prf:ref}`wpt-construc-fig-order_unique` with $\Gamma_r\star_3\Gamma_s$
+Grafting a scion $\Gamma_s$ to $\Gamma_r$ from @wpt-construc-fig-order_unique with $\Gamma_r\star_3\Gamma_s$
 ````
 
 Now we are prepared to give the algorithm to generate all rooted plane trees of
@@ -126,8 +126,8 @@ up to a given size as follows.
 
 ##### Modification for RLITT
 
-The algorithm described previously serves as the inspiration for the algorithm
-we will build here for the enumeration of the arborescent tangles. Building this
+The algorithm described above serves as the inspiration for the algorithm we
+will build here for the enumeration of the arborescent tangles. Building this
 algorithm begins with modifying the grafting $\star_i$ operation to operate on
 weighted planar tangle trees as follows.
 
@@ -136,10 +136,10 @@ weighted planar tangle trees as follows.
 
 
 To adapt the grafting operation $\star_i$ defined in
-{prf:ref}`rli-gen-def-grafting_op` for weighted planar tagle trees we require
+@rli-gen-def-grafting_op for weighted planar tagle trees we require
 that the free bond of the scion be grafted to $v_i$. We also specify that the
 scion be grafted so that the rightmost weight of $v_i$ remain to the right of the
-scion after grafting this can be seen in {prf:ref}`rli-gen-fig-scion_grafting_wth_weight`.
+scion after grafting this can be seen in @rli-gen-fig-scion_grafting_wth_weight.
 ```
 
 ````{prf:observation}
@@ -149,7 +149,7 @@ scion after grafting this can be seen in {prf:ref}`rli-gen-fig-scion_grafting_wt
 :label:  rli-gen-fig-scion_grafting_wth_weight_1
 :width: 500px
 
-A rootstock $\Gamma_r=\iota\LP \LP2\LP2\LB3\RB2\LB \ \m 3\RB3\RP \LB3\RB4\RP 4\RP$ in grey and scion $\Gamma_s=\iota\LB 10\ 9 \RB$ in orange. Each vertex is
+A rootstock $\Gamma_r=\iota\LP \LP2\LP2\LB3\RB2\LB -3\RB3\RP \LB3\RB4\RP 4\RP$ in grey and scion $\Gamma_s=\iota\LB 10\ 9 \RB$ in orange. Each vertex is
 labeled with its index in the order on $\Gamma$.
 ```
 
@@ -157,7 +157,7 @@ labeled with its index in the order on $\Gamma$.
 :label:  rli-gen-fig-scion_grafting_wth_weight_2
 :width: 500px
 
-Grafting at $v_2$ yields $\Gamma_r\star_2\Gamma_s=\iota\LP \LP2\LP2\LB3\RB2\LB \ \m 3\RB \LP\LB 10\ 9 \RB \RP3\RP \LB3\RB4\RP 4\RP$
+Grafting at $v_2$ yields $\Gamma_r\star_2\Gamma_s=\iota\LP \LP2\LP2\LB3\RB2\LB -3\RB \LP\LB 10\ 9 \RB \RP3\RP \LB3\RB4\RP 4\RP$
 ```
 ````
 
@@ -169,7 +169,7 @@ runs into issues generating even just the Montesinos tangles, a smaller class
 described in [@bonahonNewGeometricSplittings2016]. We must make a slightly more
 radical change to the Nakano algorithm, that being, grafting an entire RLITT to
 only the root $v_0$ of the rootstock. This modified version of the algorithm can
-be seen in {prf:ref}`find-grafted-trees`.
+be seen in @find-grafted-trees.
 
 ```{prf:remark} Find weighted planar trees by grafting RLITT scions to the root of RLITT rootstocks
 :label: find-grafted-trees
@@ -279,12 +279,12 @@ condition. As we established in [](#sec-CWPTT-def) that a $\LP+\RP$-RLITT can be
 transformed into a $\LP-\RP$-RLITT. We then established in
 [](#rli-const-thm-ident_exists) that a $\LP+\RP$-RLITT is a unique
 representative for a tangle. The requirement that we generate neutral tangles
-such as $\iota\LB\ \m 3\ \ \m 2\RB$ means we cannot simply discount the
-$\LP-\RP$-RLITT during the generation phase. To satisfy the conditions in the
-generation phase, we require that when the rootstock is determined explicitly
-positive or negative, the scion agree or be neutral. Meaning, if the rootstock
-is $\LP+\RP$-RLITT then the scion must be $\LP+\RP$-RLITT or neutral, similarly
-for $\LP-\RP$-RLITT. This gives us the three algorithms seen below.
+such as $\iota\LB-3\ -2\RB$ means we cannot simply discount the $\LP-\RP$-RLITT
+during the generation phase. To satisfy the conditions in the generation phase,
+we require that when the rootstock is determined explicitly positive or
+negative, the scion agree or be neutral. Meaning, if the rootstock is
+$\LP+\RP$-RLITT then the scion must be $\LP+\RP$-RLITT or neutral, similarly for
+$\LP-\RP$-RLITT. This gives us the three algorithms seen below.
 
 ```{prf:remark} Find weighted planar trees by grafting $\LP +\RP$-RLITT good scions to rightmost path of $\LP +\RP$-RLITT rootstocks
 :label: find-grafted-good-ptrees
@@ -359,9 +359,9 @@ grafted.
 :label: rli-gen-eq-buckets
 \begin{aligned}
 (0&,\text{ACN})\\
-( 1&,\text{ACN}\ \m 1)\\
+( 1&,\text{ACN}-1)\\
 &\vdots\\
-(\text{ACN}\ \m 1&,1)\\
+(\text{ACN}-1&,1)\\
 (\text{ACN}&,0)
 \end{aligned}
 ```
@@ -369,23 +369,23 @@ grafted.
 The next question we should ask is if we can simplify the list at all. First, as
 we saw in the discussion of the stick condition [](#rli-gen-sec-stick-con), we
 need our scions to be good. This means we cannot have $1$ or $0$ in the second
-position of the pair, excluding $(\text{ACN}\ \m 1,1)$ and $(\text{ACN},0)$ from
-the list. Second, the pair $(0,\text{ACN})$ will be excluded from our list,
-since the zero crossing tangle $\iota[0\ 0]$ can't serve as rootstock, grafting
-any scion would violate the stick condition. We will recover tangles with root
+position of the pair, excluding $(\text{ACN}-1,1)$ and $(\text{ACN},0)$ from the
+list. Second, the pair $(0,\text{ACN})$ will be excluded from our list, since
+the zero crossing tangle $\iota[0\ 0]$ can't serve as rootstock, grafting any
+scion would violate the stick condition. We will recover tangles with root
 weight $0$ with a post-processing step.
 
 The following is the recursive algorithm used to take us from the set of RLITT
-with $\text{ACN}\ \m 1$ to the set of RLITT of the target ACN.
+with $\text{ACN}-1$ to the set of RLITT of the target ACN.
 
-```{prf:remark} Find RLITT of given ACN from all RLITT of ACN\ \m 1
+```{prf:remark} Find RLITT of given ACN from all RLITT of ACN-1
 :label: find-rlitt-from-acnm1toacn
 
 
 **Input**
 
 -   A target ACN
--   All RILTT up to ACN\ \m 1
+-   All RILTT up to ACN-1
 
 **Output**
 
@@ -394,7 +394,7 @@ with $\text{ACN}\ \m 1$ to the set of RLITT of the target ACN.
 **Routine**
 
 1. Set $i=1$
-1. Set $N=\text{ACN}\ \m 1$
+1. Set $N=\text{ACN}-1$
 1. Set $T$ to the set $\LS \iota[\text{ACN}], \iota[0\ \text{ACN}]\RS$
 1. For each pair $(i,N-i)$
     1. Set $T_{s+}$ to be the set of $+$-RLITT good scions with ACN
@@ -434,7 +434,7 @@ with $\text{ACN}\ \m 1$ to the set of RLITT of the target ACN.
 
 **Routine**
 
-1. Set $T$ to be the set $\LS \iota[0],\ \iota[0\ 0],\ \iota[1],\ \iota[\ \m 1],\ \iota[2],\ \iota[\ \m 2],\,\ \iota[2\ 0],\ \iota[\ \m 2\ 0]\RS$
+1. Set $T$ to be the set $\LS \iota[0],\ \iota[0\ 0],\ \iota[1],\ \iota[-1],\ \iota[2],\ \iota[-2],\,\ \iota[2\ 0],\ \iota[-2\ 0]\RS$
 2. for i from 3 to ACN
     1. Execute [](#find-rlitt-from-acnm1toacn) with input ACN $i$ and RLITT set
        $T$.

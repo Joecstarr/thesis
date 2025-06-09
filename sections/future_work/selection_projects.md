@@ -4,7 +4,7 @@
 <!-- prettier-ignore-end -->
 
 The accessibility of knot theory and tangles was discussed in the in
-introduction (Chapter @pt-introduction) this elaborates on how that
+introduction @sec-intro-intuit_knot_theory this elaborates on how that
 accessibility can be leveraged to engage Undergraduates in research. Throughout
 this thesis we've investigated and observed the depth of tangle tabulation.
 We've also seen, even through the structure of this thesis itself, how easily

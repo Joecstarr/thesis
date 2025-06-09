@@ -20,9 +20,9 @@ Tangle Tree (CWPTT)** if it satisfies the following conditions:
     non-zero.
 -   **Stick Conditions**
 
-    1. On any stick the weights are non-zero except for end vertices that have a bond free in $\Gamma$ and for the case $\Gamma$ is {prf:ref}`wpt-construc-fig-stick_cond-1` or {prf:ref}`wpt-construc-fig-stick_cond-2`.
+    1. On any stick the weights are non-zero except for end vertices that have a bond free in $\Gamma$ and for the case $\Gamma$ is @wpt-construc-fig-stick_cond-1 or @wpt-construc-fig-stick_cond-2.
     2. The non-zero weights along any  stick are of alternating sign.
-    3. No end vertex of a stick has weight $\pm 1$ unless it has a bond free in $\Gamma$, or {prf:ref}`wpt-construc-fig-stick_cond-3`.
+    3. No end vertex of a stick has weight $\pm 1$ unless it has a bond free in $\Gamma$.
 
     ````{prf:observation}
     :label: wpt-construc-fig-stick_cond
@@ -30,26 +30,20 @@ Tangle Tree (CWPTT)** if it satisfies the following conditions:
     ```{figure} ../../media/bands/conditions/stick/0.svg
     :label: wpt-construc-fig-stick_cond-1
     :width: 100px
-    $\ a$
+    The zero tangle.
     ```
 
     ```{figure} ../../media/bands/conditions/stick/00.svg
     :label: wpt-construc-fig-stick_cond-2
     :width: 100px
-    $\ a$
-    ```
-
-    ```{figure} ../../media/bands/conditions/stick/pm1.svg
-    :label: wpt-construc-fig-stick_cond-3
-    :width: 100px
-    $\ a$
+    The infinity tangle.
     ```
 
     ````
 -   One of:
 
     -   **Positivity Condition** There are no sticks in $\Gamma$ of the forms
-        @wpt-construc-fig-positivity_cond-1 @wpt-construc-fig-positivity_cond-2 @wpt-construc-fig-positivity_cond-3 @wpt-construc-fig-positivity_cond-4.
+        @wpt-construc-fig-positivity_cond-1 or @wpt-construc-fig-positivity_cond-2.
 
         ````{prf:observation}
         :label: wpt-construc-fig-positivity_cond
@@ -57,31 +51,18 @@ Tangle Tree (CWPTT)** if it satisfies the following conditions:
         ```{figure} ../../media/bands/conditions/positivity/am2.svg
         :label: wpt-construc-fig-positivity_cond-1
         :width: 100px
-        $\ a$
+        The $-2$ integral tangle.
         ```
 
         ```{figure} ../../media/bands/conditions/positivity/am2a.svg
         :label: wpt-construc-fig-positivity_cond-2
         :width: 100px
-        $\ a$
-        ```
-
-        ```{figure} ../../media/bands/conditions/positivity/m2.svg
-        :label: wpt-construc-fig-positivity_cond-3
-        :width: 100px
-        $\ a$
-        ```
-
-        ```{figure} ../../media/bands/conditions/positivity/m1.svg
-        :label: wpt-construc-fig-positivity_cond-4
-        :width: 100px
-        $\ a$
+        A fully open stick with $-2$ crossings.
         ```
 
         ````
     -   **Negativity Condition** There are no sticks in $\Gamma$ of the forms
-         @wpt-construc-fig-negativity_cond-1 @wpt-construc-fig-negativity_cond-2
-         @wpt-construc-fig-negativity_cond-3 @wpt-construc-fig-negativity_cond-4.
+         @wpt-construc-fig-negativity_cond-1 or @wpt-construc-fig-negativity_cond-2.
 
         ````{prf:observation}
         :label:wpt-construc-fig-negativity_cond
@@ -89,32 +70,20 @@ Tangle Tree (CWPTT)** if it satisfies the following conditions:
         ```{figure} ../../media/bands/conditions/negativity/a2.svg
         :label: wpt-construc-fig-negativity_cond-1
         :width: 100px
-        $\ a$
+        The $2$ integral tangle.
         ```
 
         ```{figure} ../../media/bands/conditions/negativity/a2a.svg
         :label: wpt-construc-fig-negativity_cond-2
         :width: 100px
-        $\ a$
-        ```
-
-        ```{figure} ../../media/bands/conditions/negativity/2.svg
-        :label: wpt-construc-fig-negativity_cond-3
-        :width: 100px
-        $\ a$
-        ```
-
-        ```{figure} ../../media/bands/conditions/negativity/1.svg
-        :label: wpt-construc-fig-negativity_cond-4
-        :width: 100px
-        $\ a$
+        A fully open stick with $2$ crossings.
         ```
 
         ````
 
 `````
 
-Bonahon and Seibenmann show in {prf:ref}`wpt-equi-lemma-exist` that these
+Bonahon and Seibenmann show in @wpt-equi-lemma-exist that these
 conditions are sufficient to distinguish every arborescent tangle. In fact,
 every weighted planar tangle tree can be turned into a CWPTT by a series of
 moves in an extended calculus on weighted planar trees given by Bonahon and
@@ -139,7 +108,7 @@ our later discussion of generation algorithms, we will refer to these trees as
 **neutral** trees.
 
 Bonahon and Seibenmann additionally give a classification of arborescent tangles
-via moves on CWPTT, seen in {prf:ref}`wpt-equi-thm-classi`.
+via moves on CWPTT (@wpt-equi-thm-classi).
 
 ```{prf:theorem} Classification Theorem for Canonical Weighted Planar Tangle Trees, Bonahon and Seibenmann theorem 12.21 [@bonahonNewGeometricSplittings2016]
 :label: wpt-equi-thm-classi

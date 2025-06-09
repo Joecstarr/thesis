@@ -1,3 +1,6 @@
+---
+title: Future Work
+---
 
 ```{include} ./continued_research.md
 
