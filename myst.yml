@@ -1,18 +1,5 @@
 version: 1
 project:
-    abstract: ./abstract.md
-    lay_summary: ./lay_summary.md
-    epigraph: ./epigraph.md
-    acknowledgments: ./acknowledgments.md
-    parts:
-        thesis_supervisor: Isabel Darcy
-        committee_members_1: two
-        committee_members_2: three
-        committee_members_3: four
-        committee_members_4: two
-        concentration: Mathematics
-        epigraph_author: Lorem ipsum
-
     github: https://github.com/Joecstarr/thesis
     open_access: true
     license: CC-BY-4.0
@@ -40,8 +27,7 @@ project:
     bibliography:
         - "biblio.bib"
     plugins:
-        - type: executable
-          path: plugins/mermaid/default.py
+        - plugins/mermaid.mjs
     title: "The Tanglenomicon: Tabulation of two string tangles"
     date: 2025-05-01
     authors:
@@ -89,4 +75,3 @@ site:
 
     options:
         favicon: ./book.png
-        outline_maxdepth: 4

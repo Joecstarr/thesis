@@ -33,7 +33,7 @@ software documentation for the components used, described in @ch-tabulation.
 
 ### SnapPea/SnapPy [@SnapPy](https://github.com/3-manifolds/SnapPy)
 
-```mermaid
+```{mermaid-p}
 flowchart LR
     Runner
     subgraph "Runnables"

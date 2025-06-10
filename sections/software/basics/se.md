@@ -84,7 +84,7 @@ system. Writing specific and non-ambiguous requirements is a surprisingly
 difficult task, for example, when writing a set of requirements for "go fish" we
 may define a requirement such as @se-fig-bad_req.
 
-```{prf:property}
+```{prf:example}  AS requirement for a fishing action
 :label: se-fig-bad_req
 At the beginning of the active player's turn that player shall request a
 card from any other player.
@@ -102,7 +102,7 @@ card. Can the active player as for a $10$ or should they ask specifically for a
 $10\heartsuit$? Fixing this ambiguity in @se-fig-bad_req can by done as in
 @se-fig-bad_req_fixed.
 
-```{prf:property}
+```{prf:example}  An updated requirement for a fishing action
 :label: se-fig-bad_req_fixed
 At the beginning of the active player's turn that player shall request a
 card, by rank and suit, from any other player.
@@ -125,7 +125,7 @@ interactions, a template-based description, or a diagrammatic representation.
 In this context, we may rephrase @se-fig-bad_req_fixed as a use case, such as
 @se-fig-use_case.
 
-```{prf:property}
+```{prf:example} A usecase for a fishing action
 :label: se-fig-use_case
 A player asks another player for a specific card (rank and suit).
 ```
@@ -149,7 +149,7 @@ both the "fishing" and "drawing" use cases.
 
 ````{prf:example} A use case diagram for go fish
 :label: se-ex-usecase
-```mermaid
+```{mermaid-p}
 
 flowchart LR
 
@@ -280,7 +280,7 @@ mapping, `1..*` for 1 to many, or `*..1` for many to 1.
 
 ````{prf:example} A block diagram for go fish
 :label: se-ex-block
-```mermaid
+```{mermaid-p}
 
 flowchart LR
     subgraph User Interface
@@ -296,11 +296,11 @@ flowchart LR
 
     gs["Game State"]
 
-     go-h --->|* . . 1| gs
+     go-h --->|*..1| gs
      go-d --->|1| gs
      gs --->|1| ui-hd
      gs --->|1| ui-dd
-     gs --->|1 . . *| ui-ps
+     gs --->|1..*| ui-ps
 
 ```
 ````
@@ -317,7 +317,7 @@ the sequence of interactions.
 
 ````{prf:example} A sequence diagram for go fish turn
 :label: se-ex-seq
-```mermaid
+```{mermaid-p}
 
 sequenceDiagram
     participant o as Player 1
@@ -374,7 +374,7 @@ an empty block.
 ````{prf:example} A class diagram for a go fish player.
 :label: se-ex-class
 
-```mermaid
+```{mermaid-p}
 classDiagram
     Player <|-- Hand
     Player <|-- Book
@@ -407,7 +407,7 @@ diamond with conditional transitions decorated with text.
 
 ````{prf:example} A state machine diagram for go fish turn
 :label: se-ex-sm
-```mermaid
+```{mermaid-p}
 
 stateDiagram-v2
     select: Select player to ask for a card

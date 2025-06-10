@@ -39,7 +39,7 @@ init:
 
 build: bootstrap
     rip _build/exports
-    mkdir -p _build
+    mkdir -p _build/exports
     myst build -a
     cp -r resources/coloremoji/coloremoji _build/exports/myst_tex
     mkdir -p _build/exports/myst_tex/media/kauf_bkt && cp -r media/kauf_bkt _build/exports/myst_tex/media
