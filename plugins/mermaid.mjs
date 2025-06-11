@@ -7,7 +7,7 @@ const merDirective = {
         required: true,
     },
     run(data) {
-        const graph = btoa(data.body)
+        const graph = btoa(unescape(encodeURIComponent( data.body)))
         const url = `https://mermaid.ink/img/${graph}?width=800&scale=2`;
         const img = { type: 'image', url };
         return [img];

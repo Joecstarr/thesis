@@ -1,4 +1,7 @@
+<!-- prettier-ignore-start -->
+(sec-arborescent-linear)=
 #### An Encoding Strategy for Arborescent Knots and Tangles
+<!-- prettier-ignore-end -->
 
 The various flavors of weighted planar trees we have seen thus far are a useful
 tool for manipulation of arborescent tangles by human or machine. Unfortunately,

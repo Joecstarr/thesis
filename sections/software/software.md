@@ -238,7 +238,7 @@ A block diagram of the architecture of a knot theory software toolbox
 
 ```
 
-# Unit Design and Validation For Tangle Tabulation
+# Unit Design for Tangle Tabulation
 
 ```{include} ./documentation/core_libraries.md
 

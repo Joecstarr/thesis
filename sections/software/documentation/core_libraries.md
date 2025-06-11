@@ -1,6 +1,5 @@
-### Core Libraries
 
-#### Notations
+## Notations
 
 ```{include} ./notations/twist_vector.md
 
@@ -14,7 +13,7 @@
 
 ```
 
-#### Generators
+## Generators
 
 ```{include} ./generators/rational.md
 
