@@ -84,11 +84,15 @@ system. Writing specific and non-ambiguous requirements is a surprisingly
 difficult task, for example, when writing a set of requirements for "go fish" we
 may define a requirement such as @se-fig-bad_req.
 
-```{prf:example}  AS requirement for a fishing action
+````{prf:example} AS requirement for a fishing action
 :label: se-fig-bad_req
+
+```{requirement} Player goes fishing
 At the beginning of the active player's turn that player shall request a
 card from any other player.
+
 ```
+````
 
 ```{note}
 Observe the indicative mood used in @se-fig-bad_req. The indicative mood, such
@@ -102,11 +106,13 @@ card. Can the active player as for a $10$ or should they ask specifically for a
 $10\heartsuit$? Fixing this ambiguity in @se-fig-bad_req can by done as in
 @se-fig-bad_req_fixed.
 
-```{prf:example}  An updated requirement for a fishing action
+````{prf:example} An updated requirement for a fishing action
 :label: se-fig-bad_req_fixed
+```{requirement} Player goes fishing
 At the beginning of the active player's turn that player shall request a
 card, by rank and suit, from any other player.
 ```
+````
 
 In a research context, the phrasing of a requirement as in @se-fig-bad_req_fixed
 is often redundant. Most pieces of software in a rigorous mathematical context
@@ -125,10 +131,12 @@ interactions, a template-based description, or a diagrammatic representation.
 In this context, we may rephrase @se-fig-bad_req_fixed as a use case, such as
 @se-fig-use_case.
 
-```{prf:example} A usecase for a fishing action
+````{prf:example} A usecase for a fishing action
 :label: se-fig-use_case
+```{use-case} Player goes fishing
 A player asks another player for a specific card (rank and suit).
 ```
+````
 
 A use case is phrased for behavior in a research context should appear as a
 close to lay retelling of the rigorous theoretical requirements.
@@ -468,9 +476,10 @@ against. Each test card has four fields with content as follows:
 -   **Outputs**: The outputs that are expected when the inputs are fed to the
     unit.
 
-```{prf:example} A happy path test card for a player turn in go fish
+````{prf:example} A happy path test card for a player turn in go fish
 :label: se-ex-happyut
-**Test Name**: Request a card, reponse is positive
+
+```{test-card} Request a card, reponse is positive
 
 **Description**: Active player requests a card from a target player. The target
 player has the requested card and produces it.
@@ -483,12 +492,13 @@ player has the requested card and produces it.
 **Outputs**:
 
 -   Active player puts replied card in hand
-
 ```
+````
 
-```{prf:example} A unhappy path test card for a player turn in go fish
+````{prf:example} A unhappy path test card for a player turn in go fish
 :label: se-ex-unhappyut
-**Test Name**: Illegally request a card
+
+```{test-card} Illegally request a card
 
 **Description**: Active player requests a card that is not in their hand.
 
@@ -501,6 +511,8 @@ player has the requested card and produces it.
 -   Active player is notified the request failed
 
 ```
+````
+
 
 ### Integration Testing
 

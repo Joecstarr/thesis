@@ -28,6 +28,7 @@ project:
         - "biblio.bib"
     plugins:
         - plugins/mermaid.mjs
+        - plugins/requirement.mjs
     title: "The Tanglenomicon: Tabulation of two string tangles"
     date: 2025-05-01
     authors:

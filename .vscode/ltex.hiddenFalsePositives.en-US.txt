@@ -8,3 +8,4 @@
 {"rule":"FOUR_NN","sentence":"^\\QThe second phase of the software product development process is the software engineering process.\\E$"}
 {"rule":"FOUR_NN","sentence":"^\\QThis includes modeling a software process to be paired with the knot theory software toolbox in professional and undergraduate research projects.\\E$"}
 {"rule":"EN_REPEATEDWORDS_PROBLEM","sentence":"^\\QDivide and conquer: You should break a hard problem into smaller solvable problems where possible.\\E$"}
+{"rule":"CONFUSION_KNOT_NOT","sentence":"^\\QKnotPlot is a closed source^closed knot computation tool primarily used for diagramming knots.\\E$"}

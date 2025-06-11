@@ -33,7 +33,10 @@ research as the goal.
 
 ```
 
+<!-- prettier-ignore-start -->
+(sec-life-cycle)=
 ## Software Engineering and Life Cycle
+<!-- prettier-ignore-end -->
 
 ```{include} ./basics/se.md
 

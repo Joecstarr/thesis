@@ -24,3 +24,6 @@ non-bigon
 Caudron
 Rockett
 parallelizability
+KnotTheory
+SnapPy
+SnapPea
