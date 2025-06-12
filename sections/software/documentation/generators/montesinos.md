@@ -1,5 +1,8 @@
 ### Montesinos Tangle Generator
 
+The Montesinos tangle generator implements a portion of the theoretical use case
+seen in @sec-monttang. The
+
 #### Class Diagram
 
 ```mermaid
@@ -261,5 +264,3 @@ The algebraic tangle trees:
 -  +[3 3 0]+[2 2 1][4 4 2]
 
 ```
-
-

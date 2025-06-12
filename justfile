@@ -35,7 +35,7 @@ normalize-media:
 init:
     myst clean --all -y
     myst init --write-toc
-    mkdir -p _build
+    mkdir -p _build/exports
 
 build: bootstrap
     rip _build/exports
