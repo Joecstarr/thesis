@@ -212,7 +212,7 @@ common use cases for a knot theory system. Our common use cases are as follows:
         write from external systems. Examples: the command line or a database.
 
 ````{figure}
-```{mermaid-p}
+```mermaid
 flowchart LR
     Runner
     subgraph "Runnables"

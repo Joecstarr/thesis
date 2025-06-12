@@ -157,7 +157,7 @@ both the "fishing" and "drawing" use cases.
 
 ````{prf:example} A use case diagram for go fish
 :label: se-ex-usecase
-```{mermaid-p}
+```mermaid
 
 flowchart LR
 
@@ -288,7 +288,7 @@ mapping, `1..*` for 1 to many, or `*..1` for many to 1.
 
 ````{prf:example} A block diagram for go fish
 :label: se-ex-block
-```{mermaid-p}
+```mermaid
 
 flowchart LR
     subgraph User Interface
@@ -325,7 +325,7 @@ the sequence of interactions.
 
 ````{prf:example} A sequence diagram for go fish turn
 :label: se-ex-seq
-```{mermaid-p}
+```mermaid
 
 sequenceDiagram
     participant o as Player 1
@@ -382,7 +382,7 @@ an empty block.
 ````{prf:example} A class diagram for a go fish player.
 :label: se-ex-class
 
-```{mermaid-p}
+```mermaid
 classDiagram
     Player <|-- Hand
     Player <|-- Book
@@ -415,7 +415,7 @@ diamond with conditional transitions decorated with text.
 
 ````{prf:example} A state machine diagram for go fish turn
 :label: se-ex-sm
-```{mermaid-p}
+```mermaid
 
 stateDiagram-v2
     select: Select player to ask for a card

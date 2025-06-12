@@ -10,13 +10,13 @@ representations of that notation.
 
 #### Class Diagram
 
-```{mermaid-p}
+```mermaid
 classDiagram
     notation *-- note_t
     class notation {
         <<interface>>
-        + note_t decode(string)
-        + string encode(note_t)
+        + int decode(string,note_t)
+        + int encode(note_t,string,buffer_size)
     }
 
     class note_t {

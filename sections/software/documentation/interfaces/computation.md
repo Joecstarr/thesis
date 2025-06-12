@@ -10,7 +10,7 @@ must be configured with sufficient buffer space to successfully execute.
 
 #### Class Diagram
 
-```{mermaid-p}
+```mermaid
 classDiagram
     computation *-- comp_config_t
     comp_config_t *-- comp_result_t
@@ -68,7 +68,7 @@ returns a flag indicating if the function was successful.
 
 The flow for a computation is modeled by the following state machine:
 
-```{mermaid-p}
+```mermaid
 stateDiagram-v2
     state "Get data" as gd
     state "Work on data" as wod

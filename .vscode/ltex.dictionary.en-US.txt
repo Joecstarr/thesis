@@ -27,3 +27,4 @@ parallelizability
 KnotTheory
 SnapPy
 SnapPea
+stringified

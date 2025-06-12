@@ -28,7 +28,7 @@ A JSON data store with the key:index:value structure.
 
 #### Class Diagram
 
-```{mermaid-p}
+```mermaid
 classDiagram
     class storage {
         <<interface>>

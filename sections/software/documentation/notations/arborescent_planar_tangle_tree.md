@@ -1,6 +1,11 @@
+<!-- prettier-ignore-start -->
+(sec-library-awptt-note)=
 ### Arborescent Weighted Planar Tangle Tree Notation
+<!-- prettier-ignore-end -->
 
-```{mermaid-p}
+#### Class Diagram
+
+```mermaid
 classDiagram
     note_awptt --|> notation
     note_awptt *-- note_awptt_t
@@ -124,7 +129,7 @@ it as a `note_awptt_node_t`.
 
 This process is described in the following state machines:
 
-```{mermaid-p}
+```mermaid
 stateDiagram-v2
     state "Init" as vj
     state "• stack array" as vj
@@ -151,7 +156,9 @@ stateDiagram-v2
 The encode function takes in a `note_awptt_node_t` and encodes it into the
 linearized string form of the AWPTT.
 
-```{mermaid-p}
+This process is described in the following state machines:
+
+```mermaid
 stateDiagram-v2
     state "Init" as vj
     state "• stack parent array" as vj
@@ -188,7 +195,11 @@ stateDiagram-v2
 
 ##### Private Functions decode path
 
-###### Char checker
+Documented here are the functionality required by the notation but not exposed
+publicly. The functions may contain sub machines that can be broken out into
+functions in the implementation.
+
+###### Char Checker Function
 
 This function checks a character passed to it and updates the current notation
 instance with one of seven execution paths. These paths are based on the class
@@ -205,7 +216,9 @@ the character falls into:
 -   An integer beginning with "0-9" or "-"
 -   A space character
 
-```{mermaid-p}
+This process is described in the following state machines:
+
+```mermaid
 stateDiagram-v2
     state "Get ring number" as rn
     state "Twist Vector" as tv
@@ -252,7 +265,9 @@ stateDiagram-v2
 This function moves the active node to be a child of the current node.
 Functionally, this is the same as descending the AWPTT.
 
-```{mermaid-p}
+This process is described in the following state machines:
+
+```mermaid
 stateDiagram-v2
     state "Init new active node as child</br> of current active node" as child
     state "Add active node to stack" as st
@@ -268,7 +283,9 @@ stateDiagram-v2
 This function moves the active node to be a parent of the current node.
 Functionally, this is the same as ascending the AWPTT.
 
-```{mermaid-p}
+This process is described in the following state machines:
+
+```mermaid
 stateDiagram-v2
 
     state "Decrement stack index" as dsi
@@ -281,9 +298,17 @@ stateDiagram-v2
 
 ##### Private functions Encode path
 
+Documented here are the functionality required by the notation but not exposed
+publicly. The functions may contain sub machines that can be broken out into
+functions in the implementation.
+
 ###### Handle stack
 
-```{mermaid-p}
+The handle stick function takes a stick and
+
+This process is described in the following state machines:
+
+```mermaid
 stateDiagram-v2
 
     state "Push to stack" as pants
@@ -299,7 +324,7 @@ stateDiagram-v2
 
 ###### Handle stringify
 
-```{mermaid-p}
+```mermaid
 stateDiagram-v2
     state "Stringify $$\,\langle$$ and ring number" as rn
     state "Stringify $$\,($$" as par
