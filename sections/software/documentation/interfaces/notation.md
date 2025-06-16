@@ -14,13 +14,13 @@ representations of that notation.
 classDiagram
     notation *-- note_t
     class notation {
-        <<interface>>
+        <<Interface>>
         + int decode(string,note_t)
         + int encode(note_t,string,buffer_size)
     }
 
     class note_t {
-        <<struct>>
+
     }
 
 ```

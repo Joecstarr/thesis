@@ -1,25 +1,28 @@
 ### Arborescent Tangle Generator
 
+The arborescent tangle generator implements a portion of the theoretical use
+case seen in @sec-arborescent.
+
 #### Class Diagram
 
 ```mermaid
 classDiagram
-    generator_rlitt --|> generator
-    generator_rlitt_config_t --|> generator_config_t
-    generator_rlitt_config_t *-- note_awptt
+    generator_rlitt ..|> generator
+    generator_rlitt_config_t ..|> generator_config_t
+    generator_rlitt_config_t *-- note_wptt
     generator_rlitt_config_t *-- gen_rlitt_positivity_e
     generator_rlitt *-- generator_rlitt_config_t
 
     class generator {
-        <<interface>>
+        <<External Interface>>
     }
 
     class generator_rlitt {
-<<>>
+<<External>>
 }
 
 class gen_rlitt_positivity_e {
-    <<enum>>
+    <<Enumeration>>
     uninit,
     positive,
     negative,
@@ -27,20 +30,20 @@ class gen_rlitt_positivity_e {
 }
 
 class generator_rlitt_config_t {
-<<struct>>
-+ note_awptt rootstock[]
+
++ note_wptt rootstock[]
 + gen_rlitt_positivity_e rootstock_positivity[]
-+ note_awptt scion[]
++ note_wptt scion[]
 + string buffer
 }
 
 class generator_config_t {
-<<interface>>
+<<External Interface>>
 
 }
 
-class note_awptt {
-<<>>
+class note_wptt {
+<<External>>
 }
 
 ```
@@ -55,8 +58,7 @@ C
 
 #### Uses
 
--   Notation arborescent weighted planar tangle tree notation
-    (@sec-library-awptt-note)
+-   Notation arborescent weighted planar tangle tree (@sec-library-wptt-note)
 
 #### Libraries
 
@@ -68,13 +70,13 @@ N/A
 
 ###### Arborescent Generator Config Structure
 
-The config structure contains the data needed for generating a set of algebraic
-tangle trees from a collection of lists of twist vectors.
+The config structure contains the data needed for generating a set of
+arborescent tangles from a collection of arborescent rootstock and collection of
+arborescent good scions.
 
 This includes:
 
--   An integer representation of the target crossing number.
--   A notation structure for an algebraic tangle tree.
+-   A notation structure for an WPTT.
 -   A pointer to a multidimensional array of twist vectors.
 -   A string buffer for holding the stringified algebraic tangle tree.
 
@@ -88,7 +90,7 @@ This process is described in the following state machines:
 
 ```mermaid
 stateDiagram-v2
-  state "Init local config" as Sc
+  state "Initialize local config" as Sc
 
     [*] --> Sc
     Sc --> [*]
@@ -98,22 +100,43 @@ stateDiagram-v2
 ###### Generate Function
 
 The generation function carries out the Arborescent tangle generation until the
-inputs are exhausted. The function may contain sub machines that can be broken
-out into functions in the implementation.
+inputs are exhausted. The grafting operation is carried out by a call to the
+computation grafting component (@sec-computation-grafting) and the neutrality
+determination is carried out by the neutrality computation component
+(@sec-computation-neutrality).
 
 This process is described in the following state machines:
 
 ```mermaid
 stateDiagram-v2
-	state "Init" as init1
+    outer_for: "for each rootstock"
+    state outer_for {
+        inner_for: "for each scion"
+        state inner_for {
+            graft: Graft scion to rootstock forming $$\Gamma$$
+            pos: Identify the neutrality of $$\Gamma$$
+            rep: Report $$\Gamma$$ and its neutrality
+            [*] --> graft
+            graft --> pos
+            pos --> rep
+            rep --> [*]
+        }
+        [*] --> inner_for
+        inner_for --> [*]
+    }
+
+
+    [*] --> outer_for
+    outer_for-->[*]
 ```
 
 ##### Private Functions
 
+###### Identify the neutrality of $$\Gamma$$
 
 #### Validation
 
-##### Config interface
+##### Config Function
 
 ###### Positive Tests
 
@@ -147,7 +170,7 @@ A negative response.
 
 ```
 
-##### Generate interface
+##### Generate Function
 
 ```{test-card} Valid Config and generation
 
@@ -197,8 +220,4 @@ The algebraic tangle trees:
 -  +[3 3 0]+[2 2 1][3 3 2]
 -  +[3 3 0]+[2 2 1][4 4 2]
 
-```
-
-```{note}
-A block diagram for the component under development
 ```

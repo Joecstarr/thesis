@@ -15,20 +15,20 @@ classDiagram
     computation *-- comp_config_t
     comp_config_t *-- comp_result_t
     class computation {
-        <<interface>>
+        <<Interface>>
         - comp_config_t config
         + int comp_config(comp_config_t config)
         + int comp_compute()
+        + comp_result_t comp_result()
     }
 
     class comp_config_t {
-        <<struct>>
-        + comp_results_t result
+
         + int *storage_write(key, index, value)
     }
 
     class comp_result_t {
-        <<struct>>
+
     }
 
 ```
@@ -73,8 +73,18 @@ stateDiagram-v2
     state "Get data" as gd
     state "Work on data" as wod
     state "Report value or values" as rv
-    [*] --> gd
+    state check_flag <<choice>>
+    state "Set computed flag" as gd
+    [*] --> check_flag
+    check_flag --> gd : Config has not been processed
+    check_flag --> [*]  : Config has been processed
     gd  -->  wod
     wod --> rv
     rv  -->  [*]
 ```
+
+###### Result Function
+
+When this function is invoked, the result of the computation process is
+reported. The actual internal functionality is specific to the specific
+computation.

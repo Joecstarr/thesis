@@ -31,7 +31,7 @@ A JSON data store with the key:index:value structure.
 ```mermaid
 classDiagram
     class storage {
-        <<interface>>
+        <<Interface>>
         + const char *  read(key, index)
         + int write(key, index, value)
     }

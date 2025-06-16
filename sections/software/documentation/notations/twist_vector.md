@@ -7,17 +7,22 @@
 
 ```mermaid
 classDiagram
-    note_tv --|> notation
+    note_tv ..|> notation
     note_tv *-- note_tv_t
 
+    note_tv_t ..|> note_t
+    class note_t {
+        <<External Interface>>
+    }
+
     class note_tv_t {
-        <<struct>>
+
         uint8_t twist_vec[MAX_CN]
         size_t tv_length[MAX_CN]
     }
 
     class notation {
-        <<interface>>
+        <<External Interface>>
     }
 ```
 

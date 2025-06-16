@@ -1,8 +1,7 @@
 <!-- prettier-ignore-start -->
-
-<!-- prettier-ignore-end -->
-
+(sec-RLITT-generation)=
 #### Generation of Right Leaning Identity Weighted Planar Tangle Trees
+<!-- prettier-ignore-end -->
 
 We are now prepared for the enumeration of the arborescent tangles. This section
 will show the development of an algorithm that uniquely generates each
@@ -272,7 +271,10 @@ that satisfy the stick condition.
     4. Compute $\Gamma_r\star \Gamma_s$
 ```
 
+<!-- prettier-ignore-start -->
+(rli-gen-sec-pm-con)=
 ###### Positivity/Negativity Condition
+<!-- prettier-ignore-end -->
 
 The final condition of an RLITT we need to address is the positivity/negativity
 condition. As we established in [](#sec-CWPTT-def) that a $\LP+\RP$-RLITT can be
@@ -280,11 +282,97 @@ transformed into a $\LP-\RP$-RLITT. We then established in
 [](#rli-const-thm-ident_exists) that a $\LP+\RP$-RLITT is a unique
 representative for a tangle. The requirement that we generate neutral tangles
 such as $\iota\LB-3\ -2\RB$ means we cannot simply discount the $\LP-\RP$-RLITT
-during the generation phase. To satisfy the conditions in the generation phase,
-we require that when the rootstock is determined explicitly positive or
-negative, the scion agree or be neutral. Meaning, if the rootstock is
-$\LP+\RP$-RLITT then the scion must be $\LP+\RP$-RLITT or neutral, similarly for
-$\LP-\RP$-RLITT. This gives us the three algorithms seen below.
+during the generation phase. To satisfy the condition, then we need to determine
+what classes are possible results of a grafting in all combinations of $\pm$ and
+neutral trees. We first enumerate the combinations with $\Gamma_+$, $\Gamma_-$,
+and $\Gamma_n$ a plus, minus, and neutral RLITT respectively:
+
+1. $\Gamma_n\star\Gamma_n$
+1. $\Gamma_+\star\Gamma_n$
+1. $\Gamma_n\star\Gamma_+$
+1. $\Gamma_+\star\Gamma_+$
+1. $\Gamma_+\star\Gamma_-$
+
+```{note}
+We may freely pass between $+$ and $-$ trees, as such we need only consider the
+$+$ cases. The $-$ cases follow identically.
+```
+
+In the first case, we will show that the grafting of two neutral trees produces
+a neutral subtree.
+
+```{prf:lemma}
+Let $\Gamma_r$ and $\Gamma_s$ be RLITT both neutral. The result of
+$\Gamma_r\star\Gamma_s$ is also a neutral tangle.
+```
+
+```{prf:proof}
+Assume for the sake of contradiction that $\Gamma_n\star\Gamma_n=\Gamma$ is a
+$(+)$-RLITT. Since $\Gamma$ is $(+)$-RLITT it has a subtree of the form
+$\alpha[2]$ or $\alpha( \beta 2 )$ where $\alpha$ and $\beta$ (and $\gamma$) are
+portions of weighted planar trees see (@wpt-construc-fig-negativity_cond).
+
+First, assume $\Gamma$ contains $\alpha[2]$ as a subtree. Since this is a leaf
+subtree it must also be a leaf subtree of $\Gamma_r$ or $\Gamma_s$, making one
+of the components a $(+)$-RLITT a contradiction.
+
+Next, assume $\Gamma$ has $\alpha( (\beta) 2 )$ as a subtree. When the
+$\alpha( \beta 2 )$ subtree is internal to $\Gamma_r$ or $\Gamma_s$ we have the
+same contradiction as the first case, so the subtree must be introduced by the
+grafting itself and found adjacent to the root. This yields the following three
+cases and contradictions:
+
+1.  When the subtree is found on the scion side of $\Gamma$ we have
+    $\iota(\gamma (\beta 2) w_i)$. This arrangement places the subtree
+    $\alpha( \beta 2 )$ at the root of the scion, making the scion $(+)$-RLITT a
+    contradiction.
+1.  When the subtree is found on the rootstock side of $\Gamma$ and the
+    rootstock is integral, we have $\iota(\beta 2)$. This arrangement requires
+    the rootstock to be $\iota[2]$ a contradiction.
+1.  When the subtree is found on the rootstock side of $\Gamma$ and the
+    rootstock is not integral, we have $\iota((\beta 2) \gamma w_i)$. This
+    arrangement places the subtree $\alpha( \beta 2 )$ adjacent to the root of
+    the rootstock, making the rootstock $(+)$-RLITT a contradiction.
+```
+
+A similar argument for cases two, three, and four shows that $\Gamma$ can be
+$(+)$-RLITT or neutral. Finally, in the $\Gamma_+\star\Gamma_-$ case, we will
+show that this grafting can result in a neutral tree or a non-canonical tree.
+
+```{prf:lemma}
+Let $\Gamma_r$ and $\Gamma_s$ be RLITT with $\Gamma_r$ a $(+)$-RLITT and
+$\Gamma_s$ a $(-)$-RLITT. The result of $\Gamma_r\star\Gamma_s$ is $\iota[2\ 2]$
+or a non-canonical weighted planar tangle tree.
+```
+
+```{prf:proof}
+
+We will tackle this by exhaustion. We have the following possibilities for
+rootstock and scion, where $\alpha$ and $\beta$ ($\gamma$ and $\delta$) are
+portions of weighted planar trees.
+
+|             $\Gamma_r$             |              $\Gamma_s$               |
+| :--------------------------------: | :-----------------------------------: |
+|          $\iota\LB 2\RB$           |          $\iota\LB \m 2\RB$           |
+|    $\iota\LP\alpha\LB 2\RB\ w_0\RP$     |    $\iota\LP\alpha\LB \m 2\RB\RP$     |
+| $\iota\LP\alpha\LP \beta\ 2\RP\ w_0\RP$ | $\iota\LP\alpha\LP \beta\ \m 2\RP\RP$ |
+
+Taking combinations gives:
+
+| $\Gamma_r\star\Gamma_s$                                                                                                                       | Class         |
+| :-------------------------------------------------------------------------------------------------------------------------------------------- | :------------ |
+| $\iota\LB 2\RB\star\iota\LB \m 2\RB =\iota\LB2\ 2\RB$                                                                                         | Neutral       |
+| $\iota\LB 2\RB\star\iota\LP\alpha\LB \m 2\RB\RP =\iota\LP\LP\alpha\LB\m2\RB\RP2\RP$                                                           | Non-canonical |
+| $\iota\LB 2\RB\star\iota\LP\alpha\LP \beta\ \m 2\RP\RP =\iota\LP\LP\alpha\LP\beta\ \m2\RP\RP2\RP$                                             | Non-canonical |
+| $\iota\LP\alpha\LB 2\RB\ w_0\RP\star \iota\LB \m 2\RB=\iota\LP\LP\alpha\LB2\RB\RP\LB\m2\RB\ w_i\RP$                                                     | Non-canonical |
+| $\iota\LP\alpha\LB 2\RB\ w_0\RP\star \iota\LP\alpha\LB \m 2\RB\RP=\iota\LP\LP\alpha\LB2\RB\RP\LP\beta\LB\m2\RB\RP\ w_i\RP$                              | Non-canonical |
+| $\iota\LP\alpha\LB 2\RB\ w_0\RP\star \iota\LP\alpha\LP \beta\ \m 2\RP\RP=\iota\LP\LP\alpha\LB2\RB\RP\LP\beta\LP\gamma\ \m2\RP\RP\ w_i\RP$               | Non-canonical |
+| $\iota\LP\alpha\LP \beta\ 2\RP\ w_0\RP\star\iota\LB \m 2\RB=\iota\LP\LP\alpha\LP\beta\ 2\RP\RP\LB\m2\RB\ w_i\RP$                                        | Non-canonical |
+| $\iota\LP\alpha\LP \beta\ 2\RP\ w_0\RP\star\iota\LP\alpha\LB \m 2\RB\RP=\iota\LP\LP\alpha\LP\beta\ 2\RP\RP\LP\gamma\LB\m2\RB\RP\ w_i\RP$                | Non-canonical |
+| $\iota\LP\alpha\LP \beta\ 2\RP\ w_0\RP\star\iota\LP\alpha\LP \beta\ \m 2\RP\RP=\iota\LP\LP\alpha\LP\beta\ 2\RP\RP\LP\gamma\LP\delta\ \m2\RP\RP\ w_i\RP$ | Non-canonical |
+
+Exhausting all possibilities of grafting $+$ and $-$ trees.
+```
 
 ```{prf:remark} Find weighted planar trees by grafting $\LP +\RP$-RLITT good scions to rightmost path of $\LP +\RP$-RLITT rootstocks
 :label: find-grafted-good-ptrees
@@ -292,7 +380,7 @@ $\LP-\RP$-RLITT. This gives us the three algorithms seen below.
 **Input**
 
 -   A collection of $\LP+\RP$-RLITT or neutral good scions $T_s$
--   a collection of $\LP+\RP$-RLITT rootstocks $T_r$
+-   A collection of $\LP+\RP$-RLITT rootstocks $T_r$
 
 **Output**
 
@@ -301,6 +389,7 @@ $\LP-\RP$-RLITT. This gives us the three algorithms seen below.
 **Routine**
 
 1. Execute [](#find-grafted-good-trees) with $T_s$ and $T_r$ as input
+1. Execute [](#find-positivity-class-of-tree)
 ```
 
 ```{prf:remark} Find weighted planar trees by grafting $\LP -\RP$-RLITT good scions to rightmost path of $\LP -\RP$-RLITT rootstocks
@@ -309,7 +398,7 @@ $\LP-\RP$-RLITT. This gives us the three algorithms seen below.
 **Input**
 
 -   A collection of $\LP-\RP$-RLITT or neutral good scions $T_s$
--   a collection of $\LP-\RP$-RLITT rootstocks $T_r$
+-   A collection of $\LP-\RP$-RLITT rootstocks $T_r$
 
 **Output**
 
@@ -318,6 +407,7 @@ $\LP-\RP$-RLITT. This gives us the three algorithms seen below.
 **Routine**
 
 1. Execute [](#find-grafted-good-trees) with $T_s$ and $T_r$ as input
+1. Execute [](#find-positivity-class-of-tree)
 ```
 
 ```{prf:remark} Find weighted planar trees by grafting RLITT good scions to rightmost path of neutral RLITT rootstocks
@@ -326,7 +416,7 @@ $\LP-\RP$-RLITT. This gives us the three algorithms seen below.
 **Input**
 
 -   A collection of good scions $T_s$
--   a collection of neutral rootstocks $T_r$
+-   A collection of neutral rootstocks $T_r$
 
 **Output**
 
@@ -335,7 +425,27 @@ $\LP-\RP$-RLITT. This gives us the three algorithms seen below.
 **Routine**
 
 1. Execute [](#find-grafted-good-trees) with $T_s$ and $T_r$ as input
+1. Execute [](#find-positivity-class-of-tree)
 ```
+
+```{prf:remark} Identify the class ($+$,\ $-$,\ or neutral) of the tangle
+:label: find-positivity-class-of-tree
+
+**Input**
+
+-   A weighted planar tangle tree
+
+**Output**
+
+-   Truth value for the question "Is this tree neutral?".
+
+**Routine**
+
+1. Walk the tree
+    1. Find if any leaf is $\alpha\LB\pm 2\RB$ and return false if found
+    1. Find if any stick is $\alpha\LP\beta 2\RP$ and return false if found
+```
+
 
 ##### Full Generation Algorithm
 
@@ -397,14 +507,14 @@ with $\text{ACN}-1$ to the set of RLITT of the target ACN.
 1. Set $N=\text{ACN}-1$
 1. Set $T$ to the set $\LS \iota[\text{ACN}], \iota[0\ \text{ACN}]\RS$
 1. For each pair $(i,N-i)$
-    1. Set $T_{s+}$ to be the set of $+$-RLITT good scions with ACN
+    1. Set $T_{s+}$ to be the set of $(+)$-RLITT good scions with ACN
        equal to $\text{N}-i$
-    1. Set $T_{s-}$ to be the set of $-$-RLITT good scions with ACN
+    1. Set $T_{s-}$ to be the set of $(-)$-RLITT good scions with ACN
        equal to $\text{N}-i$
     1. Set $T_{sn}$ to be the set of neutral RLITT good scions with ACN
        equal to $\text{N}-i$
-    1. Set $T_{r+}$ to be the set of $+$-RLITT ACN equal to $i$
-    1. Set $T_{r-}$ to be the set of $-$-RLITT ACN equal to $i$
+    1. Set $T_{r+}$ to be the set of $(+)$-RLITT ACN equal to $i$
+    1. Set $T_{r-}$ to be the set of $(-)$-RLITT ACN equal to $i$
     1. Set $T_{rn}$ to be the set of neutral RLITT ACN equal to $i$
     1. Execute [](#find-grafted-good-mtrees) with input $T_{r-}$ and $T_{s-}$
     1. Execute [](#find-grafted-good-mtrees) with input $T_{r-}$ and $T_{sn}$
@@ -434,7 +544,7 @@ with $\text{ACN}-1$ to the set of RLITT of the target ACN.
 
 **Routine**
 
-1. Set $T$ to be the set $\LS \iota[0],\ \iota[0\ 0],\ \iota[1],\ \iota[-1],\ \iota[2],\ \iota[-2],\,\ \iota[2\ 0],\ \iota[-2\ 0]\RS$
+1. Set $T$ to be the set $\LS \iota[0],\ \iota[0\ 0],\ \iota[1],\ \iota[\m1],\ \iota[2],\ \iota[\m2],\,\ \iota[2\ 0],\ \iota[\m2\ 0],\ \iota[2\ 2],\ \iota[\m2\ \m2]\RS$
 2. for i from 3 to ACN
     1. Execute [](#find-rlitt-from-acnm1toacn) with input ACN $i$ and RLITT set
        $T$.

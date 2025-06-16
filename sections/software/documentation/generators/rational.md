@@ -4,21 +4,21 @@
 
 ```mermaid
 classDiagram
-    generator_rational --|> generator
-    gen_rational_config_t --|> gen_config_t
+    generator_rational ..|> generator
+    gen_rational_config_t ..|> gen_config_t
     gen_rational_config_t *-- notation_tv
     generator_rational *-- gen_rational_config_t
 
     class generator {
-        <<interface>>
+        <<External Interface>>
     }
 
     class generator_rational {
-<<>>
+<<External>>
 }
 
 class gen_rational_config_t {
-<<struct>>
+
 uint8_t crossingNumber;
 note_tv_t *tv_n;
 char *tv_str_buff;
@@ -26,12 +26,12 @@ size_t tv_str_buff_len;
 }
 
 class gen_config_t {
-<<interface>>
+<<External Interface>>
 
 }
 
 class notation_tv{
-<<>>
+<<External>>
 }
 
 ```
@@ -75,7 +75,7 @@ This process is described in the following state machines:
 
 ```mermaid
 stateDiagram-v2
-  state "Init local config" as Sc
+  state "Initialize local config" as Sc
 
     [*] --> Sc
     Sc --> [*]
@@ -93,7 +93,7 @@ This process is described in the following state machines:
 ```mermaid
 stateDiagram-v2
     state if_done <<choice>>
-    state "Init " as State_i
+    state "Initialize " as State_i
     state "• i as 0 " as State_i
     state State_ipp: i++
     state "Construct TV from i as a bitfield" as tv_calc{
@@ -133,7 +133,7 @@ stateDiagram-v2
 
 #### Validation
 
-##### Config interface
+##### Config Function
 
 ###### Positive Tests
 
@@ -195,7 +195,7 @@ A negative response.
 
 ```
 
-##### Generate interface
+##### Generate Function
 
 ```{test-card} Valid Config and generation
 

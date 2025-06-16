@@ -1,28 +1,28 @@
 ### Montesinos Tangle Generator
 
 The Montesinos tangle generator implements a portion of the theoretical use case
-seen in @sec-monttang. The
+seen in @sec-monttang.
 
 #### Class Diagram
 
 ```mermaid
 classDiagram
-    generator_mont --|> generator
-    generator_mont_config_t --|> generator_config_t
+    generator_mont ..|> generator
+    generator_mont_config_t ..|> generator_config_t
     generator_mont_config_t *-- note_att
     generator_mont_config_t *-- note_tv
     generator_mont *-- generator_mont_config_t
 
     class generator {
-        <<interface>>
+        <<External Interface>>
     }
 
     class generator_mont {
-<<>>
+<<External>>
 }
 
 class generator_mont_config_t {
-<<struct>>
+
 note_att_t *att_n;
 note_tv_t **tv_sets;
 size_t *tv_set_lens;
@@ -32,17 +32,17 @@ size_t str_buff_len;
 }
 
 class generator_config_t {
-<<interface>>
+<<External Interface>>
 
 }
 
 
 class note_att{
-<<>>
+<<external>>
 }
 
 class note_tv{
-<<>>
+<<external>>
 }
 
 ```
@@ -70,8 +70,8 @@ N/A
 
 ###### Montesinos Generator Config Structure
 
-The config structure contains the data needed for generating a set of algebraic
-tangle trees from a collection of lists of twist vectors.
+The config structure contains the data needed for generating a set of Montesinos
+algebraic tangle trees from a collection of lists of twist vectors.
 
 This includes:
 
@@ -90,7 +90,7 @@ This process is described in the following state machines:
 
 ```mermaid
 stateDiagram-v2
-  state "Init local config" as Sc
+  state "Initialize local config" as Sc
 
     [*] --> Sc
     Sc --> [*]
@@ -179,7 +179,7 @@ stateDiagram-v2
 
 #### Validation
 
-##### Config interface
+##### Config Function
 
 ###### Positive Tests
 
@@ -213,7 +213,7 @@ A negative response.
 
 ```
 
-##### Generate interface
+##### Generate Function
 
 ```{test-card} Valid Config and generation
 

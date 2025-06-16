@@ -14,14 +14,14 @@ be configured with sufficient buffer space to successfully execute.
 classDiagram
     generator *-- gen_config_t
     class generator {
-        <<interface>>
+        <<Interface>>
         - gen_config_t config
         + int gen_config(gen_config_t config)
         + int gen_generate()
     }
 
     class gen_config_t {
-        <<struct>>
+
         + int storage_write(key, index, value)
     }
 

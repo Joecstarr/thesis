@@ -377,15 +377,59 @@ with $+$ to indicate public visibility, meaning the member can be seen and used
 by other units. The members of the class are decorated with $-$ to indicate
 private visibility, meaning the member can only be seen from inside the class.
 When referencing other units in the system, the external units are truncated to
-an empty block.
+an empty class. One or more optional decorators can be added to a class to
+further contextualize the class. The decorators that we will allow in a class
+diagram are:
+
+1. Enumeration: Indicating the class is an enumeration.
+1. Interface: Indicating the class is an interface. This is usually used to
+   simplify the diagram when common collections of data/functions need to be
+   repeated.
+1. External: Indicating the class is defined outside the current unit.
+
+In a class diagram, the relationships between components described by arrows
+between classes. Each type of arrow used in a class diagram defines a slightly
+different type of relationship. The arrows that we will allow in a class diagram
+are the aggregation (@se-cd-fig-agg) and the realization (@se-cd-fig-real). The
+aggregation connection describes the relationship when one class uses
+(aggregates) the connected class. In @se-ex-class we see the `Player` class
+using (aggregating) the `Hand` class. The realization connection describes the
+relationship when a class implements an interface. An example can be seen in
+@se-ex-class with the `Hand` and `Book` classes realizing the `CardCollection`
+interface. Both the `Hand` and `Book` classes are collections of multiple cards
+and will need common data, such as a function to print all cards in the
+collection. In some object-oriented languages, this relationship may be defined
+by an inheritance. However, since C is not object-oriented we instead define
+this common set of data as an interface that we must implement in each component
+that realizes the interface.
+
+`````{prf:observation}
+
+````{figure}
+:label: se-cd-fig-agg
+
+```mermaid
+classDiagram
+    A *--B
+```
+An aggregation connection. Class A aggregates Class B.
+````
+````{figure}
+:label: se-cd-fig-real
+
+```mermaid
+classDiagram
+    A ..|> B
+```
+A realization connection. Class A realizes Class B.
+````
+`````
 
 ````{prf:example} A class diagram for a go fish player.
 :label: se-ex-class
 
 ```mermaid
 classDiagram
-    Player <|-- Hand
-    Player <|-- Book
     class Player{
         +Hand hand
         +List[Book] books
@@ -399,8 +443,25 @@ classDiagram
     }
     class Book{
     }
+    class Card{
+    <<External>>
+    }
+    class CardSuit{
+        <<External Enumeration>>
+    }
+    class CardCollection{
+        <<External Interface>>
+    }
+    Book *-- Card
+    Player *-- Hand
+    Player *-- Book
+    Hand *-- Card
+    Card *-- CardSuit
+    Hand ..|> CardCollection
+    Book ..|> CardCollection
 
 ```
+
 ````
 
 ##### State Machine
@@ -512,7 +573,6 @@ player has the requested card and produces it.
 
 ```
 ````
-
 
 ### Integration Testing
 

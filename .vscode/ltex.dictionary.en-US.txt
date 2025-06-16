@@ -28,3 +28,5 @@ KnotTheory
 SnapPy
 SnapPea
 stringified
+wptt
+Gamma$$

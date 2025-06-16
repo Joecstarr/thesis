@@ -6,14 +6,15 @@
 #### Class Diagram
 ```mermaid
 classDiagram
-    note_att --|> notation
+    note_att ..|> notation
+    note_att_t ..|> note_t
     note_att *-- note_att_t
     note_att_t *-- note_att_node_t
     note_att_node_t *-- note_att_operation_enum
     note_att_node_t *-- note_tv_t
 
     class note_att_t {
-        <<struct>>
+
         note_att_node_t* root
         note_att_node_t *node_buffer;
         size_t node_buffer_len;
@@ -22,13 +23,13 @@ classDiagram
     }
 
     class note_att_operation_enum {
-        <<enum>>
+        <<Enumeration>>
         Plus
         Vee
     }
 
     class note_att_node_t {
-        <<struct>>
+
         note_att_node_t* left_child
         note_att_node_t* right_child
         note_tv_t *right_tv
@@ -37,11 +38,14 @@ classDiagram
     }
 
     class notation {
-        <<interface>>
+        <<External Interface>>
     }
 
     class note_tv_t {
-        <<struct>>
+
+    }
+    class note_t {
+        <<External Interface>>
     }
 
 ```
@@ -88,7 +92,7 @@ This operation data is stored as a bit field.
 
 | Operation | NA  | NA  | NA  | NA  | NA  | NA  | Op  | Op  |
 | --------- | --- | --- | --- | --- | --- | --- | --- | --- |
-| uninit    | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   |
+| unInitialize    | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   |
 | Plus      | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 1   |
 | Vee       | 0   | 0   | 0   | 0   | 0   | 0   | 1   | 0   |
 

@@ -13,6 +13,15 @@
 
 ```
 
+## Computations
+
+```{include} ./computation/grafting.md
+
+```
+```{include} ./computation/neutrality.md
+
+```
+
 ## Generators
 
 ```{include} ./generators/rational.md
