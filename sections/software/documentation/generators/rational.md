@@ -1,4 +1,8 @@
+<!-- prettier-ignore-start -->
+(sec-rational_tang_gen)=
 ### Rational Tangle Generator
+<!-- prettier-ignore-end -->
+
 
 #### Class Diagram
 

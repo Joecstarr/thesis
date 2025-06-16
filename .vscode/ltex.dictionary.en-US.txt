@@ -30,3 +30,4 @@ SnapPea
 stringified
 wptt
 Gamma$$
+Emscripten

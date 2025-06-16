@@ -1,4 +1,7 @@
-### Arborescent Tangle Generator
+<!-- prettier-ignore-start -->
+(sec-rlitt_tang_gen)=
+### Right Leaning Identity Tangle Tree Generator
+<!-- prettier-ignore-end -->
 
 The arborescent tangle generator implements a portion of the theoretical use
 case seen in @sec-arborescent.

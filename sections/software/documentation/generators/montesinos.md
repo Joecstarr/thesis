@@ -1,4 +1,7 @@
+<!-- prettier-ignore-start -->
+(sec-Montesinos_tang_gen)=
 ### Montesinos Tangle Generator
+<!-- prettier-ignore-end -->
 
 The Montesinos tangle generator implements a portion of the theoretical use case
 seen in @sec-monttang.

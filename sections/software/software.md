@@ -141,7 +141,10 @@ System use cases shall be documented and planned as outlined by the modified V
 model (@sec-life-cycle).
 ```
 
+<!-- prettier-ignore-start -->
+(sec-system_design)=
 ## System Design
+<!-- prettier-ignore-end -->
 
 With a set of requirements for our design, we can now describe a system design.
 Each requirement can be partitioned into one of two classes of requirement,
@@ -238,9 +241,45 @@ A block diagram of the architecture of a knot theory software toolbox
 
 ```
 
+<!-- prettier-ignore-start -->
+(sec-unitdesign)=
 # Unit Design for Tangle Tabulation
+<!-- prettier-ignore-end -->
+
+In this section, we give a collection of computational unit descriptions
+(@sec-product-unit-design), each unit realizing an interface defined in
+@sec-system_design. The units give computational mechanisms to wholly or
+partially satisfy the use cases described in @ch-tabulation.
 
 ```{include} ./documentation/core_libraries.md
+
+```
+
+<!-- prettier-ignore-start -->
+(sec-runners)=
+# Runners for Tangle Tabulation
+<!-- prettier-ignore-end -->
+
+In this section, we describe the runners for the runnables defined in
+@sec-unitdesign. Through this section, we will assume the existence of a global
+data store. The data store is used for storage of two sets of data, first the
+long-term storage of generated tangles and second the storage of partial jobs to
+be processed by the runners.
+
+## Rational Tangles
+
+We saw in the use case definition for rational tangle generation as well as the
+unit description satisfying that rational tangle generation is a fairly simple
+process. With this simplicity we need only to execute the rational tangle
+generation component (@sec-rational_tang_gen). We implement this runner by a
+python (Cython [@behnel2011cython]) runner, this runner executes the generation
+algorithm and adds the generated tangles to the datastore.
+
+```{include} ./runners/montesinos.md
+
+```
+
+```{include} ./runners/rational.md
 
 ```
 

@@ -2,3 +2,10 @@
 (sec-future_work-continued_tabulation)=
 ## Continued Tabulation
 <!-- prettier-ignore-end -->
+
+```{include} ./minimalization.md
+
+```
+```{include} ./polygonal.md
+
+```
