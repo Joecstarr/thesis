@@ -15,11 +15,11 @@ classDiagram
 
     class note_att_t {
 
-        note_att_node_t* root
-        note_att_node_t *node_buffer;
-        size_t node_buffer_len;
-        note_tv_t *tv_buffer;
-        size_t tv_buffer_len;
+       + note_att_node_t* root
+       + note_att_node_t *node_buffer;
+       + size_t node_buffer_len;
+       + note_tv_t *tv_buffer;
+       + size_t tv_buffer_len;
     }
 
     class note_att_operation_enum {
@@ -30,11 +30,11 @@ classDiagram
 
     class note_att_node_t {
 
-        note_att_node_t* left_child
-        note_att_node_t* right_child
-        note_tv_t *right_tv
-        note_tv_t *left_tv
-        note_att_node_enum operation
+       + note_att_node_t* left_child
+       + note_att_node_t* right_child
+       + note_tv_t *right_tv
+       + note_tv_t *left_tv
+       + note_att_node_enum operation
     }
 
     class notation {

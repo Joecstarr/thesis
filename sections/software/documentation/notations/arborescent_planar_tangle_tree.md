@@ -19,10 +19,10 @@ classDiagram
     }
     class note_wptt_t {
 
-        note_wptt_node_t* root
-        note_wptt_node_t* node_buffer
-        note_wptt_V4_label_e label
-        size_t node_buffer_len
+       + note_wptt_node_t* root
+       + note_wptt_node_t* node_buffer
+       + note_wptt_V4_label_e label
+       + size_t node_buffer_len
     }
 
     class note_wptt_order_e {
@@ -44,11 +44,11 @@ classDiagram
 
     class note_wptt_node_t {
 
-        note_wptt_node_t* children[MAX_CN]
-        uint8_t weights[MAX_CN]
-        size_t number_of_children
-        uint8_t number_of_rings
-        note_wptt_order_t order
+       + note_wptt_node_t* children[MAX_CN]
+       + uint8_t weights[MAX_CN]
+       + size_t number_of_children
+       + uint8_t number_of_rings
+       + note_wptt_order_t order
     }
 
     class notation {

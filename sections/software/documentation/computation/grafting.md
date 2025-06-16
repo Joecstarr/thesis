@@ -33,7 +33,6 @@ classDiagram
     }
 
     class comp_grafting_config_t {
-
     + notation_wptt *rootstock
     + notation_wptt *scion
     + uint8 grating_idx

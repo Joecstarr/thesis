@@ -22,13 +22,12 @@ classDiagram
 }
 
 class generator_mont_config_t {
-
-note_att_t *att_n;
-note_tv_t **tv_sets;
-size_t *tv_set_lens;
-size_t tv_sets_len;
-char *str_buff;
-size_t str_buff_len;
++ note_att_t *att_n;
++ note_tv_t **tv_sets;
++ size_t *tv_set_lens;
++ size_t tv_sets_len;
++ char *str_buff;
++ size_t str_buff_len;
 }
 
 class generator_config_t {

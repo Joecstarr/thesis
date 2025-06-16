@@ -19,10 +19,10 @@ classDiagram
 
 class gen_rational_config_t {
 
-uint8_t crossingNumber;
-note_tv_t *tv_n;
-char *tv_str_buff;
-size_t tv_str_buff_len;
++ uint8_t crossingNumber;
++ note_tv_t *tv_n;
++ char *tv_str_buff;
++ size_t tv_str_buff_len;
 }
 
 class gen_config_t {

@@ -33,8 +33,12 @@ class generator_rlitt_config_t {
 
 + note_wptt rootstock[]
 + gen_rlitt_positivity_e rootstock_positivity[]
++ size_t rootstock_len
 + note_wptt scion[]
-+ string buffer
++ gen_rlitt_positivity_e scion_positivity[]
++ size_t scion_len
++ string str_buffer
++ size_t str_buffer_len
 }
 
 class generator_config_t {
@@ -130,10 +134,6 @@ stateDiagram-v2
     outer_for-->[*]
 ```
 
-##### Private Functions
-
-###### Identify the neutrality of $$\Gamma$$
-
 #### Validation
 
 ##### Config Function
@@ -170,7 +170,30 @@ A negative response.
 
 ```
 
+```{test-card} Null Config Parameters
+
+A config with various null parameters is passed to the function.
+
+**Inputs:**
+
+- A config with null rootstock.
+- A config with null rootstock_positivity.
+- A config with 0 rootstock_len.
+- A config with null scion.
+- A config with null scion_positivity.
+- A config with 0 scion_len.
+- A config with null str_buffer.
+- A config with 0 str_buffer_len.
+
+**Expected Output:**
+
+A negative response.
+
+```
+
 ##### Generate Function
+
+###### Positive Tests
 
 ```{test-card} Valid Config and generation
 
@@ -178,46 +201,35 @@ A valid config is set and the generation is called.
 
 **Inputs:**
 
-- The twist vector lists
-    1. $\,$
-        - [ 0 1 1 ]
-        - [ 0 2 2 ]
-        - [ 0 3 3 ]
-    2. $\,$
-        - [ 1 1 1 ]
-        - [ 1 2 2 ]
-    3. $\,$
-        - [ 2 1 1 ]
-        - [ 2 2 2 ]
-        - [ 2 3 3 ]
-        - [ 2 4 4 ]
+- The rootstock list
+    - $\iota\LB 1\RB$
+    - $\iota\LP\LB2\RB \LB3\RB 4\RP$
+- The scion list
+    - $\iota\LB 5\RB$
+    - $\iota\LP\LB6\RB \LB7\RB 8\RP$
 
 **Expected Output:**
 
 The algebraic tangle trees:
--  +[1 1 0]+[1 1 1][1 1 2]
--  +[1 1 0]+[1 1 1][2 2 2]
--  +[1 1 0]+[1 1 1][3 3 2]
--  +[1 1 0]+[1 1 1][4 4 2]
--  +[1 1 0]+[2 2 1][1 1 2]
--  +[1 1 0]+[2 2 1][2 2 2]
--  +[1 1 0]+[2 2 1][3 3 2]
--  +[1 1 0]+[2 2 1][4 4 2]
--  +[2 2 0]+[1 1 1][1 1 2]
--  +[2 2 0]+[1 1 1][2 2 2]
--  +[2 2 0]+[1 1 1][3 3 2]
--  +[2 2 0]+[1 1 1][4 4 2]
--  +[2 2 0]+[2 2 1][1 1 2]
--  +[2 2 0]+[2 2 1][2 2 2]
--  +[2 2 0]+[2 2 1][3 3 2]
--  +[2 2 0]+[2 2 1][4 4 2]
--  +[3 3 0]+[1 1 1][1 1 2]
--  +[3 3 0]+[1 1 1][2 2 2]
--  +[3 3 0]+[1 1 1][3 3 2]
--  +[3 3 0]+[1 1 1][4 4 2]
--  +[3 3 0]+[2 2 1][1 1 2]
--  +[3 3 0]+[2 2 1][2 2 2]
--  +[3 3 0]+[2 2 1][3 3 2]
--  +[3 3 0]+[2 2 1][4 4 2]
+-  $\iota\LB5\ 1\RB$
+-  $\iota\LP\LP\LB 6\RB\LB 7\RB 8\RP 1\RP$
+-  $\iota\LP\LB2\RB\LB3\RB\LB5\RB 4\RP$
+-  $\iota\LP\LB2\RB\LB3\RB\LP\LB6\RB\LB7\RB8\RP4\RP$
+
+```
+
+###### Negative Tests
+
+```{test-card} Not Configured
+
+The generate interface is called before configuration.
+
+**Inputs:**
+
+- None.
+
+**Expected Output:**
+
+A negative response.
 
 ```
