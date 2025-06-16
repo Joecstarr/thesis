@@ -22,7 +22,7 @@ that the over strand of the crossing is the drive (the slot) of a giant flathead
 screw. Imagine also attaching to the screw a marker on either end of the drive,
 the full model is shown in @fig-jp-screw-model.
 
-```{figure} ./media/fig-jp-screw-model_iso.svg
+```{figure} ../../media/fig-jp-screw-model_iso.svg
 :label: fig-jp-screw-model
 @@@ TODO: Add content description
 ```
@@ -97,25 +97,25 @@ smoothing from @eq-kbkt-t3-2, enlarged in @fig-inv-t3-ct2
 .
 
 ````{prf:observation}
-```{figure} ./media/kauf_bkt/type3/2b
+```{figure} ../../media/kauf_bkt/type3/2b
 :label: fig-inv-t3-c
 :width:100px
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/kauf_bkt/type3/3b
+```{figure} ../../media/kauf_bkt/type3/3b
 :label: fig-inv-t3-ct2
 :width:100px
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/kauf_bkt/type3/2a
+```{figure} ../../media/kauf_bkt/type3/2a
 :label: fig-inv-t3-cc
 :width:100px
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/kauf_bkt/type3/3a
+```{figure} ../../media/kauf_bkt/type3/3a
 :label: fig-inv-t3-cct2
 :width:100px
 @@@ TODO: Add content description

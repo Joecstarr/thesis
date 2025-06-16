@@ -40,12 +40,12 @@ moves.
 
 
 
-```{figure} ./media/fig-tang_eq-fixed-2.svg
+```{figure} ../../media/fig-tang_eq-fixed-2.svg
 :label: fig-tang_eq-fixed-2
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/fig-tang_eq-fixed-v2.svg
+```{figure} ../../media/fig-tang_eq-fixed-v2.svg
 :label: fig-tang_eq-fixed-v2
 @@@ TODO: Add content description
 ```
@@ -62,7 +62,7 @@ the rotation and flip equivalence, a moveable boundary allows us to unwind
 integral components of a tangle which are connected to the boundary inline with
 the integral twists. This unwinding can be seen in @fig-tangl_eq-unwinding.
 
-```{figure} ./media/fig-tangl_eq-unwinding.svg
+```{figure} ../../media/fig-tangl_eq-unwinding.svg
 :label: fig-tangl_eq-unwinding
 @@@ TODO: Add content description
 ```
@@ -90,7 +90,7 @@ is built analogously to the $+$ but stacking $A$ vertically on top of $B$
 instead of horizontally. The operations can be seen in @fig-opo-plus and
 @fig-opo-vee.
 
-```{figure} ./media/fig-opo-vee.svg
+```{figure} ../../media/fig-opo-vee.svg
 :label: fig-opo-vee
 @@@ TODO: Add content description
 ```

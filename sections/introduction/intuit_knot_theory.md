@@ -11,8 +11,9 @@ a single string with open ends, as seen in @fig-intro-everyday_knot. Notice with
 this construction, no matter how "knotted" the string, we can always pull on
 loops to remove the knot, leaving us with only an unknotted string.
 
-```{figure} ./media/everyday_knot.svg
+```{figure} ../../media/everyday_knot.svg
 :label: fig-intro-everyday_knot
+:alt: testing this thing
 @@@ TODO: Add content description
 ```
 
@@ -24,12 +25,12 @@ a circle by gluing the ends as in @fig-intro-everyday_knot_closed.
 :label: fig-intro-closed_knots
 
 
-```{figure} ./media/everyday_knot_closed.svg
+```{figure} ../../media/everyday_knot_closed.svg
 :label: fig-intro-everyday_knot_closed
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/circle.svg
+```{figure} ../../media/circle.svg
 :label: fig-intro-circle
 @@@ TODO: Add content description
 ```
@@ -46,7 +47,7 @@ each other (figure @fig-intro-torus) then gluing the ends gives you knots that
 can't be maneuvered to look the same as @fig-intro-everyday_knot_closed or
 @fig-intro-circle.
 
-```{figure} ./media/torus.svg
+```{figure} ../../media/torus.svg
 :label: fig-intro-torus
 @@@ TODO: Add content description
 ```
@@ -58,18 +59,18 @@ knots, a sampling of which can be seen in @fig-intro-torus_knots.
 :label: fig-intro-torus_knots
 
 
-```{figure} ./media/torus_3.svg
+```{figure} ../../media/torus_3.svg
 :label: fig-intro-torus_3
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/torus_5.svg
+```{figure} ../../media/torus_5.svg
 :label: fig-intro-torus_5
 
 @@@ TODO: Add content description
 ```
 
-```{figure} ./media/torus_7.svg
+```{figure} ../../media/torus_7.svg
 :label: fig-intro-torus_7
 
 @@@ TODO: Add content description
@@ -92,7 +93,7 @@ exchanges the idea of a knot for that of a tangle, introduced by Conway
 [@conwayEnumerationKnotsLinks1970]. To build a tangle from a knot, we take what
 we've developed and follow the recipe (as seen in @fig-intro-tangle_maker):
 
-```{figure} ./media/tangle_maker.svg
+```{figure} ../../media/tangle_maker.svg
 :label: fig-intro-tangle_maker
 @@@ TODO: Add content description
 ```

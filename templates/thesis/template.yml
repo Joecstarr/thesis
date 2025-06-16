@@ -1,0 +1,78 @@
+jtex: v1
+title: Uiowa Thesis
+description: A Uiowa thesis template for mystmd
+version: 1.0.0
+license: CC-BY-4.0
+source: "https://github.com/Joecstarr/thesis"
+thumbnail: ./thumbnail.png
+authors:
+  - name: Joe Starr
+    affiliations:
+      - University of Iowa
+tags:
+  - thesis
+  - iowa
+# parts:
+#   - id: abstract
+#     # required: true
+#     description: >
+#       Keep it short.
+#   - id: lay_summary
+#     # required: true
+#     description: >
+#       Keep it short.
+#   - id: thesis_supervisor
+#   - id: committee_members_1
+#   - id: committee_members_2
+#   - id: committee_members_3
+#   - id: committee_members_4
+#   - id: concentration
+#   - id: epigraph_author
+#   - id: epigraph
+#     description: >
+#       Keep it short and accessible.
+#     max_chars: 1920
+#   - id: acknowledgments
+#     required: true
+#     description: >-
+#       Free form acknowledgments section will be include at the end of the
+#       article
+doc:
+  - id: title
+    required: true
+  - id: description
+  - id: authors
+    required: true
+options:
+  - id: show_date
+    type: boolean
+    default: true
+  - id: link
+    type: string
+    description: >
+      Include a link to the article online. This link will be placed inline at
+      the end of all content, before the bibliography section.
+files:
+  - template.tex
+  - uithesis.cls
+packages:
+  - amsfonts
+  - arxiv
+  - booktabs
+  - datetime
+  - doi
+  - fancyhdr
+  - background
+  - geometry
+  - everypage
+  - fontenc
+  - geometry
+  - graphicx
+  - hyperref
+  - inputenc
+  - lmodern
+  - microtype
+  - natbib
+  - nicefrac
+  - url
+  - xcolor

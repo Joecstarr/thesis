@@ -1,6 +1,5 @@
-### Core Libraries
 
-#### Notations
+## Notations
 
 ```{include} ./notations/twist_vector.md
 
@@ -14,7 +13,16 @@
 
 ```
 
-#### Generators
+## Computations
+
+```{include} ./computation/grafting.md
+
+```
+```{include} ./computation/neutrality.md
+
+```
+
+## Generators
 
 ```{include} ./generators/rational.md
 
@@ -24,6 +32,6 @@
 
 ```
 
-```{include} ./notations/arborescent.md
+```{include} ./generators/arborescent.md
 
 ```

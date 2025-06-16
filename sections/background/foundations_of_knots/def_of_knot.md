@@ -42,7 +42,7 @@ further require that the projection have no more then two points on strands that
 are colinear. We call this projection a knot shadow, an example can be seen in
 @fig-knot_def-shadow, and is commonly interpreted as a planar graph.
 
-```{figure} ./media/knot_shadow.svg
+```{figure} ../../media/knot_shadow.svg
 :label: fig-knot_def-shadow
 @@@ TODO: Add content description
 ```

@@ -3,22 +3,20 @@
 ### Selection of Undergraduate Projects
 <!-- prettier-ignore-end -->
 
-The accessibility of knot theory and tangles was discussed in the in
-introduction (Chapter @pt-introduction) this elaborates on how that
-accessibility can be leveraged to engage Undergraduates in research. Throughout
-this thesis we've investigated and observed the depth of tangle tabulation.
-We've also seen, even through the structure of this thesis itself, how easily
-portions of tangle tabulation can be "peeled off" and decomposed as a singular
-self-contained project.
+In this section we will list a collection of undergradute research project
+statements and how those projects may be approached. We will additionally
+describe what experiance an undergraduate might need to work on a particular
+project.
 
 <!-- prettier-ignore-start -->
 (sec-proj-homflypt)=
-#### Compute HOMFLYPT polynomial from algebraic tangle trees
+#### Compute HOMFLYPT polynomial from a Tangle Notation
 <!-- prettier-ignore-end -->
 
 One of the most important advancements in knot theory was the discovery of knot
-polynomials as a class of knot invariants. Perhaps the most powerful of these
-polynomials is the HOMFLYPT polynomial [@freydNewPolynomialInvariant1985]
+polynomials as a class of knot invariants. One of the most powerful
+(distinguishes many knot) of these polynomials is the HOMFLYPT polynomial
+[@freydNewPolynomialInvariant1985]
 
 $$
 P(L) = \frac{-(\ell+\ell^{\ \m 1})}{m} P(L_1)P(L_2) $$ \ noindent constructed from
@@ -26,7 +24,7 @@ the skein relations ( @fig-future_work-skein_homfly ) conveniently the data
 needed to apply the skein relations is exactly the data encoded by the algebraic
 tangle tree, with the natural tangle orientations.
 
-```{figure} ./media/Skein_HOMFLY.svg
+```{figure} ../../media/Skein_HOMFLY.svg
 :label: fig-future_work-skein_homfly
 @@@ TODO: Add content description [@pbroks13SkeinHOMFLY2008]
 ```
@@ -38,6 +36,7 @@ knots, requires only college algebra maturity and should be easily
 accomplishable by most undergraduates. However, the algorithmic computation of
 HOMFLYPT offers a range of great opportunities for original heuristic
 optimizations.
+
 <!-- prettier-ignore-start -->
 (sec-proj-diagram_att)=
 #### Compute Diagram for Algebraic Tangle Trees

@@ -23,3 +23,11 @@ bigons
 non-bigon
 Caudron
 Rockett
+parallelizability
+KnotTheory
+SnapPy
+SnapPea
+stringified
+wptt
+Gamma$$
+Emscripten

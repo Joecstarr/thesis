@@ -4,3 +4,8 @@
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThis unwinding can be seen in @fig-tangl_eq-unwinding.\\E$"}
 {"rule":"EN_COMPOUNDS_THREE_DIMENSIONAL","sentence":"^\\QWe will give Conway's original definition followed by a description of what this looks like for a three three dimensional embedding for a knot.\\E$"}
 {"rule":"EN_COMPOUNDS_THREE_DIMENSIONAL","sentence":"^\\QWe move our attention to the three dimensional analog for a Conway circle, the Conway sphere.\\E$"}
+{"rule":"FOUR_NN","sentence":"^\\QTaking this information, we formulate what features our knot theory software toolbox must have.\\E$"}
+{"rule":"FOUR_NN","sentence":"^\\QThe second phase of the software product development process is the software engineering process.\\E$"}
+{"rule":"FOUR_NN","sentence":"^\\QThis includes modeling a software process to be paired with the knot theory software toolbox in professional and undergraduate research projects.\\E$"}
+{"rule":"EN_REPEATEDWORDS_PROBLEM","sentence":"^\\QDivide and conquer: You should break a hard problem into smaller solvable problems where possible.\\E$"}
+{"rule":"CONFUSION_KNOT_NOT","sentence":"^\\QKnotPlot is a closed source^closed knot computation tool primarily used for diagramming knots.\\E$"}

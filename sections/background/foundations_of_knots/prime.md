@@ -12,7 +12,7 @@ given by first excising an arc from both $J$ and $K$, and then glueing endpoints
 of $J$ to endpoints in $ K$. We can see an example of the connect sum of a
 trefoil and figure 8 knot in @fig-prime_knot-connect_sum
 
-```{figure} ./media/fig-prime_knot-connect_sum.svg
+```{figure} ../../media/fig-prime_knot-connect_sum.svg
 :label: fig-prime_knot-connect_sum
 @@@ TODO: Add content description
 ```

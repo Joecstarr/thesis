@@ -49,7 +49,7 @@ three.
 
 ````{prf:example}
 :label: mont-ex-flypesimple
-```{figure} ./media/fig-mont.svg
+```{figure} ../../media/fig-mont.svg
 ```
 A Montesinos tangle $\LB1\ 3\ 2\RB+\LB 3\ 0\RB+\LB \m1\ \m3\ \m2\RB+\LB 3\ 0\RB+\LB1\ 3\ 2\RB$
 simplifying to $\LB 3\ 0\RB+\LB 3\ 0\RB+\LB \m3\ \m 2\ 0\RB+\LB 3\ 0\RB+\LB 3\ 0\RB+\LB 3\RB$
@@ -142,7 +142,7 @@ us to drop parentheses from our notation, saving two bytes in each instance.
 
 ````{prf:example}
 
-```{image}./media/mont.svg
+```{image}../../media/mont.svg
 ```
 
 Algebraically:

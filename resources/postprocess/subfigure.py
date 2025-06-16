@@ -53,12 +53,12 @@ if __name__ == "__main__":
                 file_lines[start_idx] = "\\begin{figure}[!htbp]\n\\centering\n"
                 if file_lines[end_idx - 2].startswith("%  @@@label:"):
                     file_lines[end_idx - 2] = (
-                        "\\caption[]{$\\,$}\\label{"
+                        "\\caption[$\,$]{$\\,$}\\label{"
                         + file_lines[end_idx - 2].replace("%  @@@label:", "").replace("\n","")
                         + "}"
                     )
                 else:
-                    file_lines[end_idx - 2] = "\\caption[]{$\\,$}"
+                    file_lines[end_idx - 2] = "\\caption[$\,$]{$\\,$}"
                 file_lines[end_idx - 1] = ""
                 file_lines[end_idx] = "\\end{figure}\n"
                 ...

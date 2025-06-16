@@ -44,7 +44,7 @@ simple form of {prf:ref}`fig-arborescent_part` after suitable isotopic
 deformation in $S^3$.
 ```
 
-```{figure} ./media/arborescent_knot.svg
+```{figure} ../../media/arborescent_knot.svg
 :label: fig-arborescent_part
 :width: 500px
 

@@ -19,7 +19,7 @@ completed in the 1860's, contained prime knots (described in @subsec-prime_knot)
 up to seven crossings [@taitFirstSevenOrders1884], a table of the first seven
 knots can be seen in @fig-hist-7table
 
-```{figure} ./media/knots_to_7.svg
+```{figure} ../../media/knots_to_7.svg
 :label: fig-hist-7table
 @@@ TODO: Add content description [@schareinInteractiveTopologicalDrawing1998]
 ```
@@ -35,7 +35,7 @@ tables contained a single error, two equivalent ten crossing knots, identified
 in 1974 by Perko an amateur mathematician [@perkoClassificationKnots1974] (the
 pair can be seen in @fig-hist-perko) .
 
-```{figure} ./media/perko_pair.svg
+```{figure} ../../media/perko_pair.svg
 :label: fig-hist-perko
 @@@ TODO: Add content description [@schareinInteractiveTopologicalDrawing1998]
 ```

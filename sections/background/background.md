@@ -1,4 +1,6 @@
-# Background
+---
+title: Background
+---
 
 ```{include} ./history.md
 

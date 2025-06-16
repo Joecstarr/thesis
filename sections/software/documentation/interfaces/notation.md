@@ -1,36 +1,48 @@
 <!-- prettier-ignore-start -->
 (sec-interfaces-notation)=
-##### Notation Interface
+### Notation Interface
 <!-- prettier-ignore-end -->
+
+The notation interface defines the general form for a component used to store
+knot notational data. This includes a computational data structure for a knot
+notation and the functions required for translation into and out of string
+representations of that notation.
+
+#### Class Diagram
 
 ```mermaid
 classDiagram
     notation *-- note_t
     class notation {
-        <<interface>>
-        + note_t decode(string)
-        + string encode(note_t)
+        <<Interface>>
+        + int decode(string,note_t)
+        + int encode(note_t,string,buffer_size)
     }
 
     class note_t {
-        <<struct>>
+
     }
 
 ```
 
-###### Brief
+#### Functionality
 
-This interface describes a generic notation module. A notation module sits
-between a storage module and an upper layer (Computation, Generator, etc.). The
-notation module will define a struct that encodes the notational data and two IO
-functions.
+##### Public Structures
 
-The encode/decode operations are taken from the perspective of the database.
+###### Notation Data Structure
 
-**Encoding**
+This is the primary data structure for a notation component. This data structure
+defines and stores the computational representation of a knot notation.
 
-Takes a data structure and encodes it as its string representation.
+##### Public Functions
 
-**Decoding**
+###### Encode Function
 
-Takes a string and decodes it as its data structure representation.
+The encode function takes in the string representation of a knot notation,
+processes the string and stores the computational representation into a notation
+data structure.
+
+###### Decode Function
+
+The decode function takes in a computational representation of a notation data
+structure, and processes it into a string representation of a knot notation.
