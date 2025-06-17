@@ -72,7 +72,24 @@ project:
         '\mvtwt': '\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}'
         '\mvtht': '\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}'
 site:
-    template: book-theme
+    title: "The Tanglenomicon: Tabulation of two string tangles"
 
+    template: book-theme
+    nav:
+        - title: Table of Contents
+          children:
+              - title: Introduction
+                url: /introduction
+              - title: Background
+                url: /background
+              - title: Tabulation
+                url: /tabulation
+              - title: Software and its Engineering
+                url: /software
+              - title: Future Directions
+                url: /future-work
     options:
+        hide_toc: true
+        hide_title_block: true
+        logo: ./featured.svg
         favicon: ./book.png
