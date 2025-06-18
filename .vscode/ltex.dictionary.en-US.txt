@@ -31,3 +31,6 @@ stringified
 wptt
 Gamma$$
 Emscripten
+Veen
+Bar-Natan
+HOMFLYPT

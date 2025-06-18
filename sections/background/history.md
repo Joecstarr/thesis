@@ -59,7 +59,7 @@ of knot tabulation.
 
 With advancements in manufacturing in the early 1980s electronic computers
 became closer to commodity products, allowing for more and diverse users to take
-their crack at time consuming computational tasks. One of these computational
+their crack at time-consuming computational tasks. One of these computational
 tasks is the construction of knot tables. The first to construct a knot table by
 computer was Dowker and Thistlethwaite
 [@dowkerClassificationKnotProjections1983] in 1983 who produced a table of all

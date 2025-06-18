@@ -1,8 +1,7 @@
 <!-- prettier-ignore-start -->
-
-<!-- prettier-ignore-end -->
-
+(sec-minimalization)=
 #### Minimalization of CWPTT
+<!-- prettier-ignore-end -->
 
 ##### CWPTT Are Not Minimal
 

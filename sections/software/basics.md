@@ -1,4 +1,8 @@
+
+<!-- prettier-ignore-start -->
+(sec-product-vs-project)=
 # Project vs. Product
+<!-- prettier-ignore-end -->
 
 One of the most pervasive ideas held by amateur software developers is that
 documentation means simply commenting your code. This idea and its consequences
