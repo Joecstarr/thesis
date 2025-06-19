@@ -1,6 +1,6 @@
-# @@@TODO: Initial Write
+# Initial Write
 
--   [ ] 📂background
+-   [x] 📂background
     -   [x] 📂foundations_of_knots
         -   [x] conway
         -   [x] def_of_knot
@@ -20,18 +20,79 @@
     -   [ ] acknowledgments
     -   [ ] frontmatter
     -   [ ] public_abstract
--   [ ] 📂future_work
-    -   [ ] continued_research
-    -   [ ] future_work
-    -   [ ] polygonal
+-   [x] 📂future_work
+    -   [x] continued_research
+    -   [x] future_work
+    -   [x] polygonal
     -   [x] selection_projects
-    -   [ ] undergrad_rsch
+    -   [x] undergrad_rsch
 -   [x] 📂introduction
     -   [x] applications
     -   [x] introduction
     -   [x] intuit_knot_theory
     -   [x] overview
+-   [x]software
+    -   [x] documentation
+        -   [x] generators
+        -   [x] arborescent
+        -   [x] montesinos
+        -   [x] rational
+        -   [x] interfaces
+            -   [x] computation
+            -   [x] generator
+            -   [x] interfaces
+            -   [x] notation
+            -   [x] storage
+        -   [x] notations
+            -   [x] algebraic_tangle_tree
+            -   [x] arborescent_planar_tangle_tree
+            -   [x] twist_vector
+        -   [x] core_libraries
+    -   [x] software
+-   [x] 📂tabulation
+    -   [x] 📂arborescent
+    -   [x] arborescent
+    -   [x] 📂initial_dataset
+        -   [x] initial_dataset
+        -   [x] montesinos
+        -   [x] rational
+    -   [x] tabulation
+
+# Editing pass
+
+-   [x] 📂introduction
+    -   [x] introduction
+    -   [x] applications
+    -   [x] intuit_knot_theory
+    -   [x] overview
+-   [ ] 📂background
+    -   [ ] background
+    -   [ ] history
+    -   [ ] foundations_of_knots
+    -   [ ] foundations_of_tangles
+    -   [ ] 📂foundations_of_knots
+        -   [ ] conway
+        -   [ ] def_of_knot
+        -   [ ] equivalence
+        -   [ ] invariants
+        -   [ ] kauf_bkt
+        -   [ ] notations
+        -   [ ] prime
+        -   [ ] type1
+        -   [ ] writhe
+-   [ ] 📂frontmatter
+    -   [ ] abstract
+    -   [ ] acknowledgments
+    -   [ ] frontmatter
+    -   [ ] public_abstract
+-   [ ] 📂future_work
+    -   [ ] continued_research
+    -   [ ] future_work
+    -   [ ] polygonal
+    -   [ ] selection_projects
+    -   [ ] undergrad_rsch
 -   [ ]software
+    -   [ ] software
     -   [ ] documentation
         -   [ ] generators
         -   [ ] arborescent
@@ -48,55 +109,6 @@
             -   [ ] arborescent_planar_tangle_tree
             -   [ ] twist_vector
         -   [ ] core_libraries
-    -   [ ] software
--   [x] 📂tabulation
-    -   [x] 📂arborescent
-    -   [x] arborescent
-    -   [x] 📂initial_dataset
-        -   [x] initial_dataset
-        -   [x] montesinos
-        -   [x] rational
-    -   [x] tabulation
-
-# @@@TODO: Editing pass
-
--   [ ] 📂background
-    -   [ ] 📂foundations_of_knots
-        -   [ ] conway
-        -   [ ] def_of_knot
-        -   [ ] equivalence
-        -   [ ] invariants
-        -   [ ] kauf_bkt
-        -   [ ] notations
-        -   [ ] prime
-        -   [ ] type1
-        -   [ ] writhe
-    -   [ ] background
-    -   [ ] foundations_of_knots
-    -   [ ] foundations_of_tangles
-    -   [ ] history
--   [ ] 📂frontmatter
-    -   [ ] abstract
-    -   [ ] acknowledgments
-    -   [ ] frontmatter
-    -   [ ] public_abstract
--   [ ] 📂future_work
-    -   [ ] continued_research
-    -   [ ] future_work
-    -   [ ] polygonal
-    -   [ ] selection_projects
-    -   [ ] undergrad_rsch
--   [ ] 📂introduction
-    -   [ ] applications
-    -   [ ] introduction
-    -   [ ] intuit_knot_theory
-    -   [ ] overview
--   [ ] 📂software
-    -   [ ] 📂documentation - [ ] core_libraries - [ ] documentation - [ ]
-            presentation - [ ] web_api
-    -   [ ] selecting_technologies
-    -   [ ] software
-    -   [ ] software_lifecycle
 -   [ ] 📂tabulation
     -   [x] 📂arborescent
     -   [x] arborescent

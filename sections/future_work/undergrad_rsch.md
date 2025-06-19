@@ -12,9 +12,9 @@ product management (@sec-product-management) and software life cycle
 (@sec-life-cycle) for use in organizing undergraduate research. These processes
 can be combined with fully structured, partially structured, or unstructured
 problem statements, depending on student maturity, to create product worthy
-undergraduate research projects. Using this proccess for training undergraduate
-researchs is enhanced by sequencing parts of or multiple problems with a gradual
-release of responsibility model as described by Fisher and Frey
+undergraduate research projects. Using this process for training undergraduate
+researches is enhanced by sequencing parts of or multiple problems with a
+gradual release of responsibility model as described by Fisher and Frey
 [@fisherBetterLearningStructured2013].
 
 ```{include} ./selection_projects.md

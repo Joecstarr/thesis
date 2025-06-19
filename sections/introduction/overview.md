@@ -23,57 +23,63 @@ answer even further restricted versions of these questions:
     algebraic/arborescent tangles can I write down?"
 
 While we could answer these questions with pen and paper brute force, beyond
-reasonable crossing number, as small as 9, the time and effort needed makes pen
-and paper untenable. To achieve our goal in reasonable time we will follow a
-similar framework to Hoste, Thistlethwaite, Weeks, and recently Burton
+reasonable crossing number, as small as 9 or 10, the time and effort needed
+makes pen and paper untenable. To achieve our goal in reasonable time, we will
+follow a similar framework to that of Hoste, Thistlethwaite, Weeks, and Burton
 [@hosteFirst1701936Knots1998] [@hosteEnumerationClassificationKnots2005]
-[@burtonNext350Million2020] utilizing computer methods to generate a tangle
-table of algebraic tangles to twelve crossings. To effectively utilize computers
-for this tabulation work requires the design and implementation of several
-pieces of software. This tabulation framework, described in the later parts, is
-constructed with the accessible nature of knot theory in mind. We keep this
-accessibility in mind to enable future work with undergraduate researchers.
+[@burtonNext350Million2020]. Utilizing computer methods to generate a tangle
+table of algebraic/arborescent tangles to twelve crossings. To effectively
+utilize computers for this tabulation work requires the design and
+implementation of a framework and several pieces of software. This tabulation
+framework, described in the later chapters, is constructed with the accessible
+nature of knot theory in mind to enable future work with undergraduate
+researchers.
 
 ### Chapter Summary
 
-In this section, we describe the order and give a short summary of each part of
-this thesis. Organizationally, this thesis is broken into five parts. Each part
-is further broken down into chapters, sections, and subsections.
+For the remainder of this section, we describe the order and give a short
+summary of each chapter of this thesis. Organizationally, this thesis is broken
+into five chapters. Each chapter is further broken down into sections, and
+subsections.
 
 #### Introduction
 
 The introduction gives an intuitive description of the basics of knot theory,
-and a sampling of applications for tangles. The finishes with a description of
-the content of this thesis.
+and a discussion of an application for knots and tangles. Then finishes with
+this description of the content of this thesis.
 
 #### Background
 
-This chapter gives historical and rigorous groundings in the knot theory needed
-for the rest of the thesis. This includes definitions for knots and tangles, as
-well as a sampling of notations and invariants for knots and tangles.
+This chapter gives the preliminaries needed for the rest of the thesis. This
+includes the historical background of tabulation in knot theory and a rigorous
+grounding in knot and tangle theory. We will see definitions for knots and
+tangles, as well some notations and invariants for knots and tangles.
 
 #### Tabulation
 
-This chapter describes the methodology for the tabulation of tangles. The
-chapter is broken down into two chapters, the first contains the methodology
-used for tabulation of historically well-understood tangles, while the second
-describes the methodology for the tabulation of the more general algebraic
-(arborescent) tangles. For each class of tangle addressed, the definition and
-classification is given, followed by the theoretical and computational
-generation strategy.
+This chapter describes the theoretical methodology for the tabulation of
+tangles. The chapter is broken down into two chapters, the first contains the
+methodology used for tabulation of historically well-understood classes of
+tangles. The second describes the methodology for the tabulation of the more
+general algebraic (arborescent) tangles. For each class of tangle addressed, a
+definition and classification is given, then followed by the theoretical and
+computational generation strategy.
 
 #### Architecture Of A Knot Theory Software Toolbox
 
-This chapter describes the software created for the tabulation. The chapter
-begins with an overview of the system design for a general purpose "knot theory
-software toolbox". The design given in this chapter are intended to be used in
-this work as well as generically for research projects, including undergraduate
-research projects. The chapter concludes with a description of the presentation
-layer for the tangle table, a web interface similar to KnotInfo
-[@livingstonKnotInfoTableKnot2025].
+This chapter describes the software and process that was created for
+computational knot theory. The chapter begins with an overview of product
+management and software engineering. We then give a design for a general purpose
+"knot theory software toolbox", intended to be used in this work as well as
+generically for research projects, including undergraduate research projects.
+The chapter concludes with the software design (unit description) for the tools
+developed to realize the solutions in the tabulation section. These software
+design descriptions are phrased to fit the process outlined by the "knot theory
+software toolbox".
 
 #### Future Work and Undergraduate Research
 
 The final chapter of this thesis gives an overview of future work to be done on
-tangle tabulation. The chapter has a particular emphasis on outlining project
-plans for undergraduate research in tangle tabulation.
+tangle tabulation. This takes two forms, first the direct next steps in tangle
+tabulation at the professional research level. The second form is on outlining
+future project topics for undergraduate researchers at various levels.
