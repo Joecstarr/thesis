@@ -85,6 +85,13 @@
         -   [x] notations
         -   [x] conway
     -   [x] foundations_of_tangles
+-   [x] 📂tabulation
+    -   [x] tabulation
+    -   [x] 📂arborescent
+    -   [x] 📂initial_dataset
+        -   [x] initial_dataset
+        -   [x] rational
+        -   [x] montesinos
 -   [ ]software
     -   [ ] software
     -   [ ] documentation
@@ -103,14 +110,6 @@
             -   [ ] arborescent_planar_tangle_tree
             -   [ ] twist_vector
         -   [ ] core_libraries
--   [ ] 📂tabulation
-    -   [x] 📂arborescent
-    -   [x] arborescent
-    -   [ ] 📂initial_dataset
-        -   [ ] initial_dataset
-        -   [ ] montesinos
-        -   [ ] rational
-    -   [ ] tabulation
 -   [ ] 📂future_work
     -   [ ] continued_research
     -   [ ] future_work

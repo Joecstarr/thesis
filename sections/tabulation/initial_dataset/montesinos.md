@@ -9,13 +9,12 @@ core strategy of tangle tabulation.
 
 #### Construction
 
-With the rational tangles in hand, we wish to utilize the data we have to
-further enumerate tangles. One way we have seen to build simple objects into
-complex objects is to combine two tangles with the $+$ or $\vee$ operation. To
-keep complexity under control, we start with combining tangles in a repeated $+$
-sum. When the summands $R_i$, are all rational or integral, we call the result
-of the sum a **Montesinos Tangle**, allowing us to systematically construct
-Montesinos tangles.
+With the rational tangles in hand, we wish to utilize that data to enumerate
+additional tangles. One way we have seen to build simple objects into complex
+objects is to combine two tangles with the $+$ or $\vee$ operation. To keep
+complexity under control, we start with combining tangles only with repeated $+$
+sum. When the summands $R_i$ (@mont-math-def), are all rational or integral, we
+call the result of the sum a **Montesinos Tangle**.
 
 ```{math}
 :label: mont-math-def
@@ -25,8 +24,8 @@ R_0+R_1+\cdots+R_n
 ```
 
 ```{note}
-Under this characterization of the Montesinos tangles every rational tangle is a
-Montesinos tangle.
+Under this characterization of the Montesinos tangles, every rational tangle is
+also a Montesinos tangle.
 ```
 
 ##### Unique Representative
@@ -43,9 +42,9 @@ $R_i$ in a Montesinos tangle, we have four possibilities:
 Observe that in the second and fourth cases, $R_i$ terminates in a horizontal
 integral tangle. In these cases, the tangle can be simplified by using the flype
 (@subsubsec-opo-flype) to move the horizontal crossings to be the right most
-summand, seen in @mont-ex-flypesimple. If this process is carried out for each
-summand in case two and four, the resulting summands all fall into cases one and
-three.
+summand, seen in @mont-ex-flypesimple. When this process is carried out for each
+summand of the type in case two and four, the resulting summands all fall into
+cases one and three.
 
 ````{prf:example}
 :label: mont-ex-flypesimple
@@ -56,13 +55,13 @@ simplifying to $\LB 3\ 0\RB+\LB 3\ 0\RB+\LB \m3\ \m 2\ 0\RB+\LB 3\ 0\RB+\LB 3\ 0
 ````
 
 We will now pair down to a single possibility, case one. Consider a summand
-$R_i$ in case one, meaning $\m 1 <F\LP R_i\RP<0$. @rational-thm-conways tells us
-that if we can find an alternative, potentially non-canonical, twist vector that
-fits our needs, we are free to exchange for it. What we would like is an odd
-length twist vector where every entry is positive, except for the right most
-which is a negative value. This will ensure that the fraction is still negative
-but will allow us to flype the terminal horizontal integral tangle to the right,
-as in @mont-ex-flypesimple. Rockett and Szüsz give a lemma that establishes the
+$R_i$ in case three, meaning $\m 1 <F\LP R_i\RP<0$. @rational-thm-conways tells
+us that if we can find an alternative, potentially non-canonical, twist vector
+that fits our needs, we are free to exchange without impacting topology. What we
+would like, is an odd length twist vector where every entry is positive, except
+for the right most which is a negative value. This ensures that the fraction is
+still negative but will allow us to flype the terminal horizontal integral
+tangle to the right. Rockett and Szüsz give a lemma that establishes the
 existence of such a twist vector for each rational number.
 
 ```{prf:lemma} [@rockettContinuedFractions1998]
@@ -94,21 +93,26 @@ Before we can generate Montesinos tangles, we need to define an efficient
 notation for computation and storage. Similar to what we saw in the rational
 tangle case, the theoretical notation for Montesinos tangles is sufficient for
 both computation and storage. However, with eyes on future computational work,
-we will generalize our notation. Montesinos tangles are simple forms of the
-algebraic tangles @def-algbraic, so we will build a notational strategy for
-general algebraic tangles. The theoretical notation for algebraic tangles is
-outlined in @subsec-tangle_operations and seen in @mont-ex-algtang.
+we will generalize our notation.
 
-```{prf:example}
+Montesinos tangles are simple forms of the algebraic tangles (@def-algbraic), so
+we will build a notational strategy for general algebraic tangles. The
+theoretical notation for algebraic tangles is outlined in
+@subsec-tangle_operations and seen in @mont-ex-algtang.
+
+````{prf:example}
 :label: mont-ex-algtang
-$\LP\LP 1+2\RP\vee\LP 8\vee5\RP\RP+\LP1+3\RP+5$
+```{image} ../../media/algebric-ex.svg
 ```
+The tangle representation of the algebraic statemenet
+$$\LP\LP\LP 1+\frac{1}{2}\RP\vee\LP 4\vee \frac{1}{4}\RP\RP+\LP \m1+3\RP\RP+5$$
+````
 
 Since each of $+$ and $\vee$ are binary operations, we can interpret these
 algebraic statements as binary operation tree, we call these **algebraic tangle
 trees** seen in @mont-ex-tree. These tree decomposition were given first by
-Caudron @caudron1982classification and then further refined by Connolly
-@connollyClassificationTabulation2string2021.
+Caudron [@caudron1982classification] and then further refined by Connolly
+[@connollyClassificationTabulation2string2021].
 
 ````{prf:example}
 :label: mont-ex-tree
@@ -117,13 +121,13 @@ Caudron @caudron1982classification and then further refined by Connolly
  flowchart TD
 
    id0("+")-->id1("1")
-   id0("+")-->id2("2")
+   id0("+")-->id2("$$\frac{1}{2}$$")
 
-   id6("+")-->id7("1")
+   id6("+")-->id7("-1")
    id6("+")-->id8("3")
 
-   id3("v")-->id4("8")
-   id3("v")-->id5("5")
+   id3("v")-->id4("4")
+   id3("v")-->id5("$$\frac{1}{4}$$")
 
    id9("v")-->id0
    id9("v")-->id3
@@ -137,11 +141,12 @@ Caudron @caudron1982classification and then further refined by Connolly
 ```
 ````
 
-We can simplify the notation by substituting rational tangle twist vectors for
-the basic tangles. Additionally, we can improve the storage overhead by storing
-the tree as a string in polish notation
-@lukasiewiczElementyLogikiMatematycznej1929. Storing in polish notation allows
-us to drop parentheses from our notation, saving two bytes in each instance.
+We can simplify the notation, without losing fidelity, by substituting the
+integral leaf tangles for rational tangle twist vectors. Additionally, we can
+improve the storage overhead by storing the tree as a string in polish notation
+[@lukasiewiczElementyLogikiMatematycznej1929]. Storing in polish notation allows
+us to drop all the parentheses from our notation, saving two bytes in each
+instance.
 
 ````{prf:example}
 
@@ -194,16 +199,17 @@ Generation for all Montesinos tangles of a given crossing number at this point
 can be broken down into two steps:
 
 1. Generate all stencils
-2. Fill in the stencils with all rational tangles with fraction in the unit
+2. Fill in the stencils with all rational tangles whose fraction is in the unit
    interval (plus an integral tangle in the rightmost position).
 
 For the first step, we require a mechanism for breaking an integer into all
-possible combinations of parts. Luckily, we have already seen how to do this, in
-the context of a twist vector. We follow the same counting algorithm outlined in
-@find-rat-tang-of-n however we modify the algorithm to keep both the even and
-odd outputs but filter stencils with entries less than 2. For the second step,
-we pull rational (and integral) tangles from our existing list, creating all
-combinations of input tangles given by the stencil.
+possible combinations where the parts sum to the integer. Luckily, we have
+already seen how to do this, in the context of a twist vector. We follow the
+same counting algorithm outlined in @find-rat-tang-of-n, however we modify the
+algorithm to keep both the even and odd outputs but filter stencils with entries
+less than 2. For the second step, we pull rational (and integral) tangles from
+our existing list, creating all combinations of input tangles given by the
+stencil.
 
 We conclude the section with a set of algorithms that describe a method for
 computationally generating all Montesinos tangles up to a given crossing number.

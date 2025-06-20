@@ -12,8 +12,8 @@ apart, we first need to be able to say when tangles are the same. Our
 development of the concept of equality of tangles follows closely to that of
 knots. From @subsubsec-deftangles, we have definitions for tangles in the
 context of knot diagrams and three-dimensional embeddings of knots. This tells
-us that the concepts of equality developed in @subsec-knot_equivalence namely
-ambient isotopy and Reidemeister moves will apply in the tangle case with two
+us that the concepts of equality developed in @subsec-knot_equivalence, namely
+ambient isotopy and Reidemeister moves, will apply in the tangle case with two
 key differences.
 
 The first difference in tangles when compared to knots is that we restrict
@@ -63,11 +63,11 @@ components of a tangle (@fig-tangl_eq-unwinding).
 
 ```{figure} ../../media/fig-tangl_eq-unwinding.svg
 :label: fig-tangl_eq-unwinding
-The progressive unwinding of integral tangles leaving a basic $0$ tangle.
+The progressive unwinding of integral tangles, leaving a basic $0$ tangle.
 ```
 
 ```{note}
-In the moveable boundary case there is only one basic tangle, the $0$ tangle.
+In the moveable boundary case, there is only one basic tangle, the $0$ tangle.
 ```
 
 For this thesis, we will assume tangles have a fixed boundary unless explicitly
