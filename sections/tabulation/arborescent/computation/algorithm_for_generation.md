@@ -50,12 +50,12 @@ $\Gamma_r\in \mathcal{T}^{rp}_{n}$ called the rootstock,
 $\Gamma_s\in \mathcal{T}^{rp}_{m}$ called the scion, and $v_i$ the
 $i^{\text{th}}$ vertex of $\Gamma_r$. Define the grafting operation as follows.
 
-$$
+```{math}
 \begin{aligned}
 \star_i:\mathcal{T}^{rp}_{n}\times\mathcal{T}^{rp}_{m}&\to\mathcal{T}^{rp}_{n+m}\\
 \Gamma_r\times\Gamma_s&\mapsto\Gamma
 \end{aligned}
-$$
+```
 
 Starting from the vertex $v_i$ of $\Gamma_r$, introduce an edge to the root of
 $\Gamma_s$. Now, adjust the indexing of a vertex $w_k$ of $\Gamma_s$ as
@@ -357,7 +357,7 @@ portions of weighted planar trees.
 |    $\iota\LP\alpha\LB 2\RB\ w_0\RP$     |    $\iota\LP\alpha\LB \m 2\RB\RP$     |
 | $\iota\LP\alpha\LP \beta\ 2\RP\ w_0\RP$ | $\iota\LP\alpha\LP \beta\ \m 2\RP\RP$ |
 
-Taking combinations gives:
+$\!$Taking combinations gives:
 
 | $\Gamma_r\star\Gamma_s$                                                                                                                       | Class         |
 | :-------------------------------------------------------------------------------------------------------------------------------------------- | :------------ |
@@ -371,7 +371,7 @@ Taking combinations gives:
 | $\iota\LP\alpha\LP \beta\ 2\RP\ w_0\RP\star\iota\LP\alpha\LB \m 2\RB\RP=\iota\LP\LP\alpha\LP\beta\ 2\RP\RP\LP\gamma\LB\m2\RB\RP\ w_i\RP$                | Non-canonical |
 | $\iota\LP\alpha\LP \beta\ 2\RP\ w_0\RP\star\iota\LP\alpha\LP \beta\ \m 2\RP\RP=\iota\LP\LP\alpha\LP\beta\ 2\RP\RP\LP\gamma\LP\delta\ \m2\RP\RP\ w_i\RP$ | Non-canonical |
 
-Exhausting all possibilities of grafting $+$ and $-$ trees.
+$\,$Exhausting all possibilities of grafting $+$ and $-$ trees.
 ```
 
 ```{prf:remark} Find weighted planar trees by grafting $\LP +\RP$-RLITT good scions to rightmost path of $\LP +\RP$-RLITT rootstocks

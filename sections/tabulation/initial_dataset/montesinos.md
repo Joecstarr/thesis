@@ -74,14 +74,17 @@ except for the first (rightmost twist vector entry) which is an integer.
 We are now left with only the first case, and can define a canonical form for
 Montesinos tangles.
 
-```{prf:definition}Canonical Montesinos Tangles[@ernstTANGLEEQUATIONS1996; @bonahonNewGeometricSplittings2016]
+````{prf:definition}Canonical Montesinos Tangles[@ernstTANGLEEQUATIONS1996; @bonahonNewGeometricSplittings2016]
 
 Every non-rational Montesinos tangle $T$ admits a canonical diagram satisfying
-the following construction: $$T \cong R_0+\cdots+R_m+\frac{k}{1}$$ where each
-$R_i \cong \frac{p_i}{q_i}$ is a rational subtangle in canonical form with
+the following construction:
+```{math}
+T \cong R_0+\cdots+R_m+\frac{k}{1}
+```
+where each $R_i \cong \frac{p_i}{q_i}$ is a rational subtangle in canonical form with
 fraction satisfying $0<\frac{p_i}{q_i}<1$, and $\frac{k}{1}$ is a horizontal
 integer subtangle.
-```
+````
 
 #### Computational Methods
 

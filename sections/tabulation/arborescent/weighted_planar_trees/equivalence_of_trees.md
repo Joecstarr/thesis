@@ -136,10 +136,12 @@ positively (or negatively) canonical weighted planar trees.
 Finally, we define the **Arborescent Crossing Number** of the tangle diagram
 described by a CWPTT as follows.
 
-```{prf:definition} Arborescent Crossing Number
+````{prf:definition} Arborescent Crossing Number
 :label: apn-def-2
 
 We call the crossing number of the tangle diagram described by a tree the
 **Arborescent Crossing Number (ACN)** which is given by:
-$$\text{ACN}=\sum |\text{weights in the tree}|$$
+```{math}
+\text{ACN}=\sum |\text{weights in the tree}|
 ```
+````

@@ -9,3 +9,8 @@
 {"rule":"FOUR_NN","sentence":"^\\QThis includes modeling a software process to be paired with the knot theory software toolbox in professional and undergraduate research projects.\\E$"}
 {"rule":"EN_REPEATEDWORDS_PROBLEM","sentence":"^\\QDivide and conquer: You should break a hard problem into smaller solvable problems where possible.\\E$"}
 {"rule":"CONFUSION_KNOT_NOT","sentence":"^\\QKnotPlot is a closed source^closed knot computation tool primarily used for diagramming knots.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q:label: def-knot\nA **proper knot** is a smooth embedding of a circle $ S^1$ into Euclidean\n3-dimensional space $\\R^3$ (or the 3-dimensional sphere\n$S^3$).\\E$"}
+{"rule":"CONFUSION_KNOT_NOT","sentence":"^\\QThe Kauffman bracket is a function that takes knot diagrams as input and outputs a Laurent polynomial^lp with integer coefficients.\\E$"}
+{"rule":"ADVERB_OR_HYPHENATED_ADJECTIVE","sentence":"^\\Q^Jordan-curve: A Jordan curve is a simple closed curve.\\E$"}
+{"rule":"EN_A_VS_AN","sentence":"^\\QA Conway sphere, similar to the Conway circle, is an \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-)[0-9]+\\Q that encapsulates a portion of a knot so that the knot intersects the sphere in exactly four points.\\E$"}
+{"rule":"EN_A_VS_AN","sentence":"^\\QTo reduce ambiguity, in the graph (orthogonal projection) we mark this sphere with an \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-)[0-9]+\\Q.\\E$"}

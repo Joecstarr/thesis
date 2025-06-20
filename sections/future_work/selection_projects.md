@@ -20,7 +20,7 @@ polynomials as a class of knot invariants. One of the most powerful
 (distinguishes many knot) of these polynomials is the HOMFLYPT polynomial
 [@freydNewPolynomialInvariant1985]
 
-````{math}
+```{math}
 P(L) = \frac{-(\ell+\ell^{\ \m 1})}{m} P(L_1)P(L_2)
 ```
 constructed from the skein relations (@fig-future_work-skein_homfly)
@@ -29,8 +29,9 @@ tangle tree, with the natural tangle orientations.
 
 ```{figure} ../../media/Skein_HOMFLY.svg
 :label: fig-future_work-skein_homfly
-@@@ TODO: Add content description [@pbroks13SkeinHOMFLY2008]
-````
+The skein relation for the HOMFLYPT polynomial. Similar to that seen for the
+Kauffman bracket seen in @subsec-kauff. [@pbroks13SkeinHOMFLY2008]
+```
 
 In this project an undergraduate researcher will conceive the theory and design
 the software for computing the HOMFLYPT (and Jones as a special case of

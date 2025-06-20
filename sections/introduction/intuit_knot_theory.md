@@ -73,8 +73,10 @@ by Sazdanovic [@jablanLinKnotKnotTheory2007], Knots and Links by Rolfsen
 [@rolfsenKnotsLinks2003], and An Introduction to Knot Theory by Lickerish
 [@lickorishIntroductionKnotTheory1997]. The remainder of this thesis quickly
 exchanges the idea of a knot for that of a tangle, introduced by Conway
-[@conwayEnumerationKnotsLinks1970]. To build a tangle from a knot, we take what
-we've developed and follow the recipe (as seen in @fig-intro-tangle_maker):
+[@conwayEnumerationKnotsLinks1970]. A tangle can be thought of as drawing a
+circle around, or slamming a cookie cutter onto, a knot diagram. Then cutting
+off the parts of the knot laying outside the circle/cookie cutter, this process
+is seen in @fig-intro-tangle_maker.
 
 ```{figure} ../../media/tangle_maker.svg
 :label: fig-intro-tangle_maker

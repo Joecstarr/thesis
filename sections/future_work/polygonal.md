@@ -15,7 +15,7 @@ directions for tackling the polygonal knot case.
 
 #### Ad Hoc Classification of Constellations
 
-In @subsubsec-opo-insert we discussed constellations
+In @subsubsec-opo-insert, we discussed constellations
 [@connollyClassificationTabulation2string2021] used for generation of polygonal
 tangles via insertion. Since the crossing number of a polygonal tangle is
 bounded below by the vertex count of its constellation, the number of
@@ -42,8 +42,8 @@ heuristics when utilizing the methodology in @subsubsec-fw-brute.
 | Crossing Number |                                              Possible Crossing numbers                                               |
 | :-------------: | :------------------------------------------------------------------------------------------------------------------: |
 |        5        |                                                     $*.1.1.1.1.1$                                                      |
-|        6        |                       $$\begin{aligned}*.2.1.1.1.1,*.1.2.1.1.1\\*.1.1.2.1.1,*.1.1.1.2.1\\,*.1.1.1.1.2\end{aligned}$$                       |
-|        7        | $$\begin{aligned}*.1.1.1.2.2,*.1.1.2.1.2\\*.1.1.2.2.1,*.1.2.1.1.2\\*.1.2.1.2.1,*.1.2.2.1.1\\*.2.1.1.1.2,*.2.1.1.2.1\\*.2.1.2.1.1,*.2.2.1.1.1\\*.3.1.1.1.1,*.1.3.1.1.1\\*.1.1.3.1.1,*.1.1.1.3.1\\*.1.1.1.1.3\end{aligned}$$ |
+|        6        |                       $$\begin{aligned}*.2.1.1.1.1,*.1.2.1.1.1\\\ast.1.1.2.1.1,*.1.1.1.2.1,\\\ast.1.1.1.1.2\end{aligned}$$                       |
+|        7        | $$\begin{aligned}*.1.1.1.2.2,*.1.1.2.1.2\\\ast.1.1.2.2.1,*.1.2.1.1.2,\\\ast.1.2.1.2.1,*.1.2.2.1.1,\\ast.2.1.1.1.2,*.2.1.1.2.1,\\\ast.2.1.2.1.1,*.2.2.1.1.1,\\\ast.3.1.1.1.1,*.1.3.1.1.1,\\\ast.1.1.3.1.1,*.1.1.1.3.1,\\\ast.1.1.1.1.3\end{aligned}$$ |
 ```
 
 <!-- prettier-ignore-start -->
@@ -71,4 +71,4 @@ Bar-Natan (to be published [@vanderveenKnotInvariantsFinite]). While weaker than
 hyperbolic volume, these invariants are stronger than the polynomial invariants,
 and faster than both to compute. Statistics for polynomial invariants can be
 found in Maguire's thesis work (Section 5.4
-[@smaguireKhovanovHomologyLegendrian]).
+[@maguireKhovanovHomologyLegendrian]).

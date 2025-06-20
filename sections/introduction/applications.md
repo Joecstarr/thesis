@@ -6,7 +6,7 @@
 As we saw in the intuitive overview, mathematical knots can be easily
 constructed as physical objects. It should be no surprise then that mathematical
 knots and tangles appear in the hard sciences, particularly in the realms of
-physics, chemistry, and biology. In this section we will discuss one of the most
+physics, chemistry, and biology. In this section, we will discuss one of the most
 commonly discussed applications of knot theory.
 
 ### Tangles in DNA
@@ -34,7 +34,7 @@ constructed to be paired with each of the original single strands.
 
 ```{figure} ../../media/dont_proc/DNA_chemical_structure.svg
 :label:fig-intro-dna_chemical_structure
-@@@ TODO: Add content description [@priceballDNAChemicalStructure2007]
+A schematic diagram demonstrating teh structure of a dsDNA polymer [@priceballDNAChemicalStructure2007]
 ```
 
 The dsDNA of a cell needs to be physically stored inside the cell. The volume
@@ -62,7 +62,7 @@ through the gap. 5) The crossing with the strands exchanged.
 ```
 
 In mammals (and many other animal groups), dsDNA takes the form of long strings,
-which can only form everyday knots. However, it was discovered that in some
+which can only become everyday knots. However, it was discovered that in some
 bacteria the dsDNA is a closed loop, allowing it to form a mathematical knot
 (@fig-intro-circ_dna_fig) [@dulbeccoEVIDENCERINGSTRUCTURE1963]
 [@weilCYCLICHELIXCYCLIC1963] [@vinogradTwistedCircularForm1965].

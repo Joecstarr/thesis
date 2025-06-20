@@ -1,55 +1,93 @@
+<!-- prettier-ignore-start -->
+(subsec-kauff)=
 ##### Kauffman Bracket
+<!-- prettier-ignore-end -->
 
-The Kauffman bracket is a function that takes a knot diagrams as input and
-outputs a polynomial with integer coefficients.
+The Kauffman bracket is a function that takes knot diagrams as input and outputs
+a Laurent polynomial[^lp] (@kb-def-kaufb).
 
-```{prf:definition} Kauffman Bracket [@kauffmanStateModelsJones1987] [@lickorishIntroductionKnotTheory1997]
+```{prf:definition} Kauffman Bracket [@kauffmanStateModelsJones1987;@lickorishIntroductionKnotTheory1997]
+:label: kb-def-kaufb
 The **Kauffman bracket** of an unoriented knot $K$, $\LA K\RA$, is the Laurent
 polynomial with integer coefficients in $A$ given by the following:
 
 1. $\LA\img{media/kauf_bkt/unknot} \RA=1$
-2. $\LA K \sqcup \img{media/kauf_bkt/unknot} \RA=\LP-A^2-A^2\RP \LA K \RA$
+2. $\LA K \sqcup \img{media/kauf_bkt/unknot} \RA=\LP-A^2-A^{\m2}\RP \LA K \RA$
 3. $\LA \img{media/kauf_bkt/crossing/crossing_un} \RA=A\LA \img{media/kauf_bkt/type2/6a} \RA+A^{\ \m 1}\LA \img{media/kauf_bkt/type2/6b} \RA$
 
 ```
 
-We focus our discussion from here on the third criteria in the definition of the
-kauffman bracket. The action in criteria three is called the smoothing of a
-crossing and is perhaps not straight forward to see. We will now present an
-intuitive model (originally by jones [@jonesJonesPolynomialDummies2014]) for
-what happens in the smoothing process. Consider an unoriented crossing, imagine
-that the over strand of the crossing is the drive (the slot) of a giant flathead
-screw. Imagine also attaching to the screw a marker on either end of the drive,
-the full model is shown in @fig-jp-screw-model.
+Since the number one and the unknot serve important roles for polynomials and
+knots respectivly, the first criterium is intuative to apply when inventing a
+knot polynomial invariant. For now, we focus our discussion for a moment on the
+third criterium. The action we see in three is called **smoothing a crossing**
+and is difficult to see. We will now present an intuitive model (originally by
+jones [@jonesJonesPolynomialDummies2014]) for what happens in the smoothing
+process. Consider an unoriented crossing, imagine that the over strand of the
+crossing is the slot of a giant flathead screw and attaching to the screw a
+marker on either end of the slot. Taking a screwdriver, we turn the screw
+clockwise or anti-clockwise. When the screw is turned, the markers (arrows in
+@fig-jp-screw-model) trace out two arcs on the page. We add arcs inside the
+circle connecting the endpoints joined by the trace. We can see by inspection
+that the resulting picutres match the components of the third condition of
+@kb-def-kaufb.
 
 ```{figure} ../../media/fig-jp-screw-model_iso.svg
 :label: fig-jp-screw-model
-@@@ TODO: Add content description
+A diagram depicting the screwdriver model of crossing smoothing. On top, we have
+the original, pre smoothed crossing. On the bottom left, we have an anti-clockwise
+smoothing. The result connects the top point to the left point and the bottom point
+to the right point. On the bottom right we have a clockwise smoothing. The
+result connects the top point to the right point and the bottom point
+to the left point.
 ```
 
-We can take a screw driver and turn the screw clockwise or anti-clockwise. When
-the screw is turned, the markers traces out two arcs on the page. The arcs for a
-clockwise turn can be seen in @fig-jp-screw-model and anti-clockwise in
-@fig-jp-screw-model. Looking again at criteria three we notice that the
-crossing, when smoothed, match those seen in @fig-jp-screw-model.
+We will now move to proving that $\LA\,\RA$ is invariant under Reidemeister
+moves. That is, when we start with two equivelent (by Reidemeister move) local
+knot diagrams, the brackets of the two digrams are equivelent. First, we prove
+that $\LA\,\RA$ is invariant under the type II move. For a moment, we will write
+the third condition of @kb-def-kaufb as
+$\LA \img{media/kauf_bkt/crossing/crossing_un} \RA=A\LA \img{media/kauf_bkt/type2/6a} \RA+B\LA \img{media/kauf_bkt/type2/6b} \RA$
+and the second as
+$\LA K \sqcup \img{media/kauf_bkt/unknot} \RA=\LP-A^2-A^{\m2}\RP \LA K \RA$.
 
-We will now move to proving that $\LA\,\RA$ is invariant under, Reidemeister II
-and III moves. First we prove the type II move.
-
-```{prf:theorem}
+````{prf:theorem}
 :label: thm-typeii_bkt
-$$\LA \img{media/kauf_bkt/type2/1}\RA=\LA \img{media/kauf_bkt/type2/6b} \RA$$
+```{math}
+\LA \img{media/kauf_bkt/type2/1}\RA=\LA \img{media/kauf_bkt/type2/6b} \RA
 ```
+````
 
 ````{prf:proof}
 We begin by smoothing the crossing on the left of the diagram, we then smooth
-the other crossing this process yields the following chian of equalities.
+the other crossing, this process yields the following chain of equalities.
 
 ```{math}
 \begin{aligned}
  \bkt{media/kauf_bkt/type2/1}
 &=A\bkt{media/kauf_bkt/type2/2a}+\LP
-A^{\ \m 1}\RP\bkt{media/kauf_bkt/type2/2b}\\
+  B\RP\bkt{media/kauf_bkt/type2/2b}\\
+&=A \LP
+    A\bkt{media/kauf_bkt/type2/3a}+\LP
+    B\RP\bkt{media/kauf_bkt/type2/4}\RP
+ +\LP B\RP\LP A\bkt{media/kauf_bkt/type2/6b}+\LP
+    B\RP\bkt{media/kauf_bkt/type2/6a}\RP\\
+&=\LP A^2+ABC+B^2\RP\bkt{media/kauf_bkt/type2/6a}
+ +\LP AB\RP\bkt{media/kauf_bkt/type2/6b}\\
+\end{aligned}
+```
+To ensure that the bracket polynomial is an invariant we need
+to select $A, \ B, \ C$ so that $A^2+ABC+B^2=0$ and $AB=1$. These conditions give us
+$A=A$, $B=A^{\m 1}$, and $C=\LP-A^2-A^{\m2}\RP$, justfying the second criteria
+of @kb-def-kaufb. We then compute from the beginning @sec-kb-math-t2ftb,
+showing the desired result.
+
+```{math}
+:label: sec-kb-math-t2ftb
+\begin{aligned}
+ \bkt{media/kauf_bkt/type2/1}
+&=A\bkt{media/kauf_bkt/type2/2a}+\LP
+B\RP\bkt{media/kauf_bkt/type2/2b}\\
  &=A \LP
 A\bkt{media/kauf_bkt/type2/3a}+\LP
 A^{\ \m 1}\RP\bkt{media/kauf_bkt/type2/4}\RP+\LP
@@ -62,24 +100,21 @@ A^2+A^{\ \m 2}\RP\bkt{media/kauf_bkt/type2/6a}+\LP-A^{2}-A^{\ \m 2}\RP\bkt{media
  &=\bkt{media/kauf_bkt/type2/6b}\\
 \end{aligned}
 ```
-showing the desired result.
 ````
 
-Now, utilizing the fact $\LA\,\RA$ is invariant for type II we will prove the
+Now, utilizing the fact $\LA\,\RA$ is invariant for type II, we will prove the
 same for type III.
 
-```{prf:theorem}
+````{prf:theorem}
 :label: thm-typeiii_bkt
-$$\LA \img{media/kauf_bkt/type3/1}\RA=\LA \img{media/kauf_bkt/type3/6} \RA$$
+```{math}
+\LA \img{media/kauf_bkt/type3/1}\RA=\LA \img{media/kauf_bkt/type3/6} \RA
 ```
+````
 
-$$\LA \img{media/kauf_bkt/type3/1}\RA=\LA \img{media/kauf_bkt/type3/6} \RA$$
-
-`````{prf:proof}
-We begin by smoothing the crossing on the center of each the diagram in the
+````{prf:proof}
+We begin by smoothing the crossing at the center of each diagram in the
 equality, yielding
-
-
 
 ```{math}
 :label: eq-kbkt-t3-1
@@ -90,50 +125,44 @@ equality, yielding
 :label: eq-kbkt-t3-2
 \bkt{media/kauf_bkt/type3/6} =A\bkt{media/kauf_bkt/type3/3b}+A^{\ \m 1}\bkt{media/kauf_bkt/type3/3a}
 ```
-Now on the clockwise smoothing @eq-kbkt-t3-1,
-enlarged in @fig-inv-t3-c we execute a type II
-move to obtain @fig-inv-t3-ct2 the clockwise
-smoothing from @eq-kbkt-t3-2, enlarged in @fig-inv-t3-ct2
-.
+Now on the clockwise smoothing @eq-kbkt-t3-1, we execute a type II
+move and obtain @fig-inv-t3-c.
 
-````{prf:observation}
-```{figure} ../../media/kauf_bkt/type3/2b
+```{figure} ../../media/kauf_bkt/type3/2b_color.svg
 :label: fig-inv-t3-c
-:width:100px
-@@@ TODO: Add content description
+On the left is a clockwise smoothing of the type 3 move type crossing
+@fig-knot_def-r3. On the right is an application of the type II move on the
+under strand.
 ```
+Similarly, the anti-clockwise smoothing from @eq-kbkt-t3-2 we execute a type II
+move to obtain @fig-inv-t3-cc.
 
-```{figure} ../../media/kauf_bkt/type3/3b
-:label: fig-inv-t3-ct2
-:width:100px
-@@@ TODO: Add content description
-```
-
-```{figure} ../../media/kauf_bkt/type3/2a
+```{figure} ../../media/kauf_bkt/type3/2a_color.svg
 :label: fig-inv-t3-cc
-:width:100px
-@@@ TODO: Add content description
+On the left is an anti-clockwise smoothing of the type 3 move type crossing
+@fig-knot_def-r3. On the right is an application of the type II move on the
+under strand.
 ```
 
-```{figure} ../../media/kauf_bkt/type3/3a
-:label: fig-inv-t3-cct2
-:width:100px
-@@@ TODO: Add content description
-```
-````
-
-Finally, following a process similar to the clockwise case on the anti-clockwise
-smoothing @eq-kbkt-t3-1, enlarged in @fig-inv-t3-cc we execute two type II moves
-to obtain @fig-inv-t3-cct2 the anti-clockwise smoothing from @eq-kbkt-t3-2,
-enlarged in @fig-inv-t3-cct2. Since the type II move is invariant for bracket
-polynomial, shown in @thm-typeii_bkt, this chain of equalities shows the desired
-result.
-
-`````
-
-Now for the final, and least straight, Reidemeister move we compute
+Since the type II move is invariant for the bracket polynomial (@thm-typeii_bkt)
+the chain of equalities in @ eq-kbkt-t3-final shows the desired result.
 
 ```{math}
+:label: eq-kbkt-t3-final
+\begin{align*}
+\bkt{media/kauf_bkt/type3/1} &=A\bkt{media/kauf_bkt/type3/2b}+A^{\ \m 1}\bkt{media/kauf_bkt/type3/2a}\\
+&=A\bkt{media/kauf_bkt/type3/3b}+A^{\ \m 1}\bkt{media/kauf_bkt/type3/3a}&&\text{(by type II move)} \\
+&=\bkt{media/kauf_bkt/type3/6}
+\end{align*}
+```
+
+````
+
+Now for the final Reidemeister move, the type I move, we compute two chains of
+equality, @sec-kb-math-t11 and @sec-kb-math-t12.
+
+```{math}
+:label: sec-kb-math-t11
 \begin{aligned}
  \bkt{media/kauf_bkt/type1/1b} & =
 A\bkt{media/kauf_bkt/type1/2a}+A^{\ \m 1}\bkt{media/kauf_bkt/type1/2b}\\
@@ -145,9 +174,8 @@ A\bkt{media/kauf_bkt/type1/2a}+A^{\ \m 1}\bkt{media/kauf_bkt/type1/2b}\\
 \end{aligned}
 ```
 
-and for the second flavor of type I move $\bkt{media/kauf_bkt/type1/1}$
-
 ```{math}
+:label: sec-kb-math-t12
 \begin{aligned}
  \bkt{media/kauf_bkt/type1/1} & =
 A\bkt{media/kauf_bkt/type1/2b}+A^{\ \m 1}\bkt{media/kauf_bkt/type1/2a}\\
@@ -159,6 +187,10 @@ A\bkt{media/kauf_bkt/type1/2b}+A^{\ \m 1}\bkt{media/kauf_bkt/type1/2a}\\
 \end{aligned}
 ```
 
+Observe, with @sec-kb-math-t11 and @sec-kb-math-t12, that the bracket polynomial
+as it stands is not invariant under Reidemister moves. We must augment the
+bracket polynomial to give the invariance we would like.
+
 ```{include} writhe.md
 
 ```
@@ -166,3 +198,7 @@ A\bkt{media/kauf_bkt/type1/2b}+A^{\ \m 1}\bkt{media/kauf_bkt/type1/2a}\\
 ```{include} type1.md
 
 ```
+
+[^lp]:
+    A Laurent polynomial is a polynomial which is allowed to have both positive
+    and negative powers.

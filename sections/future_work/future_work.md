@@ -1,5 +1,5 @@
 ---
-title: Future Directions
+title: Future Directions and Undergraduate Research
 ---
 
 In this chapter, we describe the future research directions into the tabulation

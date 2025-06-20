@@ -60,37 +60,31 @@
 
 # Editing pass
 
--   [x] 📂introduction
-    -   [x] introduction
-    -   [x] applications
-    -   [x] intuit_knot_theory
-    -   [x] overview
--   [ ] 📂background
-    -   [ ] background
-    -   [ ] history
-    -   [ ] foundations_of_knots
-    -   [ ] foundations_of_tangles
-    -   [ ] 📂foundations_of_knots
-        -   [ ] conway
-        -   [ ] def_of_knot
-        -   [ ] equivalence
-        -   [ ] invariants
-        -   [ ] kauf_bkt
-        -   [ ] notations
-        -   [ ] prime
-        -   [ ] type1
-        -   [ ] writhe
 -   [ ] 📂frontmatter
     -   [ ] abstract
     -   [ ] acknowledgments
     -   [ ] frontmatter
     -   [ ] public_abstract
--   [ ] 📂future_work
-    -   [ ] continued_research
-    -   [ ] future_work
-    -   [ ] polygonal
-    -   [ ] selection_projects
-    -   [ ] undergrad_rsch
+-   [x] 📂introduction
+    -   [x] introduction
+    -   [x] applications
+    -   [x] intuit_knot_theory
+    -   [x] overview
+-   [x] 📂background
+    -   [x] background
+    -   [x] history
+    -   [x] foundations_of_knots
+    -   [x] 📂foundations_of_knots
+        -   [x] def_of_knot
+        -   [x] equivalence
+        -   [x] prime
+        -   [x] invariants
+        -   [x] kauf_bkt
+        -   [x] writhe
+        -   [x] type1
+        -   [x] notations
+        -   [x] conway
+    -   [x] foundations_of_tangles
 -   [ ]software
     -   [ ] software
     -   [ ] documentation
@@ -117,6 +111,12 @@
         -   [ ] montesinos
         -   [ ] rational
     -   [ ] tabulation
+-   [ ] 📂future_work
+    -   [ ] continued_research
+    -   [ ] future_work
+    -   [ ] polygonal
+    -   [ ] selection_projects
+    -   [ ] undergrad_rsch
 
 ```
 /* Colors */

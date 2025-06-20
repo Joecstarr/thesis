@@ -1,6 +1,6 @@
 <!-- prettier-ignore-start -->
 (sec-intro-overview)=
-## Overview of this thesis
+## Overview of This Thesis
 <!-- prettier-ignore-end -->
 
 As discussed in the previous section, the goal of this thesis is to address, in
@@ -77,7 +77,7 @@ developed to realize the solutions in the tabulation section. These software
 design descriptions are phrased to fit the process outlined by the "knot theory
 software toolbox".
 
-#### Future Work and Undergraduate Research
+#### Future Directions and Undergraduate Research
 
 The final chapter of this thesis gives an overview of future work to be done on
 tangle tabulation. This takes two forms, first the direct next steps in tangle
