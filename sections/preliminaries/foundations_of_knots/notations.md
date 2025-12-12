@@ -10,7 +10,7 @@ a remedy for this issue, knot theorists have invented several combinatorial
 notations for knots. Perhaps the most historically important knot notation for
 use in tabulation by computer is the Dowker-Thistlethwaite (DT) notation
 (@sec-proj-note_dt) developed by its namesakes specifically for use in
-computational tabulation. Each notational strategy used in knot theory has its
+computational tabulation. Each notational strategy used in knot theory has
 strengths and weaknesses. For example, using DT notation for computation of the
 Jones polynomial @def-jones may be more cumbersome than using the Planar Diagram
 (PD) notation (@sec-proj-note_pd) for the same task, as PD directly encodes

@@ -3,10 +3,14 @@
 ### Rational Tangle Generator
 <!-- prettier-ignore-end -->
 
+The rational tangle generator implements a portion of the theoretical use case
+seen in @sec-rational.
 
 #### Class Diagram
+$\,$
 
-```mermaid
+````{figure}
+```{mermaid}
 classDiagram
     generator_rational ..|> generator
     gen_rational_config_t ..|> gen_config_t
@@ -18,27 +22,29 @@ classDiagram
     }
 
     class generator_rational {
-<<External>>
-}
+    <<External>>
+    }
 
-class gen_rational_config_t {
+    class gen_rational_config_t {
 
-+ uint8_t crossingNumber;
-+ note_tv_t *tv_n;
-+ char *tv_str_buff;
-+ size_t tv_str_buff_len;
-}
+    + uint8_t crossingNumber;
+    + note_tv_t *tv_n;
+    + char *tv_str_buff;
+    + size_t tv_str_buff_len;
+    }
 
-class gen_config_t {
-<<External Interface>>
+    class gen_config_t {
+    <<External Interface>>
 
-}
+    }
 
-class notation_tv{
-<<External>>
-}
+    class notation_tv{
+    <<External>>
+    }
 
 ```
+````
+
 
 #### Language
 
@@ -60,10 +66,10 @@ N/A
 
 ##### Public Structures
 
-###### Rational Generator Config Structure
+###### Rational Generator ConfigurationStructure
 
-The config structure contains the data needed for generating twist vectors up to
-a given crossing number. This includes:
+The configuration structure contains the data needed for generating twist vectors
+up to a given crossing number. This includes:
 
 -   An integer representation of the target crossing number.
 -   A notation structure for a twist vector.
@@ -71,13 +77,15 @@ a given crossing number. This includes:
 
 ##### Public Functions
 
-###### Config Function
+###### Configuration Function
 
-The config function configures the local instance variable of the generator.
+The configuration function configures the local instance variable of the
+generator.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
   state "Initialize local config" as Sc
 
@@ -85,6 +93,7 @@ stateDiagram-v2
     Sc --> [*]
 
 ```
+````
 
 ###### Generate Function
 
@@ -94,17 +103,14 @@ broken out into functions in the implementation.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
     state if_done <<choice>>
-    state "Initialize " as State_i
-    state "• i as 0 " as State_i
+    state "Initialize <br>• i as 0 " as State_i
     state State_ipp: i++
     state "Construct TV from i as a bitfield" as tv_calc{
-        state "Init" as State_temp
-        state "• temp as i" as State_temp
-        state "• j as 0" as State_temp
-        state "• count as N" as State_temp
+        state "Init<br>• temp as i <br>• j as 0 <br>• count as N" as State_temp
         State_jpp: j++
         State_cntmm: count--
         State_sum_tv: TV[j]++
@@ -134,20 +140,21 @@ stateDiagram-v2
     if_done --> [*]: if i == 2**(N-1)
 
 ```
+````
 
 #### Validation
 
-##### Config Function
+##### Configuration Function
 
 ###### Positive Tests
 
-```{test-card} Valid Config
+```{test-card} Valid Configuration
 
-A valid config for the generator is passed to the function.
+A valid configuration for the generator is passed to the function.
 
 **Inputs:**
 
-- A valid config.
+- A valid configuration.
 
 **Expected Output:**
 
@@ -157,13 +164,13 @@ A positive response.
 
 ###### Negative Tests
 
-```{test-card} Null Config
+```{test-card} Null Configuration
 
-A null config for the generator is passed to the function.
+A null configuration for the generator is passed to the function.
 
 **Inputs:**
 
-- A null config.
+- A null configuration.
 
 **Expected Output:**
 
@@ -171,13 +178,13 @@ A negative response.
 
 ```
 
-```{test-card} A Config with null twist vector
+```{test-card} A configuration with null twist vector
 
-A config with a null twist vector is passed to the function.
+A configuration with a null twist vector is passed to the function.
 
 **Inputs:**
 
-- A config with a null twist vector.
+- A configuration with a null twist vector.
 
 **Expected Output:**
 
@@ -185,13 +192,13 @@ A negative response.
 
 ```
 
-```{test-card} A Config with null string buffer
+```{test-card} A configuration with null string buffer
 
-A config with a null string buffer is passed to the function.
+A configuration with a null string buffer is passed to the function.
 
 **Inputs:**
 
-- A config with a null string buffer.
+- A configuration with a null string buffer.
 
 **Expected Output:**
 
@@ -201,9 +208,9 @@ A negative response.
 
 ##### Generate Function
 
-```{test-card} Valid Config and generation
+```{test-card} Valid configuration and generation
 
-A valid config is set and the generation is called.
+A valid configuration is set, and the generation is called.
 
 **Inputs:**
 
@@ -213,21 +220,21 @@ A valid config is set and the generation is called.
 
 The twist vectors:
 
-- [1 1 1 1 1]
-- [2 1 1 1 0]
-- [1 2 1 1 0]
-- [1 1 2 1 0]
-- [1 1 1 2 0]
-- [3 1 1]
-- [1 3 1]
-- [1 1 3]
-- [2 2 1]
-- [2 1 2]
-- [1 2 2]
-- [3 2 0]
-- [2 3 0]
-- [4 1 0]
-- [1 4 0]
-- [5]
+-   [1 1 1 1 1]
+-   [2 1 1 1 0]
+-   [1 2 1 1 0]
+-   [1 1 2 1 0]
+-   [1 1 1 2 0]
+-   [3 1 1]
+-   [1 3 1]
+-   [1 1 3]
+-   [2 2 1]
+-   [2 1 2]
+-   [1 2 2]
+-   [3 2 0]
+-   [2 3 0]
+-   [4 1 0]
+-   [1 4 0]
+-   [5]
 
 ```

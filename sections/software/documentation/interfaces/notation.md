@@ -9,8 +9,10 @@ notation and the functions required for translation into and out of string
 representations of that notation.
 
 #### Class Diagram
+$\,$
 
-```mermaid
+````{figure}
+```{mermaid}
 classDiagram
     notation *-- note_t
     class notation {
@@ -24,6 +26,7 @@ classDiagram
     }
 
 ```
+````
 
 #### Functionality
 
@@ -39,10 +42,10 @@ defines and stores the computational representation of a knot notation.
 ###### Encode Function
 
 The encode function takes in the string representation of a knot notation,
-processes the string and stores the computational representation into a notation
-data structure.
+processes the string, and stores the computational representation into a
+notation data structure.
 
 ###### Decode Function
 
 The decode function takes in a computational representation of a notation data
-structure, and processes it into a string representation of a knot notation.
+structure and processes it into a string representation of a knot notation.

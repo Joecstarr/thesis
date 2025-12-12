@@ -9,50 +9,56 @@ operation defined in @rli-gen-def-grafting_op-wpt.
 
 #### Class Diagram
 
-```mermaid
+$\,$
+
+````{figure}
+```{mermaid}
 classDiagram
-    comp_grafting ..|> computation
-    comp_grafting_config_t ..|> notation_wptt
-    comp_grafting_config_t ..|> comp_config_t
-    comp_grafting *-- comp_grafting_config_t
-    comp_grafting_result_t ..|> notation_wptt
-    comp_grafting_result_t ..|> comp_result_t
-    comp_grafting *-- comp_grafting_result_t
+    comp_rlitt_grafting --|> computation
+    comp_rlitt_grafting_config_t --|> notation_wptt
+    comp_rlitt_grafting_config_t --|> comp_config_t
+    comp_rlitt_grafting *-- comp_rlitt_grafting_config_t
+    comp_rlitt_grafting_result_t --|> notation_wptt
+    comp_rlitt_grafting_result_t --|> comp_result_t
+    comp_rlitt_grafting *-- comp_rlitt_grafting_result_t
 
     class computation {
-        <<External Interface>>
+        <<interface>>
     }
 
-    class comp_grafting {
-    <<External>>
-    - notation_wptt node_buffer[MAX_CN]
-    }
+    class comp_rlitt_grafting {
+<<External>>
+}
 
-    class notation_wptt{
-    <<External>>
-    }
+class notation_wptt{
+<<>>
+}
 
-    class comp_grafting_config_t {
-    + notation_wptt *rootstock
-    + notation_wptt *scion
-    + uint8 grating_idx
-    }
+class comp_rlitt_grafting_config_t {
+<<struct>>
++ notation_wptt *rootstock
++ notation_wptt *scion
++ uint8 grating_idx
++ notation_wptt output_buffer
+}
 
-    class comp_config_t {
-    <<External Interface>>
-    }
+class comp_config_t {
+<<interface>>
+}
 
-    class comp_grafting_result_t {
+class comp_rlitt_grafting_result_t {
+<<struct>>
++ notation_wptt result
+}
 
-    + notation_wptt result
-    }
+class comp_result_t {
+<<interface>>
+}
 
-    class comp_result_t {
-    <<External Interface>>
-    }
 
 
 ```
+````
 
 #### Language
 
@@ -60,11 +66,11 @@ C
 
 #### Implements
 
--   Computation Interface (@sec-interfaces-computation)
+- Computation Interface (@sec-interfaces-computation)
 
 #### Uses
 
--   Notation Weighted Planar Tangle Tree (@sec-library-wptt-note)
+- Notation Weighted Planar Tangle Tree (@sec-library-wptt-note)
 
 #### Libraries
 
@@ -74,30 +80,36 @@ N/A
 
 ##### Public Structures
 
-###### Config Structure
+###### Configuration Structure
 
-The config structure contains the data needed for computing the grafting of two
-input arborescent tangles.
+The configuration structure contains the data needed for computing the grafting
+of two input arborescent tangles.
 
 This includes:
 
--   Rootstock pointer to a read-only notation structure for a WPTT.
--   Scion pointer to a read-only notation structure for a WPTT.
+- Rootstock pointer to a read-only notation structure for a WPTT.
+- Scion pointer to a read-only notation structure for a WPTT.
+- An index, in the total order, of the vertex in the rootstock to graft the
+  scion onto.
+- A buffer to place the resultant tangle into.
 
 ###### Result Structure
 
-The config structure contains a weighted planar tangle tree that is the result
-of grafting the configured rootstock to the configured scion.
+The results structure contains a weighted planar tangle tree that is the result
+of grafting the configured rootstock to the configured scion at the configured
+index.
 
 ##### Public Functions
 
-###### Config Function
+###### Configuration Function
 
-The config function configures the local instance variable of the computation.
+The configuration function sets the local configuration variable of the
+computation.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
   state "Initialize local config" as Sc
 
@@ -105,6 +117,7 @@ stateDiagram-v2
     Sc --> [*]
 
 ```
+````
 
 ###### Compute Function
 
@@ -114,16 +127,17 @@ the implementation.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
-    copy_normalize_tree: Copy and normalize
-    copy_normalize_tree: rootstock into buffer
+    copy_normalize_tree: Copy and normalize<br/>rootstock into buffer
     graft: Graft at vertex i
 
     [*] --> copy_normalize_tree
     copy_normalize_tree --> graft
     graft --> [*]
 ```
+````
 
 ###### Result Function
 
@@ -132,46 +146,15 @@ is reported.
 
 ##### Private Functions
 
-##### Normalize Rootstock
+#### Graft Scion to Rootstock
 
-The normalize rootstock function rearranges the nodes of the rootstock so that
-each node has forwarded order. This is accomplished by reversing the child and
-weight list, then setting the order to forward in every node that has order
-reverse.
-
-```mermaid
-stateDiagram-v2
-    state is_forward <<choice>>
-    for_nodes: For each node in rootstock
-
-    state for_nodes {
-        reverse_weights: Reverse weights of node
-        reverse_children: Reverse children of node
-        set_order: set order to forward
-        [*] --> reverse_weights
-        reverse_weights --> reverse_children
-        reverse_children --> set_order
-        set_order --> [*]
-    }
-
-    [*] --> is_forward
-    is_forward --> for_nodes : Order is reverse
-    is_forward --> [*] : Order is forward
-    for_nodes --> [*]
-```
-
-###### Graft Scion to Rootstock
-
-This function carries out the
-
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
     find_node: Identify the ith node
     set_count: Increment child count
-    add_node: Add root of scion
-    add_node: to the child list
-    move_weight: Move last weight right
-    move_weight: one and replace with 0
+    add_node: Add root of scion<br>to the child list
+    move_weight: Move last weight right<br>one and replace with 0
 
     [*] --> find_node
     find_node --> set_count
@@ -179,20 +162,21 @@ stateDiagram-v2
     add_node --> move_weight
     move_weight --> [*]
 ```
+````
 
 #### Validation
 
-##### Config Function
+##### Configuration Function
 
 ###### Positive Tests
 
-```{test-card} Valid Config
+```{Test-Card} Valid Configuration
 
-A valid config for the computation is passed to the function.
+A Valid Configuration for the Computation Is Passed to the Function.
 
 **Inputs:**
 
-- A valid config.
+- A Valid Configuration.
 
 **Expected Output:**
 
@@ -202,13 +186,13 @@ A positive response.
 
 ###### Negative Tests
 
-```{test-card} Null Config
+```{test-card} Null Configuration
 
-A null config for the computation is passed to the function.
+A null configuration for the computation is passed to the function.
 
 **Inputs:**
 
-- A null config.
+- A null configuration.
 
 **Expected Output:**
 
@@ -216,17 +200,14 @@ A negative response.
 
 ```
 
-```{test-card} Null Config Parameters
+```{test-card} Null Configuration Parameters
 
-A config with various null parameters is passed to the function.
+A configuration with various null parameters is passed to the function.
 
 **Inputs:**
 
-- A config with null rootstock.
-- A config with null ith value of rootstock.
-- A config with rootstock that an insufficient number of nodes.
-- A config with null scion.
-- A config with null root scion.
+- A configuration with null rootstock.
+- A configuration with null scion.
 
 **Expected Output:**
 
@@ -238,14 +219,14 @@ A negative response.
 
 ###### Positive Tests
 
-```{test-card} A valid config
+```{test-card} A valid Configuration
 
-A valid config is set for the component. The computation is executed and
-returns successfully. The result written to the write interface is correct.
+A valid configuration is set for the component. The computation is executed and
+returns successfully. The result written to the write interface is correct
 
 **Inputs:**
 
-- A valid config is set.
+- A valid configuration is set.
 
 **Expected Output:**
 
@@ -254,14 +235,14 @@ returns successfully. The result written to the write interface is correct.
 
 ```
 
-```{test-card} A valid config with null write interface
+```{test-card} A Valid Configuration With Null Write Interface
 
-A valid config is set for the component with null write. The computation is
+A valid configuration is set for the component with null write. The computation is
 executed and returns successfully.
 
 **Inputs:**
 
-- A valid config is set.
+- A valid configuration is set.
 
 **Expected Output:**
 
@@ -289,25 +270,25 @@ A negative response.
 
 ###### Positive Tests
 
-```{test-card} A valid config and computation
+```{test-card} A Valid Configuration and Computation
 
-A valid config is set for the component. The computation is executed and
+A valid configuration is set for the component. The computation is executed and
 returns successfully. The resulting value is correct when read from the result
 interface.
 
 **Inputs:**
 
-- A valid config is set.
+- A valid configuration is set.
 
 **Expected Output:**
 
-- A positve response.
+- A positive response.
 - The result is correct.
 ```
 
 ###### Negative Tests
 
-```{test-card} Computation not executed
+```{test-card} Computation Not Executed
 
 The result interface is called before compute has been run.
 

@@ -3,179 +3,368 @@
 ### Selection of Undergraduate Projects
 <!-- prettier-ignore-end -->
 
-In this section we will list a collection of undergradute research project
-statements and how those projects may be approached. We will additionally
-describe what experiance an undergraduate might need to work on a particular
-project.
+In this section we will provide a curated collection of undergraduate research
+problem statements. We will also give a brief outline for each, contextualizing
+the problem and describing what phase of the research experience program the
+problem may be appropriate for:
 
+1. **Lower Division Student:** A lower division student is a student with little
+   to no research or abstract math experience. A student at this level should be
+   expected to have completed a college algebra course and started a calculus
+   sequence. For students with a computational background we should expect the
+   student to have started an introduction to programming course.
+2. **Intermediate Student:** An intermediate student is a student who has some
+   exposure to abstract math. This could take the form of solving a lower
+   division problem. These students should be well into a calculus sequence,
+   having completed calculus II (advanced integration) or calculus III (vector
+   calculus). For students with a computational background we should expect the
+   student to have completed an introduction to programming sequence and started
+   a course on algorithms and data structures.
+3. **Upper Division Student:** An upper division student is a student who can be
+   expected to work semi-independently. They have solved one or more
+   intermediate student problems, have completed the standard calculus sequence,
+   and have begun abstract math courses. For students with a computational
+   background we should expect the student to have completed a discrete methods
+   course, ideally covering computational complexity theory.
+
+The remainder of the section gives statements for problems appropriate for
+undergraduate research. The problems in the list fall into five types:
+visualizations (@sec-proj-visual), invariants (@sec-projs-invariants), notations
+(@sec-proj-notations), generation (@sec-proj-gen), and potpourri[^pot]
+(@sec-proj-pot).
+
+<!-- prettier-ignore-start -->
+(sec-proj-visual)=
+#### Visualization
+<!-- prettier-ignore-end -->
+
+Visualzation and spatial reasoning is a critically important for work in knot
+theory. Problems of the visualization type develop specific visualizations or
+general visualization tools for knots and tangles.
+
+<!-- prettier-ignore-start -->
+(sec-proj-mosaic)=
+##### Create Knot Mosaics: Lower Division Student
+<!-- prettier-ignore-end -->
+
+###### Problem Statement
+
+Create a knot mosaic that has a particular property.
+
+###### Brief
+
+Knot mosaics are a simple method for creating knots from a collection of tiles.
+Creating mosaics with a particular property, a specific writhe, for example, is
+a fun and engaging activity where abstraction of a concept can be explored.
+Modifying the tile set can add additional complexity to the task.
+
+<!-- prettier-ignore-start -->
+(sec-proj-sticks)=
+##### Create Stick Knots: Lower Division Student
+<!-- prettier-ignore-end -->
+
+###### Problem Statement
+
+Create stick knots with desired properties.
+
+###### Brief
+
+Stick knots are knots built from a collection of unit sticks. Creating a
+physical model by hand or with computer design and 3D printing develops spatial
+reasoning skills needed for work in higher knot theory.
+
+<!-- prettier-ignore-start -->
+(sec-proj-quilt)=
+##### Creating Celtic Knots: Lower Division Student
+<!-- prettier-ignore-end -->
+
+###### Problem Statement
+
+Create Celtic knots with desired properties.
+
+###### Brief
+
+Celtic knots are common artistic knots. Exploring the creation of a unique
+ruleset for creating Celtic knots is an opportunity to develop a unique
+understanding of the diagrammatic nuances of knot theory.
+
+<!-- prettier-ignore-start -->
+(sec-proj-diagram_att)=
+##### Compute Diagram for General Notations: Intermediate Student
+<!-- prettier-ignore-end -->
+
+###### Problem Statement
+
+Create an interface for plotting knots in an arbitrary notation in KnotPlot.
+
+###### Brief
+
+An aspect of knot theory that makes it among the most accessible higher math
+domains is the ability for anyone to draw pictures of knots. A continuing theme
+of this thesis is that computations/operations are easy by hand, with the
+qualifier, "up to reasonable crossing number". This carries through with the
+drawing of the diagrams. A common drawing tool in knot theory is KnotPlot
+[@schareinInteractiveTopologicalDrawing1998], unfortunatly KnotPlot has no
+interface for drawing knots in "arbitrary" notations. The tool however, does
+have a Lua scripting interface in which an arbitrary notation decoder can be
+designed.
+
+##### Create VR Band Plumbing Visualizer: Upper Division Student
+
+###### Problem Statement
+
+Create a 3D VR visualizer for the band plumbing construction for arborescent
+knots.
+
+###### Brief
+
+The plumbing construction for arborescent knots and tangles is easiest
+visualized in 3D. The ideal for visualizing these objects is in VR as this is
+reduces the need for spacial reasoning. While the theory exists for creating the
+objects, the linear algebra required makes this an upper division problem.
+
+<!-- prettier-ignore-start -->
+(sec-projs-invariants)=
 #### Invariants
+<!-- prettier-ignore-end -->
+
+One way to build conjecture is by the analysis of patterns in data, these
+conjectures often lead to the development of new theory. Problems in this
+section create the collections of data that can be used for developing those
+conjectures and theory.
 
 <!-- prettier-ignore-start -->
 (sec-proj-homflypt)=
-##### Compute HOMFLYPT Polynomial From A Tangle Notation
+##### Compute Polynomial From A Tangle Notation: Intermediate Student or Upper Division Student
 <!-- prettier-ignore-end -->
 
+###### Problem Statement
+
+Develop the theory needed for efficiently computing polynomials of tangles
+
+###### Brief
+
 One of the most important advancements in knot theory was the discovery of knot
-polynomials as a class of knot invariants. One of the most powerful
-(distinguishes many knot) of these polynomials is the HOMFLYPT polynomial
-[@freydNewPolynomialInvariant1985]
+polynomials as a class of knot invariants. As an example, one of the most
+powerful of these polynomials is the HOMFLYPT polynomial
+[@freydNewPolynomialInvariant1985] constructed from the skein relations equation
+@fig-future_work-skein_homfly.
 
 ```{math}
 P(L) = \frac{-(\ell+\ell^{\ \m 1})}{m} P(L_1)P(L_2)
 ```
-constructed from the skein relations (@fig-future_work-skein_homfly)
-conveniently the data needed to apply the skein relations is exactly the data encoded by the algebraic
-tangle tree, with the natural tangle orientations.
+
+Conveniently, the data needed to apply the skein relations is precisely the data
+encoded by RLITT, relative crossing data.
 
 ```{figure} ../../media/Skein_HOMFLY.svg
 :label: fig-future_work-skein_homfly
 The skein relation for the HOMFLYPT polynomial. Similar to that seen for the
-Kauffman bracket seen in @subsec-kauff. [@pbroks13SkeinHOMFLY2008]
+Kauffman bracket @subsec-kauff. [@pbroks13SkeinHOMFLY2008]
 ```
 
-In this project an undergraduate researcher will conceive the theory and design
-the software for computing the HOMFLYPT (and Jones as a special case of
-HOMFLYPT) polynomial. The hand computation of the HOMFLYPT, for reasonably sized
-knots, requires only college algebra maturity and should be easily
-accomplishable by most undergraduates. However, the algorithmic computation of
-HOMFLYPT offers a range of great opportunities for original heuristic
-optimizations.
+Depending on the polynomial selected, the problem is appropriate for
+intermediate students or upper division students. When the polynomial has a
+developed tangle theory the solution will have a well defined start and end
+point and is appropriate for intermediate students. Otherwise, the full tangle
+theory must be developed, this requires experience with the development of
+original abstract theory, making the problem appropriate for upper division
+students.
 
+##### Compute Finite Type Invariant From A Tangle Notation: Intermediate Student or Upper Division Student
+
+###### Problem Statement
+
+Develop the theory needed for efficiently computing a finite type invariant of
+tangles
+
+###### Brief
+
+Similar to the computation of polynomial invariants the computation of finite
+type invariants expands our table with data useful for binning future tangles
+and knots. Depending on the invariant selected, the problem is appropriate for
+intermediate or upper division students. When the invariant has a developed
+tangle theory the solution will have a well defined start and end point and be
+appropriate for intermediate students. Otherwise, the full tangle theory must be
+developed, this requires experience with the development of original abstract
+theory, making the problem appropriate for upper division students.
+
+<!-- prettier-ignore-start -->
+(sec-proj-notations)=
 #### Notations
+<!-- prettier-ignore-end -->
+
+There are many ways to encode the data of a knot, each with advantages and
+disadvantages. Throughout this thesis, the primary target notation was the RLITT
+@subsec-rlitt. This subsection discusses several useful notations where a
+computational tool translating from and to RLITT is desired. Since the source
+and destination notation in each problem are well understood each is appropriate
+for intermediate students.
 
 <!-- prettier-ignore-start -->
 (sec-proj-note_gauss)=
-##### Notation Description for Extended Gauss Notation
+##### Notation Description for Extended Gauss Notation: Intermediate Student
 <!-- prettier-ignore-end -->
 
-There are many ways to encode the data of a knot, each with its own advantages
-and disadvantages. Throughout this thesis the primary target notation was the
-algebraic tangle tree @@@@Todo. In the context of tangle tabulation and tangle
-arithmetic this is a natural choice as it preserves the important algebraic
-substructure for the tangles, while in section
-@sec-future_work-continued_tabulation we saw that the Conway notation for
-polygonal tangles is preferred. Another commonly used notational strategy is the
-extended Gauss notation [@livingstonGaussNotationDescription2025]. In the
-extended Gauss notation a knot is encoded as a string of integers. The integers
-are assigned to crossings by starting at a point and walking along the strand
-until we come to a crossing. If the crossing has a label we list that label if
-not we increment our count. We also encode if we entered the crossing as the
-over/under strand by a +/- attached to the listed integer, a Gauss notation of
-the trefoil knot:
+###### Problem Statement
+
+Develop the theory translating RLITT to extended Gauss notation. Additionally,
+develop the software needed for storing and translating per theory.
+
+###### Brief
+
+A commonly used notational strategy for knots and tangles is the extended Gauss
+notation [@livingstonGaussNotationDescription2025;
+@gaussGAUSSSCOLLECTEDWORKS1903]. In the extended Gauss notation, a knot is
+encoded as a string of integers. The integers are assigned to crossings by
+starting at a point and walking along the strand until we come to a crossing. If
+the crossing has a label we list that label; if not we increment our count. We
+also encode if we entered the crossing as the over/under strand by a +/-
+attached to the listed integer, a Gauss notation of the trefoil knot:
 
 ```{math}
 1,\ \m 2,3,\ \m 1,2,\ \m 3
 ```
 
 The extended Gauss notation additionally encodes the data for handedness of the
-crossing. In this project an undergraduate researcher will describe a
-computational data structure for extended Gauss notation. They will then develop
-the software implementing extended Gauss notation within The Tanglenomicon core
-library structure. Finally, as a stretch goal they will develop a translation
-interface for taking algebraic tangle trees and converting them into extended
-Gauss notation.
+crossing.
 
 <!-- prettier-ignore-start -->
 (sec-proj-note_pd)=
-##### Notation Description For Planar Diagram (PD) Notation
+##### Notation Description For Planar Diagram (PD) Notation: Intermediate Student
 <!-- prettier-ignore-end -->
 
-There are many ways to encode the data of a knot, each with its own advantages
-and disadvantages. Throughout this thesis the primary target notation was the
-algebraic tangle tree @@@@Todo. In the context of tangle tabulation and tangle
-arithmetic this is a natural choice as it preserves the important algebraic
-substructure for the tangles, while in section
-@sec-future_work-continued_tabulation we saw that the Conway notation for
-polygonal tangles is preferred. Another commonly used notational strategy is the
-planar diagram (PD) notation [@livingstonPDNotationDescription2025]. A knot
-encoded in PD nation is a list of lists of integers each with 4 integers. To
-encode a diagram as in PD we start by enumerating the strands between crossings.
-Now starting with strand labeled 1 and walk around the knot until you reach a
-crossing, now imagine that crossing as a +/- 1 tangle with the incoming strand
+###### Problem Statement
+
+Develop the theory translating RLITT to PD notation. Additionally, develop the
+software required for storing and translating per theory.
+
+###### Brief
+
+A notational strategy that is heavily used in the Bar-Natan's KnotTheory
+[@bar-natanKnotTheory] is the planar diagram (PD) notation
+[@livingstonPDNotationDescription2025; @bar-natanKnotTheory]. A knot encoded in
+PD nation is a collection of lists of integers each with 4 entries. To encode a
+diagram in PD notation we start by enumerating the strands between the
+crossings. Labeling a strand with 1, walk along the knot until you reach a
+crossing. Now imagine that crossing as a $\pm1$ tangle with the strand we're on
 as the SE point. List the integers associated with the strands as
 $\LS \text{SE, NE, NW, SW}\RS$. Continue in this way until all crossings are
-exhausted, an example of the trefoil knot encoded as PD notation is:
+exhausted. An example of the trefoil knot encoded as PD notation is:
 
 ```{math}
 \LS\LS 1,5,2,4 \RS,\LS 2,5,3,6\RS,\LS 3,1,4,6\RS\RS
 ```
 
-In this project an undergraduate researcher will describe a computational data
-structure for PD notation. They will then develop the software implementing PD
-notation within The Tanglenomicon core library structure. Finally, as a stretch
-goal they will develop a translation interface for taking algebraic tangle trees
-and converting them into PD notation.
-
 <!-- prettier-ignore-start -->
 (sec-proj-note_dt)=
-##### Notation Description For DT Notation
+##### Notation Description For DT Notation: Intermediate Student
 <!-- prettier-ignore-end -->
 
-There are many ways to encode the data of a knot, each with its own advantages
-and disadvantages. Throughout this thesis the primary target notation was the
-algebraic tangle tree @@@@Todo. In the context of tangle tabulation and tangle
-arithmetic this is a natural choice as it preserves the important algebraic
-substructure for the tangles, while in section @@@@Todo we saw that the Conway
-notation for polygonal tangles is preferred. Another commonly used notational
-strategy is the Dowker-Thistlethwaite (DT) notation
-[@livingstonDTNotationDescription2025]. A knot encoded in DT notation is list of
-even integers. To encode a knot in DT notation we need to first start on the
-string between two crossing and start a walk along the string. At each crossing
-we reach we label, starting at 1 that crossing with an integer then increment.
-We repeat this process until each crossing has two labels (one even and one
-odd). Now ordering the crossings their odd label and listing will give the DT
-notation of the knot diagram, an example of the trefoil knot is: `{math} 4,6,2 `
-In this project an undergraduate researcher will describe a computational data
-structure for DT notation. They will then develop the software implementing DT
-notation within The Tanglenomicon core library structure. Finally, as a stretch
-goal they will develop a translation interface for taking algebraic tangle trees
-and converting them into DT notation.
+###### Problem Statement
+
+Develop the theory translating RLITT to DT notation. Additionally, develop the
+software needed for storing and translating per theory.
+
+###### Brief
+
+A commonly used notational strategy is the Dowker-Thistlethwaite (DT) notation
+[@livingstonDTNotationDescription2025;
+@dowkerClassificationKnotProjections1983]. A knot encoded in DT notation is a
+list of even integers. To encode a knot in DT notation we first start on a
+strand inbetween two crossings, and we then start a walk along the strand.
+Starting with a counter at 1, each crossing we encounter is labeled with the
+counter, and the counter is incremented. We continue our walk until each
+crossing has two labels (one even and one odd). Now ordering the crossings by
+their odd labels and listing the even will give the DT notation of the knot
+diagram. We see this in an example of the trefoil knot: `{math} 4,6,2 `.
 
 <!-- prettier-ignore-start -->
-(sec-proj-note_any)=
-##### Notation Description For ??? Notation
+(sec-proj-gen)=
+#### Generation
 <!-- prettier-ignore-end -->
 
-As seen in the previous three sections each of the various knot notational
-structures offer an opportunity for an undergraduate research project. The
-general project outline can be described as follows. In this project an
-undergraduate researcher will describe a computational data structure for ???
-notation. They will then develop the software implementing ??? notation within
-The Tanglenomicon core library structure. Finally, as a stretch goal they will
-develop a translation interface for taking algebraic tangle trees and converting
-them into ??? notation.
+This section expands the census of tangles to more abstract classes. These
+expanded lists increase accessibility of complex objects allowing for the
+creation of new theory.
 
+##### Create a table of virtual tangles: Upper Division Student
+
+###### Problem Statement
+
+Create the theory needed to construct a table of virtual tangles.
+
+###### Brief
+
+Virtual knots, developed by Kauffman [@kauffmanVirtualKnotTheory1999], are an
+extension of the knot concept where a knot shadow need not be planar. Some work
+has been done on classifying the virtual tangles by Mellor and Nevin
+[@mellorVirtualRationalTangles2020]. The full tangle theory must be developed to
+solve this problem, this requires experience with the development of original
+abstract theory, making the problem appropriate for upper division students
+
+##### Create a table of $n$ string tangles: Upper Division Student
+
+###### Problem Statement
+
+Create the theory needed to construct a table of $n$ string tangles.
+
+###### Brief
+
+The tangles we have worked with in this thesis are the two string tangles, those
+with four fixed points on the Conway circle. A natural extension to this concept
+is the $n$ string tangle. Recently, Kwon
+[@kwonClassificationRational3tangles2025], the 3 strings rational tangles, have
+been classified. For the remaining cases, the full tangle theory must be
+developed to solve the problem, this requires experience with the development of
+original abstract theory, making the problem appropriate for upper division
+students
+
+<!-- prettier-ignore-start -->
+(sec-proj-pot)=
 #### Potpourri
+<!-- prettier-ignore-end -->
+
+Problems in this section are those that do not fit into other classes of
+problems.
 
 <!-- prettier-ignore-start -->
 (sec-proj-rand)=
-##### Random Tangle Retrieval
+##### Random Tangle Sampling: Upper Division Student
 <!-- prettier-ignore-end -->
+
+###### Problem Statement
+
+Create the theory and software to select from a collection or generate a tangle
+at random with an understood distribution.
+
+###### Brief
 
 In the introduction chapter @sec-intro-applications applications of knots to the
 hard sciences were discussed. When working in the hard sciences being able to
 sample with an understood distribution from a collection is important. Similarly
 to the previous notational projects, describing and implementing random sampling
-methodologies is a class of extremely useful tabulation projects. A project
-outline for random tangle sampling can be described as follows. In this project
-an undergraduate researcher will describe and implement a computational method
-for sampling from a collection of tangles. The distribution of the sampling
-method will classified. Finally, the researcher will implement the sampling
-strategy for use with the Tanglenomicon.
+methodologies is a class of extremely useful tabulation projects. The full
+tangle theory must be developed to solve this problem, this requires experience
+with the development of original abstract theory, making the problem appropriate
+for upper division students
 
-<!-- prettier-ignore-start -->
-(sec-proj-diagram_att)=
-##### Compute Diagram for General Notations
-<!-- prettier-ignore-end -->
+##### Develop a tangle analogue for petal knots: Upper Division Student
 
-Perhaps the aspect of knot theory that makes it among the most accessible higher
-math domains is the ability for anyone to draw pictures of the knots and play. A
-continuing theme of this thesis is that computations/operations are easy by had,
-with the qualifier, "up to reasonable crossing number". This carries through
-with the drawing of the diagrams. The primary drawing tool in knot theory is
-KnotPlot [@schareinInteractiveTopologicalDrawing1998]. However, KnotPlot has no
-interface for drawing knots in "arbitrary" notations. This project will remedy
-that, with the description of a LUA interface for placing beads into KnotPlot
-and a further layer for algebraic tangle trees to be drawn from a call to The
-Tanglenomicon website API.
+###### Problem Statement
 
+Create the theory needed for a well defined tangle analogue of the petal
+knots[@adamsKnotProjectionsSingle2015].
+
+###### Brief
+
+Petal knots, first developed by Adams[@adamsKnotProjectionsSingle2015], are
+knots in which all crossings are colinear in the orthogonal projection, an
+"ubercrossing". Converting these objects to a braid is straightforward, however
+less obvious is converting to a two string tangle. Identifying a tangle analogue
+for the petal knots may allow for computation of a whole new family of tangle
+data. The full tangle theory must be developed to solve this problem, this
+requires experience with the development of original abstract theory, making the
+problem appropriate for upper division students
+
+[^pot]: Definition: A miscellaneous collection

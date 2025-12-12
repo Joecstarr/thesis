@@ -1,28 +1,33 @@
+<!-- prettier-ignore-start -->
+(sec-product-management)=
+## Instruction of Product Management
+<!-- prettier-ignore-end -->
+
 Undergraduate researchers, in most academic disciplines, have little exposure to
 systematic product management. Outside a structured classroom setting, an
-undergraduate researcher may have never completed a project, let alone a worked
-on a product. Giving undergraduate researchers a minimal set of product
-management tools increases their ability to estimate and bring together
-successful products.
+undergraduate researcher may have never completed a project, let alone worked on
+a product. Giving undergraduate researchers a minimal set of product management
+tools increases their ability to estimate and bring together successful
+products.
 
-The remainder of this section contains a course design for a basic undergraduate
-course in product management. The perspective of the course design is not
-software focused, but is intended for general use accross disciplines. In six
-weeks of instruction, this course introduces students to the key concepts in
-product management needed to ideate and systematically complete complex
-products. The design utilizes the "Backward Design" of
-[@wigginsUnderstandingDesign2008]. Many of the ideas come from
-[@pressmanSoftwareEngineeringPractitioners2015a] but have been massaged to be
-less software focused. Full course design and template documents are found
+In this section we describe a course design for a basic undergraduate course in
+product management. The perspective of the course design is not software
+focused, but is intended for general use across disciplines. In six weeks of
+instruction, this course introduces students to the key concepts in product
+management needed to ideate and systematically complete complex products. The
+design utilizes the "Backward Design" of Wiggins and McTighe
+[@wigginsUnderstandingDesign2008]. Many of the ideas come from Pressman and
+Maxim [@pressmanSoftwareEngineeringPractitioners2015a] but have been massaged to
+be less software focused. Full course design and template documents are found
 published on GitHub [@joestarrJoecstarrMfaCoBPMV1002025].
 
 ### Stage 1 - Desired Results
 
 #### Established Goals
 
-Product management is an important part of being a successful in academia as
-well as industry. To take a product from ideation to a publishable product can
-be easy when everything goes right. However, while completing a product, issues
+Product management is an important part of being successful in academia as well
+as industry. To take a product from ideation to a publishable product can be
+easy when everything goes right. However, while completing a product, issues
 often arise that impact the ability to meet product goals. This course will
 introduce product management concepts that will enable practitioners to mitigate
 these hidden impacts.
@@ -36,7 +41,7 @@ The overarching theme for the course is:
 _Students will be able to independently use their learning to…_
 
 Students should leave this course knowing that there are tools to reach for when
-planning in future products. Additionally, students should have surface
+planning in future products. Additionally, students should have a surface
 understanding of at least one specific tool to manage each section of the
 product life cycle.
 
@@ -51,9 +56,9 @@ _Students will understand that…_
 -   "Future you" is a person that you need to collaborate with.
 -   Product documentation makes life easier.
 -   Stakeholder agreement is essential.
--   Why risk management from the "Indiana Jones School of Risk Management"
-    [@thomsettIndianaJonesSchool1992] is bad.
--   Products fall behind "One day at a time" Fred Brooks
+-   Risk management from the "Indiana Jones School of Risk Management" - Rob
+    Thomsett [@thomsettIndianaJonesSchool1992] is bad.
+-   Products fall behind "One day at a time" - Fred Brooks
     [@brooksMythicalManmonthEssays2013]
 
 ##### Essential Questions
@@ -115,8 +120,8 @@ the course schedule:
 3. Week 3:
     1. Requirements design
 4. Week 4:
-    1. Risk Management
+    1. Risk management
 5. Week 5:
-    1. Product Schedule
+    1. Product schedule
 6. Week 7-15: Individual work
-7. Retrospective meeting
+7. Week 16: Retrospective meetings

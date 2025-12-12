@@ -3,15 +3,16 @@
 #### Minimalization of CWPTT
 <!-- prettier-ignore-end -->
 
-##### CWPTT Are Not Minimal
+##### CWPTT are Not Minimal
 
-A common measure for complexity of knots and their relatives is the **minimal
-crossing number**. That being the least number of crossings needed to realize
-the object in a diagram, we call that diagram the **minimal diagram**. It is
-natural to ask if our CWPTT are minimal representatives among arborescent
-representations. A quick analysis of the process of canonization demonstrates
-that they are unfortunately far from minimal. An example of canonizing a tangle,
-making the tangle non-minimal is seen in @minimal-fig-nonmin_min.
+A common measure for the complexity of knots and their relatives is the
+**minimal crossing number**. That being the least number of crossings needed to
+realize the object in a diagram, we call that diagram the **minimal diagram**.
+It is natural to ask if our CWPTT are minimal representatives among either all
+representations or arborescent representations. A quick analysis of the process
+of canonization demonstrates that CWPTT are unfortunately far from minimal even
+among arborescent representatives. An example of canonizing a tangle, making
+that tangle non-minimal, is seen in @minimal-fig-nonmin_min.
 
 ````{prf:observation}
 :label:minimal-fig-nonmin
@@ -34,76 +35,127 @@ A non-minimal presentation of the same arborescent tangle as
 
 ````
 
-##### Canonization Increases Complexity
+##### Canonization Can Increase Complexity
 
-In the previous section we saw that a CWPTT often does not realize a minimal
-crossing representative for a tangle. Since minimal crossing number is such a
-common measure for complexity, we should understand how non-minimal the process
-of canonization can make a CWPTT. We will accomplish this by first identifying
-which conditions of a CWPTT can potentially increase crossing number. The weight
-condition ensures that each vertex has a single weight, consolidating all the
-crossings into a single integral tangle. Meaning, enforcing the weight condition
-on a weighted planar tree can only decrease crossing number. The stick condition
-has three parts, the first two parts have no impact on the crossing number of
-the tree. However, the third part can increase crossing number via the 1.2 move
-, which increases crossing number by $1$.
+As we have seen, a CWPTT often does not realize a minimal crossing
+representative for an arborescent tangle. Since minimal crossing number is such
+a common measure for complexity, we should understand how canonization impacts
+the crossing number complexity of a CWPTT. We will accomplish this by
+identifying a (non-unique) minimal arborescent representative for each tangle.
+That is, a weighted planar tangle tree with minimal TCN among all weighted
+planar tangle trees in its equivalence class. To begin we expand our
+understanding of the moves in the calculus of arborescent tangles to those that
+alter weights arithmetically. These moves are related to the arithmetic
+operations on continued fractions [@bonahonNewGeometricSplittings2016].
 
-````{prf:definition} The 1.2 move, Bonahon and Seibenmann Section 12.3 [@bonahonNewGeometricSplittings2016]
-:label: minimal-def-11and12
+````{prf:definition} Bonahon and Seibenmann Section 12.3 [@bonahonNewGeometricSplittings2016]
+:label: minimal-def-arithmetic
+When carrying out the following **arithmetic moves** the relative positions of weights are
+critical to the invariance of the underlying knot pair.
+- (0.1) The **0.1 move** replaces the left side with the right side of @minimal-fig-move01.
+    ```{figure} ../../media/bands/moves/0/1/def.svg
+    :label: minimal-fig-move01
+    :width: 500px
 
-Replace the left side with the right side of @minimal-fig-move12
+    Move 0.1 on a weighted planar tree.
+    ```
+- (0.2) The **0.2 move** replaces the left side with the right side of @minimal-fig-move02. Additionally, the cyclic order of all descendants in the purple subtree is reversed and $\zeta$ ($Z$-axis rotation @wpt-construc-fig-k4g-z). The vertices $a$ and $b$ need not be valence two, either or both may have a valence greater than two.
+    ```{figure} ../../media/bands/moves/0/2/def.svg
+    :label: minimal-fig-move02
+    :width: 500px
 
+    Move 0.2 on a weighted planar tree.
+    ```
+- (1.1) The **1.1 move** replaces the left side with the right side of @minimal-fig-move11.
+    ```{figure} ../../media/bands/moves/1/1/def.svg
+    :label: minimal-fig-move11
+    :width: 500px
 
+    Move 1.1 on a weighted planar tree.
+    ```
+- (1.2) The **1.2 move** replaces the left side with the right side of @minimal-fig-move12. The vertices $a$ and $b$ need not be valence two, either or both may have a valence greater than two.
+    ```{figure} ../../media/bands/moves/1/2/def.svg
+    :label: minimal-fig-move12
+    :width: 500px
 
-```{figure} ../../media/bands/moves/1/2/def.svg
-:label: minimal-fig-move12
-:width: 500px
+    Move 1.2 on a weighted planar tree.
+    ```
+- (2.1) Replace the left side with the right side of @minimal-fig-move21
+    ```{figure} ../../media/bands/moves/2/1/def.svg
+    :label: minimal-fig-move21
+    :width: 500px
 
-Move 1.2 on a weighted planar tree.
-```
+    Move 2.1 on a weighted planar tree.
+    ```
+- (2.2) Replace the left side with the right side of @minimal-fig-move22. The vertices $a$ and $b$ need not be valence two, either or both may have a valence greater than two.
+    ```{figure} ../../media/bands/moves/2/2/def.svg
+    :label: minimal-fig-move22
+    :width: 500px
 
+    Move 2.2 on a weighted planar tree.
+    ```
 ````
 
-The final condition to check is the positivity/negativity condition. We will
-limit our analysis to the positivity condition, the negativity condition follows
-identically. The positivity condition calls out two specific subtrees that must
-not be present to satisfy the condition. The two subtrees,
-@wpt-construc-fig-positivity_cond-1 and @wpt-construc-fig-positivity_cond-2, can
-be transformed, via the 2.1 and 2.2 moves respectively. We can see from the
-definitions of the moves that the 2.1 move increases the crossing number by $1$
-and the 2.2 move increases by $2$.
-
-````{prf:definition} The 2.1 and 2.2 move, Bonahon and Seibenmann Section 12.3 [@bonahonNewGeometricSplittings2016]
-:label: minimal-def-21and22
-
-1. Move 2.1: replace the left side with the right side of @minimal-fig-move11
-2. Move 2.2: replace the left side with the right side of @minimal-fig-move12
-
-```{figure} ../../media/bands/moves/2/1/def.svg
-:label: minimal-fig-move11
-:width: 500px
-
-Move 2.1 on a weighted planar tree.
-```
-```{figure} ../../media/bands/moves/2/2/def.svg
-:label: minimal-fig-move22
-:width: 500px
-
-Move 2.2 on a weighted planar tree.
+```{note}
+The 2.1 and 2.2 moves are what allow us to pass between the $\LP+\RP$ and
+$\LP-\RP$ canonical classes of trees.
 ```
 
-````
+From here we will show that canonization of minimal trees increases TCN
+complexity in a controlled manner.
 
-##### Bounding Complexity
+```{prf:theorem}
+:label: minimal-thm-minimal
+A minimal tree canonizes to $\LP+\RP$-CWPTT, with only the moves (1.2), (2.1),
+and (2.2) increasing TCN.
+```
 
-We are now prepared to give a bound for the complexity of the canonization of a
-weighted planar tree. Given a weighted planar tree $\Gamma$ and vertices
-$V=\LS v_i\RS_i^n$, additionally let $\Gamma_c$ be the canonization of $\Gamma$.
-In the worst case, each vertex in $\Gamma$ increases the crossing number by $2$
-with a $2.2$ move. We can then bound the crossing number of $\Gamma$ as in
-@minimal-eq-upper-bound.
+```{prf:proof}
+Let $\Gamma$ be a minimal TCN arborescent representative of its equivalence
+class. Starting with the weight condition (W) and the second portion of the
+stick condition (S.2) concerning sticks having non-zero weights. Maximally apply
+to $\Gamma$ moves $F_3$, (0.1), and (0.2). This removes zero weights and
+consolidates weights of each vertex, $\Gamma$ now satisfies the conditions (S.2)
+and (W) while remaining minimal. We consider condition (S.1), the alternating
+condition. In the general canonization process (S.1) is handled by application
+of move (1.2). However, on a pair of vertices violating (S.1) move (1.2)
+decreases the TCN. This means by minimality of $\Gamma$ (S.1) must already be
+satisfied. We are left now with conditions (S.3) and (P). Canonization of
+$\Gamma$ to satisfy these conditions involves application of moves (1.2), (2.1),
+and (2.2). Similarly to our (S.1) case, $\Gamma$ is minimal, so (1.2), (2.1),
+and (2.2) cannot decrease TCN. However, (1.2), (2.1), and (2.2) may increase TCN
+by 1, 1, and 2 respectively.
+```
 
-```{math}
-:label: minimal-eq-upper-bound
-\text{ACN}\LP \Gamma\RP \leq \text{ACN}\LP \Gamma_c\RP\leq 2\cdot\abs{V}+\text{ACN}\LP\Gamma\RP
+Working in the contrapositive, @minimal-thm-minimal tells us that a minimal tree
+can be constructed from a CWPTT by application of TCN decreasing moves (1.2),
+(2.1), and (2.2). It is important to note that this does not guarantee that
+every set of applications of the (1.2), (2.1), and (2.2) moves to a CWPTT
+minimizes the TCN, only the existence of a path to a minimal tree.
+
+##### Bounding complexity
+
+We now introduce a bound on complexity between a CWPTT and a minimal
+representation of that tree. We note that @minimal-thm-minimal indicates that
+any opportunities to decrease TCN in a CWPTT are found on the boundary between
+an essential vertex and a stick of the tree. Particularly, at least one weight
+used in the execution of (1.2), (2.1), and (2.2) must be carried by an essential
+vertex.
+
+```{prf:lemma}
+:label: minimal-lemma-weights
+The sum of the weights of all essential vertices of a CWPTT is at
+most $\text{TCN}-4$.
+```
+
+```{prf:proof}
+The weight of an essential vertex of a CWPTT is maximized when consolidated on
+at a single vertex. By definition, each essential vertex has at least two
+children. In a CWPTT the least value that can be carried by a leaf vertex is
+$2$. Combining these gives us the desired bound.
+```
+
+```{prf:theorem}
+For a CWPTT $\Gamma$, the difference in TCN between $\Gamma$ and the minimal tree $\Gamma_m$ is bounded as:
+$$\text{TCN}\LP\Gamma\RP-\text{TCN}\LP\Gamma_m\RP\leq\sum\abs{\text{weights of essential vertices of }\Gamma}\leq \text{TCN}-4$$
 ```

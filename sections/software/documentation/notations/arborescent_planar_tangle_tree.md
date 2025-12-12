@@ -3,9 +3,16 @@
 ### Weighted Planar Tangle Tree Notation
 <!-- prettier-ignore-end -->
 
-#### Class Diagram
+This component implements an extended version of the linearization strategy
+outlined in @sec-arborescent-linear. The extensions are to add support for the
+abriviated trees detailed by Bonahon and Seibenmann
+[@bonahonNewGeometricSplittings2016].
 
-```mermaid
+#### Class Diagram
+$\,$
+
+````{figure}
+```{mermaid}
 classDiagram
     note_wptt ..|> notation
     note_wptt *-- note_wptt_t
@@ -57,6 +64,7 @@ classDiagram
 
 
 ```
+````
 
 #### Language
 
@@ -68,11 +76,11 @@ C
 
 #### Uses
 
-The wptt notation component does not use any other components.
+The WPTT notation component does not use any other components.
 
 #### External Libraries
 
-The wptt notation component does not use any external libraries.
+The WPTT notation component does not use any external libraries.
 
 #### Functionality
 
@@ -84,15 +92,15 @@ The interface structure for the component is designed to match the non memory
 allocating design goals of non-runner components. That means this notation
 structure contains:
 
--   A pointer to the root of the wptt
--   A buffer of/for nodes in the wptt
+-   A pointer to the root of the WPTT
+-   A buffer of/for nodes in the WPTT
 -   A length for the buffer supplied to the component instance
--   A $V_4$ label for the wptt
+-   A $V_4$ label for the WPTT
 
 ###### Node structure
 
-We saw in the use-case description an outline for the important data that needs
-to be encoded in a wptt data structure. This data is summarized as:
+We saw in the use case description an outline for the important data that needs
+to be encoded in a WPTT data structure. This data is summarized as:
 
 -   Children and their cyclic order
 -   Weights and their location in the cyclic order
@@ -128,17 +136,15 @@ This allows components to invert read order, read from $(n-1)\to 0$, at runtime.
 
 ###### Decode Function
 
-The decode function takes in the linearized string form of the wptt and encodes
-it as a `note_wptt_node_t`.
+The decode function takes in the linearized string form of the WPTT and encodes
+it as a `note_WPTT_node_t`.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
-    state "Init" as vj
-    state "• stack array" as vj
-    state "• stack index" as vj
-    state "• char pointer" as vj
+    state "Init<br>• stack array<br>• stack index<br>• char pointer" as vj
     state "read label from $$\,V_4$$" as rl
     state "Handle Root Init" as ri
     state if_end_of_string <<choice>>
@@ -154,29 +160,25 @@ stateDiagram-v2
     if_end_of_string --> [*]: is end of sting
 
 ```
+````
 
 ###### Encode Function
 
 The encode function takes in a `note_wptt_node_t` and encodes it into the
-linearized string form of the wptt.
+linearized string form of the WPTT.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
-    state "Init" as vj
-    state "• stack parent array" as vj
-    state "• stack child_idx array" as vj
-    state "• stack_idx as 0" as vj
-    state "• active node as root" as vj
-    state "Push to stack" as prts
-    state "• root" as prts
-    state "• 0 to child_idk" as prts
-    state "Stringify $$\,V_4$$ label" as sl
-    state "Execute handle stack" as handle_stack
-    state "Execute handle stringify" as handle_stringify
+    state "Init<br>• stack parent array<br>• stack child_idx array<br>• stack_idx as 0<br>• active node as root" as vj
+    state "Push to stack<br>• root<br>• 0 to child_idk" as prts
+    state "Convert the $$\,V_4$$ label to a string" as sl
+    state "Execute 'handle stack'" as handle_stack
+    state "Execute 'handle string conversion'" as handle_stringify
     state "stack_idx--" as simm2
-    state "Stringify weight at</br>child_idx of active node" as sw
+    state "Add weight at</br>child_idx of active node to string" as sw
     state if_root_labeled_done <<choice>>
     state if_children_exhausted <<choice>>
     state if_stack_idx_exhausted <<choice>>
@@ -196,6 +198,7 @@ stateDiagram-v2
     simm2 --> sw
     handle_stringify --> sw
 ```
+````
 
 ##### Private Functions decode path
 
@@ -211,23 +214,22 @@ the character falls into:
 
 -   A delimiter
     -   An opening delimiter
-        -   $\langle$
+        -   $\LA\right.$
         -   $[$
         -   $($
     -   A closing delimiter
-        -   $\rangle$
+        -   $\left.\RA$
         -   $)$
 -   An integer beginning with "0-9" or "-"
 -   A space character
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
     state "Get ring number" as rn
-    state "Twist Vector" as tv
-    state "Read TV" as tv
-    state "Move char ptr to end of tv" as tv
+    state "Read twist vector and<br>move char ptr to end of tv" as tv
     state "Read integer weight" as ri
     state "Execute move active node up" as mru
     state "Execute move active node down" as mrd
@@ -263,15 +265,17 @@ stateDiagram-v2
     ri --> [*]
 
 ```
+````
 
 ###### Move active node down
 
 This function moves the active node to be a child of the current node.
-Functionally, this is the same as descending the wptt.
+Functionally, this is the same as descending the WPTT.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
     state "Initialize new active node as child</br> of current active node" as child
     state "Add active node to stack" as st
@@ -281,15 +285,17 @@ stateDiagram-v2
     child --> isi
     isi --> [*]
 ```
+````
 
 ###### Move root up
 
 This function moves the active node to be a parent of the current node.
-Functionally, this is the same as ascending the wptt.
+Functionally, this is the same as ascending the WPTT.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
 
     state "Decrement stack index" as dsi
@@ -299,6 +305,7 @@ stateDiagram-v2
     dsi --> scr
     scr --> [*]
 ```
+````
 
 ##### Private functions Encode path
 
@@ -312,12 +319,11 @@ The handle stick function takes a stick and
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
 
-    state "Push to stack" as pants
-    state "• child node at child_idk node" as pants
-    state "• 0 to child_idx" as pants
+    state "Push to stack<br>• child node at child_idk node<br>• 0 to child_idx" as pants
     state "stack_idx++" as sipp
     state "child_idx[stack_idx]++" as cipp
     [*] --> pants
@@ -325,15 +331,17 @@ stateDiagram-v2
     cipp --> sipp
     sipp --> [*]
 ```
+````
 
-###### Handle stringify
+###### Handle String Conversion
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
-    state "Stringify $$\,\langle$$ and ring number" as rn
-    state "Stringify $$\,($$" as par
+    state "Convert $$\,\langle$$ to string and ring number" as rn
+    state "Add $$\,($$ to string" as par
     state "stack_idx--" as simm
-    state "Stringify stick as twist vector" as stv
+    state "Add to string the stick as twist vector" as stv
     state if_has_rings <<choice>>
     state if_stickcheck <<choice>>
     [*] --> if_stickcheck
@@ -346,6 +354,7 @@ stateDiagram-v2
     par --> [*]
     rn --> [*]
 ```
+````
 
 #### Validation
 
@@ -420,17 +429,17 @@ The function reports an error.
 
 ###### Positive Tests
 
-```{test-card} A valid knot wptt is fed to the function
+```{test-card} A valid knot WPTT is fed to the function
 
-A valid knot wptt (with no label) is fed to the encode function.
+A valid knot WPTT (with no label) is fed to the encode function.
 
 **Inputs:**
 
-- A valid wptt representing a knot.
-- A stick wptt.
-- A wptt with an essential vertex.
-- A wptt with a vertex that has ring number.
-- A wptt with a vertex with more than one weight.
+- A valid WPTT representing a knot.
+- A stick WPTT.
+- A WPTT with an essential vertex.
+- A WPTT with a vertex that has ring number.
+- A WPTT with a vertex with more than one weight.
 
 **Expected Output:**
 
@@ -438,21 +447,21 @@ The function produces the corresponding encoded string.
 
 ```
 
-```{test-card} A valid tangle wptt is fed to the function
+```{test-card} A valid tangle WPTT is fed to the function
 
-A valid tangle wptt (with label) is fed to the encode function.
+A valid tangle WPTT (with label) is fed to the encode function.
 
 **Inputs:**
 
-- A valid wptt representing a tangle with each label:
+- A valid WPTT representing a tangle with each label:
     - i
     - x
     - y
     - z
-- A stick wptt.
-- A wptt with an essential vertex.
-- A wptt with a vertex that has ring number.
-- A wptt with a vertex with more than one weight.
+- A stick WPTT.
+- A WPTT with an essential vertex.
+- A WPTT with a vertex that has ring number.
+- A WPTT with a vertex with more than one weight.
 
 **Expected Output:**
 
@@ -463,9 +472,9 @@ The function produces the corresponding encoded string.
 
 ###### Negative Tests
 
-```{test-card} A malformed wptt is passed to the function
+```{test-card} A malformed WPTT is passed to the function
 
-A malformed wptt is passed to the function.
+A malformed WPTT is passed to the function.
 
 **Inputs:**
 

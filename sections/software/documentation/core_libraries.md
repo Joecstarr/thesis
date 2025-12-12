@@ -1,4 +1,3 @@
-
 ## Notations
 
 ```{include} ./notations/twist_vector.md
@@ -18,7 +17,16 @@
 ```{include} ./computation/grafting.md
 
 ```
-```{include} ./computation/neutrality.md
+
+```{include} ./computation/positivity.md
+
+```
+
+```{include} ./computation/ringshift.md
+
+```
+
+```{include} ./computation/vertex_canon.md
 
 ```
 

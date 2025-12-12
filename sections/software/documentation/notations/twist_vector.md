@@ -4,8 +4,10 @@
 <!-- prettier-ignore-end -->
 
 #### Class Diagram
+$\,$
 
-```mermaid
+````{figure}
+```{mermaid}
 classDiagram
     note_tv ..|> notation
     note_tv *-- note_tv_t
@@ -25,6 +27,7 @@ classDiagram
         <<External Interface>>
     }
 ```
+````
 
 #### Language
 
@@ -68,11 +71,10 @@ encodes it as a `note_tv_t`.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
-    state "Init" as vj
-    state "• tv_index to 0" as vj
-    state "• str_end to point at end of input string" as vj
+    state "Init<br>• tv_index to 0<br>• str_end to point at end of input string" as vj
     state "Move input str pointer past opening [" as rl
     state "Read int from imput string" as rc
     state "Increment tv_index" as itvi
@@ -88,6 +90,7 @@ stateDiagram-v2
     ro-->[*]
 
 ```
+````
 
 ###### Encode Function
 
@@ -96,12 +99,10 @@ string form of the twist vector.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
-    state "Init" as vj
-    state "• local_str_buffer[MAX_CN]" as vj
-    state "• local_str_ptr to beginning of str" as vj
-    state "• interator i to tv_length" as vj
+    state "Init<br>• local_str_buffer[MAX_CN]<br>• local_str_ptr to beginning of str<br>• interator i to tv_length" as vj
     state "Place opening [" as pob
     state "Place closing ]" as pcb
     state "Place space" as ps
@@ -124,6 +125,7 @@ stateDiagram-v2
 
     pcb --> [*]
 ```
+````
 
 ##### Private Functions decode path
 
@@ -134,11 +136,10 @@ the increment read order match the theoretical indexing of the twist vector.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
-    state "Init" as rn
-    state "• left_p to start of array" as rn
-    state "• right_p to end of array" as rn
+    state "Init<br>• left_p to start of array<br>• right_p to end of array" as rn
     state "Set placeholder to left_p int" as spl
     state "Set left_p to right_p int" as slr
     state "Set right_p to placeholder int" as srp
@@ -157,6 +158,7 @@ stateDiagram-v2
     if_at_middle --> [*]: If left_p == right_p
 
 ```
+````
 
 #### Validation
 

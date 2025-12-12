@@ -7,8 +7,10 @@ The Montesinos tangle generator implements a portion of the theoretical use case
 seen in @sec-monttang.
 
 #### Class Diagram
+$\,$
 
-```mermaid
+````{figure}
+```{mermaid}
 classDiagram
     generator_mont ..|> generator
     generator_mont_config_t ..|> generator_config_t
@@ -21,15 +23,15 @@ classDiagram
     }
 
     class generator_mont {
-<<External>>
+        - process_loop_state()
 }
 
 class generator_mont_config_t {
-+ note_att_t *att_n;
-+ note_tv_t **tv_sets;
-+ size_t *tv_set_lens;
++ note_att_t att_n[];
++ note_tv_t tv_sets[][];
++ size_t tv_set_lens[];
 + size_t tv_sets_len;
-+ char *str_buff;
++ char str_buff[];
 + size_t str_buff_len;
 }
 
@@ -48,6 +50,7 @@ class note_tv{
 }
 
 ```
+````
 
 #### Language
 
@@ -70,10 +73,10 @@ N/A
 
 ##### Public Structures
 
-###### Montesinos Generator Config Structure
+###### Montesinos Generator ConfigurationStructure
 
-The config structure contains the data needed for generating a set of Montesinos
-algebraic tangle trees from a collection of lists of twist vectors.
+The configuration structure contains the data needed for generating a set of
+Montesinos algebraic tangle trees from a collection of lists of twist vectors.
 
 This includes:
 
@@ -84,13 +87,14 @@ This includes:
 
 ##### Public Functions
 
-###### Config Function
+###### Configuration Function
 
-The config function configures the local instance variable of the generator.
+The configuration function configures the local instance variable of the generator.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
   state "Initialize local config" as Sc
 
@@ -98,6 +102,7 @@ stateDiagram-v2
     Sc --> [*]
 
 ```
+````
 
 ###### Generate Function
 
@@ -107,7 +112,8 @@ out into functions in the implementation.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
     state "Init" as init1
     state "• prt=0" as init1
@@ -148,17 +154,19 @@ join_while --> while
 
 
 ```
+````
 
 ##### Private Functions
 
 ###### Process Loop State
 
-The process loop state function handles the construction and writign of an
+The process loop state function handles the construction and writing of an
 algebraic tangle tree in the generation process.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
     forstack:"for each element in stack except the final two"
     state forstack {
@@ -178,20 +186,21 @@ stateDiagram-v2
     eatt --> wr
     wr --> [*]
 ```
+````
 
 #### Validation
 
-##### Config Function
+##### Configuration Function
 
 ###### Positive Tests
 
-```{test-card} Valid Config
+```{test-card} Valid Configuration
 
-A valid config for the generator is passed to the function.
+A valid configuration for the generator is passed to the function.
 
 **Inputs:**
 
-- A valid config.
+- A valid configuration.
 
 **Expected Output:**
 
@@ -201,13 +210,13 @@ A positive response.
 
 ###### Negative Tests
 
-```{test-card} Null Config
+```{test-card} Null Configuration
 
-A null config for the generator is passed to the function.
+A null configuration for the generator is passed to the function.
 
 **Inputs:**
 
-- A null config.
+- A null configuration.
 
 **Expected Output:**
 
@@ -217,9 +226,9 @@ A negative response.
 
 ##### Generate Function
 
-```{test-card} Valid Config and generation
+```{test-card} Valid configuration and generation
 
-A valid config is set and the generation is called.
+A valid configuration is set and the generation is called.
 
 **Inputs:**
 

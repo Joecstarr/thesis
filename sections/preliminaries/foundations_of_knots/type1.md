@@ -6,7 +6,9 @@ $-A^{\ \m 3w\LP K\RP}$ term, obtaining @thm-typei.
 
 ````{prf:theorem}
 :label: thm-typei
+The equality of equation @thm-kb-math-t1 holds.
 ```{math}
+:label: thm-kb-math-t1
     \begin{aligned}
         -A^{\ \m 3w\LP
             \img{media/kauf_bkt/type1/1b}\RP}\bkt{media/kauf_bkt/type1/1b}

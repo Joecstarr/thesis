@@ -4,18 +4,21 @@
 <!-- prettier-ignore-end -->
 
 The generator interface defines the general form for a component used to perform
-a knot operation. The when the generator component is invoked, it produces more
+a knot operation. Then when the generator component is invoked, it produces more
 than a single output. The generator component does not allocate memory, it must
 be configured with sufficient buffer space to successfully execute.
 
 #### Class Diagram
+$\,$
 
-```mermaid
+````{figure}
+```{mermaid}
+%%{ init: { "flowchart": { "htmlLabels": false } }%%
 classDiagram
     generator *-- gen_config_t
     class generator {
         <<Interface>>
-        - gen_config_t config
+        - gen_config_t Configuration
         + int gen_config(gen_config_t config)
         + int gen_generate()
     }
@@ -27,36 +30,38 @@ classDiagram
 
 
 ```
+````
 
 #### Functionality
 
 ##### Public Structures
 
-###### Generator Config Structure
+###### Generator ConfigurationStructure
 
-The generator config structure defines the collection of data the component
-needs for a single run. Setting a config should be considered equivalent to
-instantiating a class in a high-level language. However, in this case, there is
-only ever a single active instance of the class.
+The generator configuration structure defines the collection of data the
+component needs for a single run. Setting a configurationshould be considered
+equivalent to instantiating a class in a high-level language. However, in this
+case, there is only ever a single active instance of the class.
 
 ##### Public Functions
 
-###### Config Function
+###### Configuration Function
 
-The function will take a configuration as input and set the local config
-instance to that input. The function returns a flag indicating if the function
-was successful. This function can be considered analogous to the `init` function
-of a class in a high-level language.
+The function will take a configuration as input and set the local configuration
+instance to that input. The function returns a flag indicating whether the
+function was successful. This function can be considered analogous to the `init`
+function of a class in a high-level language.
 
 ###### Generate Function
 
 When this function is invoked, the generation process begins. The actual
 internal functionality is specific to the specific generator. The function
-returns a flag indicating if the function was successful.
+returns a flag indicating whether the function was successful.
 
 The flow for a generator is modeled by the following state machine:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
     state "Get data" as gd
     state "Generate new data" as wod
@@ -70,3 +75,4 @@ stateDiagram-v2
     if_done --> [*]: Operations are complete
     if_done --> wod: Operations are not complete
 ```
+````

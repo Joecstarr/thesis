@@ -4,7 +4,9 @@
 <!-- prettier-ignore-end -->
 
 #### Class Diagram
-```mermaid
+$\,$
+````{figure}
+```{mermaid}
 classDiagram
     note_att ..|> notation
     note_att_t ..|> note_t
@@ -49,6 +51,7 @@ classDiagram
     }
 
 ```
+````
 
 #### Language
 
@@ -92,7 +95,7 @@ This operation data is stored as a bit field.
 
 | Operation | NA  | NA  | NA  | NA  | NA  | NA  | Op  | Op  |
 | --------- | --- | --- | --- | --- | --- | --- | --- | --- |
-| unInitialize    | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   |
+| Uninit.   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   |
 | Plus      | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 1   |
 | Vee       | 0   | 0   | 0   | 0   | 0   | 0   | 1   | 0   |
 
@@ -105,12 +108,10 @@ tree and encodes it as a `note_att_t`.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
-    state "Init" as vj
-    state "• root as empty node" as vj
-    state "• str_idx as 0" as vj
-    state "• tv_idx as 0" as vj
+    state "Init<br>• root as empty node<br>• str_idx as 0<br>• tv_idx as 0" as vj
     state "Set root operation to +" as sop
     state "Set root operation to v" as sov
     state "Traverse string" as rc
@@ -124,6 +125,7 @@ stateDiagram-v2
     rc-->[*]
 
 ```
+````
 
 ###### Encode Function
 
@@ -132,12 +134,14 @@ string form of the algebraic tangle tree.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
     state "Traverse Tree" as rc
     [*] --> rc
     rc-->[*]
 ```
+````
 
 ##### Private Functions decode path
 
@@ -148,12 +152,10 @@ algebraic tangle tree.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
-    state "Init" as rn
-    state "• node left pointers to NULL" as rn
-    state "• node right pointers to NULL" as rn
-    state "• Count of new nodes to 0" as rn
+    state "Init<br>• node left pointers to NULL<br>• node right pointers to NULL<br>• Count of new nodes to 0" as rn
     state "Get initial operation" as gio
     state "Set operation" as so
     state "Set operation to +" as sopl
@@ -196,6 +198,7 @@ stateDiagram-v2
     ptvr --> [*]
 
 ```
+````
 
 ##### Private Functions encode path
 
@@ -206,7 +209,8 @@ algebraic tangle tree.
 
 This process is described in the following state machines:
 
-```mermaid
+````{figure}
+```{mermaid}
 stateDiagram-v2
     state "Init" as rn
     state "• node left pointers to NULL" as rn
@@ -242,6 +246,7 @@ stateDiagram-v2
     ran --> [*]
     tvsr --> [*]
 ```
+````
 
 #### Validation
 

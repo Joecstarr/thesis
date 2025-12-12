@@ -52,6 +52,7 @@ options:
 files:
   - template.tex
   - editing.sty
+  - uithesisedit.cls
 packages:
   - amsfonts
   - editing

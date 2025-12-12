@@ -3,66 +3,104 @@
 ## Arborescent Tangles
 <!-- prettier-ignore-end -->
 
-This chapter will describe the methodology used to answer the final of the set
-of essential questions detailed in @sec-intro-overview.
+This section describes the methodology we use to answer the final of the
+essential questions detailed in @sec-intro-overview.
 
-> "How do I systematically construct algebraic/arborescent tangles?" and "How do
-> I tell two algebraic/arborescent tangles I make apart?", and "How many
-> algebraic/arborescent tangles can I write down?"
+> "How do I systematically construct algebraic/arborescent tangles?", "How do I
+> tell two algebraic/arborescent tangles I make apart?", and "How many
+> algebraic/arborescent tangles can I create?"
+
+In this thesis so far we have worked with the algebraic tangles (@def-algebraic)
+constructed with Conway's tangle arithmetic (@subsubsec-conway_calc).
+Unfortunately, the Conway algebraic tangles construction lacks a direct
+classification, making the combinatorics of their generation intractable.
+Instead, we will leverage a slightly different, but equivalent, construction
+given by Bonahon and Seibenmann [@bonahonNewGeometricSplittings2016] the
+**arborescent tangles**. The one-to-one correspondence between the classes will
+become clear as we introduce the construction for arborescent tangles.
+
+The section starts with an overview of Bonahon and Seibenmann's
+[@bonahonNewGeometricSplittings2016] definition of arborescent knots and tangles
+(@prelim-arbor_def). We then give their smooth and combinatorial constructions
+of arborescent knots and tangles (@subsec-wptt). Next, we give original work
+extending Bonahon and Seibenmann's canonical construction to a local view
+(@sec-CWPTT-def). This local view is leveraged to define a unique representative
+for each class of arborescent tangles (@subsec-rlitt). Finally, we will describe
+an original algorithm and notation that directly enumerates those unique
+representatives (@subsec-computation).
 
 <!-- prettier-ignore-start -->
 (prelim-arbor_def)=
-#### Definition of Arborescent
+### Definition of Arborescent
 <!-- prettier-ignore-end -->
 
-The primary goal of our program is the enumeration of the algebraic tangles,
-however the Conway construction algebraic tangles lack a direct classification,
-making the combinatorics of the Conway style algebraic tangles intractable.
-Instead, we will leverage a slightly different, but equivalent, construction
-given by Bonahon and Seibenmann [@bonahonNewGeometricSplittings2016] the
-**arborescent tangles**. The correspondence will become clear when we introduce
-the combinatorial construction for arborescent tangles in
-[](#construction_of_arbor). In our discussion of arborescent knots and tangles,
-we will use the concept of a **knot pair** defined in
-{prf:ref}`prelim-def-arborescent_knot_pair`. To define an arborescent tangle, we
-will start by defining an arborescent knot as
-{prf:ref}`prelim-def-arborescent_knot`.
+We now give a high-level description of the manifold theory underpinning the
+theory of arborescent knots and tangles. A full treatment of the manifold theory
+can be found in Bonahon and Seibenmann [@bonahonNewGeometricSplittings2016]. It
+is suggested that at least some time be spent digesting the content of Bonahon
+and Seibenmann [@bonahonNewGeometricSplittings2016]. Our first concept is that
+of a **knot pair**, which serves as the underlying structure for all the smooth
+objects in this subsection.
 
-```{prf:definition} A knot pair, Bonahon and Seibenmann Chapter 2 [@bonahonNewGeometricSplittings2016]
+```{prf:definition} Bonahon and Seibenmann Chapter 2 page 15 [@bonahonNewGeometricSplittings2016]
 :label: prelim-def-arborescent_knot_pair
-A knot pair is a pair $(M, K)$ where $M$ is an oriented connected compact 3
+A **knot pair** is a pair $(M, K)$ where $M$ is an oriented connected compact 3
 manifold with (possibly empty) boundary, and where $K$ is a proper 1-dimensional
 submanifold of $M$.
 ```
 
-```{prf:definition} Arborescent Knots, Bonahon and Seibenmann Chapter 3 [@bonahonNewGeometricSplittings2016]
+````{prf:definition} Bonahon and Seibenmann Introduction page vi [@bonahonNewGeometricSplittings2016]
 :label: prelim-def-arborescent_knot
 A knot $(S^3, K)$ is **arborescent** if there exists a finite collection
-$F_1,\dots,F_n$ of disjoint Conway spheres such that, if $N$ is the closure of
-any component of $S^3 − ⋃_{i=1}F_i$ , then the pair $(N, K \cap N )$ takes the
-simple form of {prf:ref}`fig-arborescent_part` after suitable isotopic
+$F_1,\dots,F_n$ of disjoint Conway spheres such that, if $N$ is the closure (in the sense of a closure of a set) of
+any component of $S^3 − \cup_{i=1}F_i$ , then the pair $(N, K \cap N )$ takes the
+simple form of @fig-arborescent_part after suitable isotopic
 deformation in $S^3$.
-```
 
-```{figure} ../../media/arborescent_knot.svg
+```{figure}../../media/arborescent_knot.svg
 :label: fig-arborescent_part
 :width: 500px
 
-A collection of Conway spheres (circles) forming what we call an
-**arborescent knot vignette**.
+A collection of Conway circles forming what we call an
+**arborescent vignette**.
+```
+````
+
+```{figure}../../media/arborescent_band.svg
+:label: fig-arborescent_band
+:width: 500px
+
+The arborescent vignette from @fig-arborescent_part seen with Conway spheres.
+```
+
+```{figure}../../media/vin_1.svg
+:label: fig-arborescent_vignette_1
+:width: 500px
+
+The arborescent vignette showing a $1$ crossing tangle to be arborescent.
+```
+
+```{note}
+The $F_i$ in @prelim-def-arborescent_knot are disjoint but may sit inside
+each other. This means we may have arborescent vignettes containing arborescent
+vignettes, but the closure of each individual component looks like
+@fig-arborescent_part.
 ```
 
 Observe that arborescent knots are characterized by a collection of Conway
-spheres (circles), these Conway spheres are filled in with knot data which form
-tangles. This observation gives us a natural way to define arborescent tangles.
+spheres (circles). Choosing to not fill one, or more, of these Conway spheres
+yields a tangle.
 
-```{prf:definition} Arborescent Tangles, Bonahon and Seibenmann Chapter 3 [@bonahonNewGeometricSplittings2016]
-Define an **arborescent tangle** as one whose underlying knot pair $(M, K)$ is
-arborescent in the sense defined in {prf:ref}`prelim-def-arborescent_knot`
-namely $M$ is connected, embeds in $S^3$ and if $(M, K)$ can be split up along a
-family of disjoint Conway spheres into pairs that are hollow
-(not filled with knot data).
+```{prf:definition}Bonahon and Seibenmann page 144 [@bonahonNewGeometricSplittings2016]
+:label: intro-def-arbor-tangle
+Define an **arborescent tangle** as one whose underlying knot pair $(M, K)$ (@prelim-def-arborescent_knot_pair) is
+arborescent in the sense defined in @prelim-def-arborescent_knot.
 ```
+
+We see from the above the first portion of the correspondence between the
+algebraic and arborescent tangles. Each algebraic tangle can be naturally
+decomposed into a collection of nested arborescent knot vignettes given by its
+operations $+$ and $\vee$.
 
 ```{include} weighted_planar_trees/weighted_planar_trees.md
 
