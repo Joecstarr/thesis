@@ -1,5 +1,5 @@
 
-`````{prf:observation}
+`````{figure}
 
 ````{figure}
 :label: se-cd-fig-agg

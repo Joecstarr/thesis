@@ -81,7 +81,7 @@ Vogt[@dulbeccoEVIDENCERINGSTRUCTURE1963;@weilCYCLICHELIXCYCLIC1963;@vinogradTwis
 that in some viruses (Polyoma) the dsDNA is a closed loop, allowing it to form
 into a mathematical knot (@fig-intro-circ_dna_fig) .
 
-````{prf:observation}
+````{figure}
 :label: fig-intro-circ_dna_fig
 
 
@@ -115,7 +115,7 @@ like TopoICE-X [@darcy3DVisualizationSoftware2008] (built into KnotPlot
 making these choices.
 ```
 
-````{prf:observation}
+````{figure}
 :label: fig-intro-tangle_calc
 
 

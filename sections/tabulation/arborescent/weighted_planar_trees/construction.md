@@ -31,7 +31,7 @@ an oriented square on the band such that two of the sides of the square
 intersect the boundary of the band. Two examples of bands with plumbing squares
 can be seen in @wpt-construc-fig-band_sum.
 
-````{prf:observation}
+````{figure}
 :label:wpt-construc-fig-band_sum
 
 ```{figure} ../../media/bands/bnd_sum_1.svg
@@ -62,7 +62,7 @@ Finally, we forget the boundaries of the plumbing squares, leaving only the
 joined boundaries of the bands. The result of plumbing as well as a local
 picture for plumbing can be seen in @wpt-construc-fig-band_sum_opo.
 
-````{prf:observation}
+````{figure}
 :label:wpt-construc-fig-band_sum_opo
 
 ```{figure} ../../media/bands/bnd_sum_sum.svg
@@ -86,7 +86,7 @@ one negative (right handed twists). We note that the twists appear in unique
 regions of the band, determined by their position relative to the plumbing
 squares.
 
-````{prf:observation}
+````{figure}
 ```{figure} ../../media/bands/arbor_band_with_twist.svg
 :label: wpt-construc-fig-6
 :width: 500px
@@ -105,7 +105,7 @@ Successive plumbing yields collections of bands like those seen in
 simple as removing the interior of the band, leaving only the boundary, per
 @wpt-construc-fig-24.
 
-````{prf:observation}
+````{figure}
 ```{figure} ../../media/bands/arbor_bands.svg
 :label: wpt-construc-fig-10
 :width: 500px
@@ -218,7 +218,7 @@ The realization of these two options can be seen in
 @wpt-construc-fig-order_tree. A universal choice of increasing or decreasing
 yields a unique realization of a rooted plane tree in the plane.
 
-````{prf:observation}
+````{figure}
 :label:wpt-construc-fig-order_tree
 
 ```{figure} ../../media/bands/arbor_graph_split_local_inc.svg
@@ -252,7 +252,7 @@ it satisfies the following:
 -   $p<i<c_1<\cdots< c_n$
 ```
 
-````{prf:observation}
+````{figure}
 :label:wpt-construc-fig-order
 
 ```{figure} ../../media/bands/rpt_order.svg
@@ -289,7 +289,7 @@ assigning to the weight the index that appears before it in the anti-clockwise
 planar realization of the cyclic order, per
 @wpt-construc-fig-weights-with-index.
 
-````{prf:observation}
+````{figure}
 :label:wpt-construc-fig-order_weights
 
 ```{figure} ../../media/bands/arbor_graph_split_local_with_band.svg
@@ -315,7 +315,7 @@ A rooted plane tree $\Gamma$ augmented with weights is called a
 **weighted planar tree**.
 ```
 
-````{prf:observation}
+````{figure}
 ```{figure} ../../media/bands/arbor_graph.svg
 :label: wpt-construc-fig-27
 :width: 500px
@@ -355,7 +355,7 @@ two string tangles, we restrict our focus to trees that have a single free bond.
 In tangle trees with a single free bond, we designate the vertex with the free
 bond as the root of the tree.
 
-````{prf:observation}
+````{figure}
 ```{figure} ../../media/bands/bnd_with_orientation.svg
 :label: wpt-construc-fig-band_orientation
 :width: 500px
@@ -401,7 +401,7 @@ A weighted planar tree $\Gamma$ with free bonds labeled in $V_4$ is called a
 ** weighted planar tangle tree (WPTT)**.
 ```
 
-````{prf:observation}
+````{figure}
 :label: wpt-construc-fig-v_4rotations
 
 ```{figure} ../../media/v4_rotations_i.svg
@@ -417,7 +417,7 @@ The effect of the $V_4$ rotations on each of the
 ```
 ````
 
-````{prf:observation}
+````{figure}
 :label: wpt-construc-fig-k4g
 
 ```{figure} ../../media/iota.svg

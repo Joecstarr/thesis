@@ -53,7 +53,7 @@ that these are all distinct when the boundary is fixed. In @fig-tangl_eq-fixed
 we find two tangles, each with two crossings but not equivalent by Reidemeister
 moves.
 
-````{prf:observation}
+````{figure}
 :label: fig-tangl_eq-fixed
 
 

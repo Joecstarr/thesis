@@ -57,7 +57,7 @@ to build tangles, the simplest tangles are the tangles with no crossings (the
 $0$ tangle @prelim-fig-basic_0) and the tangle with a single crossing (the $+1$
 tangle @prelim-fig-basic_1).
 
-````{prf:observation}
+````{figure}
 :label: fig-basic_tangles
 
 
@@ -103,7 +103,7 @@ When we apply this set of flips and rotations to the basic tangles seen in
 @subsubsec-basic_tangles, we obtain the two additional basic tangles seen in
 @fig-basic_tangles_extra.
 
-````{prf:observation}
+````{figure}
 :label: fig-basic_tangles_extra
 
 
@@ -246,7 +246,7 @@ connect a strand from $NW$ to $NE$ and a strand from $SW$ to $SE$
 denominator closure, formed by connecting a strand from $NW$ to $SW$ and a
 strand from $NE$ to $SE$ (@fig-closure-den).
 
-````{prf:observation}
+````{figure}
 :label: fig-closure-prec
 
 ```{figure} ../../media/fig-closure-num.svg

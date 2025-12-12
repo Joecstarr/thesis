@@ -29,7 +29,7 @@ historically relevant are linear models such as the
 waterfall[@beningtonProductionLargeComputer1983] (@fig-waterfall-model) or the V
 model[@forsbergRelationshipSystemEngineering1991] (@fig-v-model).
 
-`````{prf:observation}
+`````{figure}
 ```{figure} ../../media/software/extreme_programming.svg
 :label: fig-extreme-model
 The extreme programing agile life cycle[@donwellsExtremeProgrammingsvg2010].

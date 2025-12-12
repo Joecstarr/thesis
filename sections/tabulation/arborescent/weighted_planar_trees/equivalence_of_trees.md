@@ -25,7 +25,7 @@ $V_4$ and satisfies the following conditions:
     2. The non-zero weights along any stick are of alternating sign.
     3. No end vertex of a stick has weight $\pm 1$ unless it has a bond free in $\Gamma$.
 
-    ````{prf:observation}
+    ````{figure}
     :label: wpt-construc-fig-stick_cond
 
     ```{figure} ../../media/bands/conditions/stick/0.svg
@@ -46,7 +46,7 @@ $V_4$ and satisfies the following conditions:
     -   **Positivity Condition** Except for those with a free bond, there are no sticks in $\Gamma$ of the forms
         @wpt-construc-fig-positivity_cond-1 or @wpt-construc-fig-positivity_cond-2.
 
-        ````{prf:observation}
+        ````{figure}
         :label: wpt-construc-fig-positivity_cond
 
         ```{figure} ../../media/bands/conditions/positivity/am2.svg
@@ -65,7 +65,7 @@ $V_4$ and satisfies the following conditions:
     -   **Negativity Condition** Except for those with a free bond, there are no sticks in $\Gamma$ of the forms
          @wpt-construc-fig-negativity_cond-1 or @wpt-construc-fig-negativity_cond-2.
 
-        ````{prf:observation}
+        ````{figure}
         :label:wpt-construc-fig-negativity_cond
 
         ```{figure} ../../media/bands/conditions/negativity/a2.svg

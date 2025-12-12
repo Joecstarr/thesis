@@ -191,7 +191,7 @@ is split into a $+1$ and $-1$, one of which completes the cycle. The $+1$ and
 $-1$ then cancel, returning the vertex to zero weight. The result of carrying
 out $F_2$ on a weighted planar tree can be seen in @wpt-moves-fig-example_f2.
 
-````{prf:observation}
+````{figure}
 ```{figure} ../../media/bands/moves/f2/f2_local.svg
 :label: wpt-moves-fig-example_f2_cycle
 :width: 500px

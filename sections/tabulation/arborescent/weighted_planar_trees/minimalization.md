@@ -14,7 +14,7 @@ of canonization demonstrates that CWPTT are unfortunately far from minimal even
 among arborescent representatives. An example of canonizing a tangle, making
 that tangle non-minimal, is seen in @minimal-fig-nonmin_min.
 
-````{prf:observation}
+````{figure}
 :label:minimal-fig-nonmin
 
 ```{figure} ../../media/bands/non-minimal_minimalized.svg

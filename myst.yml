@@ -24,7 +24,7 @@ project:
     bibliography:
         - "biblio.bib"
     plugins:
-        - plugins/mermaid.mjs
+        # - plugins/mermaid.mjs
         - plugins/requirement.mjs
     title: "The Tanglenomicon: Tabulation of Arborescent Tangles"
     date: 2025-05-01

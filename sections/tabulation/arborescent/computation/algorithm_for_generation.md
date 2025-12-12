@@ -5,11 +5,11 @@
 
 ##### Generation of Rooted Plane Tree
 
-Just as rooted plane trees serve as the scaffolding we built WPTT on, a rooted
-plane tree algorithm will serve as the backbone for our RLITT generation
-algorithm. We will now give a brief description of the generation algorithm for
-rooted plane trees given by Nakano [@nakanoEfficientGenerationPlane2002]. We
-begin by defining the **rightmost path** of a rooted plane tree $\Gamma$.
+Just as rooted plane trees serve as the scaffolding we built WPTT on, a rooted plane tree algorithm
+will serve as the backbone for our RLITT generation algorithm. We will now give a brief description
+of the generation algorithm for rooted plane trees given by Nakano
+[@nakanoEfficientGenerationPlane2002]. We begin by defining the **rightmost path** of a rooted plane
+tree $\Gamma$.
 
 ```{prf:definition} Nakano Section 2 [@nakanoEfficientGenerationPlane2002]
 
@@ -19,8 +19,7 @@ $\LP v_0,\,\cdots,\,v_i \RP$, in the standard graph theoretic sense, is called
 the **rightmost path** of $\Gamma$.
 ```
 
-Next, we define a grafting operation on rooted plane trees $\Gamma$ and
-$\Gamma^\prime$.
+Next, we define a grafting operation on rooted plane trees $\Gamma$ and $\Gamma^\prime$.
 
 ```{prf:definition}
 :label: rli-gen-def-grafting_op
@@ -54,9 +53,9 @@ operation, that is, $\star_0$ is written simply as $\star$. We call $\Gamma_r$ t
 Grafting a scion $\Gamma_s$ to a rootstock $\Gamma_r$ with $\Gamma_r\star_3\Gamma_s$
 ````
 
-Now we are prepared to give the algorithm to generate all rooted plane trees of
-a given size that are created from $\Gamma$ by a sequence of $\star_\ast$
-operations on the rightmost path of $\Gamma$.
+Now we are prepared to give the algorithm to generate all rooted plane trees of a given size that
+are created from $\Gamma$ by a sequence of $\star_\ast$ operations on the rightmost path of
+$\Gamma$.
 
 ```{prf:remark} Find all rooted plane trees of a given size created from $\Gamma$ [@nakanoEfficientGenerationPlane2002]
 :label: find-all-related-trees
@@ -81,8 +80,8 @@ operations on the rightmost path of $\Gamma$.
        $\Gamma=\Gamma^\prime$ and size=size
 ```
 
-This algorithm can be extended to an algorithm that finds all rooted plane trees
-up to a given size as follows.
+This algorithm can be extended to an algorithm that finds all rooted plane trees up to a given size
+as follows.
 
 ```{prf:remark} Efficient generation of rooted plane trees [@nakanoEfficientGenerationPlane2002]
 :label: find-efficient-trees
@@ -103,10 +102,9 @@ up to a given size as follows.
 
 ##### Modification for RLITT
 
-The algorithm described above serves as the inspiration for the algorithm we
-will build now for the enumeration of the arborescent tangles. Building this
-algorithm begins with modifying the grafting $\star_i$ operation to operate on
-weighted planar tangle trees as follows.
+The algorithm described above serves as the inspiration for the algorithm we will build now for the
+enumeration of the arborescent tangles. Building this algorithm begins with modifying the grafting
+$\star_i$ operation to operate on weighted planar tangle trees as follows.
 
 ```{prf:definition}
 :label: rli-gen-def-grafting_op-wpt
@@ -118,7 +116,7 @@ the scion after grafting; this can be seen in
 @rli-gen-fig-scion_grafting_wth_weight.
 ```
 
-````{prf:observation}
+````{figure}
 :label:rli-gen-fig-scion_grafting_wth_weight
 
 ```{figure} ../../media/bands/awptt_graph_pregraft.svg
@@ -137,18 +135,16 @@ Grafting at $v_2$ yields $\Gamma_r\star_2\Gamma_s=\iota\LP \LP2\LP2\LB3\RB2\LB -
 ```
 ````
 
-Just as we have adjusted the grafting operator, we must adjust the Nakano
-algorithm so it is aware of the extra data in an RLITT. The initial reaction to
-this problem may be to simply annotate the scion of the grafting operation with
-the weights necessary to reach a target TCN. Unfortunately, this method quickly
-runs into issues generating even just the Montesinos tangles, a smaller class of
-tangle described by [@bonahonNewGeometricSplittings2016]. We must make a
-slightly more radical change to the Nakano algorithm, that being, grafting an
-entire RLITT to only the root $v_0$ of the rootstock. We will now show that a
-list of integral tangles (single vertex RLITT @wpt-construc-sec-integral)
-combined with grafting at the root generates all $\LP+\RP$-RLITT. To start, we
-will prove that each $\LP+\RP$-RLITT is integral or the result of grafting
-weighted planar tangle trees at the root.
+Just as we have adjusted the grafting operator, we must adjust the Nakano algorithm so it is aware
+of the extra data in an RLITT. The initial reaction to this problem may be to simply annotate the
+scion of the grafting operation with the weights necessary to reach a target TCN. Unfortunately,
+this method quickly runs into issues generating even just the Montesinos tangles, a smaller class of
+tangle described by [@bonahonNewGeometricSplittings2016]. We must make a slightly more radical
+change to the Nakano algorithm, that being, grafting an entire RLITT to only the root $v_0$ of the
+rootstock. We will now show that a list of integral tangles (single vertex RLITT
+@wpt-construc-sec-integral) combined with grafting at the root generates all $\LP+\RP$-RLITT. To
+start, we will prove that each $\LP+\RP$-RLITT is integral or the result of grafting weighted planar
+tangle trees at the root.
 
 ```{prf:theorem}
 :label: rli-gen-const-thm-acnm1toacn
@@ -207,9 +203,8 @@ Valence of $v_0$ is:
    follow the same argument used for $\Gamma_s$ of the valence 1 case.
 ```
 
-An identical theorem can be phrased for the $\LP-\RP$-RLITT case. With this
-result, we can start our construction of a grafting algorithm for arborescent
-tangles.
+An identical theorem can be phrased for the $\LP-\RP$-RLITT case. With this result, we can start our
+construction of a grafting algorithm for arborescent tangles.
 
 ```{prf:remark} Find weighted planar trees by grafting RLITT scions to the root of RLITT rootstocks
 :label: find-grafted-trees
@@ -229,33 +224,30 @@ tangles.
     1. Compute $\Gamma_r\star \Gamma_s$
 ```
 
-Executing the algorithm with $\Gamma_r=\LS \iota\LB 1\RB\RS$ as the rootstock
-and $\Gamma_s=\LS \iota\LB 2\ 0\RB\RS$ produces the tangle
-$\iota\LB 2\ 0\ 1\RB$. Unfortunately, this resultant tangle violates the stick
-condition and hence is not canonical. The remainder of this subsection will refine
-the grafting algorithm to satisfy each of the RLITT conditions.
+Executing the algorithm with $\Gamma_r=\LS \iota\LB 1\RB\RS$ as the rootstock and
+$\Gamma_s=\LS \iota\LB 2\ 0\RB\RS$ produces the tangle $\iota\LB 2\ 0\ 1\RB$. Unfortunately, this
+resultant tangle violates the stick condition and hence is not canonical. The remainder of this
+subsection will refine the grafting algorithm to satisfy each of the RLITT conditions.
 
 ###### Weight Condition
 
-The simplest condition to verify is the weight condition. By construction,
-grafting the rootstock and scion introduces no additional weights at the
-grafting vertex. Meaning, the weight condition is satisfied with no adjustment
-to the algorithm.
+The simplest condition to verify is the weight condition. By construction, grafting the rootstock
+and scion introduces no additional weights at the grafting vertex. Meaning, the weight condition is
+satisfied with no adjustment to the algorithm.
 
 ###### Identity Condition
 
-The next RLITT condition to address is the identity condition. We note that the
-$\star_i$ operation does not modify the $V_4$ label of the rootstock. This
-observation means if the rootstock is identity, the grafted tree will also be
-identity.
+The next RLITT condition to address is the identity condition. We note that the $\star_i$ operation
+does not modify the $V_4$ label of the rootstock. This observation means if the rootstock is
+identity, the grafted tree will also be identity.
 
 <!-- prettier-ignore-start -->
 (rli-gen-sec-stick-con)=
 ###### Stick Condition
 <!-- prettier-ignore-end -->
 
-To start with the stick condition we will prove that if grafting produces a
-non-canonical tree the non-canonical vertex must be adjacent to the root.
+To start with the stick condition we will prove that if grafting produces a non-canonical tree the
+non-canonical vertex must be adjacent to the root.
 
 ```{prf:theorem}
 :label: only-the-root-matters
@@ -277,10 +269,9 @@ showing canonicity of grafting is dependent only on the canonicity of the
 vertices at a distance up to one from the root.
 ```
 
-The $\LP-\RP$-RLITT case is shown identically, covering the majority of
-possibilities. However, we need to take special care when grafting a
-non-negative to a non-positive tree (or the reverse). Before we address that
-case we define a restricted class of scions that, after grafting, satisfy the
+The $\LP-\RP$-RLITT case is shown identically, covering the majority of possibilities. However, we
+need to take special care when grafting a non-negative to a non-positive tree (or the reverse).
+Before we address that case we define a restricted class of scions that, after grafting, satisfy the
 nonzero portion of the stick condition.
 
 ```{prf:definition}
@@ -339,9 +330,9 @@ we desired.
 ###### Positivity/Negativity Condition
 <!-- prettier-ignore-end -->
 
-Our approach to the positivity and negativity condition follows our approach to
-the stick condition. We will leverage @only-the-root-matters to add a check for
-positivity and negativity in our algorithm.
+Our approach to the positivity and negativity condition follows our approach to the stick condition.
+We will leverage @only-the-root-matters to add a check for positivity and negativity in our
+algorithm.
 
 ```{prf:remark} Find weighted planar trees by grafting $\LP+\RP$-RLITT good scions to the root of $\LP+\RP$-RLITT rootstocks
 :label: find-grafted-good-trees-p
@@ -391,12 +382,11 @@ positivity and negativity in our algorithm.
 
 ###### Right Leaning Condition
 
-Satisfying the right leaning condition is a consequence of the modified
-$\star_i$ operation. Our definition of the $\star_i$ operation grafts the scion
-in such a way that weights at $v_i$ are always right of the scion. To fully
-satisfy the right leaning condition, we need to ensure that any stick subtrees
-of are in the right most postions. This is accomplished with a slight
-modification of our grafting algorithms.
+Satisfying the right leaning condition is a consequence of the modified $\star_i$ operation. Our
+definition of the $\star_i$ operation grafts the scion in such a way that weights at $v_i$ are
+always right of the scion. To fully satisfy the right leaning condition, we need to ensure that any
+stick subtrees of are in the right most postions. This is accomplished with a slight modification of
+our grafting algorithms.
 
 ```{prf:remark} Find weighted planar trees by grafting $\LP+\RP$-RLITT good scions to the root of $\LP+\RP$-RLITT rootstocks
 :label: find-grafted-good-trees-p-r
@@ -448,20 +438,17 @@ modification of our grafting algorithms.
 
 ##### Full Generation Algorithm
 
-The algorithm we have developed so far generates new RLITT from two restricted
-collections of trees. Unfortunately, it doesn't yet tell us how to select the
-collections that guarantee the generation of all arborescent tangles up to a
-target TCN are represented. The final step in the generation scheme is
-describing how to build these collections. With computer enumeration in mind, we
-would like for our strategy to be easily split into jobs that can be run in
-parallel.
+The algorithm we have developed so far generates new RLITT from two restricted collections of trees.
+Unfortunately, it doesn't yet tell us how to select the collections that guarantee the generation of
+all arborescent tangles up to a target TCN are represented. The final step in the generation scheme
+is describing how to build these collections. With computer enumeration in mind, we would like for
+our strategy to be easily split into jobs that can be run in parallel.
 
-We observe that when grafting $\Gamma_r\star_i\Gamma_s=\Gamma$, the TCN $r$ of
-$\Gamma_r$ and the TCN $s$ of $\Gamma_s$, sum to the TCN of $\Gamma$. This
-observation is the key underpinning of the strategy we use to define discrete
-generation jobs. For a target TCN we have the integer pairs seen in
-[equation (%s)](#rli-gen-eq-buckets) that sum to the target TCN. Each of these
-pairs defines two classes, determined by TCN, of RLITT that can be grafted.
+We observe that when grafting $\Gamma_r\star_i\Gamma_s=\Gamma$, the TCN $r$ of $\Gamma_r$ and the
+TCN $s$ of $\Gamma_s$, sum to the TCN of $\Gamma$. This observation is the key underpinning of the
+strategy we use to define discrete generation jobs. For a target TCN we have the integer pairs seen
+in [equation (%s)](#rli-gen-eq-buckets) that sum to the target TCN. Each of these pairs defines two
+classes, determined by TCN, of RLITT that can be grafted.
 
 ```{math}
 :label: rli-gen-eq-buckets
@@ -474,17 +461,16 @@ pairs defines two classes, determined by TCN, of RLITT that can be grafted.
 \end{aligned}
 ```
 
-The next question we should ask is if we can simplify the list at all. First, as
-we saw in the discussion of the stick condition [](#rli-gen-sec-stick-con), we
-need our scions to be good. This means we cannot have $1$ or $0$ in the second
-position of the pair, excluding $(\text{TCN}-1,1)$ and $(\text{TCN},0)$ from the
-list. Second, the pair $(0,\text{TCN})$ will be excluded from our list, since
-the zero-crossing tangle $\iota[0\ 0]$ can't serve as rootstock; grafting any
-scion would violate the stick condition. We will recover tangles with root
-weight $0$ with a post-processing step.
+The next question we should ask is if we can simplify the list at all. First, as we saw in the
+discussion of the stick condition [](#rli-gen-sec-stick-con), we need our scions to be good. This
+means we cannot have $1$ or $0$ in the second position of the pair, excluding $(\text{TCN}-1,1)$ and
+$(\text{TCN},0)$ from the list. Second, the pair $(0,\text{TCN})$ will be excluded from our list,
+since the zero-crossing tangle $\iota[0\ 0]$ can't serve as rootstock; grafting any scion would
+violate the stick condition. We will recover tangles with root weight $0$ with a post-processing
+step.
 
-The following is the recursive algorithm used to take us from the set of RLITT
-with $\text{TCN}-1$ to the set of RLITT of the target TCN.
+The following is the recursive algorithm used to take us from the set of RLITT with $\text{TCN}-1$
+to the set of RLITT of the target TCN.
 
 ```{prf:remark} Find RLITT of given TCN from all RLITT of TCN-1
 :label: find-rlitt-from-acnm1toacn
@@ -541,7 +527,6 @@ with $\text{TCN}-1$ to the set of RLITT of the target TCN.
     1. Add the results to $T$
 ```
 
-It is important to note that the output of [](#find-rlitt-up-to-acn) includes
-duplicates in the form of $\LP+\RP$-RLITT and $\LP-\RP$-RLITT pairs. To
-deduplicate our list so it contains only topologically unique objects, we select
-from the list the collection of $\LP+\RP$-RLITT.
+It is important to note that the output of [](#find-rlitt-up-to-acn) includes duplicates in the form
+of $\LP+\RP$-RLITT and $\LP-\RP$-RLITT pairs. To deduplicate our list so it contains only
+topologically unique objects, we select from the list the collection of $\LP+\RP$-RLITT.
