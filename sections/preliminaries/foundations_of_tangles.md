@@ -29,11 +29,11 @@ Our first case for handling the boundary of a tangle is allowing the boundary
 points to move freely on the Conway sphere. In this case, a generic tangle, is
 equivalent to each of its rotations and flips (@subsubsec-tangle_flips). In
 addition to the rotation and flip equivalence, a moveable boundary allows us to
-unwind integral components of a tangle (@fig-tangl_eq-unwinding).
+unwind the outermost integral components of a tangle (@fig-tangl_eq-unwinding).
 
 ```{figure} ../../media/fig-tangl_eq-unwinding.svg
 :label: fig-tangl_eq-unwinding
-The progressive unwinding of integral tangles, leaving a basic $0$ tangle.
+The progressive unwinding of integral tangles, leaving a basic 0 tangle.
 ```
 
 ```{note}
@@ -48,8 +48,8 @@ mentioned.
 The non-moveable case is the more straightforward of the two boundary concepts
 of equality for tangles. In the fixed boundary world, we have four distinct
 basic tangles $1,\ \ \m 1,\ 0,\ \text{and } \infty$ seen in @fig-basic_tangles
-and @fig-basic_tangles_extra. With a little play, it's easy to convince yourself
-that these are all distinct when the boundary is fixed. In @fig-tangl_eq-fixed
+and @fig-basic_tangles_extra. These are all distinct when 
+the boundary is fixed. In @fig-tangl_eq-fixed
 we find two tangles, each with two crossings but not equivalent by Reidemeister
 moves.
 
@@ -67,7 +67,7 @@ A horizontal integral tangle with two crossings.
 :label: fig-tang_eq-fixed-v2
 A vertical integral tangle with two crossings.
 ```
-
+Two nonequivalent tangles with two crossings.
 ````
 
 <!-- prettier-ignore-start -->
@@ -101,7 +101,7 @@ give a natural arithmetic structure to the combinations of tangles. We'll see in
 later sections how this structure is easily encoded on a computer as a data
 structure. We conclude the section by redefining the **algebraic tangles**.
 
-```{prf:definition}Conway [@conwayEnumerationKnotsLinks1970]
+```{prf:definition}Conway, Page 331 [@conwayEnumerationKnotsLinks1970]
 :label: def-algebraic
 Any tangle that can be produced by the two binary operations $+$ and $\vee$ on
 the four basic tangles is called an **algebraic tangle**.
@@ -120,7 +120,7 @@ defining the $ \pm$ horizontal integral tangles.
 
 ```{prf:definition}
 A tangle built from the successive sum of $n$ $+1$ tangles is called a
-horizontal integral $n$ tangle. Similarly, a sum of $\ \m 1$ tangles is a
+horizontal integral (or simply integral) $n$ tangle. Similarly, a sum of $\ \m 1$ tangles is a
 horizontal integral $ -n$ tangle.
 ```
 
@@ -130,10 +130,9 @@ $\vee$ operation, yielding the $ \pm$ vertical integral tangles.
 
 ```{prf:definition}
 A tangle built from the successive vertical sum of $n$ $+1$ tangles is called a
-vertical integral $n$ tangle. Similarly, a vertical sum of $\ \m 1$ tangles is a
-vertical integral $-n$ tangle.
+vertical integral $n$ tangle. Similarly, a vertical sum of $\m 1$ tangles is a
+vertical integral $\m n$ tangle.
 ```
 
-We adopt a similar notational convention for the vertical integral tangles,
-however as not to overload our notations, we will instead notate the vertical
-tangles by $\pm\frac{1}{n}$.
+We will notate the vertical tangles by $\pm\frac{1}{n}$.
+

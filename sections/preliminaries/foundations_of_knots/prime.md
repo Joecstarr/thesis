@@ -22,7 +22,7 @@ An example of the connect sum of two trefoil knots.
 With the connect sum operation defined, we are now prepared to give the
 definitions for prime and composite knots.
 
-```{prf:definition} LickLickorish Definition 1.3 [@lickorishIntroductionKnotTheory1997]
+```{prf:definition} 
 A knot is called **prime** if, in every decomposition into a connect sum, one
 of the factors is unknotted. Otherwise, the knot is called **composite**.
 ```

@@ -12,8 +12,8 @@ use in tabulation by computer is the Dowker-Thistlethwaite (DT) notation
 (@sec-proj-note_dt) developed by its namesakes specifically for use in
 computational tabulation. Each notational strategy used in knot theory has
 strengths and weaknesses. For example, using DT notation for computation of the
-Jones polynomial @def-jones may be more cumbersome than using the Planar Diagram
-(PD) notation (@sec-proj-note_pd) for the same task, as PD directly encodes
+Jones polynomial may be more cumbersome than using the Planar Diagram
+(PD) notation for the same task, as PD directly encodes
 crossings while DT encodes a walk on a strand. The remainder of this section
 will be the development of the Conway notation, which lays the foundation for
 the work in this thesis.

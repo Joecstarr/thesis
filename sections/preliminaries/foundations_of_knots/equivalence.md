@@ -12,10 +12,14 @@ To tell two knots apart, we need to discuss the concept of sameness, that is,
 what is equivalence in knots. Our concept of equivalence for knots is given by
 **ambient isotopy**, and equal knots are said to be **ambient isotopic**.
 
-```{prf:definition} Jablan and Sazdanovic Definition 1.20 [@jablanLinKnotKnotTheory2007;@gordonKNOTSAREDETERMINED]
+```{prf:definition} Jablan and Sazdanović, Definition 1.20 [@jablanLinKnotKnotTheory2007;@gordonKNOTSAREDETERMINED]
 :label: def-ambient_isotopic
-Two knots $J$ and $K$ are said to be **ambient isotopic** if there exists an ambient
-isotopy, that is a diffeomorphism of the ambient space, taking $J$ to $K$.
+Knots $K$ and $K_1$ are \textbf{ambient isotopic} if there exists a
+  continuous function $H: \R^3 \times[0,1] \rightarrow \R^3$ such that:
+  * $h_0=H((x, y, z), 0)$ is the identity $\R^3 \rightarrow \R^3$
+  * For all $t \in[0,1], h_t=H((x, y, z), t)$ is a homeomorphism $\R^3 \rightarrow \R^3$
+  * If $h_1=H((x, y, z), 1)$, then $h_1(K)=K_1$
+
 ```
 
 When working with the three-dimensional model of a knot, writing down explicit
@@ -26,7 +30,7 @@ model for knot diagrams given in @subsec-knot_def, ambient isotopy can be
 modeled as three Reidemeister moves on diagrams
 [@reidemeisterElementareBegruendungKnotentheorie1927]. Meaning, two knots are
 ambient isotopic if and only if their diagrams are equal under a chain of
-Reidemeister moves [@reidemeisterElementareBegruendungKnotentheorie1927].
+Reidemeister moves [@reidemeisterElementareBegruendungKnotentheorie1927] and isotopies.
 
 The first Reidemeister move we will define is the Type I move
 [@reidemeisterElementareBegruendungKnotentheorie1927]. To carry out the Type I
@@ -38,9 +42,12 @@ direction.
 
 ```{figure} ../../media/reidemeister_move/R1.svg
 :label: fig-knot_def-r1
-Executing the two flavors of type I move on a knot diagram. On the left, we have
-a twist into the plane, also called a positive or left-handed twist. On the right,
-we have a twist into the plane, also called a negative or right-handed twist.
+Executing the
+    two flavors of type I move on a knot diagram. On the left, we have
+    a twist into the plane, also called a positive or left-handed
+    twist. On the right,
+  we have a twist into the plane, also called a negative or right-handed twist.
+
 ```
 
 The next Reidemeister move is the Type II
@@ -73,12 +80,14 @@ we're free to reverse the type III move.
 ```{figure} ../../media/reidemeister_move/R3.svg
 :label: fig-knot_def-r3
 Executing the three type III moves with a set of three strands. Top
-to bottom, the third strand is: • on top of the crossing strands • between
-the crossing strands • under the crossing strands.
+to bottom, the third strand is:
+* on top of the crossing strands 
+* between the crossing strands 
+* under the crossing strands.
 ```
 
 We should note here that with a concept of equivalence comes equivalence classes
 of knot diagrams. Historically, of particular interest in the tabulation of
 knots, are the knot diagrams that have minimal crossing number, we call these
-**minimal diagrams**. That is, knot diagrams where crossing number cannot be
+**minimal diagrams**, knot diagrams where crossing number cannot be
 decreased by Reidemeister moves.
