@@ -13,7 +13,6 @@ with only an unknotted string.
 
 ```{figure} ../../media/everyday_knot.svg
 :label: fig-intro-everyday_knot
-:alt: testing this thing
 An everyday knot with open ends.
 ```
 
@@ -33,9 +32,9 @@ mathematical knot.
 ```
 
 With this, when compared to an everyday knot, we are already in a better place.
-Continuing to experiment with your physical model, twisting the ends of the
-string around each other in different ways (@fig-intro-torus). You may discover
-that then gluing the ends yields knots that can't be maneuvered to look the same
+Continuing to experiment with your physical model by twisting the ends of the
+string around each other in different ways (@fig-intro-torus). 
+You may discover that gluing the ends yields knots that can't be maneuvered to look the same
 as @fig-intro-everyday_knot_closed or @fig-intro-circle.
 
 ```{figure} ../../media/circle.svg
@@ -50,7 +49,7 @@ A representation of twisting the ends of a rope around itself before gluing.
 
 In fact, this twisting gives us a whole infinite family of odd crossing torus
 knots, a sampling of which can be seen in @fig-intro-torus_knots. A good
-exercise is to convince yourself that the torus knots in @fig-intro-torus_knots
+exercise in building intution is to convince yourself that the torus knots in @fig-intro-torus_knots
 are different from each other.
 
 ```{figure} ../../media/torus.svg
