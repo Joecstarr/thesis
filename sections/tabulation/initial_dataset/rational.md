@@ -310,7 +310,7 @@ twist vectors sit in the unit interval, $\LB 0,1\RP$.
 We conclude the section with a set of algorithms that describe a method for
 computationally generating all rational tangles up to a given crossing number.
 
-```{prf:remark} Find all rational tangles of crossing number $n$
+```{algorithm} Find all rational tangles of crossing number $n$
 :label: find-rat-tang-of-n
 
 **Input**
@@ -333,7 +333,7 @@ computationally generating all rational tangles up to a given crossing number.
    5. Else, append $0$ to $O_r$ and store
 ```
 
-```{prf:remark} Find all rational tangles up to crossing number $n$
+```{algorithm} Find all rational tangles up to crossing number $n$
 :label: find-rat-tang-to-n
 
 **Input**
