@@ -50,15 +50,15 @@ if __name__ == "__main__":
                 for i in range(start_idx + 1, end_idx):
                     file_lines[i] = swap(file_lines[i])
                     ...
-                file_lines[start_idx] = "\\begin{figure}[!htbp]\n\\centering\n"
+                file_lines[start_idx] = "\\begin{figure}\n\\centering\n"
                 if file_lines[end_idx - 2].startswith("%  @@@label:"):
                     file_lines[end_idx - 2] = (
-                        "\\caption[$\,$]{$\\,$}\\label{"
+                        "\\caption[$\\,$]{$\\,$}\\label{"
                         + file_lines[end_idx - 2].replace("%  @@@label:", "").replace("\n","")
                         + "}"
                     )
                 else:
-                    file_lines[end_idx - 2] = "\\caption[$\,$]{$\\,$}"
+                    file_lines[end_idx - 2] = "\\caption[$\\,$]{$\\,$}"
                 file_lines[end_idx - 1] = ""
                 file_lines[end_idx] = "\\end{figure}\n"
                 ...

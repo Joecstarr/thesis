@@ -8,6 +8,8 @@ const admonitionDirective = {
         'algorithm',
         'use-case',
         'test-card',
+        'diagram',
+        'convention',
     ],
     arg: {
         type: 'myst',

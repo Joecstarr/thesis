@@ -3,7 +3,7 @@
 
 # Set up development environment
 bootstrap:
-    uv venv
+    uv venv --clear
     uv pip install -r requirements.txt
     mkdir -p _build
 
@@ -37,14 +37,15 @@ init:
     myst init --write-toc
     mkdir -p _build/exports
 
-build: bootstrap
+build:
     rip _build/exports
-    mkdir -p _build/exports
-    myst build -a
+    mkdir -p _build/exports/myst_tex/files
+    myst build --tex 
     cp -r resources/coloremoji/coloremoji _build/exports/myst_tex
     mkdir -p _build/exports/myst_tex/media/kauf_bkt && cp -r media/kauf_bkt _build/exports/myst_tex/media
     find ./_build/exports/myst_tex/media/ -iname "*.svg" -exec sh -c 'svg2pdf "$1" "${1%.*}.pdf" ' sh {} \;
     cp resources/coloremoji/coloremoji.sty _build/exports/myst_tex
+    uv run ./resources/postprocess/subfigure.py
     uv run ./resources/postprocess/nsf.py
 
 html: bootstrap
@@ -65,15 +66,17 @@ live:
 
 latex-main_0:
     cd ./_build/exports/myst_tex && \
-    tectonic myst_0.tex --keep-logs --keep-intermediates
+    nextonic compile myst_0.tex --keep-logs --keep-intermediates
+
 
 latex-main_1:
     cd ./_build/exports/myst_tex && \
-    tectonic myst_1.tex --keep-logs --keep-intermediates
+    nextonic compile myst_1.tex --keep-logs --keep-intermediates
 
 latex-main_2:
     cd ./_build/exports/myst_tex && \
-    tectonic myst_2.tex --keep-logs --keep-intermediates
+    nextonic compile myst_2.tex --keep-logs --keep-intermediates
+
 
 latex: latex-main_0 latex-main_1 latex-main_2
     echo built!

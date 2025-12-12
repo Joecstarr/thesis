@@ -310,3 +310,6 @@ main.pdf
 # MyST build outputs
 _build
 .ruff_cache
+.direnv
+.envrc
+.envrc
