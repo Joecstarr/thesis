@@ -19,9 +19,9 @@ the rational tangles.
 We start, with an intuitive description of the construction. Imagine a zero
 tangle (@prelim-fig-basic_0), now attach to that tangle a crank on the right
 (east) side (@fig-rat_tang-crank). We allow, for a moment, the fixed points of
-the tangle to move. If we crank a half turn, we introduce a twist, if we turn
-the crank $n$ half turns we make an integral $n$ tangle
-(@subsec-integral_tangle).
+the tangle to move. If we crank a half turn clockwise or anti-clockwise, we
+introduce a twist, if we turn the crank $n$ half turns we make an integral
+$n$ tangle(@subsec-integral_tangle).
 
 ```{figure} ../../media/fig-rat_tang-crank.svg
 :label: fig-rat_tang-crank
@@ -50,7 +50,7 @@ Zieschang, we will give a later construction by Kauffman and Goldman
 tangle with $a\in\Z$ crossings as $t_a$, similarly, a vertical integral tangle
 with $b\in \Z$ crossings as $t_b^\prime$.
 
-```{prf:definition}Kauffman and Goldman Page 310 [@goldmanRationalTangles1997;@conwayEnumerationKnotsLinks1970]
+```{prf:definition}Kauffman and Goldman, Page 310 [@goldmanRationalTangles1997;@conwayEnumerationKnotsLinks1970]
 :label: rational-def-rational
 
 To build a **rational tangle**, take one of the following constructions:
@@ -82,7 +82,7 @@ corresponding to alternating $+$ and $\vee$.
 Now we formally address our first two essential questions by:
 
 1. Describing a notation for rational tangles.
-2. Demonstrating a correspondence between the rational tangles and the rational
+2. Demonstrating a correspondence between the rational tangles and the extended rational
    numbers.
 3. Showing that the correspondence distinguishes (tells apart) rational tangles.
 
@@ -94,13 +94,19 @@ systematically write down a rational tangle by a list of integers.
 ````{prf:definition}Conway Page 332[@conwayEnumerationKnotsLinks1970;@goldmanRationalTangles1997]
 :label: rational-def-twistvector
 The list of integers of the sets of tangles $t_{a_i}$ and $t_{b_j}^\prime$
-from @rational-def-rational ordered as @rational-def-math-tv is called a
+from @rational-def-rational ordered as @rational-def-math-tv or
+  @rational-def-math-tv2 is called a
 **twist vector**.
 
 ```{math}
 :label: rational-def-math-tv
-\LB a_0\ b_0\ a_1\ b_1\ \cdots\ a_n\ b_n\ a_{n+1}\RB
+    \LB a_0\ b_0\ a_1\ b_1\ \cdots\ a_n\RB
 ```
+```{math}
+:label: rational-def-math-tv2
+    \LB b_0\ a_0\ b_1\ \cdots\ a_n\RB
+```
+
 ````
 
 We are now ready to answer the second of the essential questions, "How do I tell
@@ -111,20 +117,20 @@ entries of a twist vector as the entries for a continued fraction
 fraction corresponds to an extended rational number
 [@rockettContinuedFractions1998], $\Q\cup\LS\infty\RS$.
 
-````{prf:definition}Conway Page 332[@conwayEnumerationKnotsLinks1970]
+````{prf:definition}Conway, Page 332[@conwayEnumerationKnotsLinks1970]
 :label: rational-def-frac
-For a rational tangle $T$ we call equation @rational-math-frac the **fraction of a
+For a rational tangle $T$ we call @rational-math-frac the **fraction of a
 rational tangle** and denote it $F\LP T\RP$.
 ```{math}
 :label: rational-math-frac
-\frac{p}{q} = a_{n+1} + \cfrac{1}{b_n + \cfrac{1}{a_n + \cfrac{1}{b_{n-1} +
-\cfrac{1}{a_{n-1} + \ddots\,}}}}
+    \frac{p}{q} = a_{n} + \cfrac{1}{b_n + \cfrac{1}{a_n + \cfrac{1}{b_{n-1} +
+    \cfrac{1}{a_{n-1} + \cfrac{1}{\ddots\,+\cfrac{1}{a_0}}}}}}
 ```
 ````
 
 ```{note}
-The correspondance with the extended rational numbers means that
-$F\LP\LB1\ \m 1\ 0\RB\RP=\frac{1}{0}$ corresponds to the basic $\infty$ tangle
+  The correspondance with the extended rational numbers means that
+  $F\LP\LB1\ \m 1\ 0\RB\RP=\frac{1}{0}$ corresponds to the basic $\infty$ tangle
 (@prelim-fig-basic_nc-inf).
 ```
 
@@ -173,7 +179,7 @@ continued fractions. We start by defining a specific subclass of finite
 continued fractions with integer coefficients, the **regular continued
 fractions**. We frame the definition in the context of twist vectors.
 
-```{prf:definition}Kauffman and Goldman page 318[@kauffmanClassificationRationalKnots2002; @rockettContinuedFractions1998]
+```{prf:definition}Kauffman and Goldman, page 318[@kauffmanClassificationRationalKnots2002; @rockettContinuedFractions1998]
 A continued fraction with integer coefficients $c_i$ is called a **regular
 continued fraction** if $c_i< 0$ for every coefficient or $0< c_i$ for
 every coefficient except the last which may be $0$.
@@ -182,27 +188,28 @@ every coefficient except the last which may be $0$.
 Conveniently, each extended rational number corresponds to exactly two regular
 continued fractions [@rockettContinuedFractions1998]. The first is a twist
 vector with the leftmost element greater than or equal to $2$, and the second
-with leftmost element equal to $1$, per equation @rational-math-twotv. Observe,
+with leftmost element equal to $1$, per @rational-math-twotv. Observe,
 one of these twist vectors has an even number of entries, and one has an odd
 number of entries.
 
 ```{math}
 :label: rational-math-twotv
 \begin{aligned}
-F\LP\LB 9\RB \RP &=  F\LP\LB 1\ 8\RB \RP = \frac{9}{1}\\\\
-F\LP\LB 9\ 0\RB \RP &=  F\LP\LB 1\ 8\ 0\RB \RP = \frac{1}{9}\\\\
+    F\LP\LB 9\RB \RP &= \frac{9}{1}= 8+\frac{1}{1} = F\LP\LB 1\ 8\RB \RP \\
+    F\LP\LB 9\ 0\RB \RP &= 0+\frac{1}{9}=0+\frac{1}{8+\frac{1}{1}}=
+    F\LP\LB 1\ 8\ 0\RB \RP \\
 \end{aligned}
 ```
 
 ```{note}
-The fraction $\frac{1}{0}$ corresponds to the $\LB 0\ 0\RB$ twist vector.
+  The fraction $\frac{1}{0}$ corresponds to the $\LB 0\ 0\RB$ twist vector.
 ```
 
-To identify a unique representative for a extended rational number and hence
-rational tangle, we will select, for convenience, the odd length twist vector as
-our unique representative.
+To identify a unique representative for a rational number and hence rational
+tangle, we will select, for convenience, the odd length twist vector as our
+unique representative.
 
-```{prf:definition}Kauffman and Lambropoulou Page 13 [@kauffmanClassificationRationalKnots2002]
+```{prf:definition}Kauffman and Lambropoulou, Page 13 [@kauffmanClassificationRationalKnots2002]
 :label: rational-def-canonrat
 
 A twist vector is called a **canonical twist vector** if it contains
@@ -218,7 +225,7 @@ computational answer to the third essential question.
 ##### Notation
 
 We start by describing how we will digitally store a rational tangle. In the
-rational tangle case, the theoretical encoding strategy, twist vectors, happens
+rational tangle case, the theoretical encoding strategy of twist vectors happens
 to be well suited for computational storage. A twist vector can be
 computationally stored identically to its written form, a list of space
 separated integers delimited by a pair of square braces, $\LB\ \RB$. As we will
@@ -236,18 +243,20 @@ fact holds for all rational tangles as demonstrated by @rationa-lema-pmtv.
 Allowing us to focus our efforts on the rational tangle with twist vectors
 containing only positive entries.
 
-```{prf:lemma}Kauffman and Lambropoulou Page 19[@kauffmanClassificationRationalKnots2002]
+```{prf:lemma}Kauffman and Lambropoulou, Page 19[@kauffmanClassificationRationalKnots2002]
 :label: rationa-lema-pmtv
 For a tangle $T$ with negative $-T$ (@subsubsec-conway_minus), if
 $F\LP T\RP=\frac{p}{q}$ then $F\LP \m T\RP=\m\frac{ p}{q}$.
 ```
 
 We now begin our development of a generation strategy for twist canonical twist
-vectors of rational tangles. The method seen here is partially inspired by the
-rational tangle counting work of Bryhtan [@bryhtanTabulating2stringTangles2024].
+vectors of rational tangles. The method seen here utilizes a
+common combinatorial method for defining compositions of integers,
+the same is used for
+rational tangle counting by Bryhtan [@bryhtanTabulating2stringTangles2024].
 Consider, for a given crossing number $n$, what is the most "obvious" twist
 vector? A viable candidate for most "obvious" is a twist vector, of the form
-seen in equation @rational-math-1s, dropping the trailing $0$ where needed.
+seen in @rational-math-1s, dropping the trailing $0$ where needed.
 
 ```{math}
 :label: rational-math-1s
@@ -310,7 +319,7 @@ twist vectors sit in the unit interval, $\LB 0,1\RP$.
 We conclude the section with a set of algorithms that describe a method for
 computationally generating all rational tangles up to a given crossing number.
 
-```{algorithm} Find all rational tangles of crossing number $n$
+```{prf:algorithm} Find all rational tangles of crossing number $n$
 :label: find-rat-tang-of-n
 
 **Input**
@@ -323,9 +332,9 @@ computationally generating all rational tangles up to a given crossing number.
 
 **Routine**
 
-1. Generate $O$ the 1's twist vector @rational-math-1s for $n$
+1. Generate $O$ the 1's twist vector as in @rational-math-1s for $n$
 1. for $i=0$ to $2^{n-1}$
-   1. Transform $i$ into binary form
+   1. Transform $i$ into its binary representation
    2. Exchange as in @rational-math-1plus digits of $i$ with spaces where $i$
       is $O$ and with $+$ where $i$ is $1$
    3. Apply operations to the $1$s vector and store the resulting vector as $O_r$
@@ -333,7 +342,7 @@ computationally generating all rational tangles up to a given crossing number.
    5. Else, append $0$ to $O_r$ and store
 ```
 
-```{algorithm} Find all rational tangles up to crossing number $n$
+```{prf:algorithm} Find all rational tangles up to crossing number $n$
 :label: find-rat-tang-to-n
 
 **Input**

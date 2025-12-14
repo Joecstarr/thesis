@@ -72,21 +72,20 @@ project:
         '\mvtht': '\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}'
 site:
     title: "The Tanglenomicon: Tabulation of two string tangles"
-
     template: book-theme
-    nav:
-        - title: Table of Contents
-          children:
-              - title: Introduction
-                url: /introduction
-              - title: Preliminaries
-                url: /preliminaries
-              - title: Tabulation
-                url: /tabulation
-              - title: Software and its Engineering
-                url: /software
-              - title: Future Directions
-                url: /future-work
+    # nav:
+    #     - title: Table of Contents
+    #       children:
+    #           - title: Introduction
+    #             url: /introduction
+    #           - title: Preliminaries
+    #             url: /preliminaries
+    #           - title: Tabulation
+    #             url: /tabulation
+    #           - title: Software and its Engineering
+    #             url: /software
+    #           - title: Future Directions
+    #             url: /future-work
     options:
         numbered_references: true
         hide_toc: true

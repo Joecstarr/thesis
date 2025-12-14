@@ -5,7 +5,7 @@ const admonitionDirective = {
     doc: 'Callouts, or "admonitions", highlight a particular block of text that exists slightly apart from the narrative of your page, such as a note or a warning. \n\n The admonition kind can be determined by the directive name used (e.g. `:::{tip}` or `:::{note}`).',
     alias: [
         'requirement',
-        'algorithm',
+        // 'algorithm',
         'use-case',
         'test-card',
         'diagram',

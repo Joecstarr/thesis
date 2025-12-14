@@ -57,7 +57,7 @@ Now we are prepared to give the algorithm to generate all rooted plane trees of 
 are created from $\Gamma$ by a sequence of $\star_\ast$ operations on the rightmost path of
 $\Gamma$.
 
-```{algorithm} Find all rooted plane trees of a given size created from $\Gamma$ [@nakanoEfficientGenerationPlane2002]
+```{prf:algorithm} Find all rooted plane trees of a given size created from $\Gamma$ [@nakanoEfficientGenerationPlane2002]
 :label: find-all-related-trees
 
 **Input**
@@ -83,7 +83,7 @@ $\Gamma$.
 This algorithm can be extended to an algorithm that finds all rooted plane trees up to a given size
 as follows.
 
-```{algorithm} Efficient generation of rooted plane trees [@nakanoEfficientGenerationPlane2002]
+```{prf:algorithm} Efficient generation of rooted plane trees [@nakanoEfficientGenerationPlane2002]
 :label: find-efficient-trees
 
 **Input**
@@ -206,7 +206,7 @@ Valence of $v_0$ is:
 An identical theorem can be phrased for the $\LP-\RP$-RLITT case. With this result, we can start our
 construction of a grafting algorithm for arborescent tangles.
 
-```{algorithm} Find weighted planar trees by grafting RLITT scions to the root of RLITT rootstocks
+```{prf:algorithm} Find weighted planar trees by grafting RLITT scions to the root of RLITT rootstocks
 :label: find-grafted-trees
 
 **Input**
@@ -302,7 +302,7 @@ after grafting. Making $\Gamma$ neither $\LP+\RP-$RLITT nor $\LP-\RP-$RLITT, as
 we desired.
 ```
 
-```{algorithm} Find weighted planar trees by grafting RLITT good scions to the root of RLITT rootstocks
+```{prf:algorithm} Find weighted planar trees by grafting RLITT good scions to the root of RLITT rootstocks
 :label: find-grafted-good-trees
 
 
@@ -334,7 +334,7 @@ Our approach to the positivity and negativity condition follows our approach to 
 We will leverage @only-the-root-matters to add a check for positivity and negativity in our
 algorithm.
 
-```{algorithm} Find weighted planar trees by grafting $\LP+\RP$-RLITT good scions to the root of $\LP+\RP$-RLITT rootstocks
+```{prf:algorithm} Find weighted planar trees by grafting $\LP+\RP$-RLITT good scions to the root of $\LP+\RP$-RLITT rootstocks
 :label: find-grafted-good-trees-p
 
 
@@ -357,7 +357,7 @@ algorithm.
     1. Report $\Gamma$
 ```
 
-```{algorithm} Find weighted planar trees by grafting $\LP-\RP$-RLITT good scions to the root of $\LP-\RP$-RLITT rootstocks
+```{prf:algorithm} Find weighted planar trees by grafting $\LP-\RP$-RLITT good scions to the root of $\LP-\RP$-RLITT rootstocks
 :label: find-grafted-good-trees-n
 
 
@@ -388,7 +388,7 @@ always right of the scion. To fully satisfy the right leaning condition, we need
 stick subtrees of are in the right most postions. This is accomplished with a slight modification of
 our grafting algorithms.
 
-```{algorithm} Find weighted planar trees by grafting $\LP+\RP$-RLITT good scions to the root of $\LP+\RP$-RLITT rootstocks
+```{prf:algorithm} Find weighted planar trees by grafting $\LP+\RP$-RLITT good scions to the root of $\LP+\RP$-RLITT rootstocks
 :label: find-grafted-good-trees-p-r
 
 
@@ -412,7 +412,7 @@ our grafting algorithms.
     1. Report $\Gamma$
 ```
 
-```{algorithm} Find weighted planar trees by grafting $\LP-\RP$-RLITT good scions to the root of $\LP-\RP$-RLITT rootstocks
+```{prf:algorithm} Find weighted planar trees by grafting $\LP-\RP$-RLITT good scions to the root of $\LP-\RP$-RLITT rootstocks
 :label: find-grafted-good-trees-n-r
 
 
@@ -472,7 +472,7 @@ step.
 The following is the recursive algorithm used to take us from the set of RLITT with $\text{TCN}-1$
 to the set of RLITT of the target TCN.
 
-```{algorithm} Find RLITT of given TCN from all RLITT of TCN-1
+```{prf:algorithm} Find RLITT of given TCN from all RLITT of TCN-1
 :label: find-rlitt-from-acnm1toacn
 
 
@@ -506,7 +506,7 @@ to the set of RLITT of the target TCN.
     1. Compute $\iota[0]\star\Gamma$ and add to T
 ```
 
-```{algorithm} Find RLITT up to a given TCN
+```{prf:algorithm} Find RLITT up to a given TCN
 :label: find-rlitt-up-to-acn
 
 

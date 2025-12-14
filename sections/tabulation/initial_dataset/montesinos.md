@@ -222,7 +222,7 @@ $\!\,$The set of stencils for crossing number five, with rational tangles insert
 We conclude the section with a set of algorithms that describe this method for
 computationally generating all Montesinos tangles up to a given crossing number.
 
-```{algorithm} Find all stencils of crossing number $n$
+```{prf:algorithm} Find all stencils of crossing number $n$
 :label: find-mont-sten
 
 **Input**
@@ -245,7 +245,7 @@ computationally generating all Montesinos tangles up to a given crossing number.
    5. Add $O_r$ to $S$
 ```
 
-```{algorithm} Find all Montesinos tangles of crossing number $n$
+```{prf:algorithm} Find all Montesinos tangles of crossing number $n$
 :label: find-mont-tang-of-n
 **Input**
 
@@ -266,7 +266,7 @@ computationally generating all Montesinos tangles up to a given crossing number.
         1. Construct and store a Montesinos tangle from list entries.
 ```
 
-```{algorithm} Find all Montesinos tangles up to crossing number $n$
+```{prf:algorithm} Find all Montesinos tangles up to crossing number $n$
 :label: find-mont-tang-to-n
 
 **Input**
