@@ -69,7 +69,7 @@ The feature V process model.
 ```
 
 Often software products are developed by teams of engineers. In these team
-environments it is important that the software process be easily parallelizable.
+environments, it is important that the software process be easily parallelizable.
 Our modified V model can be parallelized as in @se-fig-modifiedmultiv. Allowing
 the process to be utilized by individual researchers at primarily undergraduate
 institutions or large REU[^reu] projects.
@@ -79,7 +79,7 @@ institutions or large REU[^reu] projects.
 The feature V process model.
 ```
 
-The remainder of this section, describes each phase of our modified V model. In
+The remainder of this section describes each phase of our modified V model. In
 each subsection, we will describe the activities that should be carried out
 during that phase, as well as an overview of what, if any, diagrams we should
 expect to be created. The diagrams we will discuss for each phase are

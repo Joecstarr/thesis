@@ -11,7 +11,7 @@ to break the software into discrete pieces of functionality called **units**.
 Depending on the team, their needs, and the technologies they are using, a unit
 can be sized anywhere from a single function to a collection of files.
 
-```{prf:definition} Pressman and Maxim Section 7.2.2 [@pressmanSoftwareEngineeringPractitioners2015a]
+```{prf:definition}Paraphrasing Pressman and Maxim, Section 7.2.2 [@pressmanSoftwareEngineeringPractitioners2015a]
 :label: se-def-8core
 1. Divide and conquer: You should break a hard problem into smaller solvable
    problems where possible.
@@ -39,21 +39,21 @@ can be sized anywhere from a single function to a collection of files.
    Spend an hour now to save days later.
 ```
 
-```{prf:definition} Pressman and Maxim Section 14.2.4 [@pressmanSoftwareEngineeringPractitioners2015a]
+```{prf:definition} Paraphrasing Pressman and Maxim, Section 14.2.4 [@pressmanSoftwareEngineeringPractitioners2015a]
 :label: se-def-coup
 **Coupling** is a qualitative measure of the degree to which units are
 connected to one another. As units become more interdependent, coupling
 increases.
 ```
 
-```{prf:definition} Pressman and Maxim Section 14.2.3 [@pressmanSoftwareEngineeringPractitioners2015a]
+```{prf:definition} Paraphrasing Pressman and Maxim, Section 14.2.3 [@pressmanSoftwareEngineeringPractitioners2015a]
 :label: se-def-coh
 Within the context of unit-level design for systems, **cohesion** implies that a
 unit encapsulates only attributes and operations that are closely
 related to one another and to the unit itself.
 ```
 
-```{prf:definition} Pressman and Maxim Page 349[@pressmanSoftwareEngineeringPractitioners2015a]
+```{prf:definition} Paraphrasing Pressman and Maxim, Page 349[@pressmanSoftwareEngineeringPractitioners2015a]
 :label: se-def-designpat
 A **design pattern** is an abstraction that prescribes a design solution to a
 specific, well-bounded design problem. A design pattern saves you from

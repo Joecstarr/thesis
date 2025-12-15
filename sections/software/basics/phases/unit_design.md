@@ -16,11 +16,11 @@ functional members a unit contains. Each of these items is described in two
 ways, first a plain English description, and second included diagrammatically in
 a class diagram [@UnifiedModelingLanguage2017] for the unit. The plain English
 description for each member describes what that member is intended to be or do.
-In the case of functional memember, along with an English description, a
+In the case of a functional memember, along with an English description, a
 diagrammatic definition as a state machine[@UnifiedModelingLanguage2017] should
 also be given.
 
-As with the the special language/mood used when designing requirements
+As with the special language/mood used when designing requirements
 (@subsec-requirements), documentation at the unit level and below have a
 particular frugal and direct style. When this style is first encountered it can
 be jarring, and the writing appear shockingly poor. However, just as the use of the
@@ -34,10 +34,11 @@ presented diagrammatically. Our English descriptions serve simply to supplement
 the diagrams.
 
 ```{note}
-Writing long, elaborate explanations at the unit level should prompt you to
-engage in analysis of your design. The need for explanations like this
-often indicates you are missing something at the software design level, look for
-missing abstraction or a place to divide and conquer.
+  Writing long, elaborate explanations at the unit level should prompt you to
+  engage in analysis of your design. The need for explanations like this
+  often indicates you are missing something at the software design
+  level, look for
+  missing abstraction or a place to divide and conquer.
 ```
 
 #### Diagrams
@@ -59,7 +60,7 @@ meaning, visibility to the world outside the unit. A $+$ is used to indicate
 public visibility, meaning the member can be seen and used by other classes, and
 a $-$ to indicate private visibility, meaning the member can only be seen from
 inside the class. When referencing other units in the system, the external units
-are truncated to an empty class (the `Card` class in @se-cd-fig-agg). One or
+are truncated to an empty class (as in the `Card` class in @se-cd-fig-agg). One or
 more optional decorators can be added to a class to further contextualize the
 class. The decorators that we allow in a class diagram are:
 
@@ -85,11 +86,12 @@ cards in the collection. This common (expected) data is modeled as an interface
 that can be reused without needing to be rewritten.
 
 ```{note}
-In some object-oriented languages, this relationship may be defined by an
-inheritance or inheritance. However, in languages that are not object oriented
-such as C, we instead define this common set of data as an abstract interface
-for design purposes that we must implement in each component that realizes the
-interface.
+  In some object-oriented languages, this relationship may be defined by an
+  interface or with inheritance. However, in languages that are not
+  object oriented
+  such as C, we instead define this common set of data as an abstract interface
+  for design purposes that we must implement in each component that realizes the
+  interface.
 ```
 
 ```{include} ./diagrams/class.md

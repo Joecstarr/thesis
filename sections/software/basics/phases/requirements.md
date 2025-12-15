@@ -45,7 +45,7 @@ unambiguously define what the software should do. This means we must change how
 we think about requirements in the research setting. Instead of requirements of
 the style of @se-fig-bad_req_fixed we phrase requirements as **use cases**.
 
-```{prf:definition} Pressman and Maxim Page 149 [@pressmanSoftwareEngineeringPractitioners2015a]
+```{prf:definition} Paraphrasing Pressman and Maxim, Page 149 [@pressmanSoftwareEngineeringPractitioners2015a]
 A **use case** tells a stylized story about how an end user (playing one of a number
 of possible roles) interacts with the system under a specific set of
 circumstances. The story may be narrative text, an outline of tasks or
