@@ -7,7 +7,7 @@ right leaning CWPTT.
 :label: rli-const-def-rl
 
 A CWPTT is called **right leaning** if all weights are in the highest indexed
-reigon (as in @indexing-rpt) of each vertex. Additionally, any ring subtrees
+region (as in @indexing-rpt) of each vertex. Additionally, any ring subtrees
 that are children of a vertex are the highest indexed children of that vertex.
 ```
 
@@ -21,15 +21,15 @@ Every arborescent tangle has a right leaning CWPTT representative.
 
 ```{prf:proof}
 Let $\Gamma$ be a CWPTT representative for a tangle $T$. If every weight
-$w_i$ of $\Gamma$ is in the highest indexed reigon of $\Gamma_{w_i}$, we
+$w_i$ of $\Gamma$ is in the highest indexed region of $\Gamma_{w_i}$, we
 are done. Otherwise, we will follow a similar algorithm to that outlined by
 Bonahon and Siebenmann [@bonahonNewGeometricSplittings2016] for distinguishing
 CWPTT. Let $w_i$ be the weight for the lowest indexed vertex $v_i$ not in its
-highest indexed reigon of $\Gamma_{v_i}$. With move $F_3^\prime$ shift $w_i$ so
-that it lies in the highest indexed reigon. Further, choose to shift $w_i$
+highest indexed region of $\Gamma_{v_i}$. With move $F_3^\prime$ shift $w_i$ so
+that it lies in the highest indexed region. Further, choose to shift $w_i$
 anti-clockwise, this ensures that $v_j$ with $j<i$ are unchanged when $w_i$ is
 even. We repeat this process for any $v_k$ with $i<k$ where the weight $w_k$ not
-in the highest indexed reigon. Since $\Gamma$ has finite vertices, the
+in the highest indexed region. Since $\Gamma$ has finite vertices, the
 algorithm terminates with a $\Gamma$ transformed into a right leaning tree
 completing the proof.
 ```

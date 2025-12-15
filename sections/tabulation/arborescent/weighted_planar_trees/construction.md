@@ -36,18 +36,18 @@ can be seen in @wpt-construc-fig-band_sum.
 
 ```{figure} ../../media/bands/bnd_sum_1.svg
 :label: wpt-construc-fig-band_sum-1
-:width: 500px
+
 
 A band with a plumbing square facing the viewer.
 ```
 
 ```{figure} ../../media/bands/bnd_sum_2.svg
 :label: wpt-construc-fig-band_sum-2
-:width: 500px
+
 
 A band with the plumping square facing away from the viewer. We are looking through the band.
 ```
-
+Plumbing squares of bands.
 ````
 
 ##### Plumbing bands
@@ -55,9 +55,9 @@ A band with the plumping square facing away from the viewer. We are looking thro
 We now glue the bands seen in @wpt-construc-fig-band_sum together with an
 operation called **plumbing**. Consider the orientation given in the green
 band's plumbing square. We will call the blue arrow $X$ and the thicker red
-arrow $Y$; similarly for the blue band with $x^\prime$ and $y^\prime$. We
+arrow $Y$; similarly for the blue band with $X^\prime$ and $Y^\prime$. We
 **plumb** the bands together along their plumbing squares, with the requirement
-that the orientation labels are mapped $x\to y^\prime$ and $y\to x^\prime$.
+that the orientation labels are mapped $X\to Y^\prime$ and $Y\to X^\prime$.
 Finally, we forget the boundaries of the plumbing squares, leaving only the
 joined boundaries of the bands. The result of plumbing as well as a local
 picture for plumbing can be seen in @wpt-construc-fig-band_sum_opo.
@@ -67,15 +67,16 @@ picture for plumbing can be seen in @wpt-construc-fig-band_sum_opo.
 
 ```{figure} ../../media/bands/bnd_sum_sum.svg
 :label: wpt-construc-fig-band_sum_opo-1
-:width: 500px
+
 Plumbed bands
 ```
 
 ```{figure} ../../media/bands/bnd_sum_patch.svg
 :label: wpt-construc-fig-band_sum_opo-2
-:width: 500px
+
 Plumbed bands
 ```
+Two bands plumbed.
 ````
 
 Our plumbing band construction can be turned into a knot, by adding a series of
@@ -87,17 +88,19 @@ regions of the band, determined by their position relative to the plumbing
 squares.
 
 ````{figure}
+:label:wpt-construc-fig-111
 ```{figure} ../../media/bands/arbor_band_with_twist.svg
 :label: wpt-construc-fig-6
-:width: 500px
+
 Band with two negative half twists<br/> and three plumbing squares.
 ```
 
 ```{figure} ../../media/bands/arbor_band_with_twist_2.svg
 :label: wpt-construc-fig-25
-:width: 500px
 
-Band with three positive half twists <br/>and one plumbing square.
+Band with three positive half twists and one plumbing square.
+```
+Plumbing bands with twists.
 ````
 
 Successive plumbing yields collections of bands like those seen in
@@ -106,18 +109,21 @@ simple as removing the interior of the band, leaving only the boundary, per
 @wpt-construc-fig-24.
 
 ````{figure}
+:label:wpt-construc-fig-112
 ```{figure} ../../media/bands/arbor_bands.svg
 :label: wpt-construc-fig-10
-:width: 500px
+
 Bands plumbed
 ```
 
 ```{figure} ../../media/bands/arbor_bound.svg
 :label: wpt-construc-fig-24
-:width: 500px
+
 An arborescent knot
 ```
-
+A set of plumbed bands in
+    @wpt-construc-fig-10
+  and arborescent knot in @wpt-construc-fig-24
 ````
 
 It is important to note that, for creating arborescent knots, we must restrict
@@ -125,13 +131,11 @@ plumbing from creating "cycles" of bands. That is a chain of plumbing beginning
 and ending with the same band, as seen in @wpt-construc-fig-cycle. If we allow
 cycles in the bands, we may create a polygonal tangle, defined in
 @subsubsec-opo-insert. These polygonal tangles contain portions that do not
-satisfy @intro-def-arbor-tangle, so are not arborescent. This informs our
-understanding of the correspondence between algebraic and arborescent knots and
-tangles.
+satisfy @intro-def-arbor-tangle, so are not arborescent presentations.
 
 ```{figure} ../../media/bands/band_cycle.svg
 :label: wpt-construc-fig-cycle
-:width: 500px
+
 A collection of bands plumbed in such a way that the last band is plumbed to
 the first band in a cycle.
 ```
@@ -151,7 +155,7 @@ the **parent** of $c$ and the collection of $C-\LS c \RS$ the
 We claim the plumbing band construction is in correspondence with the definition
 of arborescent seen in @prelim-def-arborescent_knot. To see this, we take each
 plumbing band and encapsulate it in a $S^2$ so that the corners of the plumbing
-squares lie on the $S^2$, giving us a vignette seen in @fig-arborescent_band.
+squares lie on the $S^2$, giving us the vignette seen in @fig-arborescent_band.
 
 ##### Weighted Planar Trees
 
@@ -223,15 +227,16 @@ yields a unique realization of a rooted plane tree in the plane.
 
 ```{figure} ../../media/bands/arbor_graph_split_local_inc.svg
 :label: wpt-construc-fig-order_1
-:width: 500px
+
 The local picture of a vertex with child labels increasing in anti-clockwise order.
 ```
 
 ```{figure} ../../media/bands/arbor_graph_split_local_dec.svg
 :label: wpt-construc-fig-order_2
-:width: 500px
+
 The local picture of a vertex with child labels decreasing in anti-clockwise order.
 ```
+$\,$
 
 ````
 
@@ -252,27 +257,37 @@ it satisfies the following:
 -   $p<i<c_1<\cdots< c_n$
 ```
 
+```{note} 
+Two commonly seen orderings of a tree are the breadth and depth
+  first orderings, both orderings
+  are ideal orderings. For our purposes we will prefer the depth first ordering.
+```
+
 ````{figure}
 :label:wpt-construc-fig-order
 
 ```{figure} ../../media/bands/rpt_order.svg
 :label: wpt-construc-fig-rptorder_1
-:width: 500px
+
 A rooted plane tree with ideal indexing. The index of each vertex is seen inside the vertex.
 ```
 
 ```{figure} ../../media/bands/rpt_order_ni.svg
 :label: wpt-construc-fig-rptorder_2
-:width: 500px
+
 A rooted plane tree with indexing that is not ideal. The index of is each vertex seen inside the vertex.
 ```
+Indexing strategies of a rooted plane tree. 
 ````
 
 ```{convention}
-For the remainder of this thesis we will adopt some conventions for rooted plane
-trees (and their derivatives the weighted planar tangle trees, CWPTT, and
-RLITT). When realizing a tree in the plane we select the universal increasing
-order and assume that the tree has an ideal indexing.
+For the remainder of this thesis we will adopt some conventions for
+  rooted plane
+  trees (and their derivatives the weighted planar tangle trees, CWPTT, and
+  RLITT). When realizing a tree in the plane we select the universal
+  anti-clockwise increasing
+  order and assume that the tree has depth first indexing.
+
 ```
 
 The final data we need to record is the position and count of half twists
@@ -283,7 +298,7 @@ annotating the local view of a vertex with an integer placed in the regions
 between bonds. The relationship between a plumbing band and a weighted vertex in
 a rooted plane tree can be seen in @wpt-construc-fig-7. The weights placed in
 regions between bonds inherit a cyclic order from the cyclic order of the bonds.
-Each weight falls in the region between two bonds, we assign to each weight
+Each weight falls in the region between two bonds. We assign to each weight
 (including zero weights) the lower of the two indices. This aligns with
 assigning to the weight the index that appears before it in the anti-clockwise
 planar realization of the cyclic order, per
@@ -294,39 +309,42 @@ planar realization of the cyclic order, per
 
 ```{figure} ../../media/bands/arbor_graph_split_local_with_band.svg
 :label: wpt-construc-fig-7
-:width: 500px
+
 The local view of a vertex with the weights two, zero, and zero.
 ```
 
 ```{figure} ../../media/bands/arbor_graph_split_local_1.svg
 :label: wpt-construc-fig-weights-with-index
-:width: 500px
-The local view of a vertex with weight. <br/>Notice the index of the weights come
+
+The local view of a vertex with weight. Notice the index of the weights come
 from the bond "before" it in the planar realized cyclic order.
 ```
+Local view of a vertex with weights. 
 ````
 
 We can see a full example of a tree with its associated plumbed construction in
 @wpt-construc-fig-27. We call this fully realized combinatorial recipe for an
 arborescent knot a **weighted planar tree**.
 
-```{prf:definition} Bonahon and Siebenmann page 143[@bonahonNewGeometricSplittings2016]
+```{prf:definition} Bonahon and Siebenmann, Page 143[@bonahonNewGeometricSplittings2016]
 A rooted plane tree $\Gamma$ augmented with weights is called a
 **weighted planar tree**.
 ```
 
 ````{figure}
+:label: wpt-construc-fig-114
 ```{figure} ../../media/bands/arbor_graph.svg
 :label: wpt-construc-fig-27
-:width: 500px
+
 The tree describing the plumbing of bands. Each vertex represents the band illustrated near it.
 ```
 
 ```{figure} ../../media/bands/arbor_bands.svg
 :label: wpt-construc-fig-28
-:width: 500px
+
 The realization by plumbing bands of the tree in @wpt-construc-fig-27
 ```
+Realization of plumbing of a tree.
 
 ````
 
@@ -340,13 +358,27 @@ and links. We now give a modification of this notation for tangles. A weighted
 planar tree, as in @wpt-construc-fig-29, can be modified to represent a tangle
 by allowing a **free bond** (half-edge), to be attached to a vertex, that is, to
 allow bands to have a non-plumbed plumbing square. We realize the non-plumbed
-square, as a Conway circle for a two string tangle. To consistently orient the
+square, as a Conway circle for a two string tangle as in 
+@wpt-construc-fig-tangle_trad. To consistently orient the
 Conway sphere's interior, we align the north boundary points of the Conway
 sphere with the top (up in the band orientation) boundary component, and place
 the NW corner first (following the orientation of the boundary), per
 @wpt-construc-fig-band_orientation. Plumbing two bands then corresponds to the
 action of gluing a pair of tangles together on their Conway spheres so that
-boundary points align with $\text{NW}->\text{SW}$ and $\text{SE}->\text{NE}$.
+boundary points align.
+
+```{figure} ../../media/bands/bnd_with_orientation.svg
+:label: wpt-construc-fig-band_orientation
+
+The orientation of a
+Conway sphere given by a plumbing square on a band of an
+arborescent tangle. The orientation of the underlying plumbing
+square is shown.
+This aligns with a left hand rule with $Y$ the thumb, $X$ the
+index finger, and
+$Z$ middle finger, with $Z$ pointing away from the center of the band,
+out of the page in this case. 
+```
 
 A tree may have many free bonds, with each free bond representing a unique
 boundary Conway sphere. Each boundary component serves as a location where a
@@ -356,34 +388,28 @@ In tangle trees with a single free bond, we designate the vertex with the free
 bond as the root of the tree.
 
 ````{figure}
-```{figure} ../../media/bands/bnd_with_orientation.svg
-:label: wpt-construc-fig-band_orientation
-:width: 500px
-The orientation of a Conway sphere given by a plumbing square on a band of an
-arborescent tangle. The orientation of the underlying plumbing square is shown.
-```
+:label:  wpt-construc-fig-115
+
 
 ```{figure} ../../media/bands/arbor_tangle.svg
 :label: wpt-construc-fig-29
-:width: 500px
+
 The plumbing realization of an arborescent tangle.
 ```
 
 ```{figure} ../../media/bands/example_tangle.svg
 :label: wpt-construc-fig-tangle_trad
-:width: 500px
+
 
 With an isotopy of the tangle and inversion of the Conway circle given by the
 non-plumbed square we have the realization of @wpt-construc-fig-29 as a
 traditional orthogonally projected tangle.
 ```
-
+Plumbing bands as a tangle.
 ````
 
-In the next subsection we will introduce the rational tangles in the context of
-arborescent tangles (@wpt-construc-sec-rational) and in later sections we will
-then introduce a collection of moves on weighted planar trees. These moves can
-be realized as moves on plumbed bands. We will see that keeping track of the
+
+We will see that keeping track of the
 location of the fixed points of the boundary sphere is important when
 determining tangle equivalence. This is due to the need to maintain the rational
 number (@rational-def-frac) associated with the "rational tangle" subtangles of
@@ -396,53 +422,56 @@ manifold theory underpinning these markings are found in Bonahon and Siebenmann
 [@bonahonNewGeometricSplittings2016]. We call such a labeled tree a **weighted
 planar tangle tree**.
 
-```{prf:definition}Bonahon and Siebenmann Page 165 [@bonahonNewGeometricSplittings2016]
-A weighted planar tree $\Gamma$ with free bonds labeled in $V_4$ is called a
-** weighted planar tangle tree (WPTT)**.
-```
 
 ````{figure}
 :label: wpt-construc-fig-v_4rotations
 
 ```{figure} ../../media/v4_rotations_i.svg
 :label: wpt-construc-fig-k4g-rotationsi
-:width: 500px
+
 The identity rotation (no rotation)
 ```
 
 ```{figure} ../../media/v4_rotations.svg
 :label: wpt-construc-fig-k4g-rotations
-:width: 500px
+
 The effect of the $V_4$ rotations on each of the
 ```
+The identity rotation (no rotation), and the effect of the $V_4$ rotations on each of the
 ````
+
+```{prf:definition}Bonahon and Siebenmann Page 165 [@bonahonNewGeometricSplittings2016]
+A weighted planar tree $\Gamma$ with free bonds labeled in $V_4$ is called a
+** weighted planar tangle tree (WPTT)**.
+```
+
 
 ````{figure}
 :label: wpt-construc-fig-k4g
 
 ```{figure} ../../media/iota.svg
 :label: wpt-construc-fig-k4g-i
-:width: 500px
+
 $\iota$ for no rotation
 ```
 ```{figure} ../../media/zeta.svg
 :label: wpt-construc-fig-k4g-x
-:width: 500px
+
 $\xi$ rotates around the $X$-axis
 ```
 
 ```{figure} ../../media/eta.svg
 :label: wpt-construc-fig-k4g-y
-:width: 500px
+
 $\eta$ rotates around the $Y$-axis
 ```
 
 ```{figure} ../../media/xi.svg
 :label: wpt-construc-fig-k4g-z
-:width: 500px
+
 $\zeta$ rotates around the $Z$-axis
 ```
-
+Roations of a tangle. 
 
 ````
 
@@ -464,7 +493,7 @@ appear as @wpt-construc-fig-17.
 
 ```{figure} ../../media/bands/arbor_graph_ring.svg
 :label: wpt-construc-fig-17
-:width: 500px
+
 
 Positive and negative ring subtrees
 ```
@@ -474,7 +503,7 @@ Now, resolving the plumbing for the positive subtree, we arrive at bands as in
 
 ```{figure} ../../media/bands/arbor_ring.svg
 :label: wpt-construc-fig-12
-:width: 500px
+
 Plumbed ring bands
 ```
 
@@ -483,19 +512,19 @@ Notice that the boundary of these plumbed bands has three components, as seen in
 
 ```{figure} ../../media/bands/arbor_ring_no_bnd.svg
 :label: wpt-construc-fig-13
-:width: 500px
+
 Ring boundary
 ```
 
 With an isotopy of the tangle and inversion of the Conway circle given by the
 non-plumbed square, we can arrange our plumbed bands into the standard tangle
 projection seen in @wpt-construc-fig-14. This tangle projection tells us that
-the subtree in @wpt-construc-fig-12 is either the zero or infinity tangle with a
-ring.
+the subtree in @wpt-construc-fig-12 is, depending on location of $\text{NW}$,
+either the zero or infinity tangle with a ring.
 
 ```{figure} ../../media/bands/arbor_ring_tangle.svg
 :label: wpt-construc-fig-14
-:width: 500px
+
 Ring Tangle
 ```
 
@@ -507,23 +536,23 @@ Ring Tangle
 We now classify each vertex into one of two classes, the essential vertices and
 the non-essential vertices.
 
-```{prf:definition} Bonahon and Siebenmann page 159[@bonahonNewGeometricSplittings2016]
+```{prf:definition} Bonahon and Siebenmann, Page 159[@bonahonNewGeometricSplittings2016]
 :label: apn-def-2
-We define an **essential vertex** as any vertex with valence
-greater than $3$.
+We define an **essential vertex** as any vertex with valence (count of the number of bonds) greater than $3$.
 ```
 
-```{prf:definition} Bonahon and Siebenmann page 159[@bonahonNewGeometricSplittings2016]
+```{prf:definition} Bonahon and Siebenmann, Page 159[@bonahonNewGeometricSplittings2016]
 :label: apn-def-3
 
-A vertex is called non-essential if it has valence $0,1,2$.
+A vertex is called non-essential if it has valence (count of the
+number of bonds) $0,1,2$.
 ```
 
 As an example, consider the vertices seen in @wpt-construc-fig-18.
 
 ```{figure} ../../media/bands/arbor_ring_essential.svg
 :label: wpt-construc-fig-18
-:width: 500px
+
 A weighted planar tree annotated with essential vertices in orange and
 non-essential in blue
 ```
@@ -536,7 +565,7 @@ non-essential in blue
 The final part of the anatomy of a tree we will consider is the **sticks** of a
 tree.
 
-```{prf:definition} Bonahon and Siebenmann page 159[@bonahonNewGeometricSplittings2016]
+```{prf:definition} Bonahon and Siebenmann, Page 159[@bonahonNewGeometricSplittings2016]
 :label: wpt-construc-def-sticks_of_a_tree
 Let $\Gamma$ be a weighted planar tree and $\LS b_i\RS$ be the set of essential
 vertices of $\Gamma$ including their bonds (half-edges). We call the
@@ -549,7 +578,7 @@ which can be seen in @wpt-construc-fig-19.
 
 ```{figure} ../../media/bands/arbor_ring_noessential.svg
 :label: wpt-construc-fig-19
-:width: 500px
+
 Sticks of the tree from @wpt-construc-fig-18, six half-open sticks and one open
 stick.
 ```
@@ -562,7 +591,7 @@ end of a stick an **end vertex**.
 
 ```{figure} ../../media/bands/sticks_open.svg
 :label: wpt-construc-fig-sticks
-:width: 500px
+
 From top to bottom, a closed, half-open, and an open stick. Each end vertex
 is colored in red.
 ```
@@ -577,7 +606,7 @@ vertex with a single weight $w_0$ we call it an **integral tangle tree**.
 
 ```{figure} ../../media/watt_integral.svg
 :label: wpt-construc-fig-integral
-A stick realized as a integral` tangle.
+A stick realized as a integral tangle.
 ```
 
 <!-- prettier-ignore-start -->
@@ -604,9 +633,13 @@ Finally, we define the **Tree Crossing Number (TCN)** of a weighted planar
 tangle tree. This corresponds to the crossing number of the tangle diagram given
 by the weighted planar tangle tree.
 
-```{prf:definition}
+````{prf:definition}
 :label: apn-def-TCN
 
 For weighted planar tangle tree $\Gamma$, with weights $\LS w_i\RS$. We call
-$$\text{TCN}=\sum |w_i|$$ the **Tree Crossing Number (TCN)**.
+```{math}
+:enumerated: false
+\text{TCN}=\sum |w_i|
 ```
+the **Tree Crossing Number (TCN)**.
+````

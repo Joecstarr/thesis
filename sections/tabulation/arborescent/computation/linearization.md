@@ -16,7 +16,7 @@ RLITT.
 ```{note}
 The strategy outlined here is designed for linearizing tangles. A small
 modification must be made for use with knots. That being, in the knot case,
-ignore the $n^{\text{th}}$ weight position for the root.
+ignore the $0^{\text{th}}$ weight position for the root.
 ```
 
 We will descend the tree following the indexing of the total order
@@ -46,7 +46,7 @@ proper stick or otherwise.
 ##### Case 1: The Child Is The Root Of A Half-Open And Proper Stick
 
 When the child is the root of a is proper and half-open (contains a leaf
-vertex), we append that stick as the twist vector for the corresponding rational
+vertex), we append that stick as the twist vector (@rational-def-twistvector) for the corresponding rational
 tangle. Let the stick consist of the vertices, $v_i\cdots v_{i+k}$, and weights,
 $w_i\cdots w_{i+k}$. We delimit the stick with $\LB\ \RB$, with each weight
 separated by a space, and the leaf weight as the left most entry of the twist
@@ -70,6 +70,6 @@ example of a tree encoded with this strategy can be seen in @wpt-rli-fig-23.
 
 ```{figure} ../../media/bands/watt_walk_tangle.svg
 :label: wpt-rli-fig-23
-:width: 500px
+
 Encoded tree subtrees are indicated by color.
 ```

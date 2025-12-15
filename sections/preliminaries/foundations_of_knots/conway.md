@@ -64,13 +64,13 @@ tangle @prelim-fig-basic_1).
 
 ```{figure} ../../media/0.svg
 :label: prelim-fig-basic_0
-:width: 500px
+
 A tangle with no crossings, called the 0 tangle.
 ```
 
 ```{figure} ../../media/1.svg
 :label: prelim-fig-basic_1
-:width: 500px
+
 A tangle with a single crossing, called the 1 tangle.
 ```
 Two basic tangles.
@@ -117,13 +117,13 @@ When we apply this set of flips and rotations to the basic tangles seen in
 
 ```{figure} ../../media/inf.svg
 :label: prelim-fig-basic_nc-inf
-:width: 500px
+
 A tangle with no crossings, called the $\infty$ tangle.
 ```
 
 ```{figure} ../../media/m1.svg
 :label: prelim-fig-basic_c-m1
-:width: 500px
+
 A tangle with a single crossing, called the $ \m 1$ tangle.
 ```
 Two additional basic tangles.
