@@ -9,7 +9,7 @@ preferred representative is to put some additional conditions on a weighted
 planar tree, $\Gamma$. The following conditions pare down the equivalence class
 of an arborescent tangle to a more manageable level.
 
-`````{prf:definition} Bonahon and Seibenmann Section 12.8.2 [@bonahonNewGeometricSplittings2016]
+`````{prf:definition} Bonahon and Siebenmann Section 12.8.2 [@bonahonNewGeometricSplittings2016]
 :label: wpt-equi-def-abcanon
 
 A weighted planar tree is called a **canonical weighted planar
@@ -97,13 +97,13 @@ conditions forces us globally choose a convention for moves as in
 @minimal-fig-nonmin. We will adopt the $\LP+\RP$ as our prefered form.
 ```
 
-Bonahon and Seibenmann show in @wpt-equi-lemma-exist that these conditions are
+Bonahon and Siebenmann show in @wpt-equi-lemma-exist that these conditions are
 sufficient to realize every arborescent tangle. In fact, every weighted planar
 tangle tree can be turned into a CWPTT by a series of moves in an extended
 calculus on weighted planar trees [@bonahonNewGeometricSplittings2016]. We call
 this process **canonization** of a weighted planar tangle tree.
 
-```{prf:corollary} Existance of CWPTT, Bonahon and Seibenmann Corollary 12.20 [@bonahonNewGeometricSplittings2016]
+```{prf:corollary} Existance of CWPTT, Bonahon and Siebenmann Corollary 12.20 [@bonahonNewGeometricSplittings2016]
 :label: wpt-equi-lemma-exist
 
 Every arborescent tangle is obtained by plumbing operations from
@@ -118,10 +118,10 @@ the extended calculus of weighted planar trees into a negative CWPTT
 positive CWPTT. Second, we note that a CWPTT can be both positive and negative,
 we will refer to these trees as **neutral** trees.
 
-Bonahon and Seibenmann give a classification of arborescent tangles via moves on
+Bonahon and Siebenmann give a classification of arborescent tangles via moves on
 CWPTT.
 
-```{prf:theorem} Classification Theorem for Canonical Weighted Planar Tangle Trees, Bonahon and Seibenmann theorem 12.21 [@bonahonNewGeometricSplittings2016]
+```{prf:theorem} Classification Theorem for Canonical Weighted Planar Tangle Trees, Bonahon and Siebenmann theorem 12.21 [@bonahonNewGeometricSplittings2016]
 :label: wpt-equi-thm-classi
 Consider two positive (or negative) CWPTT
 $\Gamma^{\,}$ and $\Gamma^\prime$, with free bonds labeled by
@@ -131,11 +131,11 @@ $\Gamma^\prime$ can be deduced from each other by a sequence of moves
 ($F_1$), ($F_2$), ($F_3^\prime$), and the modified ring moves $\LP\pm R\RP$.
 ```
 
-Further, Bonahon and Seibenmann describe an algorithm for producing these
+Further, Bonahon and Siebenmann describe an algorithm for producing these
 sequences of moves. This algorithm will be useful to us in
 @sec-rlitt-generation.
 
-```{prf:theorem} Bonahon and Seibenmann theorem 12.19 [@bonahonNewGeometricSplittings2016]
+```{prf:theorem} Bonahon and Siebenmann theorem 12.19 [@bonahonNewGeometricSplittings2016]
 :label: wpt-equi-cor-algo
 There exists an effective algorithm which, for any weighted planar tree $\Gamma$
 with free bonds labeled by elements of $V_4$, alters $\Gamma$ by a sequence of

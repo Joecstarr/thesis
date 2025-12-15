@@ -3,10 +3,10 @@
 Our final step at identifying a preferred representative CWPTT of an arborescent
 tangle is to show that a $\LP +\RP$-RLITT is unique in the set of CWPTT
 representing an arborescent tangle. We will utilize the key proposition from
-Bonahon and Seibenmann [@bonahonNewGeometricSplittings2016] a consequence of
+Bonahon and Siebenmann [@bonahonNewGeometricSplittings2016] a consequence of
 @wpt-equi-thm-classi and @wpt-equi-cor-algo.
 
-```{prf:proposition} Bonahon and Seibenmann proposition 12.2 [@bonahonNewGeometricSplittings2016]
+```{prf:proposition} Bonahon and Siebenmann proposition 12.2 [@bonahonNewGeometricSplittings2016]
 :label: rli-const-prop-not_iso
 Let $\Gamma$ and $\Gamma^\prime$ be $\LP +\RP$-CWPTT tangle trees with isomorphic
 underlying abstract trees. Further, let $\varphi$ be a sequence of moves of the

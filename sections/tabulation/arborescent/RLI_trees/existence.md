@@ -23,7 +23,7 @@ Every arborescent tangle has a right leaning CWPTT representative.
 Let $\Gamma$ be a CWPTT representative for a tangle $T$. If every weight
 $w_i$ of $\Gamma$ is in the highest indexed reigon of $\Gamma_{w_i}$, we
 are done. Otherwise, we will follow a similar algorithm to that outlined by
-Bonahon and Seibenmann [@bonahonNewGeometricSplittings2016] for distinguishing
+Bonahon and Siebenmann [@bonahonNewGeometricSplittings2016] for distinguishing
 CWPTT. Let $w_i$ be the weight for the lowest indexed vertex $v_i$ not in its
 highest indexed reigon of $\Gamma_{v_i}$. With move $F_3^\prime$ shift $w_i$ so
 that it lies in the highest indexed reigon. Further, choose to shift $w_i$

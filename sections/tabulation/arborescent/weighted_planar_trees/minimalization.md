@@ -48,7 +48,7 @@ understanding of the moves in the calculus of arborescent tangles to those that
 alter weights arithmetically. These moves are related to the arithmetic
 operations on continued fractions [@bonahonNewGeometricSplittings2016].
 
-````{prf:definition} Bonahon and Seibenmann Section 12.3 [@bonahonNewGeometricSplittings2016]
+````{prf:definition} Bonahon and Siebenmann Section 12.3 [@bonahonNewGeometricSplittings2016]
 :label: minimal-def-arithmetic
 When carrying out the following **arithmetic moves** the relative positions of weights are
 critical to the invariance of the underlying knot pair.

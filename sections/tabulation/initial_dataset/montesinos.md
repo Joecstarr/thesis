@@ -13,7 +13,7 @@ With the rational tangles in hand, we wish to utilize that data to enumerate
 additional tangles. One way we have seen to build simple objects into complex
 objects is to combine two tangles with the $+$ or $\vee$ operation. To keep
 complexity under control, we start with combining tangles with repeated $+$ sum.
-When all summands, $R_i$ in equation @mont-math-def, are rational or integral,
+When all summands, $R_i$ in equation @mont-math-def, are rational,
 we call the result of the sum a **Montesinos Tangle**
 [@ernstTANGLEEQUATIONS1996;@bonahonNewGeometricSplittings2016].
 
@@ -25,14 +25,14 @@ R_0+R_1+\cdots+R_n
 ```
 
 ```{note}
-Under this characterization of the Montesinos tangles, every rational and
-integral tangle is also a Montesinos tangle with a single summand.
+  Under this characterization of the Montesinos tangles, every rational tangle
+  including the integral tangles are Montesinos tangles with a single summand.
 ```
 
 ##### Unique Representative
 
 Next, we develop a classification of Montesinos tangles, allowing us to tell two
-Montesinos tangles apart. For each rational or integral summand $R_i$ in a
+Montesinos tangles apart. For each rational summand $R_i$ in a
 Montesinos tangle, we have four possibilities:
 
 1. $R_i$'s canonical twist vector is positive and ends in $0$
@@ -47,11 +47,19 @@ summand, seen in @mont-ex-flypesimple. When this process is carried out for each
 summand of the type in cases two and four, the resulting summands all fall into
 cases one and three.
 
-```{figure} ../../media/fig-mont.svg
+````{figure} ../../media/fig-mont.svg
 :label: mont-ex-flypesimple
-A Montesinos tangle $\LB1\ 2\ 2\RB+\LB \m1\ \m2\ 0\RB+\LB \m3\ \m2\ \m1\RB+\LB 1\ 2\ 0\RB+\LB1\ 2\ 2\RB$
-simplifying to $\LB 1\ 2\ 0\RB+\LB \m 1\ \m 2\ 0\RB+\LB \m3\ \m 2\ 0\RB+\LB1\ 2\ 2\RB+\LB1\ 2\ 0\RB+\LB 3\RB$
+A Montesinos tangle 
+```{math}
+:enumerated: false
+\LB1\ 2\ 2\RB+\LB \m1\ \m2\ 0\RB+\LB \m3\ \m2\ \m1\RB+\LB 1\ 2\ 0\RB+\LB1\ 2\ 2\RB
 ```
+simplifying to 
+```{math}
+:enumerated: false
+\LB 1\ 2\ 0\RB+\LB \m 1\ \m 2\ 0\RB+\LB \m3\ \m 2\ 0\RB+\LB1\ 2\ 2\RB+\LB1\ 2\ 0\RB+\LB 3\RB
+```
+````
 
 We will now pare down to a single possibility, case one. Consider a summand
 $R_i$ in case three, meaning $\m 1 <F\LP R_i\RP<0$ except for $R_n$, which may
@@ -70,11 +78,11 @@ $F\LP\LB 3\ 2\ \m1\RB\RP=\frac{\m4}{7}$ showing the tangles to be isotopic.
 ```
 
 This ensures that the fraction is still negative but will allow us to flype the
-terminal horizontal integral tangle to the right. Rockett and Sz\"usz give a
+terminal horizontal integral tangle to the right. Rockett and Szüusz give a
 lemma that establishes the existence of such a twist vector for each rational
 number.
 
-```{prf:lemma} Rockett and Sz"usz Page 3 [@rockettContinuedFractions1998]
+```{prf:lemma} Rockett and Szüsz, Page 3 [@rockettContinuedFractions1998]
 :label: mont-lem-other_cfrac
 Every extended rational number has a continued fraction with positive integer entries
 except for the first (rightmost twist vector entry) which is an integer.
@@ -83,11 +91,12 @@ except for the first (rightmost twist vector entry) which is an integer.
 We have now shown that each case (2,3,4) can be transformed into the first case,
 and we can define a canonical form for Montesinos tangles.
 
-````{prf:theorem}Bonahon and Seibenmann Theorem 11.7 [@bonahonNewGeometricSplittings2016]
+````{prf:theorem}Bonahon and Siebenmann, Theorem 11.7 [@bonahonNewGeometricSplittings2016]
 
 Every non-rational Montesinos tangle $T$ admits a canonical diagram satisfying
 the following construction:
 ```{math}
+:enumerated: false
 T \cong R_0+\cdots+R_m+\frac{k}{1}
 ```
 where each $R_i \cong \frac{p_i}{q_i}$ is a rational subtangle in canonical form with
@@ -106,13 +115,17 @@ computation. However, with eyes on future computational work, we will generalize
 our notation to increase reusability and the efficiency of storage.
 
 Montesinos tangles are simple forms of the algebraic tangles (@def-algebraic),
-so we will build a notational strategy for general algebraic tangles. The
+so we will build a notational strategy for general algebraic tangles. 
+The strategy seen here is similar to those found in Conolly, Caudron
+, and Gren, Sulkowska, and,
+Gabrovšek [@connollyClassificationTabulation2string2021;@caudron1982classification;@gren2025classificationalgebraictangles]. The
 theoretical notation for algebraic tangles is outlined in
-@subsec-tangle_operations and seen in @mont-ex-tree. We can simplify the
-notation, without losing fidelity, by substituting the integral tangle summands
-for rational tangle twist vectors. Additionally, we can improve the storage
-overhead by storing the tree as a string in Polish notation
-[@lukasiewiczElementyLogikiMatematycznej1929]. Storing in Polish notation allows
+@subsec-tangle_operations and seen in @mont-ex-tree. 
+We can simplify the notation, without losing fidelity, by substituting the
+integral leaf tangles for rational tangle twist vectors. Additionally, we can
+improve the storage overhead by storing the tree as a string in Polish notation
+[@lukasiewiczElementyLogikiMatematycznej1929]. Storing in Polish
+notation allows
 us to drop all the parentheses from our notation, saving two bytes in each
 instance.
 
@@ -123,20 +136,23 @@ instance.
 
 Algebraically:
 
-$\LB1\ 2\ 0\RB+\LP\LB2\ 1\ 0\RB+\LB2\ 2\ 0\RB\RP$
-
+```{math}
+:enumerated: false
+\LB1\ 2\ 0\RB+\LP\LB2\ 1\ 0\RB+\LB2\ 2\ 0\RB\RP
+```
 In polish notation:
-
-$+\LB1\ 2\ 0\RB+\LB2\ 1\ 0\RB\LB2\ 2\ 0\RB$
-
+```{math}
+:enumerated: false
++\LB1\ 2\ 0\RB+\LB2\ 1\ 0\RB\LB2\ 2\ 0\RB
+```
 As an algebraic tangle tree:
-   ```{mermaid}
+```{mermaid}
    flowchart TD
-   id0("$$+$$")-->id1("[1 2 0]")
+   id0("+")-->id1("[1 2 0]")
    id0-->id2
-   id2("$$+$$")-->id3("[2 1 0]")
+   id2("+")-->id3("[2 1 0]")
    id2-->id4("[2 2 0]")
-   ```
+```
 ````
 
 ##### Generation
@@ -151,7 +167,7 @@ To start, we need a mechanism that allows us to select all possible combinations
 of rational tangles with crossing numbers that sum to our target. For a
 Montesinos tangle $T$, the set of rational components $\LS R_i\RS_i^n$ combined
 with the integral component $k$ corresponds to an ordered list of crossing
-numbers as in equation @mont-math-orderedlist.
+numbers as in @mont-math-orderedlist.
 
 ```{math}
 :label: mont-math-orderedlist
@@ -167,8 +183,10 @@ Generation for all Montesinos tangles of a given crossing number at this point
 can be broken down into two steps:
 
 1. Generate all stencils
-2. Fill in the stencils with all rational tangles whose fraction is in the unit
-   interval (plus an integral tangle in the rightmost position).
+2. Fill in the stencils with all rational tangles of the
+    appropriate crossing
+    number whose fraction is in the unit interval (plus an integral
+    tangle in the rightmost position)
 
 For the first step, we require a mechanism for breaking an integer into all
 possible combinations where the parts sum to the integer. Luckily, we have
@@ -195,9 +213,12 @@ $\!\,$The set of stencils for crossing number 5:
 | $3\ 2$ | $2\ 3$ |
 ```
 
-For the second step, we insert unit interval rational tangles (and an integral
-tangle when the stencil has length greater than two) from our existing list,
-creating all combinations of input tangles given by the stencil.
+For the second step, for each entry in the stencil we
+create a list of rational tangles in the unit interval with that entry for a
+crossing number. For the rightmost entry of the stencil we also include the
+horizontal integral tangles with crossing number equal entry. This creates all
+combinations of input tangles given by the stencil.
+
 
 ```{prf:example}
 :label: ex-mont-stencil_insert
@@ -211,7 +232,7 @@ The set of rational tangles of crossing numbers two and three:
 | $[2] $      | $[1\ 2\ 0] $ |
 |             | $[3] $       |
 
-$\!\,$The set of stencils for crossing number five, with rational tangles inserted :
+The set of stencils for crossing number five, with rational tangles inserted :
 
 | $3\ 2$                 | $2\ 3$               |
 | ---------------------- | ---------------------- |
@@ -235,9 +256,9 @@ computationally generating all Montesinos tangles up to a given crossing number.
 
 **Routine**
 
-1. Generate $O$ the stencil of all $1$s for $n$
+1. Generate $O$ the 1's twist vector as in  @rational-math-1s for $n$
 1. for $i=0$ to $2^{n-1}$
-   1. Transform $i$ into binary form
+   1. Transform $i$ into its binary representation
    2. Exchange as in @rational-math-1plus digits of $i$ with spaces where $i$
       is $O$ and with $+$ where $i$ is $1$
    3. Apply operations to the $1$s vector and store the resulting vector as $O_r$
@@ -257,11 +278,11 @@ computationally generating all Montesinos tangles up to a given crossing number.
 
 **Routine**
 
-1. Execute @find-mont-sten for $n$
-1. for each composition $c$ in in $C$
+1. Execute @find-mont-sten for $n$ and store in $S$
+1. for each stencil $s$ in in $S$
     1. Retrieve lists $L=\LS L_i\RS_i^n$ of rational tangles for each stencil
-       entry $c_i$.
-    1. Add to the $L_n$ list the integral tangle $c_n$
+       entry $s_i$.
+    1. Add to the $L_n$ list the integral tangle $s_n$
     1. While there is a list in $L$ that is not exhausted.
         1. Construct and store a Montesinos tangle from list entries.
 ```

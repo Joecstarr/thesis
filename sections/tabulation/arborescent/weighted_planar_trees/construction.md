@@ -7,18 +7,18 @@
 #### Construction of Arborescent Knots from Weighted Planar Trees
 <!-- prettier-ignore-end -->
 
-This subsection begins with an introduction to Bonahon and Seibenmann's
+This subsection begins with an introduction to Bonahon and Siebenmann's
 [@bonahonNewGeometricSplittings2016] construction of arborescent knots and
 tangles in the smooth setting. This is followed by the development of a
 combinatorial representation for arborescent knots and tangles
 [@bonahonNewGeometricSplittings2016]. We deviate slightly from Bonahon and
-Seibenmann's introduction but ultimately arrive at the same structure. In our
+Siebenmann's introduction but ultimately arrive at the same structure. In our
 introduction we develop partial solutions, then progressively modify those
 partial solutions until they fit our needs. Next, we describe Bonahon and
-Seibenmann's [@bonahonNewGeometricSplittings2016] operations on the
+Siebenmann's [@bonahonNewGeometricSplittings2016] operations on the
 combinatorial structure, which allow us to systematically modify the structure,
 without changing the topology. This subsection finishes with the classification
-of arborescent knots and tangles given by Bonahon and Seibenmann
+of arborescent knots and tangles given by Bonahon and Siebenmann
 [@bonahonNewGeometricSplittings2016] as well as our extension from a global to
 local viewpoint.
 
@@ -162,7 +162,7 @@ line of reasoning leading to a combinatorial encoding strategy
 arborescent knots and tangles. The line of reasoning starts by presenting the
 required data of arborescent knots and tangles that any combinatorial
 representation must encode. We then propose partial solutions, each
-progressively closer to the full encoding described by Bonahon and Seibenmann
+progressively closer to the full encoding described by Bonahon and Siebenmann
 [@bonahonNewGeometricSplittings2016]. As we will see, the encoding strategy
 ultimately takes the form of a modified rooted plane tree, a specialized flavor
 of graph theoretic tree.
@@ -178,7 +178,7 @@ following:
     (plumbing squares)
 
 Explicit details expanding on why these two pieces of information are essential
-can be found in Bonahon and Seibenmann [@bonahonNewGeometricSplittings2016]. We
+can be found in Bonahon and Siebenmann [@bonahonNewGeometricSplittings2016]. We
 will see in the following subsections ways in which these data are essential,
 albeit in specialized cases.
 
@@ -310,7 +310,7 @@ We can see a full example of a tree with its associated plumbed construction in
 @wpt-construc-fig-27. We call this fully realized combinatorial recipe for an
 arborescent knot a **weighted planar tree**.
 
-```{prf:definition} Bonahon and Seibenmann page 143[@bonahonNewGeometricSplittings2016]
+```{prf:definition} Bonahon and Siebenmann page 143[@bonahonNewGeometricSplittings2016]
 A rooted plane tree $\Gamma$ augmented with weights is called a
 **weighted planar tree**.
 ```
@@ -392,11 +392,11 @@ information takes the form of labels from the members of $V_4$ of the Klein
 four-group $\iota,\xi,\zeta,\eta$. Each of these labels corresponds to a
 rotation of the Conway sphere around an axis in $\R^3$, as seen in
 @wpt-construc-fig-v_4rotations and @wpt-construc-fig-k4g. Full details for the
-manifold theory underpinning these markings are found in Bonahon and Seibenmann
+manifold theory underpinning these markings are found in Bonahon and Siebenmann
 [@bonahonNewGeometricSplittings2016]. We call such a labeled tree a **weighted
 planar tangle tree**.
 
-```{prf:definition}Bonahon and Seibenmann Page 165 [@bonahonNewGeometricSplittings2016]
+```{prf:definition}Bonahon and Siebenmann Page 165 [@bonahonNewGeometricSplittings2016]
 A weighted planar tree $\Gamma$ with free bonds labeled in $V_4$ is called a
 ** weighted planar tangle tree (WPTT)**.
 ```
@@ -507,13 +507,13 @@ Ring Tangle
 We now classify each vertex into one of two classes, the essential vertices and
 the non-essential vertices.
 
-```{prf:definition} Bonahon and Seibenmann page 159[@bonahonNewGeometricSplittings2016]
+```{prf:definition} Bonahon and Siebenmann page 159[@bonahonNewGeometricSplittings2016]
 :label: apn-def-2
 We define an **essential vertex** as any vertex with valence
 greater than $3$.
 ```
 
-```{prf:definition} Bonahon and Seibenmann page 159[@bonahonNewGeometricSplittings2016]
+```{prf:definition} Bonahon and Siebenmann page 159[@bonahonNewGeometricSplittings2016]
 :label: apn-def-3
 
 A vertex is called non-essential if it has valence $0,1,2$.
@@ -536,7 +536,7 @@ non-essential in blue
 The final part of the anatomy of a tree we will consider is the **sticks** of a
 tree.
 
-```{prf:definition} Bonahon and Seibenmann page 159[@bonahonNewGeometricSplittings2016]
+```{prf:definition} Bonahon and Siebenmann page 159[@bonahonNewGeometricSplittings2016]
 :label: wpt-construc-def-sticks_of_a_tree
 Let $\Gamma$ be a weighted planar tree and $\LS b_i\RS$ be the set of essential
 vertices of $\Gamma$ including their bonds (half-edges). We call the
@@ -585,7 +585,7 @@ A stick realized as a integral` tangle.
 ###### Rational Tangles
 <!-- prettier-ignore-end -->
 
-Bonahon and Seibenmann [@bonahonNewGeometricSplittings2016] give a
+Bonahon and Siebenmann [@bonahonNewGeometricSplittings2016] give a
 correspondence between stick tangle trees (stick with a single free bond) and
 Conway's rational tangles [@conwayEnumerationKnotsLinks1970]. An example of the
 correspondence can be seen in @wpt-construc-fig-rat.

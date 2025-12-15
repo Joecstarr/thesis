@@ -20,7 +20,7 @@ of this propagates to the descendants of the subtree attached to the bond
 (plumbing square) but leaves all other bonds and weights in the local view
 unchanged.
 
-````{prf:definition} Bonahon and Seibenmann Section 12.7.3 [@bonahonNewGeometricSplittings2016]
+````{prf:definition} Bonahon and Siebenmann Section 12.7.3 [@bonahonNewGeometricSplittings2016]
 :label: wpt-moves-def-f3p_move
 
 The **$F_3^\prime$ move** on a weighted arborescent tree moves a weight $w$ as in
@@ -44,9 +44,9 @@ of the vertex.
 ````
 
 The $F_3^\prime$ move is a derivative of the more general $F_3$ move described
-in Bonahon and Seibenmann [@bonahonNewGeometricSplittings2016].
+in Bonahon and Siebenmann [@bonahonNewGeometricSplittings2016].
 
-````{prf:definition} Bonahon and Seibenmann Section 12.7.1 [@bonahonNewGeometricSplittings2016]
+````{prf:definition} Bonahon and Siebenmann Section 12.7.1 [@bonahonNewGeometricSplittings2016]
 :label: wpt-moves-def-f3_move
 
 
@@ -173,7 +173,7 @@ $F_3^\prime$.
 
 Our second move, $F_2$, is a special application of the general $F_3$ move.
 
-```{prf:definition} Bonahon and Seibenmann Section 12.7.1 [@bonahonNewGeometricSplittings2016]
+```{prf:definition} Bonahon and Siebenmann Section 12.7.1 [@bonahonNewGeometricSplittings2016]
 :label: uc-c-f2-d-f2_t
 
 The **$F_2$ move** on a weighted arborescent tangle tree reverses the cyclic order
@@ -216,7 +216,7 @@ as $F_{2e}$ and odd as $F_{2o}$.
 The third of the $F$ moves is the $F_1$ move, which is a repeated application of
 the $F_2$ move.
 
-```{prf:definition} Bonahon and Seibenmann Section 12.7.1 [@bonahonNewGeometricSplittings2016]
+```{prf:definition} Bonahon and Siebenmann Section 12.7.1 [@bonahonNewGeometricSplittings2016]
 :label: uc-c-f1-d-f1_t
 
 The **$F_1$ move** on a weighted arborescent tangle tree reverses the cyclic order
@@ -242,7 +242,7 @@ $R^-$ on on a tangle representation of a tree.
 
 ```
 
-````{prf:definition} Bonahon and Seibenmann Section 12.3 [@bonahonNewGeometricSplittings2016]
+````{prf:definition} Bonahon and Siebenmann Section 12.3 [@bonahonNewGeometricSplittings2016]
 :label: wpt-moves-def-rm
 
 
@@ -261,7 +261,7 @@ tangle. This corresponds to the ring subtree in @wpt-moves-def-rm moving from
 top to bottom of the orange portion of the tree.
 ```
 
-````{prf:definition} Bonahon and Seibenmann Section 12.3 [@bonahonNewGeometricSplittings2016]
+````{prf:definition} Bonahon and Siebenmann Section 12.3 [@bonahonNewGeometricSplittings2016]
 :label: wpt-moves-def-rp
 
 The **$R^+$** replaces the left of @rmove-n-pic with the right, leaving the rest of the tree unchanged.
