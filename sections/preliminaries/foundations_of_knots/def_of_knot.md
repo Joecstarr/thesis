@@ -49,6 +49,7 @@ vertices and edges of the shadow as the strands between the overlaps.
 
 ```{figure} ../../media/knot_shadow.svg
 :label: fig-knot_def-shadow
+:width: 70%
 A schematic diagram demonstrating a knot (orange) and its
     shadow (grey).
     Imagine a light shining from above the knot onto a piece of paper. The knot

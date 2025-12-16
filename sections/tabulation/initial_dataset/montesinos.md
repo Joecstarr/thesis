@@ -121,6 +121,7 @@ in each instance.
 ````{prf:example}
 :label: mont-ex-tree
 ```{image}../../media/mont.svg
+:width: 50%
 ```
 
 Algebraically:
@@ -135,6 +136,7 @@ In polish notation:
 +\LB1\ 2\ 0\RB+\LB2\ 1\ 0\RB\LB2\ 2\ 0\RB
 ```
 As an algebraic tangle tree:
+
 ```{mermaid}
    flowchart TD
    id0("+")-->id1("[1 2 0]")
@@ -142,6 +144,7 @@ As an algebraic tangle tree:
    id2("+")-->id3("[2 1 0]")
    id2-->id4("[2 2 0]")
 ```
+
 ````
 
 #### Generation

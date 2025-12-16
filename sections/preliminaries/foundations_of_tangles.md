@@ -53,11 +53,13 @@ two crossings but not equivalent by Reidemeister moves.
 
 ```{figure} ../../media/fig-tang_eq-fixed-2.svg
 :label: fig-tang_eq-fixed-2
+:width: 30%
 A horizontal integral tangle with two crossings.
 ```
 
 ```{figure} ../../media/fig-tang_eq-fixed-v2.svg
 :label: fig-tang_eq-fixed-v2
+:width: 30%
 A vertical integral tangle with two crossings.
 ```
 Two nonequivalent tangles with two crossings.

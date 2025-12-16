@@ -49,6 +49,7 @@ operation, that is, $\star_0$ is written simply as $\star$. We call $\Gamma_r$ t
 ````{prf:example}
 :label:  rli-gen-fig-scion_grafting
 ```{figure} ../../media/bands/arbor_graph_grafting.svg
+:width: 50%
 
 ```
 Grafting a scion $\Gamma_s$ to a rootstock $\Gamma_r$ with $\Gamma_r\star_3\Gamma_s$
@@ -122,6 +123,7 @@ the scion after grafting; this can be seen in
 
 ```{figure} ../../media/bands/awptt_graph_pregraft.svg
 :label:  rli-gen-fig-scion_grafting_wth_weight_1
+:width: 60%
 
 
 A rootstock $\Gamma_r=\iota\LP \LP2\LP2\LB3\RB2\LB -3\RB3\RP \LB3\RB4\RP 4\RP$ in grey and scion $\Gamma_s=\iota\LB 10\ 9 \RB$ in orange. Each vertex is
@@ -130,6 +132,7 @@ labeled with its index in the order on $\Gamma$.
 
 ```{figure} ../../media/bands/awptt_graph_grafted.svg
 :label:  rli-gen-fig-scion_grafting_wth_weight_2
+:width: 60%
 
 
 Grafting at $v_2$ yields $\Gamma_r\star_2\Gamma_s=\iota\LP \LP2\LP2\LB3\RB2\LB -3\RB\LB 10\ 9 \RB 3\RP \LB3\RB4\RP 4\RP$

@@ -33,6 +33,7 @@ right and bottom twists is the **twist vector** (@rational-def-twistvector) of t
 
 ```{figure} ../../media/fig-rat_tang-crank_many.svg
 :label: fig-rat_tang-crank_many
+:width: 70%
 The set of alternating turns building a rational tangle $\LB3\ 2\ 1\RB$.
 ```
 

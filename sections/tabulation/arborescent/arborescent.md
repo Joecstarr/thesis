@@ -54,16 +54,17 @@ deformation in $S^3$.
 
 ```{figure}../../media/arborescent_knot.svg
 :label: fig-arborescent_part
-
+:width: 70%
 
 A collection of Conway circles forming what we call an
 **arborescent vignette**.
 ```
 ````
 
+````{figure}
+:label: fig-arborescent_vignette_99
 ```{figure}../../media/arborescent_band.svg
 :label: fig-arborescent_band
-
 
 The arborescent vignette from @fig-arborescent_part seen with Conway spheres.
 ```
@@ -71,9 +72,10 @@ The arborescent vignette from @fig-arborescent_part seen with Conway spheres.
 ```{figure}../../media/vin_1.svg
 :label: fig-arborescent_vignette_1
 
-
 The arborescent vignette showing a $1$ crossing tangle to be arborescent.
 ```
+Arborescent vignettes.
+````
 
 ```{note}
 The $F_i$ in @prelim-def-arborescent_knot are disjoint but may sit inside

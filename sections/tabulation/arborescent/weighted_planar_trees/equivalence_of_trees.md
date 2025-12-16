@@ -20,26 +20,26 @@ $V_4$ and satisfies the following conditions:
     non-zero.
 -   **Stick Conditions**
 
-    1. **(S.0)** On any stick the weights of the vertices are non-zero except for end vertices that have a bond free in $\Gamma$ and for the case $\Gamma$ is @wpt-construc-fig-stick_cond-1 or @wpt-construc-fig-stick_cond-2.
-    2.**(S.A)**  The non-zero weights along any stick are of alternating sign.
-    3. **(S.1)** No end vertex of a stick has weight $\pm 1$ unless it has a bond free in $\Gamma$.
-
+    1. **(S.0)** On any stick the weights of the vertices are non-zero except for end vertices that have a bond free in
+        $\Gamma$ and for the case $\Gamma$ is @wpt-construc-fig-stick_cond-1 or @wpt-construc-fig-stick_cond-2.
     ````{figure}
-    :label: wpt-construc-fig-stick_cond
 
     ```{figure} ../../media/bands/conditions/stick/0.svg
     :label: wpt-construc-fig-stick_cond-1
-    :width: 100px
+    :width: 2%
     The zero tangle.
     ```
 
     ```{figure} ../../media/bands/conditions/stick/00.svg
     :label: wpt-construc-fig-stick_cond-2
-    :width: 100px
+    :width: 2%
     The infinity tangle.
     ```
 
     ````
+    2.**(S.A)**  The non-zero weights along any stick are of alternating sign.
+    3. **(S.1)** No end vertex of a stick has weight $\pm 1$ unless it has a bond free in $\Gamma$.
+
 -   One of:
 
     -   **Positivity Condition (P)** Except for those with a free bond, there are no sticks in $\Gamma$ of the forms
@@ -50,13 +50,13 @@ $V_4$ and satisfies the following conditions:
 
         ```{figure} ../../media/bands/conditions/positivity/am2.svg
         :label: wpt-construc-fig-positivity_cond-1
-        :width: 100px
+        :width: 5%
         The $-2$ integral tangle.
         ```
 
         ```{figure} ../../media/bands/conditions/positivity/am2a.svg
         :label: wpt-construc-fig-positivity_cond-2
-        :width: 100px
+        :width: 5%
         A fully open stick with $-2$ crossings.
         ```
 
@@ -69,13 +69,13 @@ $V_4$ and satisfies the following conditions:
 
         ```{figure} ../../media/bands/conditions/negativity/a2.svg
         :label: wpt-construc-fig-negativity_cond-1
-        :width: 100px
+        :width: 5%
         The $2$ integral tangle.
         ```
 
         ```{figure} ../../media/bands/conditions/negativity/a2a.svg
         :label: wpt-construc-fig-negativity_cond-2
-        :width: 100px
+        :width: 5%
         A fully open stick with $2$ crossings.
         ```
 

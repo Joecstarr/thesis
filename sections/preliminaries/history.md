@@ -18,6 +18,7 @@ contained prime knots (described in @subsec-prime_knot) up to seven crossings
 
 ```{figure} ../../media/knots_to_7.svg
 :label: fig-hist-7table
+:width: 70%
 A table of the first seven prime knots. [@schareinInteractiveTopologicalDrawing1998]
 ```
 

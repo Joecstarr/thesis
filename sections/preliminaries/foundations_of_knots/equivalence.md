@@ -39,6 +39,7 @@ opposite direction.
 
 ```{figure} ../../media/reidemeister_move/R1.svg
 :label: fig-knot_def-r1
+:width: 50%
 Executing the
     two flavors of type I move on a knot diagram. On the left, we have
     a twist into the plane, also called a positive or left-handed
@@ -54,6 +55,7 @@ Similarly to the type I move, the type II move can be freely undone by pulling t
 
 ```{figure} ../../media/reidemeister_move/R2.svg
 :label: fig-knot_def-r2
+:width: 50%
 Executing the two type II moves with a pair of strands. In the top image, the
 bottom strand is pulled over the upper. In the bottom image, the bottom strand
 is pulled under the top strand.
@@ -72,6 +74,7 @@ it across the center crossing. As with type I and type II, we're free to reverse
 
 ```{figure} ../../media/reidemeister_move/R3.svg
 :label: fig-knot_def-r3
+:width: 50%
 Executing the three type III moves with a set of three strands. Top
 to bottom, the third strand is:
 * on top of the crossing strands

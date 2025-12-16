@@ -32,6 +32,7 @@ plumbing squares can be seen in @wpt-construc-fig-band_sum.
 
 ```{figure} ../../media/bands/bnd_sum_1.svg
 :label: wpt-construc-fig-band_sum-1
+:width: 70%
 
 
 A band with a plumbing square facing the viewer.
@@ -39,6 +40,7 @@ A band with a plumbing square facing the viewer.
 
 ```{figure} ../../media/bands/bnd_sum_2.svg
 :label: wpt-construc-fig-band_sum-2
+:width: 70%
 
 
 A band with the plumping square facing away from the viewer. We are looking through the band.
@@ -61,12 +63,14 @@ plumbing as well as a local picture for plumbing can be seen in @wpt-construc-fi
 
 ```{figure} ../../media/bands/bnd_sum_sum.svg
 :label: wpt-construc-fig-band_sum_opo-1
+:width: 50%
 
 Plumbed bands
 ```
 
 ```{figure} ../../media/bands/bnd_sum_patch.svg
 :label: wpt-construc-fig-band_sum_opo-2
+:width: 40%
 
 Plumbed bands
 ```
@@ -83,12 +87,14 @@ determined by their position relative to the plumbing squares.
 :label:wpt-construc-fig-111
 ```{figure} ../../media/bands/arbor_band_with_twist.svg
 :label: wpt-construc-fig-6
+:width: 50%
 
 Band with two negative half twists<br/> and three plumbing squares.
 ```
 
 ```{figure} ../../media/bands/arbor_band_with_twist_2.svg
 :label: wpt-construc-fig-25
+:width: 50%
 
 Band with three positive half twists and one plumbing square.
 ```
@@ -125,6 +131,7 @@ defined in @subsubsec-opo-insert. These polygonal tangles contain portions that 
 
 ```{figure} ../../media/bands/band_cycle.svg
 :label: wpt-construc-fig-cycle
+:width: 50%
 
 A collection of bands plumbed in such a way that the last band is plumbed to
 the first band in a cycle.
@@ -207,12 +214,14 @@ of increasing or decreasing yields a unique realization of a rooted plane tree i
 
 ```{figure} ../../media/bands/arbor_graph_split_local_inc.svg
 :label: wpt-construc-fig-order_1
+:width: 30%
 
 The local picture of a vertex with child labels increasing in anti-clockwise order.
 ```
 
 ```{figure} ../../media/bands/arbor_graph_split_local_dec.svg
 :label: wpt-construc-fig-order_2
+:width: 30%
 
 The local picture of a vertex with child labels decreasing in anti-clockwise order.
 ```
@@ -248,12 +257,14 @@ Two commonly seen orderings of a tree are the breadth and depth
 
 ```{figure} ../../media/bands/rpt_order.svg
 :label: wpt-construc-fig-rptorder_1
+:width: 40%
 
 A rooted plane tree with ideal indexing. The index of each vertex is seen inside the vertex.
 ```
 
 ```{figure} ../../media/bands/rpt_order_ni.svg
 :label: wpt-construc-fig-rptorder_2
+:width: 40%
 
 A rooted plane tree with indexing that is not ideal. The index of each vertex is seen inside the vertex.
 ```
@@ -286,12 +297,14 @@ order, per @wpt-construc-fig-weights-with-index.
 
 ```{figure} ../../media/bands/arbor_graph_split_local_with_band.svg
 :label: wpt-construc-fig-7
+:width: 30%
 
 The local view of a vertex with the weights two, zero, and zero.
 ```
 
 ```{figure} ../../media/bands/arbor_graph_split_local_1.svg
 :label: wpt-construc-fig-weights-with-index
+:width: 30%
 
 The local view of a vertex with weight. Notice the index of the weights comes from the bond
 "before" it in the planar realized cyclic order.
@@ -312,12 +325,14 @@ A rooted plane tree $\Gamma$ augmented with weights is called a
 :label: wpt-construc-fig-114
 ```{figure} ../../media/bands/arbor_graph.svg
 :label: wpt-construc-fig-27
+:width: 50%
 
 The tree describing the plumbing of bands. Each vertex represents the band illustrated near it.
 ```
 
 ```{figure} ../../media/bands/arbor_bands.svg
 :label: wpt-construc-fig-28
+:width: 50%
 
 The realization by plumbing bands of the tree in @wpt-construc-fig-27
 ```
@@ -366,13 +381,14 @@ the root of the tree.
 
 ```{figure} ../../media/bands/arbor_tangle.svg
 :label: wpt-construc-fig-29
+:width: 60%
 
 The plumbing realization of an arborescent tangle.
 ```
 
 ```{figure} ../../media/bands/example_tangle.svg
 :label: wpt-construc-fig-tangle_trad
-
+:width: 30%
 
 With an isotopy of the tangle and inversion of the Conway circle given by the
 non-plumbed square we have the realization of @wpt-construc-fig-29 as a
@@ -396,12 +412,14 @@ found in Bonahon and Siebenmann [@bonahonNewGeometricSplittings2016]. We call su
 
 ```{figure} ../../media/v4_rotations_i.svg
 :label: wpt-construc-fig-k4g-rotationsi
+:width: 10%
 
 The identity rotation (no rotation)
 ```
 
 ```{figure} ../../media/v4_rotations.svg
 :label: wpt-construc-fig-k4g-rotations
+:width: 60%
 
 The effect of the $V_4$ rotations on each of the
 ```
@@ -418,23 +436,27 @@ A weighted planar tree $\Gamma$ with free bonds labeled in $V_4$ is called a
 
 ```{figure} ../../media/iota.svg
 :label: wpt-construc-fig-k4g-i
+:width: 20%
 
 $\iota$ for no rotation
 ```
 ```{figure} ../../media/zeta.svg
 :label: wpt-construc-fig-k4g-x
+:width: 20%
 
 $\xi$ rotates around the $X$-axis
 ```
 
 ```{figure} ../../media/eta.svg
 :label: wpt-construc-fig-k4g-y
+:width: 20%
 
 $\eta$ rotates around the $Y$-axis
 ```
 
 ```{figure} ../../media/xi.svg
 :label: wpt-construc-fig-k4g-z
+:width: 20%
 
 $\zeta$ rotates around the $Z$-axis
 ```
@@ -460,6 +482,7 @@ We will now describe the ring subtrees of a weighted planar tree, which locally 
 
 ```{figure} ../../media/bands/arbor_graph_ring.svg
 :label: wpt-construc-fig-17
+:width: 50%
 
 
 Positive and negative ring subtrees
@@ -469,6 +492,7 @@ Now, resolving the plumbing for the positive subtree, we arrive at bands as in @
 
 ```{figure} ../../media/bands/arbor_ring.svg
 :label: wpt-construc-fig-12
+:width: 70%
 
 Plumbed ring bands
 ```
@@ -478,6 +502,7 @@ Notice that the boundary of these plumbed bands has three components, as seen in
 
 ```{figure} ../../media/bands/arbor_ring_no_bnd.svg
 :label: wpt-construc-fig-13
+:width: 70%
 
 Ring boundary
 ```
@@ -489,6 +514,7 @@ $\text{NW}$, either the zero or infinity tangle with a ring.
 
 ```{figure} ../../media/bands/arbor_ring_tangle.svg
 :label: wpt-construc-fig-14
+:width: 30%
 
 Ring Tangle
 ```
@@ -554,6 +580,7 @@ stick**, and we call a vertex on the end of a stick an **end vertex**.
 
 ```{figure} ../../media/bands/sticks_open.svg
 :label: wpt-construc-fig-sticks
+:width: 40%
 
 From top to bottom, a closed, half-open, and an open stick. Each end vertex
 is colored in red.

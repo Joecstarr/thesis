@@ -86,3 +86,4 @@ site:
         favicon: ./book.png
         outline_maxdepth: 2
         hide_footer_links: true
+        style: ./custom.css

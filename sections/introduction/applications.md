@@ -25,6 +25,7 @@ consisting of two strands constructed from a sugar-phosphate connected to one of
 
 ```{figure} ../../media/dont_proc/DNA_chemical_structure.svg
 :label:fig-intro-dna_chemical_structure
+:width: 50%
 A schematic diagram demonstrating the structure of a dsDNA polymer (Ball CC BY-SA 2.5 via Wikimedia
   Commons [@priceballDNAChemicalStructure2007])
 ```
@@ -55,6 +56,7 @@ knotting problem is the enzyme type II topoisomerase [@albertsMolecularBiologyCe
 
 ```{figure} ../../media/dont_proc/Gyrase_structure_Dmitry_Sutormin_eng.png
 :label:fig-intro-topo2schem
+:width: 50%
 A schematic diagram of the enzyme type II topoisomerase. (Sutor CC BY-SA 4.0 via Wikimedia
     Commons [@sutorSchemeDNAGyrase])
 ```
@@ -64,6 +66,7 @@ cross, then moving the top double strand to the bottom, this action can be seen 
 
 ```{figure} ../../media/topo3.svg
 :label: fig-intro-topo
+:width: 70%
 Type II topoisomerase doing a crossing exchange. From top left to bottom
 right: 1) A crossing of two dsDNA segments. 2) The enzyme grabs the under segment.
 3) The enzyme splits the under segment. 4) The enzyme passes the over segments
@@ -82,11 +85,13 @@ knot (@fig-intro-circ_dna_fig) .
 
 ```{figure} ../../media/dna_circle.svg
 :label: fig-intro-dna_circle
+:width: 40%
 A schematic diagram of circular dsDNA.
 ```
 
 ```{figure} ../../media/sem_knot.png
 :label: fig-intro-sem_knot-png
+:width: 50%
 A scanning electron microscope image of knotted dsDNA (Arsuaga CC
 BY-ND [@arsuagaDNAKnotSeen2013]).
 ```
@@ -115,12 +120,14 @@ making these choices.
 
 ```{figure} ../../media/tangle_equation_start.svg
 :label: fig-intro-tangle_equation_start
+:width: 40%
 A knot diagram showing two areas containing knot data. The right side contains
 the crossing that type II topoisomerase will work on.
 ```
 
 ```{figure} ../../media/tangle_equation_result.svg
 :label: fig-intro-tangle_equation_result
+:width: 40%
 A knot diagram showing two areas containing knot data. The right side contains
 the crossing that type II topoisomerase has worked on.
 ```

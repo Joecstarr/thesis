@@ -28,6 +28,7 @@ model[@forsbergRelationshipSystemEngineering1991] (@fig-v-model).
 `````{figure}
 ```{figure} ../../media/software/extreme_programming.svg
 :label: fig-extreme-model
+:width: 40%
 The extreme programing agile life cycle[@donwellsExtremeProgrammingsvg2010].
 ```
 ```{figure} ../../media/software/scrum_process.svg
@@ -36,10 +37,12 @@ The scrum agile life cycle [@lakeworksScrumProjectManagement2008].
 ```
 ````{figure} ../../media/software/waterfall_process.drawio.svg
 :label: fig-waterfall-model
+:width: 80%
 The waterfall process model. Note that the model allows no back tracking.
 ````
 ````{figure} ../../media/software/v_process.drawio.svg
 :label: fig-v-model
+:width: 80%
 The V process model.
 ````
 Life cycle diagrams of two agile and two linear process models.
@@ -58,6 +61,7 @@ downstream phases to change requirements, as seen in @se-fig-modifiedv.
 
 ```{figure} ../../media/software/v_mod_process.svg
 :label: se-fig-modifiedv
+:width: 40%
 The feature V process model.
 ```
 

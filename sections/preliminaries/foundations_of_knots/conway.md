@@ -31,6 +31,7 @@ This can be seen by a straightforward isotopy of one into the other, @fig-jordan
 
 ```{figure} ../../media/conway_circ_isotopy.svg
 :label: fig-jordan_isotopy
+:width: 100%
 An isotopy turning Jordan curves into circles.
 ```
 
@@ -57,12 +58,14 @@ crossing (the $+1$ tangle @prelim-fig-basic_1).
 
 ```{figure} ../../media/0.svg
 :label: prelim-fig-basic_0
+:width: 30%
 
 A tangle with no crossings, called the 0 tangle.
 ```
 
 ```{figure} ../../media/1.svg
 :label: prelim-fig-basic_1
+:width: 30%
 
 A tangle with a single crossing, called the 1 tangle.
 ```
@@ -79,6 +82,7 @@ the NW point) of data in the interior of the Conway circle is indicated by a bro
 
 ```{figure} ../../media/generic_tangles/generic_tangle.svg
 :label: fig-generic_tangle
+:width: 30%
 A generic tangle with a broken T.
 ```
 
@@ -107,12 +111,14 @@ we obtain the two additional basic tangles seen in @fig-basic_tangles_extra.
 
 ```{figure} ../../media/inf.svg
 :label: prelim-fig-basic_nc-inf
+:width: 30%
 
 A tangle with no crossings, called the $\infty$ tangle.
 ```
 
 ```{figure} ../../media/m1.svg
 :label: prelim-fig-basic_c-m1
+:width: 30%
 
 A tangle with a single crossing, called the $ \m 1$ tangle.
 ```
@@ -243,11 +249,13 @@ denominator closure, formed by connecting a strand from $NW$ to $SW$ and a stran
 
 ```{figure} ../../media/fig-closure-num.svg
 :label: fig-closure-num
+:width: 25%
 The numerator closure of a tangle.
 ```
 
 ```{figure} ../../media/fig-closure-den.svg
 :label: fig-closure-den
+:width: 30%
 The denominator closure of a tangle.
 ```
 The two simple closures of a tangle.
@@ -284,6 +292,7 @@ here are the polygon graphs. For example, the $6^{**}$ graph (or octahedron) can
 
 ```{figure} ../../media/fig-6starstar.svg
 :label: fig-6starstar
+:width: 50%
 A four valent planar graph with six vertices and triangular regions between
 vertices. When the graph is placed on the surface of an $S^2$ we get the
 octahedron.
@@ -299,6 +308,7 @@ example of a tangle insertion into $6^{**}$ can be seen in @fig-6starstar_insurt
 
 ```{figure} ../../media/fig-6starstar_insurtion.svg
 :label: fig-6starstar_insurtion
+:width: 50%
 
 Tangles inserted into the $6^{**}$
 tangle, with Conway notation $$6^{**}\ast.1\ 2\ 2\ 3\ 1.1\ 2\ 2\ 3\ 1.1\ 2\ 2\ 3\ 1.1\ 2\ 2\ 3\ 1.1\ 2\ 2\ 3\ 1$$

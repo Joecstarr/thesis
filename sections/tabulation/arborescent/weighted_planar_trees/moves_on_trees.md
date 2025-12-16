@@ -261,12 +261,26 @@ $R^-$ on on a tangle representation of a tree.
 ```
 
 ````{prf:definition} Bonahon and Siebenmann, Section 12.3 [@bonahonNewGeometricSplittings2016]
+:label: wpt-moves-def-rp
+
+The **$R^+$** replaces the left of @rmove-n-pic with the right, leaving the rest of the tree unchanged.
+
+```{figure} ../../media/bands/moves/R/p/def.svg
+:label: rmove-p-pic
+:width: 50%
+A $\LP+\RP$-ring subtree moving around a vertex.
+```
+
+````
+
+````{prf:definition} Bonahon and Siebenmann, Section 12.3 [@bonahonNewGeometricSplittings2016]
 :label: wpt-moves-def-rm
 
 The **$R^-$** replaces the left of @rmove-n-pic with the right, leaving the rest of the tree unchanged.
 
 ```{figure} ../../media/bands/moves/R/n/def.svg
 :label: rmove-n-pic
+:width: 50%
 A $\LP-\RP$-ring subtree moving around a vertex. Equivalent to @wpt-moves-fig-example-r.
 ```
 
@@ -277,15 +291,3 @@ In @wpt-moves-fig-example-r the ring moves from the right to the left of the
 tangle. This corresponds to the ring subtree in @wpt-moves-def-rm moving from
 top to bottom of the orange portion of the tree.
 ```
-
-````{prf:definition} Bonahon and Siebenmann, Section 12.3 [@bonahonNewGeometricSplittings2016]
-:label: wpt-moves-def-rp
-
-The **$R^+$** replaces the left of @rmove-n-pic with the right, leaving the rest of the tree unchanged.
-
-```{figure} ../../media/bands/moves/R/p/def.svg
-:label: rmove-p-pic
-A $\LP+\RP$-ring subtree moving around a vertex.
-```
-
-````

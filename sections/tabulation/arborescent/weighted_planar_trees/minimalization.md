@@ -19,14 +19,12 @@ representatives. An example of canonizing a tangle, making that tangle non-minim
 ```{figure} ../../media/bands/non-minimal_minimalized.svg
 :label: minimal-fig-nonmin_min
 
-
 A minimal presentation of a arborescent tangle in both its orthogonal projection
 as well as its weighted planar tree.
 ```
 
 ```{figure} ../../media/bands/non-minimal.svg
 :label: minimal-fig-nonmin_non
-
 
 A non-minimal presentation of the same arborescent tangle as
 @minimal-fig-nonmin_min in both its orthogonal projection as well as its CWPTT.
@@ -168,14 +166,17 @@ tangle class of $\Gamma$.
 ````{figure}
 ```{figure} ../../media/bands/moves/1/2/minimal.svg
 :label: minimal-fig-minimize_move12
+:width: 25%
 Admits move 1.2
 ```
 ```{figure} ../../media/bands/moves/2/1/minimal.svg
 :label: minimal-fig-minimize_move21
+:width: 20%
 Admits move 2.1
 ```
 ```{figure} ../../media/bands/moves/2/2/minimal.svg
 :label: minimal-fig-minimize_move22
+:width: 30%
 Admits move 2.2
 ```
 Examples of canonical subtrees of a $\LP+\RP$-CWPTT which admit the given moves.

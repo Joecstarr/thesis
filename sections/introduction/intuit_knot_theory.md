@@ -36,11 +36,13 @@ maneuvered to look the same as @fig-intro-everyday_knot_closed or @fig-intro-cir
 
 ```{figure} ../../media/circle.svg
 :label: fig-intro-circle
+:width: 50%
 A representation of a simple loop made from gluing the ends of a rope together.
 ```
 
 ```{figure} ../../media/torus_physical.svg
 :label: fig-intro-torus
+:width: 70%
 A representation of twisting the ends of a rope around itself before gluing.
 ```
 
