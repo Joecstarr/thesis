@@ -1,4 +1,4 @@
-#### Uniqueness of Right Leaning Identity CWPTT
+### Uniqueness of Right Leaning Identity CWPTT
 
 Our final step at identifying a preferred representative CWPTT of an arborescent tangle is to show
 that a $\LP +\RP$-RLITT is unique in the set of CWPTT representing an arborescent tangle. We will

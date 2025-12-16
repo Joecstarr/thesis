@@ -1,6 +1,6 @@
 <!-- prettier-ignore-start -->
 (sec-arborescent-linear)=
-#### An Encoding Strategy for Arborescent Knots and Tangles
+### An Encoding Strategy for Arborescent Knots and Tangles
 <!-- prettier-ignore-end -->
 
 The various flavors of weighted planar trees we have seen thus far are a useful tool for
@@ -30,7 +30,7 @@ We will now walk through an example of the linearization algorithm. Let $\Gamma$
 planar tangle tree seen in @wpt-rli-fig-23. As we walk the tree, the vertex currently being
 linearized will be called the **object vertex**.
 
-##### Tangle Linearization Example
+#### Tangle Linearization Example
 
 We begin by adding the $V_4$ label for our tangle to the linearization. We then start the following
 algorithm with the root as the object vertex.
@@ -40,7 +40,7 @@ linearization the weights and children of the object vertex in an anti-clockwise
 bond is encountered, we descend to that child. When we descend, we have two cases to consider, the
 child is a half-open proper stick or otherwise.
 
-##### Case 1: The Child Is The Root Of A Half-Open And Proper Stick
+#### Case 1: The Child Is The Root Of A Half-Open And Proper Stick
 
 When the child is the root of a is proper and half-open (contains a leaf vertex), we append that
 stick as the twist vector (@rational-def-twistvector) for the corresponding rational tangle. Let the
@@ -54,7 +54,7 @@ entries to match, as in @linear-math-tv.
 \LB w_{i+k}\ \m w_{i+k-1}\cdots\ \m w_{i-1}\ w_{i}\RB
 ```
 
-##### Case 2: The Child Is Essential, On A Open Stick, Or On A Non-Proper Stick
+#### Case 2: The Child Is Essential, On A Open Stick, Or On A Non-Proper Stick
 
 In this case, we restart the algorithm from the beginning with the current vertex as the object
 vertex.

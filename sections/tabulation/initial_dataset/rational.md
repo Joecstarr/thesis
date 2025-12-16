@@ -1,6 +1,6 @@
 <!-- prettier-ignore-start -->
 (sec-rational)=
-### Rational Tangles
+## Rational Tangles
 <!-- prettier-ignore-end -->
 
 We will see in this section that **rational tangles**, originally described by Conway
@@ -8,7 +8,7 @@ We will see in this section that **rational tangles**, originally described by C
 simplest classes of tangle. This simplicity leads to the rational tangles, and their knot closures,
 being some of the most commonly studied objects in knot theory.
 
-#### Construction
+### Construction
 
 In our development of the modified tangle calculus (@subsec-tangle_operations) we described a way to
 glue tangles together, allowing us to take simple objects and build complex objects. That approach
@@ -69,7 +69,7 @@ To see the alignment between @rational-def-rational and our intuitive constructi
 of the crank as corresponding to horizontal and vertical integral tangles, and the alternating of
 right and bottom as corresponding to alternating $+$ and $\vee$.
 
-##### Correspondence With Extended Rational Numbers
+#### Correspondence With Extended Rational Numbers
 
 Now we formally address our first two essential questions by:
 
@@ -158,7 +158,7 @@ need to determine a unique twist vector representative for each rational tangle.
 representative allows us to simply and efficiently write down each tangle without risk of duplicates
 showing up on our list.
 
-#### Canonical Twist Vectors
+### Canonical Twist Vectors
 
 Identifying a unique representative will stem from properties of finite continued fractions. We
 start by defining a specific subclass of finite continued fractions with integer coefficients, the
@@ -200,12 +200,12 @@ coefficients of a regular continued fraction and is of odd length or is
 $\LB0\ 0\RB$.
 ```
 
-#### Computational Methods
+### Computational Methods
 
 Armed with a unique representative for a rational tangle, we can construct our computational answer
 to the third essential question.
 
-##### Notation
+#### Notation
 
 We start by describing how we will digitally store a rational tangle. In the rational tangle case,
 the theoretical encoding strategy of twist vectors happens to be well suited for computational
@@ -214,7 +214,7 @@ space separated integers delimited by a pair of square braces, $\LB\ \RB$. As we
 @sec-arborescent this direct translation of theoretical notation to computational notation is not
 always the case.
 
-##### Generation
+#### Generation
 
 A common tactic in the knot tabulation space is to pare down the number of items that must be
 tabulated by leveraging symmetries of the objects being tabulated. For example, the $\LB 3\RB$ and

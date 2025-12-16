@@ -1,9 +1,9 @@
 <!-- prettier-ignore-start -->
 (sec-rlitt-generation)=
-#### Generation of Right Leaning Identity Weighted Planar Tangle Trees
+### Generation of Right Leaning Identity Weighted Planar Tangle Trees
 <!-- prettier-ignore-end -->
 
-##### Generation of Rooted Plane Tree
+#### Generation of Rooted Plane Tree
 
 Just as rooted plane trees serve as the scaffolding we built WPTT on, a rooted plane tree algorithm
 will serve as the backbone for our RLITT generation algorithm. We will now give a brief description
@@ -101,7 +101,7 @@ as follows.
 2. Execute @find-all-related-trees with $\Gamma=\Gamma_1$ and $n=n$
 ```
 
-##### Modification for RLITT
+#### Modification for RLITT
 
 The algorithm described above serves as the inspiration for the algorithm we will build now for the
 enumeration of the arborescent tangles. Building this algorithm begins with modifying the grafting
@@ -232,13 +232,13 @@ $\Gamma_s=\LS \iota\LB 2\ 0\RB\RS$ produces the tangle $\iota\LB 2\ 0\ 1\RB$. Un
 resultant tangle violates the stick condition and hence is not canonical. The remainder of this
 subsection will refine the grafting algorithm to satisfy each of the RLITT conditions.
 
-###### Weight Condition
+##### Weight Condition
 
 The simplest condition to verify is the weight condition. By construction, grafting the rootstock
 and scion introduces no additional weights at the grafting vertex. Meaning, the weight condition is
 satisfied with no adjustment to the algorithm.
 
-###### Identity Condition
+##### Identity Condition
 
 The next RLITT condition to address is the identity condition. We note that the $\star_i$ operation
 does not modify the $V_4$ label of the rootstock. This observation means if the rootstock is
@@ -246,7 +246,7 @@ identity, the grafted tree will also be identity.
 
 <!-- prettier-ignore-start -->
 (rli-gen-sec-stick-con)=
-###### Stick Condition
+##### Stick Condition
 <!-- prettier-ignore-end -->
 
 To start with the stick condition we will prove that if grafting produces a non-canonical tree the
@@ -330,7 +330,7 @@ we desired.
 
 <!-- prettier-ignore-start -->
 (rli-gen-sec-pm-con)=
-###### Positivity/Negativity Condition
+##### Positivity/Negativity Condition
 <!-- prettier-ignore-end -->
 
 Our approach to the positivity and negativity condition follows our approach to the stick condition.
@@ -383,7 +383,7 @@ algorithm.
     1. Report $\Gamma$
 ```
 
-###### Right Leaning Condition
+##### Right Leaning Condition
 
 Satisfying the right leaning condition is a consequence of the modified $\star_i$ operation. Our
 definition of the $\star_i$ operation grafts the scion in such a way that weights at $v_i$ are
@@ -439,7 +439,7 @@ our grafting algorithms.
     1. Report $\Gamma$
 ```
 
-##### Full Generation Algorithm
+#### Full Generation Algorithm
 
 The algorithm we have developed so far generates new RLITT from two restricted collections of trees.
 Unfortunately, it doesn't yet tell us how to select the collections that guarantee the generation of

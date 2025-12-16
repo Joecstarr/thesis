@@ -329,9 +329,8 @@ tangle closures.
 ```
 
 [^Jordancurve]:
-
-A Jordan curve is a simple closed curve. This can be thought of as a curve drawn on a piece of paper
-that has: 1) No end points. 2) No self intersections.
+    A Jordan curve is a simple closed curve. This can be thought of as a curve drawn on a piece of
+    paper that has: 1) No end points. 2) No self intersections.
 
 [^bigon]:
     A bigon is a polygon with two sides. In the same way that an octagon has eight sides or a trigon

@@ -4,7 +4,7 @@
 
 <!-- prettier-ignore-start -->
 (construction_of_arbor)=
-#### Construction of Arborescent Knots from Weighted Planar Trees
+### Construction of Arborescent Knots from Weighted Planar Trees
 <!-- prettier-ignore-end -->
 
 This subsection begins with an introduction to Bonahon and Siebenmann's
@@ -19,7 +19,7 @@ topology. This subsection finishes with the classification of arborescent knots 
 Bonahon and Siebenmann [@bonahonNewGeometricSplittings2016] as well as our extension from a global
 to local viewpoint.
 
-##### Bands and Plumbing Squares
+#### Bands and Plumbing Squares
 
 Our first step in describing a notation for the arborescent knots
 [@bonahonNewGeometricSplittings2016] is describing a plumbing operation on bands. A band with a
@@ -46,7 +46,7 @@ A band with the plumping square facing away from the viewer. We are looking thro
 Plumbing squares of bands.
 ````
 
-##### Plumbing bands
+#### Plumbing bands
 
 We now glue the bands seen in @wpt-construc-fig-band_sum together with an operation called
 **plumbing**. Consider the orientation given in the green band's plumbing square. We will call the
@@ -147,7 +147,7 @@ in @prelim-def-arborescent_knot. To see this, we take each plumbing band and enc
 $S^2$ so that the corners of the plumbing squares lie on the $S^2$, giving us the vignette seen in
 @fig-arborescent_band.
 
-##### Weighted Planar Trees
+#### Weighted Planar Trees
 
 The band construction we have developed for arborescent knots, as it stands, is completely unsuited
 for machine computation. In this subsection, we lay out a line of reasoning leading to a
@@ -222,7 +222,7 @@ $\,$
 
 <!-- prettier-ignore-start -->
 (indexing-rpt)=
-###### Indexing the total order of a tree
+##### Indexing the total order of a tree
 <!-- prettier-ignore-end -->
 
 We will now describe an **ideal indexing** for a rooted plane tree.
@@ -327,7 +327,7 @@ Realization of plumbing of a tree.
 
 <!-- prettier-ignore-start -->
 (wpt-construc-sec-wptt)=
-##### Weighted Planar Tangle Trees
+#### Weighted Planar Tangle Trees
 <!-- prettier-ignore-end -->
 
 Our construction to this point has been concerned with the notation for knots and links. We now give
@@ -444,7 +444,7 @@ Roations of a tangle.
 
 <!-- prettier-ignore-start -->
 (wpt-construc-sec-subtrees)=
-#### Anatomy of a tree
+### Anatomy of a tree
 <!-- prettier-ignore-end -->
 
 In this subsection, we will describe several portions of weighted planar trees: the ring subtree,
@@ -452,7 +452,7 @@ essential vertex, and the sticks of a tree.
 
 <!-- prettier-ignore-start -->
 (wpt-construc-sec-rings)=
-##### Ring subtree
+#### Ring subtree
 <!-- prettier-ignore-end -->
 
 We will now describe the ring subtrees of a weighted planar tree, which locally appear as
@@ -495,7 +495,7 @@ Ring Tangle
 
 <!-- prettier-ignore-start -->
 (wpt-construc-sec-essential_verts)=
-##### Essential Vertex
+#### Essential Vertex
 <!-- prettier-ignore-end -->
 
 We now classify each vertex into one of two classes, the essential vertices and the non-essential
@@ -524,7 +524,7 @@ non-essential in blue
 
 <!-- prettier-ignore-start -->
 (wpt-construc-sec-sticks)=
-##### Sticks of a Tree
+#### Sticks of a Tree
 <!-- prettier-ignore-end -->
 
 The final part of the anatomy of a tree we will consider is the **sticks** of a tree.
@@ -561,7 +561,7 @@ is colored in red.
 
 <!-- prettier-ignore-start -->
 (wpt-construc-sec-integral)=
-###### Integral Tangles
+##### Integral Tangles
 <!-- prettier-ignore-end -->
 
 When a weighted planar tangle tree is a half-open stick containing a single vertex with a single
@@ -574,7 +574,7 @@ A stick realized as an integral tangle.
 
 <!-- prettier-ignore-start -->
 (wpt-construc-sec-rational)=
-###### Rational Tangles
+##### Rational Tangles
 <!-- prettier-ignore-end -->
 
 Bonahon and Siebenmann [@bonahonNewGeometricSplittings2016] give a correspondence between stick
@@ -589,7 +589,7 @@ A stick tangle tree realized as a rational tangle.
 
 <!-- prettier-ignore-start -->
 (wpt-construc-sec-TCN)=
-###### Tree Crossing Number
+##### Tree Crossing Number
 <!-- prettier-ignore-end -->
 
 Finally, we define the **Tree Crossing Number (TCN)** of a weighted planar tangle tree. This

@@ -11,7 +11,7 @@ currently available for use in knot theory research (@sec-surveyoftools). Using 
 current tools, and our software process we define a set of requirements and a system design for a
 new general purpose knot theory software toolbox (@sec-archofktst). Finally, using this system
 design, and following our process, we present documentation for the software units that satisfy the
-tabulation theory of @ch-tabulation.
+tabulation theory of [Chapter 6 Tabulation](../tabulation/tabulation.md).
 
 # Basics of Product Management and Software Engineering
 

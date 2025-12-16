@@ -181,10 +181,6 @@ flowchart LR
 A block diagram of the architecture of a knot theory software toolbox
 ````
 
-```{include} ./interfaces/interfaces.md
-
-```
-
 [^io]: Input and Output
 
 [^emb]:

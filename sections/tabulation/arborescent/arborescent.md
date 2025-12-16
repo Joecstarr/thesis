@@ -1,6 +1,6 @@
 <!-- prettier-ignore-start -->
 (sec-arborescent)=
-## Arborescent Tangles
+# Arborescent Tangles
 <!-- prettier-ignore-end -->
 
 This section describes the methodology we use to answer the final of the essential questions
@@ -29,7 +29,7 @@ original algorithm and notation that directly enumerates those unique representa
 
 <!-- prettier-ignore-start -->
 (prelim-arbor_def)=
-### Definition of Arborescent
+## Definition of Arborescent
 <!-- prettier-ignore-end -->
 
 We now give a high-level description of the manifold theory underpinning the theory of arborescent

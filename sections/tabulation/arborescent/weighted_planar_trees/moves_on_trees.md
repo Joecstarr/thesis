@@ -1,6 +1,6 @@
 <!-- prettier-ignore-start -->
 (calculus_on_trees)=
-#### Calculus of Weighted Planar Trees
+### Calculus of Weighted Planar Trees
 <!-- prettier-ignore-end -->
 
 This subsection develops a set of moves, $F^\prime_3,\ F_2,\ F_1$, and $R^\pm$, on the weighted
@@ -10,7 +10,7 @@ Siebenmann [@bonahonNewGeometricSplittings2016]. The $F^\prime_3,\ F_2,\ F_1,\te
 moves allow us to systematically modify, without changing the topology, a weighted planar tree and
 form the basis for the classification of the arborescent knots.
 
-##### The $F^\prime_3$ Move
+#### The $F^\prime_3$ Move
 
 The first move, and as we will see, the most important in distinguishing tangles, is the
 $F_3^\prime$ move. In this move we consider the local picture of a vertex. In the local view,
@@ -89,7 +89,7 @@ view $F_3^\prime$ from the perspective of an object vertex (object band). The ob
 one or more children that we will act on with $F^\prime_3$. When we translate $F_3$ and $F_3^\prime$
 into practice we are free to operate on children as well as the parent of a vertex (band).
 
-###### $F_3^\prime$ on bands
+##### $F_3^\prime$ on bands
 
 The translation of crossings across child bands models the traditional **flype** move of "Tait
 Flyping Conjecture" [@taitKnotsIIIII1900] fame. To see the correspondence between $F_3^\prime$ and
@@ -151,7 +151,7 @@ band.
 
 ```
 
-###### $F_3^\prime$ Examples
+##### $F_3^\prime$ Examples
 
 Consider the weighted planar tree in @wpt-moves-fig-example_f3-even-1 and
 @wpt-moves-fig-example_f3-odd_1, the left trees in each agree in all but a weight of a single
@@ -187,7 +187,7 @@ $F_3^\prime$ on a
 
 ```
 
-##### The $F_2$ Move
+#### The $F_2$ Move
 
 Our second move, $F_2$, is a special application of the general $F_3$ move.
 
@@ -229,7 +229,7 @@ Observe that vertices can be partitioned into two equivalence classes. Those cha
 applied at an even distance from the root, and those changed by $F_2$ applied at an odd distance
 from the root. We write $F_2$ on the even class as $F_{2e}$ and odd as $F_{2o}$.
 
-##### The $F_1$ Move
+#### The $F_1$ Move
 
 The third of the $F$ moves is the $F_1$ move, which is a repeated application of the $F_2$ move.
 
@@ -247,7 +247,7 @@ acted on, per @wpt-construc-sec-wptt.
 To realize $F_1$ as $F_2$ moves, we successively apply $F_{2e}$ and then $F_{2o}$ to the tree.
 Observe that the combination of $F_{2e}$ and $F_{2o}$ modifies the free bonds by $\xi\eta=\zeta$.
 
-##### The $R^\pm$ moves
+#### The $R^\pm$ moves
 
 The $R$ move, or ring move is the final move we will describe on weighted planar tangle trees and
 deals with the ring subtrees of a tree. The result of a ring move on a tangle can be seen in

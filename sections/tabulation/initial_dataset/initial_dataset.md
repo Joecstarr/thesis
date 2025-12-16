@@ -1,4 +1,4 @@
-## The First Tangle Datasets
+# The First Tangle Datasets
 
 This chapter will describe the methodology used to answer two of the essential questions detailed in
 @sec-intro-overview.

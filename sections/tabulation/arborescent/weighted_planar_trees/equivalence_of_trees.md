@@ -1,6 +1,6 @@
 <!-- prettier-ignore-start -->
 (sec-CWPTT-def)=
-#### Canonical Weighted Planar Tangle Trees (CWPTT)
+### Canonical Weighted Planar Tangle Trees (CWPTT)
 <!-- prettier-ignore-end -->
 
 Observe that the weighted planar tangle trees we have seen are badly non-unique representatives for
@@ -137,7 +137,7 @@ moves of the calculus of arborescent tangles to produce its collection of
 positively (or negatively) canonical weighted planar trees.
 ```
 
-##### Canonical Vertex
+#### Canonical Vertex
 
 The conditions for a weighted planar tree to be a CWPTT are phrased for the global context of a
 weighted planar tangle tree. We now recontextualize those conditions for a local view, a single

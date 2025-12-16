@@ -1,13 +1,13 @@
 <!-- prettier-ignore-start -->
 (sec-monttang)=
-### Montesinos Tangles
+## Montesinos Tangles
 <!-- prettier-ignore-end -->
 
 In this section, we will use the rational tangles to build a yet more complex class of tangles, the
 Montesinos tangles. This building up process demonstrates one of the core strategies for tangle
 tabulation.
 
-#### Construction
+### Construction
 
 With the rational tangles in hand, we wish to utilize that data to enumerate additional tangles. One
 way we have seen to build simple objects into complex objects is to combine two tangles with the $+$
@@ -27,7 +27,7 @@ R_0+R_1+\cdots+R_n
   including the integral tangles are Montesinos tangles with a single summand.
 ```
 
-##### Unique Representative
+#### Unique Representative
 
 Next, we develop a classification of Montesinos tangles, allowing us to tell two Montesinos tangles
 apart. For each rational summand $R_i$ in a Montesinos tangle, we have four possibilities:
@@ -98,9 +98,9 @@ fraction satisfying $0<\frac{p_i}{q_i}<1$, and $\frac{k}{1}$ is a horizontal
 integer subtangle.
 ````
 
-#### Computational Methods
+### Computational Methods
 
-##### Notation
+#### Notation
 
 Before we can generate Montesinos tangles, we need to define an efficient notation for computation
 and storage. Similar to what we saw in the rational tangle case, the theoretical notation for
@@ -144,7 +144,7 @@ As an algebraic tangle tree:
 ```
 ````
 
-##### Generation
+#### Generation
 
 In this section, we will design an algorithm that allows us to efficiently generate new Montesinos
 tangles up to a given crossing number. As we saw, the construction of a Montesinos tangle is based
@@ -204,7 +204,6 @@ combinations of input tangles given by the stencil.
 
 ```{prf:example}
 :label: ex-mont-stencil_insert
-:align: center
 
 The set of rational tangles of crossing numbers two and three:
 

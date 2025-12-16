@@ -1,4 +1,4 @@
-#### Existence of Right Leaning CWPTT
+### Existence of Right Leaning CWPTT
 
 We start our construction of RLITT by defining what conditions make a CWPTT a right leaning CWPTT.
 
@@ -32,7 +32,7 @@ algorithm terminates with a $\Gamma$ transformed into a right leaning tree
 completing the proof.
 ```
 
-#### Existence of Identity CWPTT
+### Existence of Identity CWPTT
 
 Our second step in the construction of RLITT is to define what conditions make a CWPTT an identity
 CWPTT.
@@ -65,7 +65,7 @@ we fall into one of three cases:
 This transforms $\Gamma$ into an identity tree completing the proof.
 ```
 
-#### Existence of Right Leaning Identity CWPTT (RLITT)
+### Existence of Right Leaning Identity CWPTT (RLITT)
 
 What we have shown is that every arborescent tangle has at least one right leaning CWPTT and at
 least one identity CWPTT representative. Combining these two ideas, we will show that every

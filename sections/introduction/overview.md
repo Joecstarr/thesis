@@ -8,8 +8,8 @@ questions "How do I systematically construct knots?", "How do I tell two knots I
 "How do I generate new knots?" Particularly, we will address a restricted version of these
 questions, for objects that can be thought of as the building blocks of knots, the tangles
 introduced by Conway [@conwayEnumerationKnotsLinks1970]. Through the middle of this thesis
-@ch-tabulation, we will describe several strategies that have been employed to answer even further
-restricted versions of these questions:
+([Chapter 6 Tabulation](../tabulation/tabulation.md)), we will describe several strategies that have
+been employed to answer even further restricted versions of these questions:
 
 - "How do I systematically construct rational tangles?", "How do I tell two rational tangles I make
   apart?", and "How do I generate new rational tangles?"

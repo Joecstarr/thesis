@@ -1,6 +1,6 @@
 <!-- prettier-ignore-start -->
 (subsec-computation)=
-### Computational Methods
+## Computational Methods
 <!-- prettier-ignore-end -->
 
 ```{include} linearization.md

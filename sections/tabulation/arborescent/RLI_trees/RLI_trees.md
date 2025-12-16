@@ -1,6 +1,6 @@
 <!-- prettier-ignore-start -->
 (subsec-rlitt)=
-### Right Leaning Identity CWPTT
+## Right Leaning Identity CWPTT
 <!-- prettier-ignore-end -->
 
 The CWPTT are sufficient for distinguishing any two arborescent tangles via moves on their trees.

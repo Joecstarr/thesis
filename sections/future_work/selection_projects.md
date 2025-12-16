@@ -155,7 +155,7 @@ relative crossing data.
 :label: fig-future_work-skein_homfly
 The skein
     relation for the HOMFLYPT polynomial.  (Public domain, via
-    Wikimedia Commons [@pbroks13SkeinHOMFLYPublic2008])
+    Wikimedia Commons [@pbroks13SkeinHOMFLY2008])
 
 ```
 
@@ -202,7 +202,9 @@ intermediate students.
 Develop the theory translating RLITT to extended Gauss notation. Additionally, develop the software
 needed for storing and translating per theory.
 
-% prettier-ignore-start (sec-proj-note_pd)=
+% prettier-ignore-start
+
+(sec-proj-note_pd)=
 
 ##### Notation Description for Planar Diagram (PD) Notation: Intermediate Student
 
@@ -213,7 +215,7 @@ needed for storing and translating per theory.
 Develop the theory for translating RLITT to PD notation. Additionally, develop the software required
 for storing and translating per theory.
 
-% prettier-ignore-start (sec-proj-note_dt)=
+% prettier-ignore-start
 
 ##### Notation Description for DT Notation: Intermediate Student
 

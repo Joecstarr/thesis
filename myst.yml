@@ -11,6 +11,8 @@ project:
             enabled: true
         heading_3:
             enabled: true
+        heading_4:
+            enabled: true
     id: 28ae89ab-cba9-440d-a062-08075e0d441c
     toc:
         - file: main.md
@@ -29,7 +31,7 @@ project:
     title: "The Tanglenomicon: Tabulation of Arborescent Tangles"
     date: 2025-05-01
     authors:
-        - name: Joe Starr
+        - name: Joseph Starr
     exports:
         # - format: tex
         #   template: ./templates/arxiv
@@ -73,22 +75,14 @@ project:
 site:
     title: "The Tanglenomicon: Tabulation of two string tangles"
     template: book-theme
-    # nav:
-    #     - title: Table of Contents
-    #       children:
-    #           - title: Introduction
-    #             url: /introduction
-    #           - title: Preliminaries
-    #             url: /preliminaries
-    #           - title: Tabulation
-    #             url: /tabulation
-    #           - title: Software and its Engineering
-    #             url: /software
-    #           - title: Future Directions
-    #             url: /future-work
+    actions:
+        - title: Report a Bug
+          url: https://github.com/Joecstarr/thesis/issues/new/choose
     options:
         numbered_references: true
-        hide_toc: true
-        hide_title_block: true
-        logo: ./featured.svg
+        hide_toc: false
+        logo: ./book.png
+        logo_dark: ./book.png
         favicon: ./book.png
+        outline_maxdepth: 2
+        hide_footer_links: true

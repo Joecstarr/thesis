@@ -1,9 +1,9 @@
 <!-- prettier-ignore-start -->
 (sec-minimalization)=
-#### Minimalization of CWPTT
+### Minimalization of CWPTT
 <!-- prettier-ignore-end -->
 
-##### CWPTT are Not Minimal
+#### CWPTT are Not Minimal
 
 A common measure for the complexity of knots and their relatives is the **minimal crossing number**.
 That being the least number of crossings needed to realize the object in a diagram, we call that
@@ -34,7 +34,7 @@ A non-minimal presentation of the same arborescent tangle as
 Minimal and non-minimal trees.
 ````
 
-##### Canonization Can Increase Complexity
+#### Canonization Can Increase Complexity
 
 As we have seen, a CWPTT often does not realize a minimal crossing representative for an arborescent
 tangle. Since minimal crossing number is such a common measure for complexity, we should understand
@@ -141,7 +141,7 @@ CWPTT by application of TCN decreasing moves 1.2, 2.1, and 2.2. It is important 
 does not guarantee that every set of applications of the 1.2, 2.1, and 2.2 moves to a CWPTT
 minimizes the TCN, only the existence of a path to a minimal tree.
 
-##### Bounding complexity
+#### Bounding complexity
 
 We now introduce a bound on complexity between a CWPTT and a minimal representation of that tree. We
 build the bound by identifying the maximum number of subtrees of a CWPTT which admit a 1.2, 2.1, or

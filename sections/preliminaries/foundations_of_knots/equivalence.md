@@ -14,7 +14,7 @@ said to be **ambient isotopic**.
 
 ```{prf:definition} Jablan and Sazdanović, Definition 1.20 [@jablanLinKnotKnotTheory2007;@gordonKNOTSAREDETERMINED]
 :label: def-ambient_isotopic
-Knots $K$ and $K_1$ are \textbf{ambient isotopic} if there exists a
+Knots $K$ and $K_1$ are **ambient isotopic** if there exists a
   continuous function $H: \R^3 \times[0,1] \rightarrow \R^3$ such that:
   * $h_0=H((x, y, z), 0)$ is the identity $\R^3 \rightarrow \R^3$
   * For all $t \in[0,1], h_t=H((x, y, z), t)$ is a homeomorphism $\R^3 \rightarrow \R^3$
