@@ -1,112 +1,220 @@
-\documentclass[17pt]{extarticle}
-\usepackage{editing}
-\usepackage{extsizes}
-
-\usepackage[utf8]{inputenc} % allow utf-8 input
-\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
-\usepackage{hyperref}       % hyperlinks
-\usepackage{url}            % simple URL typesetting
-\usepackage{datetime}       % show dates in the title block
-\usepackage{booktabs}       % professional-quality tables
-\usepackage{amsfonts}       % blackboard math symbols
-\usepackage{nicefrac}       % compact symbols for 1/2, etc.
-\usepackage{microtype}      % microtypography
+\documentclass[letterpaper, 17pt]{uithesis}
 \usepackage{graphicx}
-\usepackage{mathrsfs}
-\usepackage[square,numbers]{natbib}
-\usepackage{doi}
-\usepackage{xcolor}
-\usepackage{float}
-\usepackage{subcaption}
-\usepackage[twitter]{coloremoji}
-\usepackage{qrcode}
 
+\usepackage{silence}
+%Disable all warnings issued by latex starting with "You have..."
+\WarningFilter{latex}{You have requested package}
+\WarningFilter{pdf backend}{(pdf backend): ignore duplicate}
+\WarningFilter{latex}{Hyper reference}
+\WarningFilter{latex}{Reference `ex:}
+
+[# if doc.bibliography #]
+\bibliography{[- doc.bibliography | join(", ") -]}
+[# endif #]
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+
+\lstdefinelanguage{json}{
+    basicstyle=\normalfont\ttfamily,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frame=lines,
+    backgroundcolor=\color{background},
+    literate=
+     *{0}{{{\color{numb}0}}}{1}
+      {1}{{{\color{numb}1}}}{1}
+      {2}{{{\color{numb}2}}}{1}
+      {3}{{{\color{numb}3}}}{1}
+      {4}{{{\color{numb}4}}}{1}
+      {5}{{{\color{numb}5}}}{1}
+      {6}{{{\color{numb}6}}}{1}
+      {7}{{{\color{numb}7}}}{1}
+      {8}{{{\color{numb}8}}}{1}
+      {9}{{{\color{numb}9}}}{1}
+      {:}{{{\color{punct}{:}}}}{1}
+      {,}{{{\color{punct}{,}}}}{1}
+      {\{}{{{\color{delim}{\{}}}}{1}
+      {\}}{{{\color{delim}{\}}}}}{1}
+      {[}{{{\color{delim}{[}}}}{1}
+      {]}{{{\color{delim}{]}}}}{1},
+}
+\usepackage[inkscapeformat=png]{svg}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{url}            % simple URL typesetting
+\usepackage{datetime2}      % show dates in the title block
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{microtype}      % microtypography
+\usepackage{doi}
+\usepackage[twitter]{coloremoji}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{times}
+\usepackage{mathtools}
+\usepackage{bbm}
+\usepackage{fancyhdr}
+\usepackage{tikz-cd}
+\usepackage{tikz}
 \usepackage{lineno}
 \linenumbers
 [- IMPORTS -]
 
-\hypersetup{colorlinks = true,
-linkcolor = purple,
-urlcolor  = blue,
-citecolor = cyan,
-anchorcolor = black}
 
-\title{[-doc.title-]}
-
+\setsecnumdepth{paragraph}
+\DTMlangsetup{showdayofmonth=false}
 [# if options.show_date #]
-\newdate{articleDate}{[-doc.date.day-]}{[-doc.date.month-]}{[-doc.date.year-]}
-\date{\displaydate{articleDate}}
+\date{\today}
 [# else #]
 \date{}
 [# endif #]
 
-\makeatletter
-\let\@fnsymbol\@arabic
-\makeatother
+\title{[-doc.title-]}
 
 \author{[# for author in doc.authors #]
 [--author.name--]
-[# if author.corresponding #]
-\footnotemark[[-author.corresponding.index-]]
-[#- endif #]\\
-[# for affiliation in author.affiliations #][-affiliation.value.name-]\\[# endfor #]
-[# if not loop.last #]
-\AND
-[# endif #]
 [# endfor #]
 }
 
-% Uncomment to override  the `A preprint' in the header
-\renewcommand{\headeright}{[-doc.subject-]}
-\renewcommand{\undertitle}{[-doc.subtitle-]}
-\renewcommand{\shorttitle}{[-doc.short_title-]}
 
-%% Add PDF metadata to help others organize their library
-%% Once the PDF is generated, you can check the metadata with
-%% $ pdfinfo template.pdf
+% \definecolor{clrsnavy}{HTML}{001F3F}
+% \definecolor{clrsblue}{HTML}{0074D9}
+% \definecolor{clrsaqua}{HTML}{7FDBFF}
+% \definecolor{clrsteal}{HTML}{39CCCC}
+% \definecolor{clrsolive}{HTML}{3D9970}
+% \definecolor{clrsgreen}{HTML}{2ECC40}
+% \definecolor{clrslime}{HTML}{01FF70}
+% \definecolor{clrsyellow}{HTML}{FFDC00}
+% \definecolor{clrsorange}{HTML}{FF851B}
+% \definecolor{clrsred}{HTML}{FF4136}
+% \definecolor{clrsfuchsia}{HTML}{F012BE}
+% \definecolor{clrspurple}{HTML}{B10DC9}
+% \definecolor{clrsmaroon}{HTML}{85144B}
+% \definecolor{clrswhite}{HTML}{FFFFFF}
+% \definecolor{clrssilver}{HTML}{DDDDDD}
+% \definecolor{clrsgray}{HTML}{AAAAAA}
+% \definecolor{clrsblack}{HTML}{111111}
+
+
+% \usepackage[many]{tcolorbox}
+% \tcbset{
+%   base/.style={
+%         enhanced,
+%         breakable,  % Allows page break.
+%         sharp corners,
+%         fonttitle=\bfseries,
+%         colbacktitle=#1!5!white,
+%         coltitle=#1,
+%         toptitle=0mm,
+%         bottomtitle=0mm,
+%         boxrule=0mm,
+%         left=2.5mm,
+%         leftrule=1mm,
+%         right=3.5mm,
+%         boxrule=0pt,frame hidden,
+%         colback=#1!5,
+%         colframe=#1!80,
+%         borderline west={2pt}{0pt}{#1}
+%     }
+% }
+
+
+% \renewtcolorbox[number within=chapter]{theorem}[1][]{
+%   title={Theorem~\thetcbcounter: #1},
+%   base=blue
+% }
+
+% \renewtcolorbox[number within=chapter]{Definition}[1][]{
+%   title={Theorem~\thetcbcounter: #1},
+%   base=blue
+% }
+
+\usepackage{hyperref}
 \hypersetup{
-pdftitle={\@title},
-pdfsubject={[-doc.description-]},
-pdfauthor={\@author},
-pdfkeywords={[-doc.keywords-]},
-addtopdfcreator={Written in Curvenote}
+  colorlinks,
+  linkcolor=[rgb]{0.62,0.22,0.24},
+  urlcolor=[rgb]{0.16,0.20,0.36},
+  citecolor=[rgb]{0.95,0.65,0.07},
+  pdftitle={\thetitle},
+  pdfauthor={\theauthor}
 }
+
+\degree{Doctor of Philosophy}
+\concentration{[- parts.concentration -]}
+
+\ThesisSupervisor{[- parts.thesis_supervisor-]}
+
+\CommitteeMember{[- parts.committee_members_1 -]}
+\CommitteeMember{[- parts.committee_members_2 -]}
+\CommitteeMember{[- parts.committee_members_3 -]}
+
+\setcounter{tocdepth}{3}
 
 \begin{document}
-\maketitle
-[# for author in doc.authors #]
-[# if author.corresponding #]
-\footnotetext[[-author.corresponding.index-]]{Correspondence to: [-author.email-]}
-[# endif #]
-[# endfor #]
 
-[# if parts.abstract #]
+\titlepage
+
+\copyrightPage
+
+\frontmatter
+
+
+[# if parts.epigraph #]
+\iowaEpigraph{[-parts.epigraph-]}{
+[# if parts.epigraph_author #]
+[- parts.epigraph_author-]
+[# endif #]
+}
+[# endif #]
+
+
+\begin{acknowledgments}
+[-parts.acknowledgments-]
+\end{acknowledgments}
+
 \begin{abstract}
 [-parts.abstract-]
 \end{abstract}
-[# endif #]
 
-[# if doc.keywords #]
-\keywords{[-doc.keywords|join(", ")-]}
-[# endif #]
+\begin{publicAbstract}
+[-parts.lay_summary-]
+\end{publicAbstract}
+
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+
+\mainmatter
+
 
 [-CONTENT-]
 
-[# if parts.acknowledgments #]
-\section*{Acknowledgments}
-[-parts.acknowledgments-]
-[# endif #]
 
-[# if options.link #]
-\section*{Original article}
-\footnotesize
-This article is available online at the following URL: \href{[-options.link-]}{[-options.link-]}
-\normalsize
-[# endif #]
+% \appendix
+
+
+% \backmatter
+
 
 [# if doc.bibliography #]
-\bibliographystyle{ksfh_nat}
-\bibliography{[- doc.bibliography | join(", ") -]}
+\printbibliography
 [# endif #]
 
 \end{document}

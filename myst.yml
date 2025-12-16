@@ -4,6 +4,7 @@ project:
     open_access: true
     license: CC-BY-4.0
     numbering:
+        title: true
         heading_1:
             enabled: true
         heading_2:
@@ -12,34 +13,34 @@ project:
             enabled: true
         heading_4:
             enabled: true
-        heading_5:
-            enabled: true
-        heading_6:
-            enabled: true
     id: 28ae89ab-cba9-440d-a062-08075e0d441c
     toc:
         - file: main.md
+        - file: abstract.md
+        - file: lay_summary.md
         - file: sections/introduction/introduction.md
-        - file: sections/background/background.md
+        - file: sections/preliminaries/background.md
         - file: sections/tabulation/tabulation.md
         - file: sections/software/software.md
         - file: sections/future_work/future_work.md
     bibliography:
         - "biblio.bib"
     plugins:
-        - plugins/mermaid.mjs
+        # - plugins/mermaid.mjs
         - plugins/requirement.mjs
-    title: "The Tanglenomicon: Tabulation of two string tangles"
+    title: "The Tanglenomicon: Tabulation of Arborescent Tangles"
     date: 2025-05-01
     authors:
-        - name: Joe Starr
+        - name: Joseph Starr
     exports:
-        - format: tex
-          template: ./templates/arxiv
-          logo: false
-        - format: tex
-          template: ./templates/editing
-          logo: false
+        # - format: tex
+        #   template: ./templates/arxiv
+        #   logo: false
+        #   top_level: chapters
+        # - format: tex
+        #   template: ./templates/editing
+        #   logo: false
+        #   top_level: chapters
         - format: tex
           template: ./templates/thesis
           logo: false
@@ -52,7 +53,7 @@ project:
         '\R': '\mathbb{R}'
         '\T': '\mathscr{T}'
         '\M': '\mathscr{M}'
-        '\m': '\texttt{-}'
+        '\m': '\texttt{-}\!'
         '\LN': '\left.'
         '\LP': '\left('
         '\RP': '\right)'
@@ -72,7 +73,17 @@ project:
         '\mvtwt': '\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}'
         '\mvtht': '\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}\frac{\mvspc}{\mvspc}'
 site:
+    title: "The Tanglenomicon: Tabulation of two string tangles"
     template: book-theme
-
+    actions:
+        - title: Report a Bug
+          url: https://github.com/Joecstarr/thesis/issues/new/choose
     options:
+        numbered_references: true
+        hide_toc: false
+        logo: ./book.png
+        logo_dark: ./book.png
         favicon: ./book.png
+        outline_maxdepth: 2
+        hide_footer_links: true
+        style: ./custom.css

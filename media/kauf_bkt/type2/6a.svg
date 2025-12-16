@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xml:space="preserve" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 530 530"><g vectornator:layerName="Layer 1" clip-path="url(#ArtboardFrame_85)" transform="translate(15 15)"><path fill="none" stroke="#ffb86c" stroke-width="30" d="M500 500C204.948 478.769 207.504 23.073 500 0" class="stroke-orange stroke-orange"/></g><g vectornator:layerName="Layer 2" clip-path="url(#ArtboardFrame_85)" transform="translate(15 15)"><path fill="none" stroke="#ffb86c" stroke-width="30" d="M0 500C296.011 478.769 293.448 23.073 0 0" class="stroke-orange stroke-orange"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xml:space="preserve" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 530 530">
+  <g vectornator:layerName="Layer 1" clip-path="url(#ArtboardFrame_85)" transform="translate(15 15)">
+    <path fill="none" stroke="#616161" stroke-width="30" d="M500 500C204.948 478.769 207.504 23.073 500 0" class="stroke-orange stroke-orange"/>
+  </g>
+  <g vectornator:layerName="Layer 2" clip-path="url(#ArtboardFrame_85)" transform="translate(15 15)">
+    <path fill="none" stroke="#616161" stroke-width="30" d="M0 500C296.011 478.769 293.448 23.073 0 0" class="stroke-orange stroke-orange"/>
+  </g>
+</svg>

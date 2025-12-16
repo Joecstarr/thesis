@@ -3,164 +3,138 @@
 ## Brief Discussion on Applications
 <!-- prettier-ignore-end -->
 
-As we saw in the intuitive overview, mathematical knots can be easily
-constructed as physical objects. It should be no surprise then that mathematical
-knots and tangles appear in the hard sciences, particularly in the realms of
-physics and biology, this section will discuss some of these applications.
-
-### Solar Flares
-
-The sun is a ball of "burning" gas 150 million kilometers away, this burning gas
-generates tremendous heat and a massive magnetic field. You may remember from an
-earth science course that the earth has layers, and as you move further from the
-center, the layers become cooler. The sun also has layers, similarly to the
-layers of the earth, the core of the sun is the hottest and as you move outward
-the layers become cooler. However, unlike the earth, as you move to the
-atmosphere the temperature increases as you move outward. With the hottest layer
-of the solar atmosphere, called the corona, being the outermost
-[@carrollIntroductionModernAstrophysics2014]. One model for why the corona is so
-hot, is the braiding of solar flares (magnetic field lines)
-[@cirtainEnergyReleaseSolar2013;@bergerEnergycrossingNumberRelations1993]. When
-energy builds in this magnetic field and released, a solar flare, an arc of
-burning gas, is formed. When these arcs form, they will sometimes "dance" around
-each other, becoming a braid. While at first glance this structure may not look
-like a tangle, in fact, physically it's not a tangle.
-
-```{figure} ../../media/Sun-corona-magnetic-braids.jpg
-:label: fig-intro-solar_lines
-@@@ TODO: Add content description
-```
-
-To see the tangle, we need to change our perspective slightly; we move the end
-points of the flares so that they lay on the edge of one giant circle and
-"delete" the rest of the sun we are left with a $n-\text{string tangle}$ similar
-to @fig-intro-solar_tangle In general when talking about the knot theory of
-solar flares we instead consider what is known as a braid, where two circles are
-drawn around the two sets of bases of the flares, seen in
-
-````{prf:observation}
-:label: fig-intro-solar
-
-
-```{figure} ../../media/solar_tangle.svg
-:label: fig-intro-solar_tangle
-@@@ TODO: Add content description
-```
-
-```{figure} ../../media/solar_braid.svg
-:label: fig-intro-solar_braid
-@@@ TODO: Add content description
-```
-````
-
-@fig-intro-solar_braid. An accessible introduction to the theory of braids can
-be found in Birman's "Braids: A survey" [@birmanBraidsSurvey2005].
+As we saw in @sec-intro-intuit_knot_theory, mathematical knots can be easily constructed as physical
+objects. It should be no surprise then that mathematical knots and tangles appear in the hard
+sciences, particularly in the realms of physics, chemistry, and biology. In this section, we will
+discuss one of the most commonly discussed applications of knot theory.
 
 ### Tangles in DNA
 
-One of the fundamental features that identifies life as life is the ability to
-self-replicate. In order to self-replicate, life must have a mechanism to pass
-information to successive generations. Consider first the most basic self
-replicating component of life, called a cell. The information of a cell is
-stored as double-stranded DNA (dsDNA), a polymer consisting of two strands a
-sugar-phosphate connected to one of the monomers: adenine (A), guanine (G),
-cytosine (C), and thymine (T) [@watsonMolecularStructureNucleic1953]. The two
-strands of dsDNA connect to each other to form the "double-helix" where the
-monomer guanine (G) binding to cytosine (C), and adenine (A) binding to thymine
-(T) [@watsonMolecularStructureNucleic1953] as seen in
-@fig-intro-dna_chemical_structure. When replicating, the cell will duplicate the
-dsDNA by splitting the dsDNA with an enzyme DNA-helicase into two single
-strands, then will build two new strands from each strand of the original dsDNA.
-The dsDNA of a cell needs to be physically stored in the cell. The volume in a
-cell which can contain the dsDNA is small, so to fit all the dsDNA into the cell
-it must remain organized. Every once in a while, the dsDNA will become locally
-knotted. If this type of knotting happens to dsDNA and the cell attempts to
-replicate, the DNA-helicase will start to split the dsDNA, but when the
-DNA-helicase reaches the knot it will become stuck and the DNA helicase, as well
-as the replication, would be unable to continue
-[@albertsMolecularBiologyCell2022]. If this was allowed to happen, every cell
-would eventually be unable to replicate and would ultimately die. Famously, life
-finds a way, for the knotting problem. A solution is an enzyme, called type II
-topoisomerase, that tries to ensure there are no knots on the
-dsDNA[@albertsMolecularBiologyCell2022]. Type II topoisomerase accomplishes this
-by splitting the dsDNA at a crossing and moving the (depending on perspective)
-top double strand to be the bottom double strand. This action can be seen in
-@fig-intro-topo.
+One of the fundamental features that identifies life as life is the ability to self-replicate. In
+order to self-replicate, life must have a mechanism to pass information to successive generations.
+Consider first the most basic self replicating component of life, called a cell. The information of
+a cell is stored as double-stranded DNA (dsDNA), as described by Crick, Franklin, Gosling, and
+Watson [@watsonMolecularStructureNucleic1953; @franklinMolecularConfigurationSodium1953], a polymer
+consisting of two strands constructed from a sugar-phosphate connected to one of the monomers
+[@watsonMolecularStructureNucleic1953]:
 
-````{prf:observation}
-:label: fig-intro-dna
-
+1. Adenine (A)
+1. Guanine (G)
+1. Cytosine (C)
+1. Thymine (T)
 
 ```{figure} ../../media/dont_proc/DNA_chemical_structure.svg
 :label:fig-intro-dna_chemical_structure
-@@@ TODO: Add content description [@priceballDNAChemicalStructure2007]
+:width: 50%
+A schematic diagram demonstrating the structure of a dsDNA polymer (Ball CC BY-SA 2.5 via Wikimedia
+  Commons [@priceballDNAChemicalStructure2007])
 ```
+
+The two strands of dsDNA connect to each other to form the "double-helix" where the monomers bind to
+each other with guanine (G) binding to cytosine (C) and adenine (A) binding to thymine (T)
+[@watsonMolecularStructureNucleic1953] (@fig-intro-dna_chemical_structure). When replicating, the
+cell will duplicate the dsDNA by splitting the dsDNA into two single strands with the enzyme DNA
+helicase. Once the DNA is split, two new complementary single strands are constructed to be paired
+with each of the original single strands.
+
+```{figure} ../../media/dont_proc/DNA_replication_en.svg
+:label:fig-intro-dna_split
+A schematic diagram demonstrating the splitting of a double strand of DNA into
+two new double strands. (Ruiz Public domain via Wikimedia
+  Commons[@ruizDNAReplicationFork])
+```
+
+The dsDNA of a cell needs to be physically stored inside the cell. Cell volume is limited, so
+organizing the dsDNA to fit in that volume requires several complex cellular mechanisms. One issue
+solved by these mechanisms is that of local knotting, which becomes a problem when the cell attempts
+to replicate. During the replication process, the DNA helicase begins splitting the dsDNA, but when
+the DNA helicase reaches the locally knotted portion, it becomes stuck, the replication will be
+unable to continue [@albertsMolecularBiologyCell2022], and the cell will die. If this local knotting
+is allowed to happen unchecked, every cell would eventually be unable to replicate and would
+ultimately die. Famously, life finds a way, and one cellular mechanism that mitigates this local
+knotting problem is the enzyme type II topoisomerase [@albertsMolecularBiologyCell2022].
+
+```{figure} ../../media/dont_proc/Gyrase_structure_Dmitry_Sutormin_eng.png
+:label:fig-intro-topo2schem
+:width: 50%
+A schematic diagram of the enzyme type II topoisomerase. (Sutor CC BY-SA 4.0 via Wikimedia
+    Commons [@sutorSchemeDNAGyrase])
+```
+
+The enzyme attempts to solve this local knotting by cutting one of the dsDNA where two segments
+cross, then moving the top double strand to the bottom, this action can be seen in @fig-intro-topo.
 
 ```{figure} ../../media/topo3.svg
 :label: fig-intro-topo
-@@@ TODO: Add content description
+:width: 70%
+Type II topoisomerase doing a crossing exchange. From top left to bottom
+right: 1) A crossing of two dsDNA segments. 2) The enzyme grabs the under segment.
+3) The enzyme splits the under segment. 4) The enzyme passes the over segments
+through the gap. 5) The crossing with the segments exchanged.
 ```
-```{figure} ../../media/topo2.svg
-:label: fig-intro-topo2
-@@@ TODO: Add content description
-```
-````
 
-While in mammals, dsDNA takes the form of long strings, which can only form
-everyday knots, however it was discovered that in some bacteria the dsDNA is a
-closed loop, making it a mathematical knot (@fig-intro-circ_dna_fig)
-[@dulbeccoEVIDENCERINGSTRUCTURE1963] [@weilCYCLICHELIXCYCLIC1963]
-[@vinogradTwistedCircularForm1965].
+In mammals (and many other animal groups), dsDNA takes the form of long strings, which can only
+become everyday knots. However, it was discovered by Dulbecco and Vogt
+[@dulbeccoEVIDENCERINGSTRUCTURE1963;@weilCYCLICHELIXCYCLIC1963;@vinogradTwistedCircularForm1965]
+that in some viruses (Polyoma) the dsDNA is a closed loop, allowing it to form into a mathematical
+knot (@fig-intro-circ_dna_fig) .
 
-````{prf:observation}
+````{figure}
 :label: fig-intro-circ_dna_fig
 
 
 ```{figure} ../../media/dna_circle.svg
 :label: fig-intro-dna_circle
-@@@ TODO: Add content description
+:width: 40%
+A schematic diagram of circular dsDNA.
 ```
 
 ```{figure} ../../media/sem_knot.png
 :label: fig-intro-sem_knot-png
-@@@ TODO: Add content description
+:width: 50%
+A scanning electron microscope image of knotted dsDNA (Arsuaga CC
+BY-ND [@arsuagaDNAKnotSeen2013]).
 ```
+Schematic diagrams of circular and knotted dsDNA.
 ````
 
-From here one may ask, "If the dsDNA is knotted and type II topoisomerase makes
-a change, what kind new knot does this make?", this question was addressed first
-by Ernst and Sumners in the 1990s [@ernstCalculusRationalTangles1990]
-[@ernstTANGLEEQUATIONS1996]. Their approach was to consider the dsDNA split in
-two "areas", the first area is created by drawing a circle around the crossing
-that type II topoisomerase is working on and the second by drawing a circle
-around the remainder, as seen in @fig-intro-tangle_equation_start. From here,
-the crossing change from type II topoisomerase can be modeled by changing the
-tangle bound in the area on the right (@fig-intro-tangle_calc),
-[@darcy3DVisualizationSoftware2008] built into KnotPlot
-[@schareinInteractiveTopologicalDrawing1998]
+From here one may ask, "If the dsDNA is knotted and type II topoisomerase makes a change, what kind
+of new knot can this make?", this question was addressed first by Ernst and Sumners in the 1990s
+[@ernstCalculusRationalTangles1990] [@ernstTANGLEEQUATIONS1996]. Their approach considers the dsDNA
+to be bounded by two "areas", the first area is created by drawing a circle around the crossing that
+type II topoisomerase is working on (right side of @fig-intro-tangle_equation_start), and the second
+by drawing a circle around the remainder (left side of @fig-intro-tangle_equation_start). From here,
+the crossing change from type II topoisomerase can be modeled by changing the tangle bound in the
+area on the right (@fig-intro-tangle_calc), [@darcy3DVisualizationSoftware2008].
 
-````{prf:observation}
+```{note}
+After the change, there may be many crossings that type II topoisomerase could "choose" to work on next. A program
+like TopoICE-X [@darcy3DVisualizationSoftware2008] (built into KnotPlot
+[@schareinInteractiveTopologicalDrawing1998]) can help visualize the results of
+making these choices.
+```
+
+````{figure}
 :label: fig-intro-tangle_calc
 
 
 ```{figure} ../../media/tangle_equation_start.svg
 :label: fig-intro-tangle_equation_start
-@@@ TODO: Add content description
+:width: 40%
+A knot diagram showing two areas containing knot data. The right side contains
+the crossing that type II topoisomerase will work on.
 ```
 
 ```{figure} ../../media/tangle_equation_result.svg
 :label: fig-intro-tangle_equation_result
-@@@ TODO: Add content description
+:width: 40%
+A knot diagram showing two areas containing knot data. The right side contains
+the crossing that type II topoisomerase has worked on.
 ```
-
-```{figure} ../../media/pathway.png
-:label: fig-intro-pathway-png
-@@@ TODO: Add content description
-```
+A tangle model for a crossing change in a knot.
 ````
 
-@fig-intro-tangle_equation_result. As you can see, after the change there, may
-be many crossings that type II topoisomerase could "choose" to work on next. A
-program like TopoICE-X [@darcy3DVisualizationSoftware2008] built into KnotPlot
-[@schareinInteractiveTopologicalDrawing1998] can help visualize the results of
-making these choices as seen in @fig-intro-pathway-png.
+The modeling of the action of type II topoisomerase is just one of the many applications for the
+theory of knots and tangles found in biology. For further reading on applications, a good source is
+the "Encyclopedia of knot theory"[@adamsEncyclopediaKnotTheory2021], a survey of many subdisciplines
+of knot theory with a chapter devoted to applications.

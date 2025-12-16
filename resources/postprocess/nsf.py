@@ -11,7 +11,11 @@ REPLACEMENTS = [
     },
     {
         "original": "Observation",
-        "replacement": "Figure",
+        "replacement": "Placeholder",
+    },
+    {
+        "original": "!htbp",
+        "replacement": "H",
     },
 ]
 

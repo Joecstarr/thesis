@@ -1,0 +1,78 @@
+<!-- prettier-ignore-start -->
+(sec-interfaces-generator)=
+### Generator Interface
+<!-- prettier-ignore-end -->
+
+The generator interface defines the general form for a component used to perform a knot operation.
+Then when the generator component is invoked, it produces more than a single output. The generator
+component does not allocate memory, it must be configured with sufficient buffer space to
+successfully execute.
+
+#### Class Diagram
+
+$\,$
+
+````{figure}
+```{mermaid}
+%%{ init: { "flowchart": { "htmlLabels": false } }%%
+classDiagram
+    generator *-- gen_config_t
+    class generator {
+        <<Interface>>
+        - gen_config_t Configuration
+        + int gen_config(gen_config_t config)
+        + int gen_generate()
+    }
+
+    class gen_config_t {
+
+        + int storage_write(key, index, value)
+    }
+
+
+```
+````
+
+#### Functionality
+
+##### Public Structures
+
+###### Generator Configuration Structure
+
+The generator configuration structure defines the collection of data the component needs for a
+single run. Setting a configuration should be considered equivalent to instantiating a class in a
+high-level language. However, in this case, there is only ever a single active instance of the
+class.
+
+##### Public Functions
+
+###### Configuration Function
+
+The function will take a configuration as input and set the local configuration instance to that
+input. The function returns a flag indicating whether the function was successful. This function can
+be considered analogous to the `init` function of a class in a high-level language.
+
+###### Generate Function
+
+When this function is invoked, the generation process begins. The actual internal functionality is
+specific to the specific generator. The function returns a flag indicating whether the function was
+successful.
+
+The flow for a generator is modeled by the following state machine:
+
+````{figure}
+```{mermaid}
+stateDiagram-v2
+    state "Get data" as gd
+    state "Generate new data" as wod
+    state "Report new data" as rv
+    state if_done <<choice>>
+
+    [*] --> gd
+    gd  -->  wod
+    wod --> rv
+    rv --> if_done
+    if_done --> [*]: Operations are complete
+    if_done --> wod: Operations are not complete
+```
+````

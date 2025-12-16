@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xml:space="preserve" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" viewBox="-20 0 452.473 529.332"><g vectornator:layerName="Layer 1" fill="none" stroke="#ffb86c" stroke-width="30" clip-path="url(#ArtboardFrame_78)" transform="translate(-5.076 13.94)"><path d="M300.572 342.152C158.74 341.722-2.153 495.578.254 500.393M302.69 342.204c158.994 0 160.957-185.493-.982-185.983" class="stroke-orange stroke-orange"/></g><g vectornator:layerName="Layer 2" clip-path="url(#ArtboardFrame_78)" transform="translate(-5.076 13.94)"><path fill="none" stroke="#ffb86c" stroke-width="30" d="M.895 1.152C6.37-1.585 142.662 156.341 304.137 156.341" class="stroke-orange stroke-orange"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xml:space="preserve" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" viewBox="-20 0 452.473 529.332">
+  <g vectornator:layerName="Layer 1" fill="none" stroke="#616161" stroke-width="30" clip-path="url(#ArtboardFrame_78)" transform="translate(-5.076 13.94)">
+    <path d="M300.572 342.152C158.74 341.722-2.153 495.578.254 500.393M302.69 342.204c158.994 0 160.957-185.493-.982-185.983" class="stroke-orange stroke-orange"/>
+  </g>
+  <g vectornator:layerName="Layer 2" clip-path="url(#ArtboardFrame_78)" transform="translate(-5.076 13.94)">
+    <path fill="none" stroke="#616161" stroke-width="30" d="M.895 1.152C6.37-1.585 142.662 156.341 304.137 156.341" class="stroke-orange stroke-orange"/>
+  </g>
+</svg>

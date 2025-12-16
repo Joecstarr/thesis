@@ -1,8 +1,7 @@
 <!-- prettier-ignore-start -->
-
+(subsec-wptt)=
+## Weighted Planar Trees
 <!-- prettier-ignore-end -->
-
-### Weighted Planar Trees
 
 ```{include} construction.md
 

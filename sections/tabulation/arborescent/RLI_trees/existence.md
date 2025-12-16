@@ -1,18 +1,16 @@
-#### Existence of Right Leaning CWPTT
+### Existence of Right Leaning CWPTT
 
-We start our construction of RLITT by first defining what conditions make a
-CWPTT a right leaning CWPTT.
+We start our construction of RLITT by defining what conditions make a CWPTT a right leaning CWPTT.
 
-```{prf:definition} Right Leaning CWPTT
+```{prf:definition}
 :label: rli-const-def-rl
 
-A CWPTT is called right leaning if all weights are in the highest indexed
-sections of each vertex. Additionally, any ring subtrees that are children of a
-vertex are the highest indexed children of that vertex.
+A CWPTT is called **right leaning** if all weights are in the highest indexed
+region (as in @indexing-rpt) of each vertex. Additionally, any ring subtrees
+that are children of a vertex are the highest indexed children of that vertex.
 ```
 
-Our next step is to show that every arborescent tangle has a right leaning
-representative.
+Our next step is to show that every arborescent tangle has a right leaning representative.
 
 ```{prf:theorem}
 :label: rli-const-thm-rl_exists
@@ -20,33 +18,32 @@ Every arborescent tangle has a right leaning CWPTT representative.
 ```
 
 ```{prf:proof}
-Let $\Gamma$ be a CWPTT representative for a tangle $\T$. If every weight
-$w_i$ of $\Gamma$ is in the highest indexed section of $\Gamma_{w_i}$, we
+Let $\Gamma$ be a CWPTT representative for a tangle $T$. If every weight
+$w_i$ of $\Gamma$ is in the highest indexed region of $\Gamma_{w_i}$, we
 are done. Otherwise, we will follow a similar algorithm to that outlined by
-Bonahon and Seibenmann [@bonahonNewGeometricSplittings2016] for distinguishing
+Bonahon and Siebenmann [@bonahonNewGeometricSplittings2016] for distinguishing
 CWPTT. Let $w_i$ be the weight for the lowest indexed vertex $v_i$ not in its
-highest indexed section of $\Gamma_{v_i}$. With move $F_3^\prime$ shift $w_i$ so
-that it lies in the highest indexed section. Further, choose to shift $w_i$
-anticlockwise, this ensures that $v_j$ with $j<i$ are unchanged when $w_i$ is
-even. We repeat this process for any $v_k$ with $i<k$ where the weight $w_k$ not
-in the highest indexed section. Since $\Gamma$ has finite vertices, the
+highest indexed region of $\Gamma_{v_i}$. With move $F_3^\prime$ shift $w_i$ so
+that it lies in the highest indexed region. Further, choose to shift $w_i$
+anti-clockwise, this ensures that $v_j$ with $j<i$ are unchanged when $w_i$ is
+even. We repeat this process for any $v_k$ with $i<k$ where the weight $w_k$ is not
+in the highest indexed region. Since $\Gamma$ has finite vertices, the
 algorithm terminates with a $\Gamma$ transformed into a right leaning tree
 completing the proof.
 ```
 
-#### Existence of Identity CWPTT
+### Existence of Identity CWPTT
 
-Our second step in the construction of RLITT is to define what conditions make a
-CWPTT an identity CWPTT.
+Our second step in the construction of RLITT is to define what conditions make a CWPTT an identity
+CWPTT.
 
-```{prf:definition} Identity CWPTT
-:label: rli-const-def-rl
-A CWPTT is called an identity tree if its free bond is marked by
+```{prf:definition}
+:label: rli-const-def-identity
+A CWPTT is called an **identity tree** if its free bond is marked by
 $\iota\in V_4$.
 ```
 
-Again, we must show that every arborescent tangle has a right leaning
-representative.
+Again, we must show that every arborescent tangle has an identity representative.
 
 ```{prf:theorem}
 :label: rli-const-thm-ident_exists
@@ -54,7 +51,7 @@ Every arborescent tangle has an identity CWPTT representative.
 ```
 
 ```{prf:proof}
-Let $\Gamma$ be a CWPTT representative for a tangle $\T$. If the label
+Let $\Gamma$ be a CWPTT representative for a tangle $T$. If the label
 $\alpha$ for the free bond of $\Gamma$ is $\iota$ we are done. Otherwise,
 we fall into one of three cases:
 
@@ -68,26 +65,26 @@ we fall into one of three cases:
 This transforms $\Gamma$ into an identity tree completing the proof.
 ```
 
-#### Existence of Right Leaning Identity CWPTT (RLITT)
+### Existence of Right Leaning Identity CWPTT (RLITT)
 
-What we have shown is that every arborescent tangle has at least on right
-leaning CWPTT and at least one identity CWPTT representative. Combining these
-two ideas, we will show that every arborescent tangle has at least one CWPTT
-that is right leaning and identity, we call such a CWPTT a RLITT.
+What we have shown is that every arborescent tangle has at least one right leaning CWPTT and at
+least one identity CWPTT representative. Combining these two ideas, we will show that every
+arborescent tangle has at least one CWPTT that is right leaning and identity, we call such a CWPTT
+an RLITT.
 
-```{prf:definition} Right Leaning Identity CWPTT (RLITT)
-:label: rli-const-def-rl
-A CWPTT is called a right leaning identity tree if it's a right leaning and
-identity tree.
+```{prf:definition}
+:label: rli-const-def-rlident
+A CWPTT is called a **right leaning identity tangle tree (RLITT)** if it's a
+right leaning and identity tree.
 ```
 
 ```{prf:theorem}
-:label: rli-const-thm-ident_exists
+:label: rli-const-thm-rightident_exists
 Every CWPTT has a right leaning identity representative.
 ```
 
 ```{prf:proof}
-Let $\Gamma$ be an identity CWPTT representative for a tangle $\T$.
+Let $\Gamma$ be an identity CWPTT representative for a tangle $T$.
 Applying the algorithm described in the proof of
 @rli-const-thm-rl_exists transforms $\Gamma$ into a right leaning
 tree. Our requirement that $F_3^\prime$ be anti-clockwise ensures that the
