@@ -80,6 +80,5 @@ to bottom, the third strand is:
 ```
 
 We should note here that with a concept of equivalence comes equivalence classes of knot diagrams.
-Historically, of particular interest in the tabulation of knots, are the knot diagrams that have
-minimal crossing number, we call these **minimal diagrams**, knot diagrams where crossing number
-cannot be decreased by Reidemeister moves.
+Historically, of particular interest in the tabulation of knots are the knot diagrams that have
+minimal crossing number; we call these **minimal diagrams**.

@@ -42,10 +42,10 @@ classDiagram
 
 ##### Public Structures
 
-###### Computation ConfigurationStructure
+###### Computation Configuration Structure
 
 The computation configuration structure defines the collection of data the component needs for a
-single run. Setting a configurationshould be considered equivalent to instantiating a class in a
+single run. Setting a configuration should be considered equivalent to instantiating a class in a
 high-level language. However, in this case, there is only ever a single active instance of the
 class.
 

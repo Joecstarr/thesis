@@ -14,7 +14,7 @@ and tangles [@bonahonNewGeometricSplittings2016]. We deviate slightly from Bonah
 introduction but ultimately arrive at the same structure. In our introduction we develop partial
 solutions, then progressively modify those partial solutions until they fit our needs. Next, we
 describe Bonahon and Siebenmann's [@bonahonNewGeometricSplittings2016] operations on the
-combinatorial structure, which allow us to systematically modify the structure, without changing the
+combinatorial structure, which allow us to systematically modify the structure without changing the
 topology. This subsection finishes with the classification of arborescent knots and tangles given by
 Bonahon and Siebenmann [@bonahonNewGeometricSplittings2016] as well as our extension from a global
 to local viewpoint.
@@ -73,7 +73,7 @@ Plumbed bands
 Two bands plumbed.
 ````
 
-Our plumbing band construction can be turned into a knot, by adding a series of half-twists to our
+Our plumbing band construction can be turned into a knot by adding a series of half-twists to our
 plumbing bands (@wpt-construc-fig-6 and @wpt-construc-fig-25). When forming the half twists, we have
 two options for direction relative to the band, we call one positive (left handed twists) and one
 negative (right handed twists). We note that the twists appear in unique regions of the band,
@@ -110,7 +110,7 @@ Bands plumbed
 ```{figure} ../../media/bands/arbor_bound.svg
 :label: wpt-construc-fig-24
 
-An arborescent knot
+An arborescent knot.
 ```
 A set of plumbed bands in
     @wpt-construc-fig-10
@@ -131,13 +131,13 @@ the first band in a cycle.
 ```
 
 We now establish some language for describing the relative positions of bands. This language will be
-reused when we transition to the combinatorial setting, and is widely used in graph theoretic
+reused when we transition to the combinatorial setting and is widely used in graph theoretic
 settings.
 
 ```{prf:definition}
 :label: wpt-construc-def-relationships_of_bands
 Given a band $B$ with plumbing squares, we call the set $C$ of bands
-plumbed to $B$ the **children** of $B$. Additionally, for $c\in C$ we call $B$
+plumbed to $B$ the **children** of $B$. Additionally, for $c\in C$, we call $B$
 the **parent** of $c$ and the collection of $C-\LS c \RS$ the
 **siblings of $C$**.
 ```
@@ -228,7 +228,7 @@ $\,$
 We will now describe an **ideal indexing** for a rooted plane tree.
 
 ```{prf:definition}
-Let $\Gamma$ be a rooted plane tree $r$, be the root of $\Gamma$. Additionally,
+Let $\Gamma$ be a rooted plane tree and $r$ be the root of $\Gamma$. Additionally,
 let $v_i\neq r$ be a vertex with parent $v_p$ and children
 $v_{c_1},\,\cdots,\,v_{c_n}$. We call the indexing of a rooted plane **ideal** if
 it satisfies the following:
@@ -255,7 +255,7 @@ A rooted plane tree with ideal indexing. The index of each vertex is seen inside
 ```{figure} ../../media/bands/rpt_order_ni.svg
 :label: wpt-construc-fig-rptorder_2
 
-A rooted plane tree with indexing that is not ideal. The index of is each vertex seen inside the vertex.
+A rooted plane tree with indexing that is not ideal. The index of each vertex is seen inside the vertex.
 ```
 Indexing strategies of a rooted plane tree.
 ````
@@ -293,8 +293,8 @@ The local view of a vertex with the weights two, zero, and zero.
 ```{figure} ../../media/bands/arbor_graph_split_local_1.svg
 :label: wpt-construc-fig-weights-with-index
 
-The local view of a vertex with weight. Notice the index of the weights come
-from the bond "before" it in the planar realized cyclic order.
+The local view of a vertex with weight. Notice the index of the weights comes from the bond
+"before" it in the planar realized cyclic order.
 ```
 Local view of a vertex with weights.
 ````
@@ -332,11 +332,11 @@ Realization of plumbing of a tree.
 
 Our construction to this point has been concerned with the notation for knots and links. We now give
 a modification of this notation for tangles. A weighted planar tree, as in @wpt-construc-fig-29, can
-be modified to represent a tangle by allowing a **free bond** (half-edge), to be attached to a
+be modified to represent a tangle by allowing a **free bond** (half-edge) to be attached to a
 vertex, that is, to allow bands to have a non-plumbed plumbing square. We realize the non-plumbed
-square, as a Conway circle for a two string tangle as in @wpt-construc-fig-tangle_trad. To
+square as a Conway circle for a two string tangle as in @wpt-construc-fig-tangle_trad. To
 consistently orient the Conway sphere's interior, we align the north boundary points of the Conway
-sphere with the top (up in the band orientation) boundary component, and place the NW corner first
+sphere with the top (up in the band orientation) boundary component and place the NW corner first
 (following the orientation of the boundary), per @wpt-construc-fig-band_orientation. Plumbing two
 bands then corresponds to the action of gluing a pair of tangles together on their Conway spheres so
 that boundary points align.
@@ -345,7 +345,7 @@ that boundary points align.
 :label: wpt-construc-fig-band_orientation
 
 The orientation of a
-Conway sphere given by a plumbing square on a band of an
+Conway sphere is given by a plumbing square on a band of an
 arborescent tangle. The orientation of the underlying plumbing
 square is shown.
 This aligns with a left hand rule with $Y$ the thumb, $X$ the
@@ -405,7 +405,7 @@ The identity rotation (no rotation)
 
 The effect of the $V_4$ rotations on each of the
 ```
-The identity rotation (no rotation), and the effect of the $V_4$ rotations on each of the
+The identity rotation (no rotation) and the effect of the $V_4$ rotations on each of the
 ````
 
 ```{prf:definition}Bonahon and Siebenmann Page 165 [@bonahonNewGeometricSplittings2016]
@@ -569,7 +569,7 @@ weight $w_0$ we call it an **integral tangle tree**.
 
 ```{figure} ../../media/watt_integral.svg
 :label: wpt-construc-fig-integral
-A stick realized as a integral tangle.
+A stick realized as an integral tangle.
 ```
 
 <!-- prettier-ignore-start -->
@@ -578,7 +578,7 @@ A stick realized as a integral tangle.
 <!-- prettier-ignore-end -->
 
 Bonahon and Siebenmann [@bonahonNewGeometricSplittings2016] give a correspondence between stick
-tangle trees (stick with a single free bond) and Conway's rational tangles
+tangle trees (a stick with a single free bond) and Conway's rational tangles
 [@conwayEnumerationKnotsLinks1970]. An example of the correspondence can be seen in
 @wpt-construc-fig-rat.
 

@@ -15,7 +15,7 @@ modified ring moves $\LP\pm R\RP$). Assume that there is an $i > 0$ such that
 $\varphi$ respects the cyclic orders of weight and bonds at each vertex $v_j$
 with $j < i$, and that the labels of the free bond $\alpha$ in
 $\Gamma$ and of $\varphi\LP \alpha\RP$ in $\Gamma^\prime$ are identical. Assume
-moreover that one of:
+moreover, that one of:
 
 1. $\varphi$ reverses the cyclic order of bonds at $v_i$
 2. $\varphi$ does not respect the label in $V_4$ of some free bond of a
@@ -41,7 +41,7 @@ calculus of arborescent tangles that takes $\Gamma^\prime$ to $\Gamma$. Let
 $\varphi$ be such a sequence. By construction the labels in $V_4$ of $\Gamma$
 and $\Gamma^\prime$ agree. Now, since $\Gamma\neq \Gamma^\prime$ there must be a
 first, in the total order, vertex $v_i$ where $\Gamma$ and $\Gamma^\prime$
-disagree. As $\LP +\RP$-RLITT the location of weights for $v_i$ in $\Gamma$ and
+disagree. As $\LP +\RP$-RLITT, the location of weights for $v_i$ in $\Gamma$ and
 $\Gamma^\prime$ must appear in the same region. This requires that the
 disagreement at $v_i$ must be in cyclic order of its children. We find ourselves
 in the first case of @rli-const-prop-not_iso, making $\varphi$ not a

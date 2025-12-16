@@ -8,11 +8,11 @@ knot theory software toolbox.
 
 KnotPlot[@schareinInteractiveTopologicalDrawing1998] is a closed source[^closed] knot computation
 tool primarily and widely used for diagramming knots, this includes several diagrams in this thesis.
-Knotplot was developed as a portion of Dr. Robert Scharein's PhD thesis
+KnotPlot was developed as a portion of Dr. Robert Scharein's PhD thesis
 [@schareinInteractiveTopologicalDrawing1998], he is also the primary maintainer. The primary
 interface for KnotPlot is by interacting with a GUI[^GUI]. This makes the onboarding process for
 non-technical users, including undergraduate researchers, straightforward and the learning curve
-shallow. Knotplot includes many export options and specialized research computational tools, some
+shallow. KnotPlot includes many export options and specialized research computational tools, some
 undocumented. While support is readily available from Dr. Scharein this can make power use of
 KnotPlot difficult. KnotPlot has recently added a programmatic interface allowing general scripting
 in the programming language Lua. This scripting interface allows for custom diagramming and custom
@@ -50,8 +50,8 @@ be considered when using the collections.
 SnapPy [@SnapPy] is a Python wrapper for SnapPea, which is a collection of C libraries. SnapPy and
 SnapPea are open source and published in the same GitHub repository which includes bug reporting and
 test suites. SnapPy's Python bindings allow researchers to leverage the massive Python ecosystem,
-allowing for wide and varied usage. SnapPy can be utilized in anything from a simple command line
-tool, to a GUI tool to draw knots, to a webapp doing knot computations. This allows SnapPy to be
+allowing for wide and varied usage. SnapPy can be utilized in anything such as a simple command line
+tool, GUI tool to draw knots, or a web application doing knot computations. This allows SnapPy to be
 tailored to the needs of individual researchers, allowing for simple subsets of functionality to be
 presented to undergraduate researchers. Each of these uses benefits from the decoupling of SnapPy
 and the core logic in SnapPea, allowing for fast execution of the SnapPea C code, but simple

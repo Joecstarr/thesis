@@ -9,7 +9,7 @@ rephrase Conway's example for tangles.
 ```{figure}../../media/fig-6starstar_nonminimal.svg
 :label: fig-6starstar_nonminimal
 An arborescent tangle being turned into a polygonal tangle via a sequence of
-interpolated Reidemister moves.
+interpolated Reidemeister moves.
 ```
 
 This leads to two items that must be addressed to ensure the list of tangles contains minimal

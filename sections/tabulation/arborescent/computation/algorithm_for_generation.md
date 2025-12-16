@@ -143,7 +143,7 @@ scion of the grafting operation with the weights necessary to reach a target TCN
 this method quickly runs into issues generating even just the Montesinos tangles, a smaller class of
 tangle described by [@bonahonNewGeometricSplittings2016] We must make a slightly more radical change
 to the Nakano algorithm, that being, grafting an entire RLITT to only the root $v_0$ of the
-rootstock. We will now show that a list of integral tangles (single vertex RLITT
+rootstock. We will now show that a list of integral tangles (single vertex RLITT)
 @subsec-integral_tangle combined with grafting at the root generates all $\LP+\RP$-RLITT. To start,
 we will prove that each $\LP+\RP$-RLITT is integral or the result of grafting weighted planar tangle
 trees at the root.
@@ -167,7 +167,7 @@ Every $\Gamma$ $\LP+\RP$-RLITT of TCN $n$ is one of two forms:
 Let $\Gamma$ be a $\LP +\RP$-RLITT, we have three cases based on the valence of
 $v_0\in \Gamma$.
 
-Valence of $v_0$ is:
+The valence of $v_0$ is:
 
 1. **One:** $\Gamma$ is integral (@wpt-construc-sec-integral), we fall into
    the first condition.
@@ -222,7 +222,7 @@ construction of a grafting algorithm for arborescent tangles.
 
 **Routine**
 
-1. for each combination of $\Gamma_r\in T_r$ and $\Gamma_s \in T_s$
+1. For each combination of $\Gamma_r\in T_r$ and $\Gamma_s \in T_s$
     1. Compute $\Gamma_r\star \Gamma_s$
 ```
 
@@ -255,14 +255,14 @@ non-canonical vertex must be adjacent to the root.
 ```{prf:theorem}
 :label: only-the-root-matters
 For $\Gamma_r$ a $\LP+\RP-$RLITT and $\Gamma_s$ a $\LP+\RP-$RLITT scion,
-the result of $\Gamma=\Gamma_r\star\Gamma_s$ is canonical, if all
+the result of $\Gamma=\Gamma_r\star\Gamma_s$ is canonical if all
 $v_i$ at distance $1$ or less from the root are canonical.
 ```
 
 ```{prf:proof}
 We need to show that each vertex $v_i$ at a distance greater than one from the
 root of $\Gamma=\Gamma_r\star\Gamma_s$ is canonical. The vertex $v_i$ is also a
-vertex of either $\Gamma_r$ or $\Gamma_s$. If the vertex is in $\Gamma_r$ then
+vertex of either $\Gamma_r$ or $\Gamma_s$. If the vertex is in $\Gamma_r$, then
 $v_i$ has a parent in $\Gamma_r$ and if the valence of $v_i$ is 2 or more
 $v_i$ also has children in $\Gamma_r$. The parent and children in $\Gamma$ are
 the same as the parent and children in $\Gamma_r$. Since $\Gamma_r$ is RLITT
@@ -278,7 +278,7 @@ Before we address that case we define a restricted class of scions that, after g
 nonzero portion of the stick condition.
 
 ```{prf:definition}
-A $\LP+\RP-$RLITT (respectively $\LP+\RP-$RLITT) $\Gamma$ with root weight $w_0$
+An $\LP+\RP-$RLITT (respectively $\LP+\RP-$RLITT) $\Gamma$ with root weight $w_0$
 is called a **good scion** when either:
 
 1. $w_0\neq0$
@@ -298,7 +298,7 @@ which is a stick of the form @wpt-construc-fig-positivity_cond-1 or
 @wpt-construc-fig-positivity_cond-2. Similarly, $\Gamma_s$ is a non-neutral
 $\LP+\RP-$RLITT, so it has a non-root vertex $v_{j}$, which is a stick of the
 form @wpt-construc-fig-negativity_cond-1 or @wpt-construc-fig-negativity_cond-2.
-Since, $v_i$ and $v_j$ are not at the root, they remain sticks of the form
+Since $v_i$ and $v_j$ are not at the root, they remain sticks of the form
 @wpt-construc-fig-positivity_cond-1, @wpt-construc-fig-positivity_cond-2,
 @wpt-construc-fig-negativity_cond-1, or @wpt-construc-fig-negativity_cond-2
 after grafting. Making $\Gamma$ neither $\LP+\RP-$RLITT nor $\LP-\RP-$RLITT, as
@@ -320,9 +320,9 @@ we desired.
 
 **Routine**
 
-1. for each combination of $\Gamma_s\in T_s$ and $\Gamma_r \in T_r$
+1. For each combination of $\Gamma_s\in T_s$ and $\Gamma_r \in T_r$
     1. Compute $\Gamma = \Gamma_r\star \Gamma_s$
-    1. for each vertex $v_i$ at distance 1 from the root of $\Gamma$
+    1. For each vertex $v_i$ at distance 1 from the root of $\Gamma$
         1. Continue to the next iteration of the outer loop if $v_i$ fails to satisfy the stick condition
     1. Report $\Gamma$
 
@@ -352,9 +352,9 @@ algorithm.
 
 **Routine**
 
-1. for each combination of $\Gamma_s\in T_s$ and $\Gamma_r \in T_r$
+1. For each combination of $\Gamma_s\in T_s$ and $\Gamma_r \in T_r$
     1. Compute $\Gamma = \Gamma_r\star \Gamma_s$
-    1. for each vertex $v_i$ at distance 1 from the root of $\Gamma$
+    1. For each vertex $v_i$ at distance 1 from the root of $\Gamma$
         1. Continue to the next iteration of the outer loop if $v_i$ fails to satisfy the stick condition
         1. Continue to the next iteration of the outer loop if $v_i$ fails to satisfy the positivity condition
     1. Report $\Gamma$
@@ -375,9 +375,9 @@ algorithm.
 
 **Routine**
 
-1. for each combination of $\Gamma_s\in T_s$ and $\Gamma_r \in T_r$
+1. For each combination of $\Gamma_s\in T_s$ and $\Gamma_r \in T_r$
     1. Compute $\Gamma = \Gamma_r\star \Gamma_s$
-    1. for each vertex $v_i$ at distance 1 from the root of $\Gamma$
+    1. For each vertex $v_i$ at distance 1 from the root of $\Gamma$
         1. Continue to the next iteration of the outer loop if $v_i$ fails to satisfy the stick condition
         1. Continue to the next iteration of the outer loop if $v_i$ fails to satisfy the negativity condition
     1. Report $\Gamma$
@@ -388,7 +388,7 @@ algorithm.
 Satisfying the right leaning condition is a consequence of the modified $\star_i$ operation. Our
 definition of the $\star_i$ operation grafts the scion in such a way that weights at $v_i$ are
 always right of the scion. To fully satisfy the right leaning condition, we need to ensure that any
-stick subtrees of are in the right most postions. This is accomplished with a slight modification of
+stick subtrees are in the right most positions. This is accomplished with a slight modification of
 our grafting algorithms.
 
 ```{prf:algorithm} Find weighted planar trees by grafting $\LP+\RP$-RLITT good scions to the root of $\LP+\RP$-RLITT rootstocks
@@ -406,10 +406,10 @@ our grafting algorithms.
 
 **Routine**
 
-1. for each combination of $\Gamma_s\in T_s$ and $\Gamma_r \in T_r$
+1. For each combination of $\Gamma_s\in T_s$ and $\Gamma_r \in T_r$
     1. Compute $\Gamma = \Gamma_r\star \Gamma_s$
     1. Shift ring subtrees of the root of $\Gamma$ to the right
-    1. for each vertex $v_i$ at distance 1 from the root of $\Gamma$
+    1. For each vertex $v_i$ at distance 1 from the root of $\Gamma$
         1. Continue to the next iteration of the outer loop if $v_i$ fails to satisfy the stick condition
         1. Continue to the next iteration of the outer loop if $v_i$ fails to satisfy the positivity condition
     1. Report $\Gamma$
@@ -430,10 +430,10 @@ our grafting algorithms.
 
 **Routine**
 
-1. for each combination of $\Gamma_s\in T_s$ and $\Gamma_r \in T_r$
+1. For each combination of $\Gamma_s\in T_s$ and $\Gamma_r \in T_r$
     1. Compute $\Gamma = \Gamma_r\star \Gamma_s$
     1. Shift ring subtrees of the root of $\Gamma$ to the right
-    1. for each vertex $v_i$ at distance 1 from the root of $\Gamma$
+    1. For each vertex $v_i$ at distance 1 from the root of $\Gamma$
         1. Continue to the next iteration of the outer loop if $v_i$ fails to satisfy the stick condition
         1. Continue to the next iteration of the outer loop if $v_i$ fails to satisfy the negativity condition
     1. Report $\Gamma$
@@ -448,8 +448,8 @@ is describing how to build these collections. With computer enumeration in mind,
 our strategy to be easily split into jobs that can be run in parallel.
 
 We observe that when grafting $\Gamma_r\star_i\Gamma_s=\Gamma$, the TCN $r$ of $\Gamma_r$ and the
-TCN $s$ of $\Gamma_s$, sum to the TCN of $\Gamma$. This observation is the key underpinning of the
-strategy we use to define discrete generation jobs. For a target TCN we have the integer pairs seen
+TCN $s$ of $\Gamma_s$ sum to the TCN of $\Gamma$. This observation is the key underpinning of the
+strategy we use to define discrete generation jobs. For a target TCN, we have the integer pairs seen
 in @rli-gen-eq-buckets that sum to the target TCN. Each of these pairs defines two classes,
 determined by TCN, of RLITT that can be grafted.
 
@@ -524,7 +524,7 @@ to the set of RLITT of the target TCN.
 **Routine**
 
 1. Set $T$ to be the set $\LS \iota[0],\ \iota[0\ 0],\ \iota[1],\ \iota[-1],\ \iota[2],\ \iota[-2],\,\ \iota[2\ 0],\ \iota[-2\ 0]\RS$
-2. for i from 3 to TCN
+2. For i from 3 to TCN
     1. Execute @find-rlitt-from-acnm1toacn with input TCN $i$ and RLITT set
        $T$.
     1. Add the results to $T$

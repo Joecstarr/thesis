@@ -10,7 +10,7 @@ of product management tools increases their ability to estimate and bring togeth
 products.
 
 In this section we describe a course design for a basic undergraduate course in product management.
-The perspective of the course design is not software focused, but is intended for general use across
+The perspective of the course design is not software focused but is intended for general use across
 disciplines. In six weeks of instruction, this course introduces students to the key concepts in
 product management needed to ideate and systematically complete complex products. The design
 utilizes the "Backward Design" of Wiggins and McTighe [@wigginsUnderstandingDesign2008]. Many of the

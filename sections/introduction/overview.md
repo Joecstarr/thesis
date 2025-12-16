@@ -8,7 +8,7 @@ questions "How do I systematically construct knots?", "How do I tell two knots I
 "How do I generate new knots?" Particularly, we will address a restricted version of these
 questions, for objects that can be thought of as the building blocks of knots, the tangles
 introduced by Conway [@conwayEnumerationKnotsLinks1970]. Through the middle of this thesis
-(@@@TODO), we will describe several strategies that have been employed to answer even further
+@ch-tabulation, we will describe several strategies that have been employed to answer even further
 restricted versions of these questions:
 
 - "How do I systematically construct rational tangles?", "How do I tell two rational tangles I make
@@ -19,7 +19,7 @@ restricted versions of these questions:
   algebraic/arborescent tangles I make apart?", and "How do I generate new algebraic/arborescent
   tangles?"
 
-While we could answer these questions about tangles with pen and paper brute forceas Tait, Little,
+While we could answer these questions about tangles with pen and paper brute force as Tait, Little,
 Kirkman, Conway, and Caudron [@taitTenfoldKnottiness1885;
 @kirkmanEnumerationDescriptionConstruction1885; @littleKnotsCensusOrder1885;
 @conwayEnumerationKnotsLinks1970; @caudron1982classification] did for knots. Beyond a reasonable
@@ -34,11 +34,11 @@ software toolbox.
 ### Chapter Summary
 
 We will now summarize each of the chapters of this thesis. Organizationally, this thesis is
-partitioned into five chapters, with each chapter further divided into sections, and subsections.
+partitioned into five chapters, with each chapter further divided into sections and subsections.
 
 #### Chapter 1: Introduction
 
-This introduction gave an intuitive description of the basics of knot theory, and a discussion of an
+This introduction gave an intuitive description of the basics of knot theory and a discussion of an
 application for knots and tangles. We now finish with this description of the content in the
 remainder of this thesis.
 
@@ -58,7 +58,7 @@ the tabulation of the more general type of tangle the arborescent (algebraic) ta
 class of tangle we tabulated, a definition and classification is given, followed by a theoretical
 generation strategy.
 
-#### Chapter 4: Software and its Engineering
+#### Chapter 4: Software and Its Engineering
 
 This chapter addresses the computational and engineering aspects of software for mathematics
 research. The chapter begins with an overview of product management and software engineering

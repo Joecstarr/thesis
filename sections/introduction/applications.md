@@ -30,7 +30,7 @@ A schematic diagram demonstrating the structure of a dsDNA polymer (Ball CC BY-S
 ```
 
 The two strands of dsDNA connect to each other to form the "double-helix" where the monomers bind to
-each other with guanine (G) binding to cytosine (C), and adenine (A) binding to thymine (T)
+each other with guanine (G) binding to cytosine (C) and adenine (A) binding to thymine (T)
 [@watsonMolecularStructureNucleic1953] (@fig-intro-dna_chemical_structure). When replicating, the
 cell will duplicate the dsDNA by splitting the dsDNA into two single strands with the enzyme DNA
 helicase. Once the DNA is split, two new complementary single strands are constructed to be paired
@@ -51,7 +51,7 @@ the DNA helicase reaches the locally knotted portion, it becomes stuck, the repl
 unable to continue [@albertsMolecularBiologyCell2022], and the cell will die. If this local knotting
 is allowed to happen unchecked, every cell would eventually be unable to replicate and would
 ultimately die. Famously, life finds a way, and one cellular mechanism that mitigates this local
-knotting problem is the enzyme type II topoisomerase[@albertsMolecularBiologyCell2022].
+knotting problem is the enzyme type II topoisomerase [@albertsMolecularBiologyCell2022].
 
 ```{figure} ../../media/dont_proc/Gyrase_structure_Dmitry_Sutormin_eng.png
 :label:fig-intro-topo2schem
@@ -71,8 +71,8 @@ through the gap. 5) The crossing with the segments exchanged.
 ```
 
 In mammals (and many other animal groups), dsDNA takes the form of long strings, which can only
-become everyday knots. However, it was discovered by Dulbecco and
-Vogt[@dulbeccoEVIDENCERINGSTRUCTURE1963;@weilCYCLICHELIXCYCLIC1963;@vinogradTwistedCircularForm1965]
+become everyday knots. However, it was discovered by Dulbecco and Vogt
+[@dulbeccoEVIDENCERINGSTRUCTURE1963;@weilCYCLICHELIXCYCLIC1963;@vinogradTwistedCircularForm1965]
 that in some viruses (Polyoma) the dsDNA is a closed loop, allowing it to form into a mathematical
 knot (@fig-intro-circ_dna_fig) .
 
@@ -102,8 +102,8 @@ by drawing a circle around the remainder (left side of @fig-intro-tangle_equatio
 the crossing change from type II topoisomerase can be modeled by changing the tangle bound in the
 area on the right (@fig-intro-tangle_calc), [@darcy3DVisualizationSoftware2008].
 
-```{note}After the change, there may be many
-crossings that type II topoisomerase could "choose" to work on next. A program
+```{note}
+After the change, there may be many crossings that type II topoisomerase could "choose" to work on next. A program
 like TopoICE-X [@darcy3DVisualizationSoftware2008] (built into KnotPlot
 [@schareinInteractiveTopologicalDrawing1998]) can help visualize the results of
 making these choices.

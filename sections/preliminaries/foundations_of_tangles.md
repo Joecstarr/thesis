@@ -8,13 +8,13 @@ tangles needed for the remainder of this thesis.
 
 As we saw for knots in @subsec-knot_equivalence, if we want to tell two tangles apart, we first need
 to be able to identify when tangles are the same. Our development of the concept of equality of
-tangles follows closely to that of knots. From @subsubsec-deftangles, we have definitions for
-tangles in the context of knot diagrams and three-dimensional embeddings of knots. This tells us
-that the concepts of equality developed in @subsec-knot_equivalence, namely ambient isotopy and
-Reidemeister moves, will apply in the tangle case with two key differences.
+tangles follows closely that of knots. From @subsubsec-deftangles, we have definitions for tangles
+in the context of knot diagrams and three-dimensional embeddings of knots. This tells us that the
+concepts of equality developed in @subsec-knot_equivalence, namely ambient isotopy and Reidemeister
+moves, will apply in the tangle case with two key differences.
 
-The first difference with tangles when compared to knots is that we restrict ambient isotopy, and
-Reidemeister moves, from pushing a strand through the Conway sphere, or Conway circle. The second
+The first difference with tangles when compared to knots is that we restrict ambient isotopy and
+Reidemeister moves from pushing a strand through the Conway sphere (Conway circle). The second
 difference is the handling of the boundary points. There are two conventions for how to handle
 equality with the boundary points; first allowing the boundary points to move on the Conway sphere,
 and second fixing the boundary points on the Conway sphere.
@@ -22,7 +22,7 @@ and second fixing the boundary points on the Conway sphere.
 #### Moveable Boundary Points
 
 Our first case for handling the boundary of a tangle is allowing the boundary points to move freely
-on the Conway sphere. In this case, a generic tangle, is equivalent to each of its rotations and
+on the Conway sphere. In this case, a generic tangle is equivalent to each of its rotations and
 flips (@subsubsec-tangle_flips). In addition to the rotation and flip equivalence, a moveable
 boundary allows us to unwind the outermost integral components of a tangle
 (@fig-tangl_eq-unwinding).

@@ -204,7 +204,7 @@ needed for storing and translating per theory.
 
 % prettier-ignore-start (sec-proj-note_pd)=
 
-##### Notation Description For Planar Diagram (PD) Notation: Intermediate Student
+##### Notation Description for Planar Diagram (PD) Notation: Intermediate Student
 
 % prettier-ignore-end
 
@@ -215,7 +215,7 @@ for storing and translating per theory.
 
 % prettier-ignore-start (sec-proj-note_dt)=
 
-##### Notation Description For DT Notation: Intermediate Student
+##### Notation Description for DT Notation: Intermediate Student
 
 % prettier-ignore-end
 
@@ -298,7 +298,7 @@ knots[@adamsKnotProjectionsSingle2015].
 
 ###### Brief
 
-Petal knots, first developed by Adams[@adamsKnotProjectionsSingle2015], are knots in which all
+Petal knots, first developed by Adams [@adamsKnotProjectionsSingle2015], are knots in which all
 crossings are collinear in the orthogonal projection, an "ubercrossing". Converting these objects to
 a braid is straightforward, however less obvious is converting to a two string tangle. Identifying a
 tangle analogue for the petal knots may allow for computation of a whole new family of tangle data.

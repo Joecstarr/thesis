@@ -9,9 +9,9 @@ process from an undergraduate training perspective. However, unlike our discussi
 product management, we assume some prior knowledge of software practices. We assume familiarity with
 programming, types of programming languages, and the basic structure of a program. If the reader
 feels unprepared, they may find it useful to complete one of the many free asynchronous online
-courses offered by major universities[^online] and browse a standard intoduction to computation text
-such as "Introduction to the theory of computation" by
-Sipser[@sipserIntroductionTheoryComputation2013]. With this in mind, we will focus on engineering
+courses offered by major universities[^online] and browse a standard introduction to computation
+text such as "Introduction to the Theory of Computation" by Sipser
+[@sipserIntroductionTheoryComputation2013]. With this in mind, we will focus on engineering
 processes needed for our tangle tabulation use case, omitting discussion of the practice of
 programming itself.
 
@@ -52,9 +52,9 @@ the software are necessarily fully understood and well-defined. Consequently, an
 industry trends, linear models are the most appropriate for research contexts. While researchers can
 be expected to define well-considered requirements, as amateur software engineers, it is rare that
 the design and programming techniques are mature enough to support the strict progression of a
-waterfall process. As such, a V model where downstream phases feedback into previous phases is
+waterfall process. As such, a V model where downstream phases feed back into previous phases is
 ideal. For our model process, however, we will make a single change, disallowing feedback caused by
-down stream phases to change requirements, as seen in @se-fig-modifiedv.
+downstream phases to change requirements, as seen in @se-fig-modifiedv.
 
 ```{figure} ../../media/software/v_mod_process.svg
 :label: se-fig-modifiedv

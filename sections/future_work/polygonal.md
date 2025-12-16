@@ -21,10 +21,10 @@ the ten smallest constellations, those with ten or fewer vertices.
 
 ```{note}
 It's worth noting that expanding the table of constellations for a polygon graph is computationally
-hard, shown NP-Complete by Cook[@cookComplexityTheoremprovingProcedures1971].
+hard, shown NP-complete by Cook[@cookComplexityTheoremprovingProcedures1971].
 ```
 
-With low vertex count polygons, and at low crossing number, developing an ad hoc classification
+With low vertex count polygons and at low crossing number, developing an ad hoc classification
 result for each constellation may be a fruitful approach. For example, consider the constellation
 seen in @fig-6starstar_const, we can enumerate the possible crossing numbers and locations for
 tangles to be inserted, @sec-fw-adhoc-tab-to7.
@@ -67,5 +67,5 @@ the per tangle time to compute the volume. This says nothing about the raw stora
 the computed and partial data. A seemingly better choice are invariants (@subsec-invariant) which
 have polynomial time computations, such as those introduced by van der Veen and Bar-Natan (to be
 published [@vanderveenKnotInvariantsFinite]). While weaker than hyperbolic volume, these invariants
-are stronger than the polynomial invariants, and faster than both to compute. Statistics for
+are stronger than the polynomial invariants and faster than both to compute. Statistics for
 polynomial invariants can be found in Maguire's thesis work [@maguireKhovanovHomologyLegendrian].

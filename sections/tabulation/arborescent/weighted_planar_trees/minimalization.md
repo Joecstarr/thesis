@@ -107,8 +107,8 @@ A minimal tree canonizes to $\LP+\RP$-CWPTT, with only the moves (1.2), (2.1),
 and (2.2) increasing TCN.
 ```
 
-```{prf:proof}Let $\Gamma$ be a minimal TCN arborescent representative
-of its equivalence
+```{prf:proof}
+Let $\Gamma$ be a minimal TCN arborescent representative of its equivalence
 class. Starting with the weight condition
 (W) maximally apply $F_3$ consolidating the weights of each vertex.
 $F_3$ may need to be reapplied after application of arithmetic moves
@@ -116,7 +116,7 @@ and does not impact TCN.
 
 Next we handle the stick condition starting with condition S.0 concerning
 sticks having non-zero weights. Maximally apply
-to $\Gamma$ moves 0.1, and 0.2; this removes zero weights of
+to $\Gamma$ moves 0.1 and 0.2; this removes zero weights of
 sticks. In the general canonization process S.A, the alternating
 stick condition, is handled by application
 of move 1.2. However, on a pair of vertices violating condition
@@ -126,7 +126,7 @@ S.A must already be
 satisfied. Finally to obtain condition S.1, we apply moves 1.1 and
 1.2, where move 1.2 may increase crossing number by 1.
 
-The last condition to enforce is P, the positvity condition, which is
+The last condition to enforce is P, the positivity condition, which is
 done by modifying $\Gamma$ by application of moves 2.1
 and 2.2. Similarly to our S.1 case, $\Gamma$ is minimal, 2.1,
 and 2.2 cannot decrease TCN. However, 2.1 and 2.2 may increase TCN
@@ -178,8 +178,7 @@ Admits move 2.1
 :label: minimal-fig-minimize_move22
 Admits move 2.2
 ```
-Examples of
-canoncial subtrees of a $\LP+\RP$-CWPTT which admit the given moves.
+Examples of canonical subtrees of a $\LP+\RP$-CWPTT which admit the given moves.
 Note: These are subtrees admiting the moves, but not the only subtrees admiting
 the moves.
 ````

@@ -24,7 +24,7 @@ arcs pointing in the compass directions $NW, \ NE, \ SW, \ \text{and }SE$.
 
 These boundaries that split knots at four points are called **Conway circles**, and we call the
 points $NW,\ NE,\ SW,\ \text{and }SE$ **boundary points**. Formally, we can consider a Conway circle
-to be a Jordan curve[^Jordan-curve] meeting the knot diagram in exactly four points
+to be a Jordan curve [^Jordancurve] meeting the knot diagram in exactly four points
 [@bonahonNewGeometricSplittings2016]. In general, we prefer our Conway circles to actually be
 circles in the colloquial sense. Luckily, the circle and Jordan curve constructions are equivalent.
 This can be seen by a straightforward isotopy of one into the other, @fig-jordan_isotopy.
@@ -79,7 +79,7 @@ the NW point) of data in the interior of the Conway circle is indicated by a bro
 
 ```{figure} ../../media/generic_tangles/generic_tangle.svg
 :label: fig-generic_tangle
-{A generic tangle with a broken T.
+A generic tangle with a broken T.
 ```
 
 We can manipulate this tangle by the set of rotations, clockwise or anti-clockwise. Each rotation in
@@ -262,10 +262,9 @@ With the calculus of tangles and simple closures, Conway was able to enumerate a
 of knots, but not all. We should notice a common theme with the calculus, when starting with basic
 tangles every operation forms a bigon[^bigon]. We can collapse bigons in the knot shadow by deleting
 edges and merging the two vertices of a bigon. For a knot formed by only the operations and simple
-closures, if we iteratively collapse all bigons we obtain a four-valent planar[^plan]
-graph[^four-val] with one vertex, per @fig-bigon_collapse. The class of knots who have a
-presentation where bigons can be collapsed to a single vertex with two self edges are called the
-**algebraic knots**.
+closures, if we iteratively collapse all bigons we obtain a four-valent planar graph [^fourval] with
+one vertex, per @fig-bigon_collapse. The class of knots who have a presentation where bigons can be
+collapsed to a single vertex with two self edges are called the **algebraic knots**.
 
 ```{figure} ../../media/fig-bigon_collapse.svg
 :label: fig-bigon_collapse
@@ -329,7 +328,7 @@ Observe that insertion into the one vertex graph is equivalent to the simple
 tangle closures.
 ```
 
-[^Jordan-curve]:
+[^Jordancurve]:
 
 A Jordan curve is a simple closed curve. This can be thought of as a curve drawn on a piece of paper
 that has: 1) No end points. 2) No self intersections.
@@ -338,6 +337,6 @@ that has: 1) No end points. 2) No self intersections.
     A bigon is a polygon with two sides. In the same way that an octagon has eight sides or a trigon
     (triangle) has three.
 
-[^four-val]:
+[^fourval]:
     A graph is said to be four valent if each vertex has four edge ends connected to it. In
     @fig-bigon_collapse, the result is four valent.

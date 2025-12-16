@@ -4,7 +4,7 @@
 <!-- prettier-ignore-end -->
 
 A knot, when used in everyday life, is a tool whether it's the "bunny ear" knot holding on your
-shoe, a decorative monkey's fist on your keychain, or a climbing hitch securing yourself to a rock
+shoe, a decorative monkey's fist on your key chain, or a climbing hitch securing yourself to a rock
 wall. Now, when thinking of these tool knots, we should note one critical attribute, they're made of
 a single string with open ends (@fig-intro-everyday_knot). Notice with this construction, no matter
 how "knotted" the string, we can always pull on loops to remove the knot, leaving us with only an
@@ -29,7 +29,7 @@ Closing the ends of the everyday knot in @fig-intro-everyday_knot to form a
 mathematical knot.
 ```
 
-With this, when compared to an everyday knot, we are already in a better place. Continuing to
+With this, when compared to an everyday knot, we are already in a better place. Continue to
 experiment with your physical model by twisting the ends of the string around each other in
 different ways (@fig-intro-torus). You may discover that gluing the ends yields knots that can't be
 maneuvered to look the same as @fig-intro-everyday_knot_closed or @fig-intro-circle.
@@ -45,7 +45,7 @@ A representation of twisting the ends of a rope around itself before gluing.
 ```
 
 In fact, this twisting gives us a whole infinite family of odd crossing torus knots, a sampling of
-which can be seen in @fig-intro-torus_knots. A good exercise in building intution is to convince
+which can be seen in @fig-intro-torus_knots. A good exercise in building intuition is to convince
 yourself that the torus knots in @fig-intro-torus_knots are different from each other.
 
 ```{figure} ../../media/torus.svg
@@ -72,7 +72,7 @@ Computer by Jablan and Sazdanović [@jablanLinKnotKnotTheory2007], Knots and Lin
 The remainder of this thesis quickly exchanges the idea of a knot for that of a tangle, introduced
 by Conway [@conwayEnumerationKnotsLinks1970]. A tangle can be thought of as slamming a cookie cutter
 onto a knot diagram pinning down four points. Once the knot is pinned down we then cut off the parts
-of the knot laying outside the cookie cutter, seen in @fig-intro-tangle_maker.
+of the knot lying outside the cookie cutter, seen in @fig-intro-tangle_maker.
 
 ```{figure} ../../media/tangle_maker.svg
 :label: fig-intro-tangle_maker

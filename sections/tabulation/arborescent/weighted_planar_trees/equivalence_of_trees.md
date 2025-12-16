@@ -91,7 +91,7 @@ $V_4$ and satisfies the following conditions:
   The positivity and negativity conditions are a consequence of the behavior of
   two crossing tangles seen in Figure~\ref{minimal-fig-nonmin}. We
   will adopt the
-  $\LP+\RP$ as our prefered form.
+  $\LP+\RP$ as our preferred form.
 ```
 
 Bonahon and Siebenmann show in @wpt-equi-lemma-exist that these conditions are sufficient to realize
@@ -104,7 +104,7 @@ tangle tree.
 :label: wpt-equi-lemma-exist
 
 Every arborescent tangle is obtained by plumbing operations from
-arborescent tangles associated to positively (or negatively)
+arborescent tangles associated with positively (or negatively)
 canonical weighted planar trees (with labels in $V_4$ at free bonds).
 ```
 
@@ -184,6 +184,6 @@ Checking each canonicity condition locally shows both directions.
 ```
 
 The definition and proof for $\LP -\RP$-canonical vertices are identical. Similarly to the canonical
-tree case, we define a third positivity class for a vertex, the \textbf{neutral vertex}, a vertex
-that is both $\LP
+tree case, we define a third positivity class for a vertex, the **neutral vertex**, a vertex that is
+both $\LP
 -\RP$-canonical and $\LP+\RP$-canonical.

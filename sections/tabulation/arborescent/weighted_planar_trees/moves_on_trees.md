@@ -6,10 +6,9 @@
 This subsection develops a set of moves, $F^\prime_3,\ F_2,\ F_1$, and $R^\pm$, on the weighted
 planar trees described in @wpt-construc-sec-wptt. We will restrict our discussion to a subset of the
 calculus of weighted planar trees. A full description of the calculus can be found in Bonahon and
-Siebenmann \citep{bonahonNewGeometricSplittings2016}. The
-$F^\prime_3,\ F_2,\ F_1,\text{ and}\ R_\pm$ moves allow us to systematically modify, without
-changing the topology, a weighted planar tree and form the basis for the classification of the
-arborescent knots.
+Siebenmann [@bonahonNewGeometricSplittings2016]. The $F^\prime_3,\ F_2,\ F_1,\text{ and}\ R_\pm$
+moves allow us to systematically modify, without changing the topology, a weighted planar tree and
+form the basis for the classification of the arborescent knots.
 
 ##### The $F^\prime_3$ Move
 
@@ -31,11 +30,11 @@ subtree attached to the bond (plumbing square) but leaves unchanged all other we
   purple bond (half-edge) lying at odd distance
   (count of edges between two vertices) from the vertex shown. Also, when $W$ is
   odd, apply $\xi$ ($X$-axis rotation
-  @wpt-construc-fig-k4g to all free bonds
+  @wpt-construc-fig-k4g) to all free bonds
   in the subtree attached to the purple bond (half-edge) that are
   attached to a vertex at even distance from the
   vertex shown, and $\eta$ ($Y$-axis rotation
-  @wpt-construc-fig-k4g-y to those
+  @wpt-construc-fig-k4g-y) to those
   at odd distance. The rotations are relative to the local orientations of the
   plumbing squares on the bands corresponding to vertices at odd distance from
   the vertex carrying weight $W$.
@@ -92,7 +91,7 @@ into practice we are free to operate on children as well as the parent of a vert
 
 ###### $F_3^\prime$ on bands
 
-The translation of crossings across child bands models the traditional **flype** move, of "Tait
+The translation of crossings across child bands models the traditional **flype** move of "Tait
 Flyping Conjecture" [@taitKnotsIIIII1900] fame. To see the correspondence between $F_3^\prime$ and
 flype we need to view the plumbed child (or parent) band as a tangle, $T$. We can then carry out
 $F_3^\prime$ over this tangle. Tracking the parts of this operation, we can see the correspondence
@@ -111,21 +110,15 @@ as described in @wpt-moves-def-f3p_move.
 ```{figure} ../../media/bands/moves/f3/bnd_only_f3.svg
 :label: uc-c-f3-e-flype_bnd
 
-The odd $F_3^\prime$ case on a band model realization of
-    the given portion of a
-    tree, with local $X$-axis in blue and $Y$-axis in red given
-    relative to the purple band.
-    Yielding a $\xi$ ($X$-axis rotation) to all bands plumbed to the purple band
-    or plumbed at even distance (counting plumbing squares) from the
-    orange band,
-    and $\eta$ ($Y$-axis rotation) to the purple band and those
-    plumbed at odd distance from the orange band.
-    Note that the orientations of the plumbing squares must agree before and
-    after $F_3^\prime$. Following the orientations with the left hand
-    (Figure~\ref{wpt-construc-fig-band_orientation})
-    rule shows the orientation of the purple band reverses in $X$ and
-    $Z$ in the second image due to the rotation in $Y$
-  (we are no longer looking through the band in the second image).
+The odd $F_3^\prime$ case on a band model realization of the given portion of a tree, with local
+$X$-axis in blue and $Y$-axis in red given relative to the purple band. Yielding a $\xi$ ($X$-axis
+rotation) to all bands plumbed to the purple band or plumbed at even distance (counting plumbing
+squares) from the orange band, and $\eta$ ($Y$-axis rotation) to the purple band and those plumbed
+at odd distance from the orange band. Note that the orientations of the plumbing squares must agree
+before and after $F_3^\prime$. Following the orientations with the left hand
+(Figure~\ref{wpt-construc-fig-band_orientation}) rule shows the orientation of the purple band
+reverses in $X$ and $Z$ in the second image due to the rotation in $Y$ (we are no longer looking
+through the band in the second image).
 ```
 
 Applying $F_3^\prime$ to an even number of crossings is equivalent to applying the move on two sets
@@ -143,24 +136,18 @@ inverted; the second set inverts the child again, leaving it where it began
 
 We expand to an example where the child band has descendants, as in @uc-c-f3-e-cor. Observe that
 when the $F_3^\prime$ is applied in this case, the child band and every band even distance from it
-(odd distance from the parent) is inverted.
+(odd distance from the parent) are inverted.
 
 ```{figure} ../../media/bands/moves/f3/bands_odd_change.svg
 :label: uc-c-f3-e-cor
 
 
-$F_3^\prime$ when
-    applied to a band (gray) with a child (orange) and grandchild
-    (light blue). We read the bands following the local orientation
-    of the plumbing
-    squares. Before the move is applied, the child (orange) band is
-    traversed as;
-    the blue band, a green star, a green circle, and back to the parent. After
-    $F_3^\prime$ it is traversed as; a green circle, a green star,
-    the blue band,
-    and back to the parent. The blue band is traversed as; yellow star, yellow
-  circle, and back to orange band.
-
+$F_3^\prime$ when applied to a band (gray) with a child (orange) and grandchild (light blue). We
+read the bands following the local orientation of the plumbing squares. Before the move is applied,
+the child (orange) band is traversed as; the blue band, a green star, a green circle, and back to
+the parent. After $F_3^\prime$ it is traversed as; a green circle, a green star, the blue band, and
+back to the parent. The blue band is traversed as; yellow star, yellow circle, and back to orange
+band.
 
 ```
 
@@ -180,15 +167,15 @@ even, applying $F_3^\prime$ to the tree, the impacted subtree (purple subtree in
 ```{figure} ../../media/bands/moves/f3/watt_rooted_even.svg
 :label: wpt-moves-fig-example_f3-even-1
 
-$F_3^\prime$ on a
-    weighted planar tree with even weight. The weight of the
-  object weight is even, so the impacted subtree is unchaged.
+
+$F_3^\prime$ on a weighted planar tree with even weight. The weight of the object weight is even, so
+the impacted subtree is unchanged.
 
 ```
 
 In @wpt-moves-fig-example_f3-odd_1, the object weight is odd, applying $F_3^\prime$ the cyclic order
-of vertices, of the impacted subtree at an odd distance are reversed. Additionally, all free bonds
-in the impacted subtree are altered as described in @wpt-moves-def-f3p_move.
+of vertices of the impacted subtree at an odd distance are reversed. Additionally, all free bonds in
+the impacted subtree are altered as described in @wpt-moves-def-f3p_move.
 
 ```{figure} ../../media/bands/moves/f3/watt_rooted_odd.svg
 :label: wpt-moves-fig-example_f3-odd_1
@@ -207,21 +194,18 @@ Our second move, $F_2$, is a special application of the general $F_3$ move.
 ```{prf:definition} Bonahon and Siebenmann, Section 12.7.1 [@bonahonNewGeometricSplittings2016]
 :label: uc-c-f2-d-f2_t
 
-  The **$F_2$ move** on a weighted arborescent tangle tree
-  reverses the cyclic order
-  of bonds and weights at one vertex on the tree and at every vertex
-  at even distance from it; also
-  apply $\eta$ ($Y$-axis rotation) to every free bond of a vertex at
-  even (or zero) distance, and
-  apply $\xi$ ($X$-axis rotation) to every free bond at odd distance.
-  The rotations are relative to the orientation of the plumbing square (Conway
-  sphere) of the band being acted on, per @wpt-construc-sec-wptt.
 
+The **$F_2$ move** on a weighted arborescent tangle tree reverses the cyclic order of bonds and
+weights at one vertex on the tree and at every vertex at even distance from it; also apply $\eta$
+($Y$-axis rotation) to every free bond of a vertex at even (or zero) distance, and apply $\xi$
+($X$-axis rotation) to every free bond at odd distance. The rotations are relative to the
+orientation of the plumbing square (Conway sphere) of the band being acted on, per
+@wpt-construc-sec-wptt.
 ```
 
 $F_2$ is equivalent to applying $F_3$ to a vertex by moving a $\pm 1$ weight around a full cycle of
 the children (and parent), as in @wpt-moves-fig-example_f2_cycle. If the vertex has no weights, the
-zero weight is split into a $+1$ and $-1$, one of which completes the cycle. The $+1$ and $-1$ then
+zero weight is split into $+1$ and $-1$, one of which completes the cycle. The $+1$ and $-1$ then
 cancel, returning the vertex to zero weight. The result of carrying out $F_2$ on a weighted planar
 tree can be seen in @wpt-moves-fig-example_f2.
 
@@ -252,18 +236,16 @@ The third of the $F$ moves is the $F_1$ move, which is a repeated application of
 ```{prf:definition} Bonahon and Siebenmann, Section 12.7.1 [@bonahonNewGeometricSplittings2016]
 :label: uc-c-f1-d-f1_t
 
-The **$F_1$ move** on a weighted arborescent tangle tree
-  reverses the cyclic order
-  of bonds and weights at every vertex of the graph and applies
-  $\zeta$ ($z$-axis
-  rotation) to every free bond. The rotations are relative to the
-  orientation of the plumbing square (Conway
-  sphere) of the band being acted on, per
-@wpt-construc-sec-wptt.
+
+The **$F_1$ move** on a weighted arborescent tangle tree reverses the cyclic order of bonds and
+weights at every vertex of the graph and applies $\zeta$ ($z$-axis rotation) to every free bond. The
+rotations are relative to the orientation of the plumbing square (Conway sphere) of the band being
+acted on, per @wpt-construc-sec-wptt.
+
 ```
 
-To realize $F_1$ as $F_2$ moves, we successively apply $F_{2e}$ then $F_{2o}$ to the tree. Observe
-that the combination of $F_{2e}$ and $F_{2o}$ modifies the free bonds by $\xi\eta=\zeta$.
+To realize $F_1$ as $F_2$ moves, we successively apply $F_{2e}$ and then $F_{2o}$ to the tree.
+Observe that the combination of $F_{2e}$ and $F_{2o}$ modifies the free bonds by $\xi\eta=\zeta$.
 
 ##### The $R^\pm$ moves
 
@@ -280,7 +262,6 @@ $R^-$ on on a tangle representation of a tree.
 
 ````{prf:definition} Bonahon and Siebenmann, Section 12.3 [@bonahonNewGeometricSplittings2016]
 :label: wpt-moves-def-rm
-
 
 The **$R^-$** replaces the left of @rmove-n-pic with the right, leaving the rest of the tree unchanged.
 

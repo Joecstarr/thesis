@@ -27,7 +27,7 @@ A **$c$ component link** is a smooth embedding of $ c$ disjoint copies of a circ
 ```
 
 ```{convention}
-  For convenience, and brevity, in the remainder of this thesis we
+  For convenience and brevity, in the remainder of this thesis we
   will adopt the
   following convention. The term **knot** refers to the collection of
   all proper knots and
@@ -39,13 +39,13 @@ A **$c$ component link** is a smooth embedding of $ c$ disjoint copies of a circ
 Playing with this three-dimensional construction for knots, it will quickly become apparent that
 three-dimensional knots are unwieldy to work with. To simplify our work, we will now build a
 two-dimensionally encoded model for knots, a **knot diagram**. We start by taking a knot
-$K\subset S^3$. We then select an $S^2$ such that $K$ lies fully in the interior. Now, for any plane
+$K\subset S^3$. We then select a $S^2$ such that $K$ lies fully in the interior. Now, for any plane
 that lies tangent to $S^2$, we take an orthogonal projection of the knot onto the plane. We require
 that the projection have no **degenerate crossings**, intersections of the knot projection where
 more than two points are collinear or where the crossing is not transverse. We call this projection
 a **knot shadow**, an example can be seen in @fig-knot_def-shadow. A knot shadow is interpreted as a
 planar graph[^planargraph], with points where strands overlap (are collinear in the projection) as
-vertices, and edges of the shadow as the strands between the overlaps.
+vertices and edges of the shadow as the strands between the overlaps.
 
 ```{figure} ../../media/knot_shadow.svg
 :label: fig-knot_def-shadow

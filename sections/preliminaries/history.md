@@ -41,14 +41,14 @@ After the completion of the ten crossing tables, efforts in knot tabulation stag
 concerted efforts and little progress being made in expanding the tables. The next researcher to
 take up the tabulation torch was Conway in the 1960s [@conwayEnumerationKnotsLinks1970]. Conway, in
 "a few hours" [@conwayEnumerationKnotsLinks1970], tabulated knots to eleven crossings, with only
-four omissions[@caudron1982classification]. Conway's work continued by hand computation, but
-employed a novel approach to tabulation. He described decompositions of knots into building blocks,
-which he called tangles[@conwayEnumerationKnotsLinks1970]. Conway paired this with a calculus to
-glue the blocks together. Under Conway's tangle calculus, the combinatorial work of knot tabulation
-became a game of building from simple to complex. Inspired by Conway's strategies, a second effort
-to enumerate eleven crossing knots was carried out by Caudron [@caudron1982classification],
-verifying Conway's findings and rectifying the four omissions. Caudron's confirmation of the eleven
-crossing tables marked the final chapter in the hand computation era of knot tabulation.
+four omissions[@caudron1982classification]. Conway's work continued by hand computation but employed
+a novel approach to tabulation. He described decompositions of knots into building blocks, which he
+called tangles[@conwayEnumerationKnotsLinks1970]. Conway paired this with a calculus to glue the
+blocks together. Under Conway's tangle calculus, the combinatorial work of knot tabulation became a
+game of building from simple to complex. Inspired by Conway's strategies, a second effort to
+enumerate eleven crossing knots was carried out by Caudron [@caudron1982classification], verifying
+Conway's findings and rectifying the four omissions. Caudron's confirmation of the eleven crossing
+tables marked the final chapter in the hand computation era of knot tabulation.
 
 ### Knot Tabulation by Computer
 
@@ -66,17 +66,17 @@ and removing all duplicate entries from the list (deduping [^dedupe]).
 
 The next table produced by computer, knots up to sixteen crossing, was given by Hoste,
 Thistlethwaite, and Weeks [@hosteFirst1701936Knots1998] in 1998. Their process deviates only
-slightly from the earlier approach of Dowker and Thistlethwaite, by leaning on
+slightly from the earlier approach of Dowker and Thistlethwaite by leaning on
 heuristics[^heuristics] to limit the duplicates found in their first pass. This preprocessing in the
 first pass allowed Hoste, Thistlethwaite, and Weeks to compute their table in one to two weeks of
 wall time[^walltime].
 
 The most recent computational effort was carried out by Burton in 2020 [@burtonNext350Million2020],
-finding knots to nineteen crossings. Burton's program followed closely to the two pass processes,
-with further heuristic work to preprocess in the first pass and heavily relying on the hyperbolic
-volume invariant for the second pass. The computation of the nineteen crossing table required months
-of wall time on a cluster[^cluster], serving as an important signpost for the time requirement
-problems of knot tabulation.
+finding knots to nineteen crossings. Burton's program closely followed the two pass process, with
+further heuristic work to preprocess in the first pass and heavily relying on the hyperbolic volume
+invariant for the second pass. The computation of the nineteen crossing table required months of
+wall time on a cluster[^cluster], serving as an important signpost for the time requirement problems
+of knot tabulation.
 
 ### Tangle Tabulation
 

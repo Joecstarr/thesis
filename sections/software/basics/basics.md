@@ -23,7 +23,7 @@ technical engineering work is started, reducing the risk of a product being intr
 product constraints. The remainder of this chapter will give context to product management and
 software engineering practices, with preparing undergraduates for research as the goal. We will
 start with a design for a course on teaching project management to undergraduate researchers. We
-then develop a software engineering process for use in mathematics reasearch.
+then develop a software engineering process for use in mathematics research.
 
 ```{include} ./pm.md
 

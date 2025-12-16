@@ -26,7 +26,7 @@ CWPTT. Let $w_i$ be the weight for the lowest indexed vertex $v_i$ not in its
 highest indexed region of $\Gamma_{v_i}$. With move $F_3^\prime$ shift $w_i$ so
 that it lies in the highest indexed region. Further, choose to shift $w_i$
 anti-clockwise, this ensures that $v_j$ with $j<i$ are unchanged when $w_i$ is
-even. We repeat this process for any $v_k$ with $i<k$ where the weight $w_k$ not
+even. We repeat this process for any $v_k$ with $i<k$ where the weight $w_k$ is not
 in the highest indexed region. Since $\Gamma$ has finite vertices, the
 algorithm terminates with a $\Gamma$ transformed into a right leaning tree
 completing the proof.
@@ -69,8 +69,8 @@ This transforms $\Gamma$ into an identity tree completing the proof.
 
 What we have shown is that every arborescent tangle has at least one right leaning CWPTT and at
 least one identity CWPTT representative. Combining these two ideas, we will show that every
-arborescent tangle has at least one CWPTT that is right leaning and identity, we call such a CWPTT a
-RLITT.
+arborescent tangle has at least one CWPTT that is right leaning and identity, we call such a CWPTT
+an RLITT.
 
 ```{prf:definition}
 :label: rli-const-def-rlident
