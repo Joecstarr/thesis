@@ -3,18 +3,18 @@
 ## Tabulation as Undergraduate Research
 <!-- prettier-ignore-end -->
 
-### A Research Experiance Program for Undergraduates
+### A Research Experience Program for Undergraduates
 
-The accessibility of knot theory was discussed in @sec-intro-intuit_knot_theory,
-this section elaborates on how that accessibility can be leveraged to engage
+The accessibility of knot theory was discussed in @sec-intro-intuit_knot_theory.
+This section elaborates on how that accessibility can be leveraged to engage
 undergraduates in research. Throughout this thesis, we have investigated and
 observed the depth and complexity of tabulation. We have seen how easily
 portions of complex tabulation problems can be "peeled off" and decomposed as
 self-contained problems. Additionally, we discussed product management training
 (@sec-product-management) and developed a software enginering life cycle
 (@sec-life-cycle) for use in organizing undergraduate research. These self
-contained problems combined with our processes, produce a research experiance
-program ideal for undergraduates. The research experiance program can be
+contained problems combined with our processes, produce a research experience
+program ideal for undergraduates. The research experience program can be
 enhanced by sequencing problems with a gradual release of responsibility model
 as described by Fisher and Frey [@fisherBetterLearningStructured2013].
 
@@ -48,7 +48,7 @@ complex problems. At this point we expect the student to have mature reading and
 reasoning skills, but perhaps lack skills such as literature review. Support for
 reading at this stage should be focused on assisting students in finding answers
 rather than answers being provided. Students may be prepared to formulate a
-research question of their own and this should be encouraged, however presenting
+research question of their own and this should be encouraged; however presenting
 students with ideas to build on or select from is beneficial. An ideal problem
 here should fit student's interests and have a clear goal but perhaps no clear
 starting point, for example the random tangle sampling seen in @sec-proj-rand.
@@ -57,7 +57,7 @@ starting point, for example the random tangle sampling seen in @sec-proj-rand.
 
 One key issue that must be addressed in a tabulation research program is
 computational needs. Computing on knots and tangles is not necessarily a
-computationally challenging task, many problems are simple to describe
+computationally challenging task. Many problems are simple to describe
 computationally and have efficient implementations. The primary challenge for
 tabulation research stems from the raw scale of the dataset, as both the knot
 and tangle datasets grow exponentially. This exponential growth of the data
@@ -94,21 +94,23 @@ needed to store that data also grows exponentially. As a benchmark, we use
 arborescent tangles and the space required to store them in their linearized
 form (@sec-arborescent-linear).
 
-| Tree Crossing Number | Projected Total number of tangles up to TCN | Projected Total size of notations up to TCN |
-| -------------------- | ------------------------------------------- | ------------------------------------------- |
-| 17                   | 1357091239                                  | 48.74GB                                     |
-| 18                   | 4974950825                                  | 191.07GB                                    |
-| 19                   | 18237891116                                 | 749.04GB                                    |
-| 20                   | 66859362088                                 | 2.94TB                                      |
-| 21                   | 245103977777                                | 11.51TB                                     |
-| 22                   | 898542537410                                | 45.12TB                                     |
-| 23                   | 3294025581847                               | 176.89TB                                    |
-| 24                   | 12075783168984                              | 693.44TB                                    |
-| 25                   | 44269401297258                              | 2.72PB                                      |
 
-$\,$ As we can see, the space required for storing tangles quickly becomes
+| Tree Crossing Number | Projected Total Number of Tangles up to TCN | Projected Total Size of Notations up to TCN |
+| :------------------: | :-----------------------------------------: | :-----------------------------------------: |
+| 20                   | 20,178,846,455.0426                         | 744.93 GB                                   |
+| 21                   | 77,404,113,447.2751                         | 3.02 TB                                     |
+| 22                   | 296,920,571,662.606                         | 12.24 TB                                    |
+| 23                   | 1,138,987,289,416.26                        | 49.59 TB                                    |
+| 24                   | 4,369,161,597,793.56                        | 200.98 TB                                   |
+| 25                   | 16,760,135,017,593                          | 814.55 TB                                   |
+| 26                   | 64,292,004,387,526.9                        | 3.30 PB                                     |
+| 27                   | 246,624,621,285,968                         | 13.38 PB                                    |
+| 28                   | 946,053,943,972,148                         | 54.23 PB                                    |
+| 29                   | 3,629,070,212,865,634                       | 219.77 PB                                   |
+
+As we can see, the space required for storing tangles quickly becomes
 large. For perspective, a basic storage solution holds at least two copies of
-the data, meaning to store arborescent tangles up to 20 crossings, we need
+the data, meaning to store arborescent tangles up to 21 crossings, we need
 $3\times4\text{TB}=12\text{TB}$ of disk space (using 4TB as it's a common disk
 size). More robust would be a solution that allows for two drive failures such
 as RAIDZ2, in this case, we require $\LP2+3\RP\times4\text{TB}=20\text{TB}$. At

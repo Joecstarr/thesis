@@ -4,7 +4,7 @@ As we discussed in @sec-minimalization, that RLITT are often non-minimal
 arborescent representatives of a tangle. In fact, minimal arborescent
 representations may not be minimal tangle representations. Conway gives an
 example [@conwayEnumerationKnotsLinks1970] where an arborescent (algebraic) knot
-is transformed into a minimal polygonal tangle (@subsubsec-opo-insert). In
+is transformed into a minimal polygonal knot (@subsubsec-opo-insert). In
 @fig-6starstar_nonminimal we rephrase Conway's example for tangles.
 
 ```{figure}../../media/fig-6starstar_nonminimal.svg
@@ -29,7 +29,7 @@ arborescent form.
 
 #### Identification of Minimal Representations for Arborescent Tangles
 
-Second, and seemingly significantly more challenging, is the identification of
+Second, and more challenging, is the identification of
 the minimal representative of a given arborescent tangle. That is, identifying
 the minimal representative, arborescent or otherwise as in
 @fig-6starstar_nonminimal. This task requires the development of a
