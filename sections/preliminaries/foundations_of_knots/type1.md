@@ -1,8 +1,7 @@
 ###### Kauffman Bracket: Type I
 
-With the writhe, we're ready to augment the bracket polynomial applied to the
-type I move. We do this with the addition of multiplication by a
-$-A^{\ \m 3w\LP K\RP}$ term, obtaining @thm-typei.
+With the writhe, we're ready to augment the bracket polynomial applied to the type I move. We do
+this with the addition of multiplication by a $-A^{\ \m 3w\LP K\RP}$ term, obtaining @thm-typei.
 
 ````{prf:theorem}
 :label: thm-typei

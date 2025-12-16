@@ -1,4 +1,3 @@
-
 `````{prf:example} A block diagram for Go Fish
 :label: se-ex-block
 ````{figure}

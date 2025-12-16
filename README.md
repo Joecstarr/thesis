@@ -1,121 +1,121 @@
 # Initial Write
 
--   [x] 📂background
-    -   [x] 📂foundations_of_knots
-        -   [x] conway
-        -   [x] def_of_knot
-        -   [x] equivalence
-        -   [x] invariants
-        -   [x] kauf_bkt
-        -   [x] notations
-        -   [x] prime
-        -   [x] type1
-        -   [x] writhe
-    -   [x] background
-    -   [x] foundations_of_knots
-    -   [x] foundations_of_tangles
-    -   [x] history
--   [ ] 📂frontmatter
-    -   [ ] abstract
-    -   [ ] acknowledgments
-    -   [ ] frontmatter
-    -   [ ] public_abstract
--   [x] 📂future_work
-    -   [x] continued_research
-    -   [x] future_work
-    -   [x] polygonal
-    -   [x] selection_projects
-    -   [x] undergrad_rsch
--   [x] 📂introduction
-    -   [x] applications
-    -   [x] introduction
-    -   [x] intuit_knot_theory
-    -   [x] overview
--   [x]software
-    -   [x] documentation
-        -   [x] generators
-        -   [x] arborescent
-        -   [x] montesinos
-        -   [x] rational
-        -   [x] interfaces
-            -   [x] computation
-            -   [x] generator
-            -   [x] interfaces
-            -   [x] notation
-            -   [x] storage
-        -   [x] notations
-            -   [x] algebraic_tangle_tree
-            -   [x] arborescent_planar_tangle_tree
-            -   [x] twist_vector
-        -   [x] core_libraries
-    -   [x] software
--   [x] 📂tabulation
-    -   [x] 📂arborescent
-    -   [x] arborescent
-    -   [x] 📂initial_dataset
-        -   [x] initial_dataset
-        -   [x] montesinos
-        -   [x] rational
-    -   [x] tabulation
+- [x] 📂background
+    - [x] 📂foundations_of_knots
+        - [x] conway
+        - [x] def_of_knot
+        - [x] equivalence
+        - [x] invariants
+        - [x] kauf_bkt
+        - [x] notations
+        - [x] prime
+        - [x] type1
+        - [x] writhe
+    - [x] background
+    - [x] foundations_of_knots
+    - [x] foundations_of_tangles
+    - [x] history
+- [ ] 📂frontmatter
+    - [ ] abstract
+    - [ ] acknowledgments
+    - [ ] frontmatter
+    - [ ] public_abstract
+- [x] 📂future_work
+    - [x] continued_research
+    - [x] future_work
+    - [x] polygonal
+    - [x] selection_projects
+    - [x] undergrad_rsch
+- [x] 📂introduction
+    - [x] applications
+    - [x] introduction
+    - [x] intuit_knot_theory
+    - [x] overview
+- [x]software
+    - [x] documentation
+        - [x] generators
+        - [x] arborescent
+        - [x] montesinos
+        - [x] rational
+        - [x] interfaces
+            - [x] computation
+            - [x] generator
+            - [x] interfaces
+            - [x] notation
+            - [x] storage
+        - [x] notations
+            - [x] algebraic_tangle_tree
+            - [x] arborescent_planar_tangle_tree
+            - [x] twist_vector
+        - [x] core_libraries
+    - [x] software
+- [x] 📂tabulation
+    - [x] 📂arborescent
+    - [x] arborescent
+    - [x] 📂initial_dataset
+        - [x] initial_dataset
+        - [x] montesinos
+        - [x] rational
+    - [x] tabulation
 
 # Editing pass
 
--   [ ] 📂frontmatter
-    -   [ ] abstract
-    -   [ ] acknowledgments
-    -   [ ] frontmatter
-    -   [ ] public_abstract
--   [x] 📂introduction
-    -   [x] introduction
-    -   [x] applications
-    -   [x] intuit_knot_theory
-    -   [x] overview
--   [x] 📂background
-    -   [x] background
-    -   [x] history
-    -   [x] foundations_of_knots
-    -   [x] 📂foundations_of_knots
-        -   [x] def_of_knot
-        -   [x] equivalence
-        -   [x] prime
-        -   [x] invariants
-        -   [x] kauf_bkt
-        -   [x] writhe
-        -   [x] type1
-        -   [x] notations
-        -   [x] conway
-    -   [x] foundations_of_tangles
--   [x] 📂tabulation
-    -   [x] tabulation
-    -   [x] 📂arborescent
-    -   [x] 📂initial_dataset
-        -   [x] initial_dataset
-        -   [x] rational
-        -   [x] montesinos
--   [ ]software
-    -   [ ] software
-    -   [ ] documentation
-        -   [ ] generators
-        -   [ ] arborescent
-        -   [ ] montesinos
-        -   [ ] rational
-        -   [ ] interfaces
-            -   [ ] computation
-            -   [ ] generator
-            -   [ ] interfaces
-            -   [ ] notation
-            -   [ ] storage
-        -   [ ] notations
-            -   [ ] algebraic_tangle_tree
-            -   [ ] arborescent_planar_tangle_tree
-            -   [ ] twist_vector
-        -   [ ] core_libraries
--   [ ] 📂future_work
-    -   [ ] continued_research
-    -   [ ] future_work
-    -   [ ] polygonal
-    -   [ ] selection_projects
-    -   [ ] undergrad_rsch
+- [ ] 📂frontmatter
+    - [ ] abstract
+    - [ ] acknowledgments
+    - [ ] frontmatter
+    - [ ] public_abstract
+- [x] 📂introduction
+    - [x] introduction
+    - [x] applications
+    - [x] intuit_knot_theory
+    - [x] overview
+- [x] 📂background
+    - [x] background
+    - [x] history
+    - [x] foundations_of_knots
+    - [x] 📂foundations_of_knots
+        - [x] def_of_knot
+        - [x] equivalence
+        - [x] prime
+        - [x] invariants
+        - [x] kauf_bkt
+        - [x] writhe
+        - [x] type1
+        - [x] notations
+        - [x] conway
+    - [x] foundations_of_tangles
+- [x] 📂tabulation
+    - [x] tabulation
+    - [x] 📂arborescent
+    - [x] 📂initial_dataset
+        - [x] initial_dataset
+        - [x] rational
+        - [x] montesinos
+- [ ]software
+    - [ ] software
+    - [ ] documentation
+        - [ ] generators
+        - [ ] arborescent
+        - [ ] montesinos
+        - [ ] rational
+        - [ ] interfaces
+            - [ ] computation
+            - [ ] generator
+            - [ ] interfaces
+            - [ ] notation
+            - [ ] storage
+        - [ ] notations
+            - [ ] algebraic_tangle_tree
+            - [ ] arborescent_planar_tangle_tree
+            - [ ] twist_vector
+        - [ ] core_libraries
+- [ ] 📂future_work
+    - [ ] continued_research
+    - [ ] future_work
+    - [ ] polygonal
+    - [ ] selection_projects
+    - [ ] undergrad_rsch
 
 ```
 /* Colors */

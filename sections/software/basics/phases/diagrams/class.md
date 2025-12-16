@@ -1,4 +1,3 @@
-
 `````{figure}
 
 ````{figure}

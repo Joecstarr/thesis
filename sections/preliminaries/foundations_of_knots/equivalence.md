@@ -3,14 +3,14 @@
 ### Knot Equivalence
 <!-- prettier-ignore-end -->
 
-Armed with the formal definition of a knot, we can make our first progress in
-answering the overarching question from @sec-intro-intuit_knot_theory.
+Armed with the formal definition of a knot, we can make our first progress in answering the
+overarching question from @sec-intro-intuit_knot_theory.
 
 > How do I tell two knots I make apart?
 
-To tell two knots apart, we need to discuss the concept of sameness, that is,
-what is equivalence in knots. Our concept of equivalence for knots is given by
-**ambient isotopy**, and equal knots are said to be **ambient isotopic**.
+To tell two knots apart, we need to discuss the concept of sameness, that is, what is equivalence in
+knots. Our concept of equivalence for knots is given by **ambient isotopy**, and equal knots are
+said to be **ambient isotopic**.
 
 ```{prf:definition} Jablan and Sazdanović, Definition 1.20 [@jablanLinKnotKnotTheory2007;@gordonKNOTSAREDETERMINED]
 :label: def-ambient_isotopic
@@ -22,23 +22,20 @@ Knots $K$ and $K_1$ are \textbf{ambient isotopic} if there exists a
 
 ```
 
-When working with the three-dimensional model of a knot, writing down explicit
-ambient isotopies is, in general, quite difficult. As we did in
-@subsec-knot_def, we can simplify the concept of equality by moving ambient
-isotopy to an equivalence of knot diagrams. Taking the orthogonal projection
-model for knot diagrams given in @subsec-knot_def, ambient isotopy can be
-modeled as three Reidemeister moves on diagrams
-[@reidemeisterElementareBegruendungKnotentheorie1927]. Meaning, two knots are
-ambient isotopic if and only if their diagrams are equal under a chain of
-Reidemeister moves [@reidemeisterElementareBegruendungKnotentheorie1927] and isotopies.
+When working with the three-dimensional model of a knot, writing down explicit ambient isotopies is,
+in general, quite difficult. As we did in @subsec-knot_def, we can simplify the concept of equality
+by moving ambient isotopy to an equivalence of knot diagrams. Taking the orthogonal projection model
+for knot diagrams given in @subsec-knot_def, ambient isotopy can be modeled as three Reidemeister
+moves on diagrams [@reidemeisterElementareBegruendungKnotentheorie1927]. Meaning, two knots are
+ambient isotopic if and only if their diagrams are equal under a chain of Reidemeister moves
+[@reidemeisterElementareBegruendungKnotentheorie1927] and isotopies.
 
 The first Reidemeister move we will define is the Type I move
-[@reidemeisterElementareBegruendungKnotentheorie1927]. To carry out the Type I
-move (@fig-knot_def-r1), start by taking a portion of a diagram with no
-crossings, then add a half twist. When adding the twist, we have two choices;
-twist into (left handed) or out of (right handed) the plane the diagram lies in.
-In either, we can freely remove the new crossing by twisting in the opposite
-direction.
+[@reidemeisterElementareBegruendungKnotentheorie1927]. To carry out the Type I move
+(@fig-knot_def-r1), start by taking a portion of a diagram with no crossings, then add a half twist.
+When adding the twist, we have two choices; twist into (left handed) or out of (right handed) the
+plane the diagram lies in. In either, we can freely remove the new crossing by twisting in the
+opposite direction.
 
 ```{figure} ../../media/reidemeister_move/R1.svg
 :label: fig-knot_def-r1
@@ -50,12 +47,10 @@ Executing the
 
 ```
 
-The next Reidemeister move is the Type II
-move[@reidemeisterElementareBegruendungKnotentheorie1927], seen in
-@fig-knot_def-r2. When we carry out the type II move, we need two strands, each
-with no crossings. We then pull one strand on top of the other, inducing two new
-crossings in our diagram. Similarly to the type I move, the type II move can be
-freely undone by pulling the strands apart.
+The next Reidemeister move is the Type II move[@reidemeisterElementareBegruendungKnotentheorie1927],
+seen in @fig-knot_def-r2. When we carry out the type II move, we need two strands, each with no
+crossings. We then pull one strand on top of the other, inducing two new crossings in our diagram.
+Similarly to the type I move, the type II move can be freely undone by pulling the strands apart.
 
 ```{figure} ../../media/reidemeister_move/R2.svg
 :label: fig-knot_def-r2
@@ -65,29 +60,26 @@ is pulled under the top strand.
 ```
 
 The final Reidemeister move is the Type III
-move[@reidemeisterElementareBegruendungKnotentheorie1927]. In the type III move,
-we take three strands, two that form a crossing and a third that lies in one of
-three possible positions:
+move[@reidemeisterElementareBegruendungKnotentheorie1927]. In the type III move, we take three
+strands, two that form a crossing and a third that lies in one of three possible positions:
 
 1. above the over strand
 2. between the over and under strands
 3. below the under strand
 
-We now execute the type III by taking the third strand (not part of the center
-crossing) and passing it across the center crossing. As with type I and type II,
-we're free to reverse the type III move.
+We now execute the type III by taking the third strand (not part of the center crossing) and passing
+it across the center crossing. As with type I and type II, we're free to reverse the type III move.
 
 ```{figure} ../../media/reidemeister_move/R3.svg
 :label: fig-knot_def-r3
 Executing the three type III moves with a set of three strands. Top
 to bottom, the third strand is:
-* on top of the crossing strands 
-* between the crossing strands 
+* on top of the crossing strands
+* between the crossing strands
 * under the crossing strands.
 ```
 
-We should note here that with a concept of equivalence comes equivalence classes
-of knot diagrams. Historically, of particular interest in the tabulation of
-knots, are the knot diagrams that have minimal crossing number, we call these
-**minimal diagrams**, knot diagrams where crossing number cannot be
-decreased by Reidemeister moves.
+We should note here that with a concept of equivalence comes equivalence classes of knot diagrams.
+Historically, of particular interest in the tabulation of knots, are the knot diagrams that have
+minimal crossing number, we call these **minimal diagrams**, knot diagrams where crossing number
+cannot be decreased by Reidemeister moves.

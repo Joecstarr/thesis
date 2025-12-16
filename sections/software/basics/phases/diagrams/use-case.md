@@ -1,4 +1,3 @@
-
 ````{prf:example} A use case diagram for Go Fish
 :label: se-ex-usecase
 ```{mermaid}

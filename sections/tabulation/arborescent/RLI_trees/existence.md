@@ -1,7 +1,6 @@
 #### Existence of Right Leaning CWPTT
 
-We start our construction of RLITT by defining what conditions make a CWPTT a
-right leaning CWPTT.
+We start our construction of RLITT by defining what conditions make a CWPTT a right leaning CWPTT.
 
 ```{prf:definition}
 :label: rli-const-def-rl
@@ -11,8 +10,7 @@ region (as in @indexing-rpt) of each vertex. Additionally, any ring subtrees
 that are children of a vertex are the highest indexed children of that vertex.
 ```
 
-Our next step is to show that every arborescent tangle has a right leaning
-representative.
+Our next step is to show that every arborescent tangle has a right leaning representative.
 
 ```{prf:theorem}
 :label: rli-const-thm-rl_exists
@@ -36,8 +34,8 @@ completing the proof.
 
 #### Existence of Identity CWPTT
 
-Our second step in the construction of RLITT is to define what conditions make a
-CWPTT an identity CWPTT.
+Our second step in the construction of RLITT is to define what conditions make a CWPTT an identity
+CWPTT.
 
 ```{prf:definition}
 :label: rli-const-def-identity
@@ -45,8 +43,7 @@ A CWPTT is called an **identity tree** if its free bond is marked by
 $\iota\in V_4$.
 ```
 
-Again, we must show that every arborescent tangle has an identity
-representative.
+Again, we must show that every arborescent tangle has an identity representative.
 
 ```{prf:theorem}
 :label: rli-const-thm-ident_exists
@@ -70,10 +67,10 @@ This transforms $\Gamma$ into an identity tree completing the proof.
 
 #### Existence of Right Leaning Identity CWPTT (RLITT)
 
-What we have shown is that every arborescent tangle has at least one right
-leaning CWPTT and at least one identity CWPTT representative. Combining these
-two ideas, we will show that every arborescent tangle has at least one CWPTT
-that is right leaning and identity, we call such a CWPTT a RLITT.
+What we have shown is that every arborescent tangle has at least one right leaning CWPTT and at
+least one identity CWPTT representative. Combining these two ideas, we will show that every
+arborescent tangle has at least one CWPTT that is right leaning and identity, we call such a CWPTT a
+RLITT.
 
 ```{prf:definition}
 :label: rli-const-def-rlident

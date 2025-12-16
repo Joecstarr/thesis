@@ -1,4 +1,3 @@
-
 `````{prf:example} A sequence diagram for Go Fish turn
 :label: se-ex-seq
 ````{figure}

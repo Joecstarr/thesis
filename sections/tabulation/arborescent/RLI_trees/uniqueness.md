@@ -1,10 +1,9 @@
 #### Uniqueness of Right Leaning Identity CWPTT
 
-Our final step at identifying a preferred representative CWPTT of an arborescent
-tangle is to show that a $\LP +\RP$-RLITT is unique in the set of CWPTT
-representing an arborescent tangle. We will utilize the key proposition from
-Bonahon and Siebenmann [@bonahonNewGeometricSplittings2016] a consequence of
-@wpt-equi-thm-classi and @wpt-equi-cor-algo.
+Our final step at identifying a preferred representative CWPTT of an arborescent tangle is to show
+that a $\LP +\RP$-RLITT is unique in the set of CWPTT representing an arborescent tangle. We will
+utilize the key proposition from Bonahon and Siebenmann [@bonahonNewGeometricSplittings2016] a
+consequence of @wpt-equi-thm-classi and @wpt-equi-cor-algo.
 
 ```{prf:proposition} Bonahon and Siebenmann, Proposition 12.2 [@bonahonNewGeometricSplittings2016]
 :label: rli-const-prop-not_iso

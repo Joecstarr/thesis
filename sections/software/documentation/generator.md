@@ -3,12 +3,13 @@
 ### Generator Interface
 <!-- prettier-ignore-end -->
 
-The generator interface defines the general form for a component used to perform
-a knot operation. Then when the generator component is invoked, it produces more
-than a single output. The generator component does not allocate memory, it must
-be configured with sufficient buffer space to successfully execute.
+The generator interface defines the general form for a component used to perform a knot operation.
+Then when the generator component is invoked, it produces more than a single output. The generator
+component does not allocate memory, it must be configured with sufficient buffer space to
+successfully execute.
 
 #### Class Diagram
+
 $\,$
 
 ````{figure}
@@ -38,25 +39,24 @@ classDiagram
 
 ###### Generator ConfigurationStructure
 
-The generator configuration structure defines the collection of data the
-component needs for a single run. Setting a configurationshould be considered
-equivalent to instantiating a class in a high-level language. However, in this
-case, there is only ever a single active instance of the class.
+The generator configuration structure defines the collection of data the component needs for a
+single run. Setting a configurationshould be considered equivalent to instantiating a class in a
+high-level language. However, in this case, there is only ever a single active instance of the
+class.
 
 ##### Public Functions
 
 ###### Configuration Function
 
-The function will take a configuration as input and set the local configuration
-instance to that input. The function returns a flag indicating whether the
-function was successful. This function can be considered analogous to the `init`
-function of a class in a high-level language.
+The function will take a configuration as input and set the local configuration instance to that
+input. The function returns a flag indicating whether the function was successful. This function can
+be considered analogous to the `init` function of a class in a high-level language.
 
 ###### Generate Function
 
-When this function is invoked, the generation process begins. The actual
-internal functionality is specific to the specific generator. The function
-returns a flag indicating whether the function was successful.
+When this function is invoked, the generation process begins. The actual internal functionality is
+specific to the specific generator. The function returns a flag indicating whether the function was
+successful.
 
 The flow for a generator is modeled by the following state machine:
 

@@ -3,13 +3,12 @@
 ### Software Design
 <!-- prettier-ignore-end -->
 
-After expectations of a system are set in the requirements phase, we can
-decompose the problem into a software design. Pressman and Maxim
-[@pressmanSoftwareEngineeringPractitioners2015a] outline eight principles
-(@se-def-8core) that guide this process. This problem decomposition tells us how
-to break the software into discrete pieces of functionality called **units**.
-Depending on the team, their needs, and the technologies they are using, a unit
-can be sized anywhere from a single function to a collection of files.
+After expectations of a system are set in the requirements phase, we can decompose the problem into
+a software design. Pressman and Maxim [@pressmanSoftwareEngineeringPractitioners2015a] outline eight
+principles (@se-def-8core) that guide this process. This problem decomposition tells us how to break
+the software into discrete pieces of functionality called **units**. Depending on the team, their
+needs, and the technologies they are using, a unit can be sized anywhere from a single function to a
+collection of files.
 
 ```{prf:definition}Paraphrasing Pressman and Maxim, Section 7.2.2 [@pressmanSoftwareEngineeringPractitioners2015a]
 :label: se-def-8core
@@ -100,15 +99,13 @@ Use the Iterator pattern:
 
 ##### Block Diagram
 
-To diagrammatically represent a software design, we utilize a modified block
-diagram. A block diagram gives a high-level description of the discrete units of
-a software design and how those units relate to each other. The units are given
-by blocks containing a descriptive title. Units that satisfy similar use cases
-and may be abstractable to a common design are grouped together in container
-blocks (`User Interface` in @se-ex-block). Connections between blocks are
-recorded with decorated arrows, the decorations indicate the multiplicity of the
-relationship between components, such as `1` for a one-to-one, `1..*` for a 1 to
-many, or `*..1` for a many to 1 mapping.
+To diagrammatically represent a software design, we utilize a modified block diagram. A block
+diagram gives a high-level description of the discrete units of a software design and how those
+units relate to each other. The units are given by blocks containing a descriptive title. Units that
+satisfy similar use cases and may be abstractable to a common design are grouped together in
+container blocks (`User Interface` in @se-ex-block). Connections between blocks are recorded with
+decorated arrows, the decorations indicate the multiplicity of the relationship between components,
+such as `1` for a one-to-one, `1..*` for a 1 to many, or `*..1` for a many to 1 mapping.
 
 ```{include} ./diagrams/block.md
 
@@ -116,14 +113,13 @@ many, or `*..1` for a many to 1 mapping.
 
 ##### Sequence Diagram
 
-When the software design must account for communication between units, a
-sequence diagram may be used. A sequence diagram records the actions and data
-transfers that actors (units) take during a use case. A sequence diagram encodes
-time on the vertical axis, with actors as vertical lanes. Interactions between
-actors over time are indicated by annotated arrows between lanes. Arrow
-annotations are a description of the interaction taking place. Conditional
-sequences are indicated by boxes delimiting the possible sequences of the
-interaction (`is negative` and `is positive` subsequences in @se-ex-seq).
+When the software design must account for communication between units, a sequence diagram may be
+used. A sequence diagram records the actions and data transfers that actors (units) take during a
+use case. A sequence diagram encodes time on the vertical axis, with actors as vertical lanes.
+Interactions between actors over time are indicated by annotated arrows between lanes. Arrow
+annotations are a description of the interaction taking place. Conditional sequences are indicated
+by boxes delimiting the possible sequences of the interaction (`is negative` and `is positive`
+subsequences in @se-ex-seq).
 
 ```{include} ./diagrams/sequence.md
 

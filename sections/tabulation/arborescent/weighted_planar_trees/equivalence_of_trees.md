@@ -3,11 +3,10 @@
 #### Canonical Weighted Planar Tangle Trees (CWPTT)
 <!-- prettier-ignore-end -->
 
-Observe that the weighted planar tangle trees we have seen are badly non-unique
-representatives for arborescent tangles. The first step to finding a unique
-preferred representative is to put some additional conditions on a weighted
-planar tree, $\Gamma$. The following conditions pare down the equivalence class
-of an arborescent tangle to a more manageable level.
+Observe that the weighted planar tangle trees we have seen are badly non-unique representatives for
+arborescent tangles. The first step to finding a unique preferred representative is to put some
+additional conditions on a weighted planar tree, $\Gamma$. The following conditions pare down the
+equivalence class of an arborescent tangle to a more manageable level.
 
 `````{prf:definition} Bonahon and Siebenmann, Section 12.8.2 [@bonahonNewGeometricSplittings2016]
 :label: wpt-equi-def-abcanon
@@ -84,8 +83,10 @@ $V_4$ and satisfies the following conditions:
 
 `````
 
-```{note}  The set of CWPTT for an arborescent tangle can be large.
+```{note} The set of CWPTT for an arborescent tangle can be large.
+
 ```
+
 ```{note}
   The positivity and negativity conditions are a consequence of the behavior of
   two crossing tangles seen in Figure~\ref{minimal-fig-nonmin}. We
@@ -93,11 +94,11 @@ $V_4$ and satisfies the following conditions:
   $\LP+\RP$ as our prefered form.
 ```
 
-Bonahon and Siebenmann show in @wpt-equi-lemma-exist that these conditions are
-sufficient to realize every arborescent tangle. In fact, every weighted planar
-tangle tree can be turned into a CWPTT by a series of moves in an extended
-calculus on weighted planar trees [@bonahonNewGeometricSplittings2016]. We call
-this process **canonization** of a weighted planar tangle tree.
+Bonahon and Siebenmann show in @wpt-equi-lemma-exist that these conditions are sufficient to realize
+every arborescent tangle. In fact, every weighted planar tangle tree can be turned into a CWPTT by a
+series of moves in an extended calculus on weighted planar trees
+[@bonahonNewGeometricSplittings2016]. We call this process **canonization** of a weighted planar
+tangle tree.
 
 ```{prf:corollary} Existance of CWPTT, Bonahon and Siebenmann, Corollary 12.20 [@bonahonNewGeometricSplittings2016]
 :label: wpt-equi-lemma-exist
@@ -107,15 +108,13 @@ arborescent tangles associated to positively (or negatively)
 canonical weighted planar trees (with labels in $V_4$ at free bonds).
 ```
 
-We note some consequences of the positivity and negativity condition. First, a
-positive CWPTT ($\LP +\RP$-CWPTT) can be transformed by a sequence of moves in
-the extended calculus of weighted planar trees into a negative CWPTT
-($\LP -\RP$-CWPTT). Similarly, a negative CWPTT can be transformed into a
-positive CWPTT. Second, we note that a CWPTT, with no modification, can be both
+We note some consequences of the positivity and negativity condition. First, a positive CWPTT
+($\LP +\RP$-CWPTT) can be transformed by a sequence of moves in the extended calculus of weighted
+planar trees into a negative CWPTT ($\LP -\RP$-CWPTT). Similarly, a negative CWPTT can be
+transformed into a positive CWPTT. Second, we note that a CWPTT, with no modification, can be both
 positive and negative. We will refer to these trees as **neutral** trees.
 
-Bonahon and Siebenmann give a classification of arborescent tangles via moves on
-CWPTT.
+Bonahon and Siebenmann give a classification of arborescent tangles via moves on CWPTT.
 
 ```{prf:theorem} Classification Theorem for Canonical Weighted Planar Tangle Trees, Bonahon and Siebenmann, Theorem 12.21 [@bonahonNewGeometricSplittings2016]
 :label: wpt-equi-thm-classi
@@ -127,9 +126,8 @@ $\Gamma^\prime$ can be deduced from each other by a sequence of moves
 ($F_1$), ($F_2$), ($F_3^\prime$), and the modified ring moves $\LP\pm R\RP$.
 ```
 
-Further, Bonahon and Siebenmann describe an algorithm for producing these
-sequences of moves. This algorithm will be useful to us in
-@sec-rlitt-generation.
+Further, Bonahon and Siebenmann describe an algorithm for producing these sequences of moves. This
+algorithm will be useful to us in @sec-rlitt-generation.
 
 ```{prf:theorem} Bonahon and Siebenmann, Theorem 12.19 [@bonahonNewGeometricSplittings2016]
 :label: wpt-equi-cor-algo
@@ -141,9 +139,9 @@ positively (or negatively) canonical weighted planar trees.
 
 ##### Canonical Vertex
 
-The conditions for a weighted planar tree to be a CWPTT are phrased for the
-global context of a weighted planar tangle tree. We now recontextualize those
-conditions for a local view, a single vertex of the tree.
+The conditions for a weighted planar tree to be a CWPTT are phrased for the global context of a
+weighted planar tangle tree. We now recontextualize those conditions for a local view, a single
+vertex of the tree.
 
 ```{prf:definition}
 :label: vertex-canon-def
@@ -172,8 +170,8 @@ $i$ is not zero with the following conditions satisfied:
             $\text{sign}\LP w_i\RP\neq\text{sign}\LP w_{i+1}\RP$ (the child)
 ```
 
-From this definition, we now show that these conditions are identical to those
-in the global context of @wpt-equi-def-abcanon.
+From this definition, we now show that these conditions are identical to those in the global context
+of @wpt-equi-def-abcanon.
 
 ```{prf:theorem}
 :label: vertex-and-cannon
@@ -184,8 +182,8 @@ $\LP+\RP$-canonical.
 ```{prf:proof}
 Checking each canonicity condition locally shows both directions.
 ```
-The definition and proof for $\LP -\RP$-canonical vertices are identical.
-Similarly to the canonical tree case, we define a third positivity class for a
-vertex, the \textbf{neutral vertex}, a vertex that is both $\LP
--\RP$-canonical and
-$\LP+\RP$-canonical.
+
+The definition and proof for $\LP -\RP$-canonical vertices are identical. Similarly to the canonical
+tree case, we define a third positivity class for a vertex, the \textbf{neutral vertex}, a vertex
+that is both $\LP
+-\RP$-canonical and $\LP+\RP$-canonical.

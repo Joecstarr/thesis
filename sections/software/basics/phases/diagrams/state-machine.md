@@ -1,4 +1,3 @@
-
 `````{prf:example} A state machine diagram for Go Fish turn
 :label: se-ex-sm
 ````{figure}
