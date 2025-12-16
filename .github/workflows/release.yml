@@ -1,0 +1,40 @@
+name: Create release
+
+on:
+    push:
+        tags:
+            - "v*.*.*"
+
+permissions:
+    contents: write
+
+jobs:
+    release:
+        runs-on: ubuntu-22.04
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  submodules: recursive
+                  fetch-depth: 0
+
+            - name: Check Nixpkgs inputs
+              uses: DeterminateSystems/flake-checker-action@main
+              with:
+                  fail-mode: true
+
+            - name: Install Nix
+              uses: DeterminateSystems/nix-installer-action@main
+
+            - uses: DeterminateSystems/magic-nix-cache-action@main
+
+            - name: Build dist
+              run: |
+                  nix develop --command \
+                    just html
+
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              publish_dir: ./_build/html
+              cname: thesis.joe-starr.com

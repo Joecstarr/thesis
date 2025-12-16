@@ -13,20 +13,10 @@ bib:
     curl "http://127.0.0.1:23119/better-bibtex/export/collection?/1/DNKTAVKK.biblatex" > ./biblio.bib
 
 check-prettier:
-    prettier README.md --check
-    prettier main.md --check
-    prettier "sections/**/*.md" --check
+    prettier "**/*.md" --check
 
 do-prettier:
-    prettier -w README.md
-    prettier -w main.md
-    prettier -w "sections/**/*.md"
-
-check-ruff:
-    ruff format --check plugins
-
-do-ruff:
-    ruff format plugins
+    prettier -w "**/*.md"
 
 normalize-media:
     uv run ./resources/imgproc/svg_colors.py
@@ -53,7 +43,6 @@ html: bootstrap
 
 proc-svg-ws:
     uv run ./resources/imgproc/proc_svg_text.py .
-
 
 proc-svg-size:
     uv run ./resources/imgproc/proc_svg_size.py .
